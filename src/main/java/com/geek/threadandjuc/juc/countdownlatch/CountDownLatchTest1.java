@@ -21,7 +21,6 @@ public class CountDownLatchTest1 {
         },"t2").start();
 
 
-
         new Thread(new Runnable() {
             @Override
             public void run() {
