@@ -37,16 +37,16 @@ synchronized和volitile比较<br>
 
 Concurrent同步工具类 
 
-countDownLatch
-CyclicBarrier
-Semaphore
-Exchanger
-ReenTrantLock
-ReentrantReadWriteLock
+countDownLatch<br>
+CyclicBarrier<br>
+Semaphore<br>
+Exchanger<br>
+ReenTrantLock<br>
+ReentrantReadWriteLock<br>
 
 四种线程池与自定义线程池，底层代码
 设计模式： 单例，Future Master-Worker,Producer-Consumer的模式原理和实现
-
+===============================================================
 CountDownLatch是一个辅助的工具类，它允许一个或者多个线程等待一系列指定的操作的完成.
 以一个给定的数量初始化,countDown()每被调用一次，这一数量就减一.通过调用await()方法之一
 线程可以阻塞等待这一数量到达0
@@ -63,7 +63,7 @@ CyclicBarrier一个同步辅助类,它允许一组线程互相等待,直到到�
 
 起跑例子 ：  有两种用法 一种必须全部等待 另一种有超时时间  在等待某个时间后
 可以独自起跑 
-
+====================================================
 Semaphore一个计数信号量。信号量维护了一个许可集合; 通过acquire()
 和release()来获取和释放访问许可证。只有通过acquire获取了许可证的线
 程才能执行,否则阻塞。通过release释放许可证其他线程才能进行获取.
@@ -77,6 +77,12 @@ Semaphore一个计数信号量。信号量维护了一个许可集合; 通过acq
 有一个布尔类型的参数的构造子,通过这个参数以告知 Semaphore 是否
 要强制公平。强制公平会影响到并发性能,所以除非你确实需要它否则
 不要启用它
+===================================================
+
+Exchanger Exchanger 类表示一种两个线程可以进行互相交换对象的会
+和点。
+只能用于两个线程之间,并且两个线程必须都到达汇合点才会进行数
+据交换
 
 
 
