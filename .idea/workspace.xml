@@ -2,20 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cc8ef784-fbbd-4cb2-8c64-561bb52779a4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/geek/threadandjuc/juc/future/futuretype/Data.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/geek/threadandjuc/juc/future/futuretype/FutureController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/geek/threadandjuc/juc/future/futuretype/FutureData.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/geek/threadandjuc/juc/future/futuretype/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/geek/threadandjuc/juc/future/futuretype/RealData.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/geek/threadandjuc/juc/queue/Consumer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/geek/threadandjuc/juc/queue/Data.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/geek/threadandjuc/juc/queue/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/geek/threadandjuc/juc/queue/Provider.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/geek/threadandjuc/juc/single/DemoThread22.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/geek/threadandjuc/juc/single/DemoThread23.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/geek/threadandjuc/juc/single/DemoThread24.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/geek/threadandjuc/juc/single/DemoThread25.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/geek/threadandjuc/juc/future/futuretype/JdkFuture.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/geek/threadandjuc/juc/future/futuretype/JdkFuture.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/geek/threadandjuc/juc/threadpool/ScheduledThreadPoolTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/geek/threadandjuc/juc/threadpool/ScheduledThreadPoolTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/geek/threadandjuc/juc/threadpool/SingleThreadExecutorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/geek/threadandjuc/juc/threadpool/SingleThreadExecutorTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/geek/threadandjuc/juc/threadpool/ThreadPoolExecutorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/geek/threadandjuc/juc/threadpool/ThreadPoolExecutorTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -134,37 +126,44 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="java" value="24" />
+          <entry key="java" value="28" />
+          <entry key="md" value="1" />
           <entry key="xml" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="24" />
+          <entry key="JAVA" value="28" />
+          <entry key="Markdown" value="1" />
           <entry key="XML" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="699" />
-          <entry key="txt" value="22" />
+          <entry key="java" value="703" />
+          <entry key="md" value="155" />
+          <entry key="txt" value="31" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="699" />
-          <entry key="PLAIN_TEXT" value="22" />
+          <entry key="JAVA" value="703" />
+          <entry key="Markdown" value="155" />
+          <entry key="PLAIN_TEXT" value="31" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/geek/threadandjuc/juc/threadpool/FixedThreadPoolTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="380">
-              <caret line="23" column="9" selection-start-line="23" selection-start-column="9" selection-end-line="23" selection-end-column="9" />
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="FIRST">
+              <first_editor relative-caret-position="1919">
+                <caret line="101" lean-forward="true" selection-start-line="101" selection-end-line="101" />
+              </first_editor>
+              <second_editor />
             </state>
           </provider>
         </entry>
@@ -184,8 +183,44 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/geek/threadandjuc/juc/queue/Consumer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="71">
+            <state relative-caret-position="-100">
               <caret line="7" selection-start-line="7" selection-end-line="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/geek/threadandjuc/juc/single/DemoThread25.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="627">
+              <caret line="46" column="13" selection-start-line="46" selection-start-column="13" selection-end-line="46" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/geek/threadandjuc/juc/single/DemoThread23.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="78">
+              <caret line="17" selection-start-line="17" selection-end-line="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/geek/threadandjuc/juc/single/DemoThread22.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="78">
+              <caret line="17" selection-start-line="17" selection-end-line="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/geek/threadandjuc/juc/single/DemoThread24.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="152">
+              <caret line="17" selection-start-line="17" selection-end-line="17" />
             </state>
           </provider>
         </entry>
@@ -202,53 +237,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/geek/threadandjuc/juc/queue/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="76">
+            <state relative-caret-position="-433">
               <caret line="7" selection-start-line="7" selection-end-line="7" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/geek/threadandjuc/juc/queue/Provider.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="78">
               <caret line="10" column="3" lean-forward="true" selection-start-line="10" selection-start-column="3" selection-end-line="10" selection-end-column="3" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/geek/threadandjuc/juc/threadpool/ThreadPoolExecutorTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="95">
-              <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/geek/threadandjuc/juc/threadpool/SingleThreadExecutorTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="76">
-              <caret line="5" selection-start-line="5" selection-end-line="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/geek/threadandjuc/juc/threadpool/ScheduledThreadPoolTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="76">
-              <caret line="7" selection-start-line="7" selection-end-line="7" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/geek/threadandjuc/juc/future/futuretype/FutureController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="133">
-              <caret line="15" selection-start-line="15" selection-end-line="15" />
             </state>
           </provider>
         </entry>
@@ -296,7 +295,6 @@
         <option value="$PROJECT_DIR$/src/main/java/com/geek/threadandjuc/juc/reentranlock/ReentrantLockTest3.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/geek/threadandjuc/juc/Reentrantreadwritelock/ReadWriteLockTest1.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/geek/threadandjuc/juc/Semaphore/SemaphoreTest1.java" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/src/main/java/com/geek/threadandjuc/juc/threadpool/CachedThreadPoolTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/geek/threadandjuc/juc/threadpool/FixedThreadPoolTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/geek/threadandjuc/juc/future/CookNoFuture.java" />
@@ -316,6 +314,11 @@
         <option value="$PROJECT_DIR$/src/main/java/com/geek/threadandjuc/juc/queue/Data.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/geek/threadandjuc/juc/queue/Main.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/geek/threadandjuc/juc/queue/Provider.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/geek/threadandjuc/juc/single/DemoThread25.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/geek/threadandjuc/juc/single/DemoThread22.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/geek/threadandjuc/juc/single/DemoThread24.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/geek/threadandjuc/juc/single/DemoThread23.java" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -394,7 +397,7 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="threadandjuc" type="462c0819:PsiDirectoryNode" />
               <item name="juc" type="462c0819:PsiDirectoryNode" />
-              <item name="future" type="462c0819:PsiDirectoryNode" />
+              <item name="single" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="threadandjuc" type="b2602c69:ProjectViewProjectNode" />
@@ -404,8 +407,8 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="threadandjuc" type="462c0819:PsiDirectoryNode" />
               <item name="juc" type="462c0819:PsiDirectoryNode" />
-              <item name="future" type="462c0819:PsiDirectoryNode" />
-              <item name="futuretype" type="462c0819:PsiDirectoryNode" />
+              <item name="single" type="462c0819:PsiDirectoryNode" />
+              <item name="DemoThread22.java" type="529ef68f:ClassesTreeStructureProvider$PsiClassOwnerTreeNode" />
             </path>
             <path>
               <item name="threadandjuc" type="b2602c69:ProjectViewProjectNode" />
@@ -415,7 +418,8 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="threadandjuc" type="462c0819:PsiDirectoryNode" />
               <item name="juc" type="462c0819:PsiDirectoryNode" />
-              <item name="queue" type="462c0819:PsiDirectoryNode" />
+              <item name="single" type="462c0819:PsiDirectoryNode" />
+              <item name="DemoThread24.java" type="529ef68f:ClassesTreeStructureProvider$PsiClassOwnerTreeNode" />
             </path>
             <path>
               <item name="threadandjuc" type="b2602c69:ProjectViewProjectNode" />
@@ -425,18 +429,8 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="threadandjuc" type="462c0819:PsiDirectoryNode" />
               <item name="juc" type="462c0819:PsiDirectoryNode" />
-              <item name="threadpool" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="threadandjuc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="threadandjuc" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="threadandjuc" type="462c0819:PsiDirectoryNode" />
-              <item name="juc" type="462c0819:PsiDirectoryNode" />
-              <item name="threadpool" type="462c0819:PsiDirectoryNode" />
-              <item name="ThreadPoolExecutorTest.java" type="529ef68f:ClassesTreeStructureProvider$PsiClassOwnerTreeNode" />
+              <item name="single" type="462c0819:PsiDirectoryNode" />
+              <item name="DemoThread25.java" type="529ef68f:ClassesTreeStructureProvider$PsiClassOwnerTreeNode" />
             </path>
             <path>
               <item name="threadandjuc" type="b2602c69:ProjectViewProjectNode" />
@@ -461,7 +455,7 @@
     <property name="RequestMappingsPanelWidth2" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1540519698444" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1540520636588" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -471,11 +465,11 @@
       <recent name="com.geek.threadandjuc" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\project\threadandjuc\src\main\java\com\geek\threadandjuc\juc\single" />
       <recent name="D:\project\threadandjuc\src\main\java\com\geek\threadandjuc\juc\queue" />
       <recent name="D:\project\threadandjuc\src\main\java\com\geek\threadandjuc\juc\future\futuretype" />
       <recent name="D:\project\threadandjuc\src\main\java\com\geek\threadandjuc\juc\future" />
       <recent name="D:\project\threadandjuc\src\main\java\com\geek\threadandjuc\juc\threadpool" />
-      <recent name="$PROJECT_DIR$" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -599,7 +593,7 @@
       <workItem from="1539959199463" duration="4534000" />
       <workItem from="1539998846215" duration="22892000" />
       <workItem from="1540386389329" duration="4233000" />
-      <workItem from="1540468335317" duration="2545000" />
+      <workItem from="1540468335317" duration="3494000" />
     </task>
     <task id="LOCAL-00001" summary="xiugai">
       <created>1539999075324</created>
@@ -657,11 +651,18 @@
       <option name="project" value="LOCAL" />
       <updated>1540469597637</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="队列模式 -- --  例子与说明">
+      <created>1540519822052</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1540519822052</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="53806000" />
+    <option name="totallyTimeSpent" value="54755000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -748,7 +749,8 @@
     <MESSAGE value="可重入锁 -- --  例子与说明" />
     <MESSAGE value="线程池 -- --  例子与说明" />
     <MESSAGE value="future模式 -- --  例子与说明" />
-    <option name="LAST_COMMIT_MESSAGE" value="future模式 -- --  例子与说明" />
+    <MESSAGE value="队列模式 -- --  例子与说明" />
+    <option name="LAST_COMMIT_MESSAGE" value="队列模式 -- --  例子与说明" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -775,14 +777,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/geek/ThreadandjucMainApplication.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/geek/threadandjuc/ThreadandjucMainApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="10" column="40" selection-start-line="10" selection-start-column="40" selection-end-line="10" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/geek/threadandjuc/visibility/Synchronizedandvolatilevisibility.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="242">
@@ -923,19 +917,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor />
-          <second_editor />
-        </state>
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="449">
-          <caret line="125" column="37" selection-start-line="125" selection-start-column="37" selection-end-line="125" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/geek/threadandjuc/juc/reentranlock/ReentrantLockTest3.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="703">
@@ -1071,13 +1052,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/geek/threadandjuc/juc/queue/Consumer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="71">
-          <caret line="7" selection-start-line="7" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/geek/threadandjuc/juc/queue/Data.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="78">
@@ -1085,17 +1059,67 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/geek/threadandjuc/juc/queue/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="7" selection-start-line="7" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/geek/threadandjuc/juc/queue/Provider.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="78">
           <caret line="10" column="3" lean-forward="true" selection-start-line="10" selection-start-column="3" selection-end-line="10" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/geek/threadandjuc/juc/queue/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-433">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/geek/threadandjuc/juc/queue/Consumer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-100">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/geek/threadandjuc/juc/single/DemoThread22.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="78">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/geek/threadandjuc/juc/single/DemoThread24.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/geek/threadandjuc/juc/single/DemoThread25.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="627">
+          <caret line="46" column="13" selection-start-line="46" selection-start-column="13" selection-end-line="46" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/geek/threadandjuc/juc/single/DemoThread23.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="78">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="1919">
+            <caret line="101" lean-forward="true" selection-start-line="101" selection-end-line="101" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="449">
+          <caret line="125" column="37" selection-start-line="125" selection-start-column="37" selection-end-line="125" selection-end-column="37" />
         </state>
       </provider>
     </entry>
