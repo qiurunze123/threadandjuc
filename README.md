@@ -151,9 +151,11 @@
     将每一个任务的处理结果返回给Master，所有的任务处理完毕后,由
     Master进行结果汇总再返回给Clien
     
+ ##  使用AtomicInteger等原子类可以保证共享变量的原子性
     
-    
-
+    使用AtomicInteger等原子类可以保证共享变量的原子性。 
+    使用Atomic类不能保证成员方法的原子性。 
+    Atomic类采用了CAS非锁机制（Check And Set)
 
 
  
