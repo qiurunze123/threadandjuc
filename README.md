@@ -196,12 +196,37 @@
 
 ### ConcurrentLinkedQueue 
 
-### 
+    无阻塞、无锁、高性能、无界、线程安全，性能优于BlockingQueue、不允许null值
+    单生产者，单消费者  用 LinkedBlockingqueue
+    多生产者，单消费者   用 LinkedBlockingqueue
+    单生产者 ，多消费者   用 ConcurrentLinkedQueue
+    多生产者 ，多消费者   用 ConcurrentLinkedQueue
 
 ## 并发阻塞式队列
 ### ArrayBlockingQueue
+
+    ArrayBlockingQueue：基于数组实现的阻塞有界队列、
+    创建时可指定长度，内部实现维护了一个定长数组用于缓存数据,
+    内部没有采用读写分离，写入和读取数据不能同时进行，不允许null值
+    
 ### LinkedBlockingQueue
+
+    基于链表的阻塞队列,内部维护一个链表存储缓存数据，支持写入和读取的并发操作，
+    创建时可指定长度也可以不指定，不指定时代表无界队列，不允许null值
 ### SynchronousQueue
+    没有任何容量，必须现有线程先从队列中take,才能向queue中add数据
+    否则会抛出队列已满的异常。不能使用peek方法取数据,此方法底层没有实现,会直接返回null
 ### PriorityBlockingQueue
+
+    一个无界阻塞队列，默认初始化长度11，也可以手动指定，但是队列会自动扩容。
+    资源被耗尽时导致OutOfMemoryError。不允许使用null元素。不允许插入不可比较的对象
+    （导致抛出ClassCastException）, 加入的对象实现Comparable接口
 ### DelayQueue
+    
+    DelayQueue：Delayed 元素的一个无界阻塞队列，只有在延迟期满时才能从中提取元素。
+    该队列的头部是延迟期满后保存时间最长的Delayed 元素。如果延迟都还没有期满，则队列没有头部，
+    并且poll 将返回null。当一个元素的getDelay(TimeUnit.NANOSECONDS) 方法返回一个小于等于0 的值时
+    ，将发生到期。即使无法使用take 或poll 移除未到期的元素，也不会将这些元素作为正常元素对待。
+    例如，size 方法同时返回到期和未到期元素的计数。此队列不允许使用null 元素。内部元素需实现Delayed接口
+    场景：缓存到期删除、任务超时处理、空闲链接关闭等
  
