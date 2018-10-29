@@ -2,13 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cc8ef784-fbbd-4cb2-8c64-561bb52779a4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/geek/threadandjuc/juc/atomic/AtomicA.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/geek/threadandjuc/synchronizedgo/CopyOnWriteArrayListGo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/geek/threadandjuc/synchronizedgo/SynchronizedNew.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/geek/threadandjuc/synchronizedgo/SynchronizedOld.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/geek/threadandjuc/threadlocal/ThreadLocalGo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/geek/threadandjuc/visibility/VolatileDealNoA.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/geek/threadandjuc/visibility/Volatiledeal.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
@@ -145,15 +138,15 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="java" value="1858" />
-          <entry key="md" value="618" />
-          <entry key="txt" value="53" />
+          <entry key="md" value="659" />
+          <entry key="txt" value="75" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="JAVA" value="1858" />
-          <entry key="Markdown" value="618" />
-          <entry key="PLAIN_TEXT" value="53" />
+          <entry key="Markdown" value="659" />
+          <entry key="PLAIN_TEXT" value="75" />
         </counts>
       </usages-collector>
     </session>
@@ -164,8 +157,8 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="FIRST">
-              <first_editor relative-caret-position="229">
-                <caret line="187" column="64" selection-start-line="187" selection-start-column="64" selection-end-line="187" selection-end-column="64" />
+              <first_editor relative-caret-position="472">
+                <caret line="201" column="22" lean-forward="true" selection-start-line="201" selection-start-column="22" selection-end-line="201" selection-end-column="22" />
               </first_editor>
               <second_editor />
             </state>
@@ -400,7 +393,7 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
     <option name="width" value="1936" />
@@ -471,7 +464,7 @@
     <property name="RequestMappingsPanelWidth2" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1540793853418" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1540794362856" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../mima-concurrent" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -610,7 +603,7 @@
       <workItem from="1539998846215" duration="22892000" />
       <workItem from="1540386389329" duration="4233000" />
       <workItem from="1540468335317" duration="12729000" />
-      <workItem from="1540552790693" duration="7189000" />
+      <workItem from="1540552790693" duration="7577000" />
     </task>
     <task id="LOCAL-00001" summary="xiugai">
       <created>1539999075324</created>
@@ -710,17 +703,24 @@
       <option name="project" value="LOCAL" />
       <updated>1540553034531</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="并发类容器 -- --  例子与说明">
+      <created>1540793957281</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1540793957281</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="71179000" />
+    <option name="totallyTimeSpent" value="71567000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20234291" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20234291" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -730,14 +730,14 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.78434503" visible="true" weight="0.5145946" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.78434503" visible="true" weight="0.23135135" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.4978701" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Spring" order="7" />
       <window_info anchor="bottom" id="Terminal" order="8" />
-      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.21565495" side_tool="true" visible="true" weight="0.5145946" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.21565495" side_tool="true" visible="true" weight="0.23135135" />
       <window_info anchor="bottom" id="Messages" order="10" sideWeight="0.49733758" weight="0.32864866" />
       <window_info anchor="bottom" id="Java Enterprise" order="11" />
       <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" />
@@ -804,7 +804,8 @@
     <MESSAGE value="队列模式 -- --  例子与说明" />
     <MESSAGE value="讲解 -- --  例子与说明" />
     <MESSAGE value="atomic -- --  例子与说明" />
-    <option name="LAST_COMMIT_MESSAGE" value="atomic -- --  例子与说明" />
+    <MESSAGE value="并发类容器 -- --  例子与说明" />
+    <option name="LAST_COMMIT_MESSAGE" value="并发类容器 -- --  例子与说明" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1241,8 +1242,8 @@
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="FIRST">
-          <first_editor relative-caret-position="229">
-            <caret line="187" column="64" selection-start-line="187" selection-start-column="64" selection-end-line="187" selection-end-column="64" />
+          <first_editor relative-caret-position="472">
+            <caret line="201" column="22" lean-forward="true" selection-start-line="201" selection-start-column="22" selection-end-line="201" selection-end-column="22" />
           </first_editor>
           <second_editor />
         </state>
