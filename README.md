@@ -9,8 +9,15 @@
     觉得不错对您有帮助，麻烦右上角点下star以示鼓励！长期维护不易 多次想放弃 坚持是一种信仰 专注是一种态度！
 
 
-## 线程可见性
+## 线程可见性 volatile 和 synchronized 的区别和内容
 
+    volatile 强制线程到共享内存中读取数据，而不从线程工作内存中读取，从而使变量在多个线程中可见
+    volatile无法保证原子性，volatile属于轻量级的同步，性能比synchronized强很多(不加锁)，但是只保证线程见的可见性，
+    并不能替代synchronized的同步功能，netty框架中大量使用了volatile
+    ====================================================================================================
+    Static保证唯一性, 不保证一致性，多个实例共享一个静态变量。
+    Volatile保证一致性，不保证唯一性，多个实例有多个volatile变量
+    ====================================================================================================
     1.共享变量在线程间的可见性 
     2.synchronized 实现可见性 
     3.volitile 实现可见性 
@@ -18,7 +25,6 @@
     　　as-if-serial语义     
     　　volatile使用注意事项 
     synchronized和volitile比较 
-
 
 ## 线程池讲解
 
@@ -151,11 +157,44 @@
     将每一个任务的处理结果返回给Master，所有的任务处理完毕后,由
     Master进行结果汇总再返回给Clien
     
- ##  使用AtomicInteger等原子类可以保证共享变量的原子性
+ ##  使用Atomic类
     
     使用AtomicInteger等原子类可以保证共享变量的原子性。 
     使用Atomic类不能保证成员方法的原子性。 
     Atomic类采用了CAS非锁机制（Check And Set)
+    
+## ThreadLocal
+
+    使用ThreadLocal维护变量时，ThreadLocal为每个使用该变量的线程提供独立的变量副本，所以每一个线程都可以独立地改变自己的副本，而不会影响其它线程所对应的副本
+
+## 同步类容器
+    古老的实现方法
+    Vector、HashTable等古老的并发容器，都是使用Collections.synchronizedXXX等工厂方法创建的，并发状态下只能有一个线程访问容器对象，性能很低
+    
+    先进的实现方法
+    JDK5.0之后提供了多种并发类容易可以替代同步类容器，提升性能、吞吐量
+    ConcurrentHashMap替代HashMap、HashTable
+    ConcurrentSkipListMap替代TreeMap
+    ConcurrentHashMap将hash表分为16个segment，每个segment单独进行锁控制，从而减小了锁的粒度，提升了性能
+    
+    
+
+## 并发类容器
+
+    Copy On Write容器,简称COW;写时复制容器，向容器中添加元素时，先将容器进行Copy出一个新容器，
+    然后将元素添加到新容器中，再将原容器的引用指向新容器。并发读的时候不需要锁定容器，
+    因为原容器没有变化，使用的是一种读写分离的思想。由于每次更新都会复制新容器，所以如果数据量较大，
+    并且更新操作频繁则对内存消耗很高，建议在高并发读的场景下使用
+    ============================================================
+    CopyOnWriteArraySet基于CopyOnWriteArrayList实现，其唯一的不同是
+    在add时调用的是CopyOnWriteArrayList的addIfAbsent方法, 
+    adIfAbsent方法同样采用锁保护，并创建一个新的大小+1的Object数组。
+    遍历当前Object数组，如Object数组中已有了当前元素，则直接返回，如果没有则放入Object数组的尾部，
+    并返回。从以上分析可见，CopyOnWriteArraySet在add时每次都要进行数组的遍历，因此其性能会低于CopyOnWriteArrayList.
+
+## 并发无阻塞式队列
+
+## 并发阻塞式队列
 
 
  
