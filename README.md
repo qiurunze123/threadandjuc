@@ -102,11 +102,74 @@
     
    ![整体流程](https://raw.githubusercontent.com/qiurunze123/imageall/master/线程中断.png)
     
+    并发下的ArrayList ArrayListMutiThread 按理说t1,t2两个线程同时向一个ArrayList容器添加1000000个元素，按理说应该有20000000个元素在ArrayList 
+    
+    可能会出现三种结果： 正常 ， 
+    异常 ：
+    
+   ![整体流程](https://raw.githubusercontent.com/qiurunze123/imageall/master/array.png)
+   
+    比想象的小：
+    由于多线程访问冲突，使得保存容器大小的变量被多线程不正常的访问，同时两个线程也同时对ArrayList中的同一个位置进行赋值导致错误
+    
 
+     hashmap与ArrayList 的前两个问题相似，第三种hashmap有可能成环状 key1 key2互为next元素
+     
+   ![整体流程](https://raw.githubusercontent.com/qiurunze123/imageall/master/map.png)
+   
+          https://coolshell.cn/articles/9606.html hashmap 死循环案例  酷壳
+          
+    重入锁：ReentrantLock  ReentrantLockBase 使用重入锁保护临界取资源确保多线程对i操作的安全 ， 与synchronized相比，重入锁有着明显显示的操作过程
+    灵活性远好于与synchronized相比 而且他可以多次获取同一把锁
+    对于与synchronized相比，如果一个线程在等待锁，要么获取锁继续执行要么保持等待，而ReentrantLock 提供了另外一种可能就是可以中断，在等待锁的
+    过程中程序可以根据要求取消对锁的请求
     
     
+   ![整体流程](https://raw.githubusercontent.com/qiurunze123/imageall/master/lockclass.png)
 
-### 6.JDK并法包
+    1.主要集中在Java层面 原子状态使用CAS操作来存储当前锁的状态，判断锁是否被别的线程持有
+    2.等待队列 所有没有请求到锁的线程，会进入等待队列进行等待，带有线程释放锁后，系统就能从等待队列唤醒一个线程，继续工作
+    3.线程阻塞类工具 LockSupport
+    
+    重入锁的好搭档：Condition条件
+    
+    通过Lock接口的Condition new Condition()方法可以生成一个与当前重入锁绑定的Condition实例，利用Condition对象，
+    我们可以让线程在合适的时间等待或者在某一个特定的时刻得到通知，继续执行
+    
+   ![整体流程](https://raw.githubusercontent.com/qiurunze123/imageall/master/lockcondition.png)
+
+    允许多个线程同时访问：信号量（Semaphore）
+    无论是内部锁sunchronized 还是 reentrantLock 一次都只允许一个线程访问资源，但是信号量可以指定多个线程同时访问某一个资源
+    申请信号量使用acquire操作，在离开的时候务必释放信号量release
+    
+   ![整体流程](https://raw.githubusercontent.com/qiurunze123/imageall/master/semaphore.png)
+       
+       读写锁：readwritelock
+       读写分离锁，有效的减少了所得竞争 A1,A2,A3三个线程进行写操作，B1,B2,B3进行读操作，如果使用重入锁或者内部所，则理论上所有
+       读之间，读与写之间，写与写之间都是串行的操作，当B1进行读取时，B2,B3则需要等待锁，由于读操作并不会对数据的完整性进行破坏
+       等待就不合理，因此产生了读写锁
+   
+   ![整体流程](https://raw.githubusercontent.com/qiurunze123/imageall/master/readwrite.png)
+   
+     倒计时器（CountDownLatch）：控制线程等待，它可以让某一个线程等待直到倒计时结束，在开始执行
+       例如： 火箭发射，在火箭发射前为了保证ok必须等到所有的检查完毕后，才开始点火，这种场景很适合countdownlatch 他可以
+       是的点火线程等待线程全部完工后，在执行
+       
+   ![整体流程](https://raw.githubusercontent.com/qiurunze123/imageall/master/countdownlatch.png)
+   
+       循环栅栏（CyclicBarrier）:司令下达命令，要求10名士兵一起去完成一项任务，这个就会要求士兵先集合报道，接着，一起去执行任务
+       当10个士兵把自己手头的任务都执行完成后，司令才能对外宣布，任务完成 比CountDownLatch强大的是CyclicBarrier可以接受一个参数作为
+       barrierAction 
+   ![整体流程](https://raw.githubusercontent.com/qiurunze123/imageall/master/CyclicBarrier.png)
+   
+   
+   ![整体流程](https://raw.githubusercontent.com/qiurunze123/imageall/master/CyclicBarrier1.png)
+   
+   
+   线程池：
+
+    
+### 6.JDK并发包
 
 ## 线程可见性 volatile 和 synchronized 的区别和内容
 
