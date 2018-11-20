@@ -75,7 +75,7 @@
     
     线程枚举类
     
-   ![整体流程](https://raw.githubusercontent.com/qiurunze123/imageall/master/线程枚举类.png)
+   ![整体流程](https://raw.githubusercontent.com/qiurunze123/imageall/master/线程枚举.png)
 
     NEW状态标识刚刚创建的线程，这种线程还没有执行，等待线程调用start（）方法的时候才表示线程开始执行
     当线程执行的时候处于RUNNABLE的状态，表示线程所有的一切资源都已经准备好了，如果在线程执行的过程当中
@@ -163,12 +163,52 @@
    ![整体流程](https://raw.githubusercontent.com/qiurunze123/imageall/master/CyclicBarrier.png)
    
    
-   ![整体流程](https://raw.githubusercontent.com/qiurunze123/imageall/master/CyclicBarrier1.png)
+   ![整体流程](https://raw.githubusercontent.com/qiurunze123/imageall/master/yclicBarrier1.png)
    
    
-   线程池：
-
+    线程池-------------->>>>>>>>>>
     
+   ![整体流程](https://raw.githubusercontent.com/qiurunze123/imageall/master/xianchengchi.png)
+   
+    Executors类扮演着线程池工厂的角色，通过Excutors可以获取一个拥有特定功能的线程池，ThreadPoolExcutor类实现了Excutor接口
+    因此通过这个接口，任何Runnable的对象都可以被ThreadPoolExcutor线程池调度
+    
+   ![整体流程](https://raw.githubusercontent.com/qiurunze123/imageall/master/xianchengchi1.png)
+   
+    五种线程池:
+   
+   ![整体流程](https://raw.githubusercontent.com/qiurunze123/imageall/master/xianchengchi2.png)
+   
+   
+    调度任务
+   
+   ![整体流程](https://raw.githubusercontent.com/qiurunze123/imageall/master/xianchengchi4.png)
+   
+    核心参数意义
+
+   ![整体流程](https://raw.githubusercontent.com/qiurunze123/imageall/master/xianchengchi5.png)
+   
+   
+   ![整体流程](https://raw.githubusercontent.com/qiurunze123/imageall/master/xianchengchi6.png)
+
+
+    ThreadPoolExecutor 的任务调度逻辑
+    
+   ![整体流程](https://raw.githubusercontent.com/qiurunze123/imageall/master/xianchengchi7.png)
+   
+    超负载如何处理
+    
+    拒绝策略可以说是系统超负荷运行时的补救措施，通常是因为压力太大引起，也就是线程池用完了无法继续未新任务服务
+    同时，等待队列中也已经排满，再也塞不下新的任务，这时候我们需要一套机制，合理处理问题
+    
+    JDK四种拒绝策略：
+    
+    
+   ![整体流程](https://raw.githubusercontent.com/qiurunze123/imageall/master/xianchengchi8.png)
+   
+    也可以自己扩展
+
+
 ### 6.JDK并发包
 
 ## 线程可见性 volatile 和 synchronized 的区别和内容
