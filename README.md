@@ -208,6 +208,30 @@
    
     也可以自己扩展
 
+    扩展线程池
+    
+    Fork/Join框架使用
+    
+    分而治之 是有效处理大数据的方法 简单的说如果你要处理1000个数据，但是你并不具备1000个数据处理的能力，那么你可以
+    处理其中的10个，然后分阶段处理100次，将100次处理的结果进行合成，那么就是最终想要的结果
+    
+    实际过程中，毫无顾忌的使用fork()开启线程很有可能导致过多的线程来严重影响性能，JDK中给出了一个ForkJoinPool线程池，对于
+    fork()方法并不着急开启线程，而是提交给ForkJoinPool线程池来进行处理，以节省资源
+    
+    线程A已经把自己的任务执行完成了，而线程B还有一堆的任务等待处理，而线程A就会帮助线程B，
+    从线程B的任务队列中哪一个任务过来处理经可能达到平衡 注意---->>>>>>> 当线程试图帮助别人的时候，总是从任务的底部开始拿数据
+    而线程试图执行自己的任务时，则是相反的从顶部开始拿，十分利于避免数据竞争
+
+   ![整体流程](https://raw.githubusercontent.com/qiurunze123/imageall/master/forkjoin.png)
+   
+    两个重要的子类
+    
+    RecursiveAction 和 RecursiveTask  他们分别表示没有返回值的任务和可以携带返回值的任务
+    
+   ![整体流程](https://raw.githubusercontent.com/qiurunze123/imageall/master/forkjoin1.png)
+   
+    实例请看 countfiletask , counttask
+
 
 ### 6.JDK并发包
 
