@@ -9,5 +9,6 @@ public class ThreadBaseCreate implements Runnable{
     public static void main(String[] args) {
         Thread a2 = new Thread(new ThreadBaseCreate());
         a2.start();
+
     }
 }
