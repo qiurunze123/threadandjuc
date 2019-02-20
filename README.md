@@ -1,7 +1,14 @@
-### 前言
-大家好,线程在现在的工作中使用的频率较高，自己构建了一个小的demo，来和大家分享下自己对线程的理解，希望和大家分享一下，希望大家能从中收益，如果有意见和好的想法请加我！
- ＱＱ:3341386488
- 邮箱：QiuRunZe_key@163.com
+![互联网 Java 多线程那些事](https://raw.githubusercontent.com/qiurunze123/imageall/master/thread100.png)
+
+
+> 邮箱 : [QiuRunZe_key@163.com](QiuRunZe_key@163.com)
+
+> Github : [https://github.com/qiurunze123](https://github.com/qiurunze123)
+
+> QQ : [3341386488](3341386488)
+
+> QQ群 :
+
 
 我会不断完善，希望大家有好的想法拉一个分支提高，一起合作！
 
