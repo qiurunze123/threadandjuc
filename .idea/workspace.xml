@@ -128,14 +128,14 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="java" value="101" />
-          <entry key="md" value="5" />
+          <entry key="md" value="6" />
           <entry key="xml" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="JAVA" value="101" />
-          <entry key="Markdown" value="5" />
+          <entry key="Markdown" value="6" />
           <entry key="XML" value="4" />
         </counts>
       </usages-collector>
@@ -143,14 +143,14 @@
         <counts>
           <entry key="dummy" value="3" />
           <entry key="java" value="8239" />
-          <entry key="md" value="7457" />
+          <entry key="md" value="7554" />
           <entry key="txt" value="92" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="JAVA" value="8239" />
-          <entry key="Markdown" value="7457" />
+          <entry key="Markdown" value="7554" />
           <entry key="PLAIN_TEXT" value="95" />
         </counts>
       </usages-collector>
@@ -158,19 +158,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/geek/threadandjuc/juc/future/futuretype/RealData.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="25" column="20" selection-start-line="25" selection-start-column="20" selection-end-line="25" selection-end-column="20" />
-              <folding>
-                <element signature="e#375#376#0" expanded="true" />
-                <element signature="e#395#396#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/geek/threadandjuc/juc/future/futuretype/FutureController.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -202,9 +189,19 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="FIRST">
-              <first_editor>
-                <caret column="90" selection-start-column="90" selection-end-column="90" />
+              <first_editor relative-caret-position="247">
+                <caret line="13" column="72" selection-start-line="13" selection-start-column="72" selection-end-line="13" selection-end-column="72" />
               </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/doc/thread-base-1.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="FIRST">
+              <first_editor />
               <second_editor />
             </state>
           </provider>
@@ -268,6 +265,9 @@
       </list>
     </option>
   </component>
+  <component name="FindBugs-IDEA-Workspace">
+    <toolWindowEditorPreview>false</toolWindowEditorPreview>
+  </component>
   <component name="FindInProjectRecents">
     <findStrings>
       <find>Kevin</find>
@@ -284,7 +284,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/geek/threadandjuc/juc/threadpool/ScheduledThreadPoolTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/geek/threadandjuc/juc/queue/Consumer.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/geek/threadandjuc/juc/queue/Data.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/geek/threadandjuc/juc/queue/Main.java" />
@@ -334,6 +333,7 @@
         <option value="$PROJECT_DIR$/src/main/java/com/geek/threadandjuc/base/future/Data.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/geek/threadandjuc/base/future/FutureData.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/geek/threadandjuc/juc/future/futuretype/FutureController.java" />
+        <option value="$PROJECT_DIR$/doc/thread-base-1.md" />
         <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
@@ -418,6 +418,23 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="threadandjuc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="threadandjuc" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="threadandjuc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="threadandjuc" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="geek" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -433,7 +450,7 @@
     <property name="RequestMappingsPanelWidth2" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542939636598" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1550714634643" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -579,7 +596,7 @@
       <workItem from="1542783718846" duration="10032000" />
       <workItem from="1542889848135" duration="1444000" />
       <workItem from="1542940273923" duration="893000" />
-      <workItem from="1550660420615" duration="479000" />
+      <workItem from="1550660420615" duration="2055000" />
     </task>
     <task id="LOCAL-00001" summary="xiugai">
       <created>1539999075324</created>
@@ -739,13 +756,13 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="130710000" />
+    <option name="totallyTimeSpent" value="132286000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15548456" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23056443" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -763,7 +780,7 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Spring" order="7" sideWeight="0.49946752" weight="0.32972974" />
-      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.58093715" weight="0.32972974" />
+      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.58093715" visible="true" weight="0.32972974" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5037274" side_tool="true" weight="0.32864866" />
       <window_info anchor="bottom" id="Messages" order="10" sideWeight="0.49627262" weight="0.32864866" />
       <window_info anchor="bottom" id="Java Enterprise" order="11" />
@@ -892,13 +909,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/geek/threadandjuc/visibility/Volatiledeal.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-190">
-          <caret line="20" column="21" selection-start-line="20" selection-start-column="21" selection-end-line="20" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/geek/threadandjuc/queue/ConcurrentLinkedQueueGo.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="342">
@@ -1244,11 +1254,19 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/doc/thread-base-1.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="FIRST">
-          <first_editor>
-            <caret column="90" selection-start-column="90" selection-end-column="90" />
+          <first_editor relative-caret-position="247">
+            <caret line="13" column="72" selection-start-line="13" selection-start-column="72" selection-end-line="13" selection-end-column="72" />
           </first_editor>
           <second_editor />
         </state>
