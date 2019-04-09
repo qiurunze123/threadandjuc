@@ -1,5 +1,6 @@
 package com.geek.threadandjuc.juc.future.futuretype;
 
+
 import java.util.concurrent.Callable;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
@@ -24,6 +25,7 @@ public class JdkFuture implements Callable<String>{
 		String result = this.para + "处理完成";
 		return result;
 	}
+
 	
 	//主控制函数
 	public static void main(String[] args) throws Exception {
