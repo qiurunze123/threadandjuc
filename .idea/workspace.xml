@@ -2,21 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cc8ef784-fbbd-4cb2-8c64-561bb52779a4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/geek/create/CreateThread1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/geek/create/CreateThread2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/geek/create/CreateThread3.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/geek/join/JoinGo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/geek/stop/StopSafe.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/geek/stop/StopSafe2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/geek/stop/StopUnsafe.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/geek/stop/YieldWhat.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/geek/threadandjuc2/DeadLoackTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/geek/threadandjuc2/DeadLock.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/geek/threadandjuc2/OtherService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/geek/threadandjuc2/ThreadGo1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/geek/daemon/DaemonGo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/geek/priority/PriorityDemo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/geek/threadandjuc/juc/future/futuretype/JdkFuture.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/geek/threadandjuc/juc/future/futuretype/JdkFuture.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -142,7 +131,7 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="java" value="129" />
+          <entry key="java" value="131" />
           <entry key="md" value="14" />
           <entry key="url" value="2" />
           <entry key="xml" value="5" />
@@ -150,7 +139,7 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="129" />
+          <entry key="JAVA" value="131" />
           <entry key="Markdown" value="14" />
           <entry key="PLAIN_TEXT" value="2" />
           <entry key="XML" value="5" />
@@ -159,15 +148,15 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="3" />
-          <entry key="java" value="8650" />
-          <entry key="md" value="8812" />
+          <entry key="java" value="8768" />
+          <entry key="md" value="8918" />
           <entry key="txt" value="92" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="8650" />
-          <entry key="Markdown" value="8812" />
+          <entry key="JAVA" value="8768" />
+          <entry key="Markdown" value="8918" />
           <entry key="PLAIN_TEXT" value="95" />
         </counts>
       </usages-collector>
@@ -179,10 +168,32 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="FIRST">
-              <first_editor relative-caret-position="617">
-                <caret line="95" lean-forward="true" selection-start-line="95" selection-end-line="95" />
+              <first_editor relative-caret-position="437">
+                <caret line="113" column="41" lean-forward="true" selection-start-line="113" selection-start-column="41" selection-end-line="113" selection-end-column="41" />
               </first_editor>
               <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/geek/daemon/DaemonGo.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="418">
+              <caret line="22" column="28" selection-start-line="22" selection-start-column="28" selection-end-line="22" selection-end-column="28" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/geek/priority/PriorityDemo.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="260">
+              <caret line="39" lean-forward="true" selection-start-line="39" selection-end-line="39" />
+              <folding>
+                <element signature="e#179#180#0" expanded="true" />
+                <element signature="e#210#211#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -215,19 +226,6 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/geek/stop/StopSafe.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-271">
-              <caret line="45" column="18" selection-start-line="45" selection-start-column="12" selection-end-line="45" selection-end-column="18" />
-              <folding>
-                <element signature="e#850#851#0" expanded="true" />
-                <element signature="e#887#888#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/geek/stop/StopSafe2.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="149">
@@ -252,23 +250,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/geek/create/CreateThread3.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="152">
-              <caret line="8" column="27" lean-forward="true" selection-start-line="8" selection-start-column="27" selection-end-line="8" selection-end-column="27" />
-              <folding>
-                <element signature="e#248#249#0" expanded="true" />
-                <element signature="e#284#285#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="jar://C:/Program Files/Java/jdk1.7.0_79/src.zip!/java/lang/Thread.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="314">
-              <caret line="1280" column="19" lean-forward="true" selection-start-line="1280" selection-start-column="19" selection-end-line="1280" selection-end-column="19" />
+            <state relative-caret-position="504">
+              <caret line="256" column="28" selection-start-line="256" selection-start-column="28" selection-end-line="256" selection-end-column="28" />
               <folding>
                 <element signature="e#14796#14797#0" expanded="true" />
                 <element signature="e#14860#14861#0" expanded="true" />
@@ -324,8 +309,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/geek/threadandjuc/threadlocal/ThreadLocalGo.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/geek/threadandjuc/synchronizedgo/SynchronizedOld.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/geek/threadandjuc/synchronizedgo/SynchronizedNew.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/geek/threadandjuc/synchronizedgo/CopyOnWriteArrayListGo.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/geek/threadandjuc/queue/ConcurrentLinkedQueue.java" />
@@ -374,6 +357,8 @@
         <option value="$PROJECT_DIR$/src/main/java/com/geek/stop/YieldWhat.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/geek/stop/StopSafe2.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/geek/join/JoinGo.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/geek/daemon/DaemonGo.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/geek/priority/PriorityDemo.java" />
         <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
@@ -487,6 +472,16 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="com" type="462c0819:PsiDirectoryNode" />
               <item name="geek" type="462c0819:PsiDirectoryNode" />
+              <item name="daemon" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="threadandjuc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="threadandjuc" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="geek" type="462c0819:PsiDirectoryNode" />
               <item name="join" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -506,7 +501,7 @@
     <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;jar://C:/Program Files/Java/jdk1.7.0_79/src.zip!/java/lang/Thread.java" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1554809624678" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1554810888056" />
     <property name="last_opened_file_path" value="D:/多线程/akka_demo" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -519,11 +514,11 @@
       <recent name="com.geek.threadandjuc" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\project\threadandjuc\src\main\java\com\geek" />
       <recent name="D:\project\threadandjuc\src\main\java\com\geek\threadandjuc2" />
       <recent name="D:\project\threadandjuc\docs" />
       <recent name="D:\project\threadandjuc\src\main\java\com\geek\threadandjuc\juc\single" />
       <recent name="D:\project\threadandjuc\src\main\java\com\geek\threadandjuc\juc\queue" />
-      <recent name="D:\project\threadandjuc\src\main\java\com\geek\threadandjuc\juc\future\futuretype" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -538,7 +533,20 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.JoinGo">
+  <component name="RunManager" selected="Application.PriorityDemo">
+    <configuration name="DaemonGo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.geek.daemon.DaemonGo" />
+      <module name="threadandjuc" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.geek.daemon.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="JoinGo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.geek.join.JoinGo" />
       <module name="threadandjuc" />
@@ -552,12 +560,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="StopSafe" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.geek.stop.StopSafe" />
+    <configuration name="PriorityDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.geek.priority.PriorityDemo" />
       <module name="threadandjuc" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.geek.stop.*" />
+          <option name="PATTERN" value="com.geek.priority.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -567,19 +575,6 @@
     </configuration>
     <configuration name="StopSafe2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.geek.stop.StopSafe2" />
-      <module name="threadandjuc" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.geek.stop.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="StopUnsafe" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.geek.stop.StopUnsafe" />
       <module name="threadandjuc" />
       <extension name="coverage">
         <pattern>
@@ -613,19 +608,19 @@
     </configuration>
     <list>
       <item itemvalue="Spring Boot.ThreadandjucMainApplication" />
-      <item itemvalue="Application.StopUnsafe" />
-      <item itemvalue="Application.StopSafe" />
       <item itemvalue="Application.StopSafe2" />
       <item itemvalue="Application.YieldWhat" />
       <item itemvalue="Application.JoinGo" />
+      <item itemvalue="Application.DaemonGo" />
+      <item itemvalue="Application.PriorityDemo" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.PriorityDemo" />
+        <item itemvalue="Application.DaemonGo" />
         <item itemvalue="Application.JoinGo" />
         <item itemvalue="Application.StopSafe2" />
         <item itemvalue="Application.YieldWhat" />
-        <item itemvalue="Application.StopSafe" />
-        <item itemvalue="Application.StopUnsafe" />
       </list>
     </recent_temporary>
   </component>
@@ -660,7 +655,7 @@
       <workItem from="1552465960114" duration="5699000" />
       <workItem from="1552615341676" duration="3490000" />
       <workItem from="1553600335352" duration="130000" />
-      <workItem from="1554779333874" duration="12000000" />
+      <workItem from="1554779333874" duration="13263000" />
     </task>
     <task id="LOCAL-00001" summary="xiugai">
       <created>1539999075324</created>
@@ -820,13 +815,13 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="157188000" />
+    <option name="totallyTimeSpent" value="158451000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23695421" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.23695421" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -836,7 +831,7 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.7838126" visible="true" weight="0.23891892" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.7838126" visible="true" weight="0.35675675" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.4978701" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -979,20 +974,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://C:/Program Files/Java/jdk1.7.0_79/src.zip!/java/util/concurrent/ScheduledExecutorService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2280">
-          <caret line="154" column="30" selection-start-line="154" selection-start-column="30" selection-end-line="154" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.7.0_79/src.zip!/java/util/concurrent/ScheduledThreadPoolExecutor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="7315">
-          <caret line="426" column="9" selection-start-line="426" selection-start-column="6" selection-end-line="427" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.7.0_79/src.zip!/java/util/concurrent/ThreadPoolExecutor.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="21470">
@@ -1286,10 +1267,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.7.0_79/src.zip!/java/lang/Object.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="226">
+          <caret line="382" column="32" selection-start-line="382" selection-start-column="32" selection-end-line="382" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/geek/daemon/DaemonGo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="22" column="28" selection-start-line="22" selection-start-column="28" selection-end-line="22" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.7.0_79/src.zip!/java/lang/Thread.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="314">
-          <caret line="1280" column="19" lean-forward="true" selection-start-line="1280" selection-start-column="19" selection-end-line="1280" selection-end-column="19" />
+        <state relative-caret-position="504">
+          <caret line="256" column="28" selection-start-line="256" selection-start-column="28" selection-end-line="256" selection-end-column="28" />
           <folding>
             <element signature="e#14796#14797#0" expanded="true" />
             <element signature="e#14860#14861#0" expanded="true" />
@@ -1301,18 +1296,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.7.0_79/src.zip!/java/lang/Object.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/geek/priority/PriorityDemo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="226">
-          <caret line="382" column="32" selection-start-line="382" selection-start-column="32" selection-end-line="382" selection-end-column="32" />
+        <state relative-caret-position="260">
+          <caret line="39" lean-forward="true" selection-start-line="39" selection-end-line="39" />
+          <folding>
+            <element signature="e#179#180#0" expanded="true" />
+            <element signature="e#210#211#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="FIRST">
-          <first_editor relative-caret-position="617">
-            <caret line="95" lean-forward="true" selection-start-line="95" selection-end-line="95" />
+          <first_editor relative-caret-position="437">
+            <caret line="113" column="41" lean-forward="true" selection-start-line="113" selection-start-column="41" selection-end-line="113" selection-end-column="41" />
           </first_editor>
           <second_editor />
         </state>
