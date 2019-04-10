@@ -99,13 +99,15 @@
  
  三点注意：
  (1) thread.setDaemon(true)必须在thread.start()之前设置，否则会跑出一个IllegalThreadStateException异常。你不能把正在运行的常规线程设置为守护线程。
+ 
  (2) 在Daemon线程中产生的新线程也是Daemon的。 
+ 
  (3) 不要认为所有的应用都可以分配给Daemon来进行服务，比如读写操作或者计算逻辑
  
  =====================================
  线程优先级：
  
- 高优先级的线程比低优先级的线程有更高的几率得到执行
+ 高优先级的线程比低优先级的线程有更高的几率得到执行 更容易竞争到！
  
  系统线程组的最大优先级默认为 Thread.MAX_PRIORITY
  
@@ -113,3 +115,42 @@
  
  可以通过 setPriority 更改最大优先级，但无法超过父线程组的最大优先级
  /daemon   /priority
+ 
+ 4.基本的线程同步操作
+ 
+  (1) 对给定对象加锁，进入同步代码前要获得给定对象的锁
+  
+  (2) 直接作用于实例方法：相当于对当前实例加锁，进入同步代码前要获得当前实例的锁
+  
+  (3) 直接作用于静态方法：相当于对当前类加锁，进入同步代码前要获得当前类的锁
+  
+  ![整体流程](https://raw.githubusercontent.com/qiurunze123/imageall/master/threadnew4.png)
+
+  ![整体流程](https://raw.githubusercontent.com/qiurunze123/imageall/master/threadnew6.png)
+  
+===================================  
+  A. 无论synchronized关键字加在方法上还是对象上，如果它作用的对象是非静态的，则它取得的锁是对象；
+  如果synchronized作用的对象是一个静态方法或一个类，则它取得的锁是对类，该类所有的对象同一把锁。
+  
+  B. 每个对象只有一个锁（lock）与之相关联，谁拿到这个锁谁就可以运行它所控制的那段代码。
+  
+  C. 实现同步是要很大的系统开销作为代价的，甚至可能造成死锁，所以尽量避免无谓的同步控制。
+ 
+  `http://www.importnew.com/21866.html 此博客更为精细`  /create/sync
+  
+  5.wait/notify
+  
+  1.wait和notify 必须实在同步代码块中使用 经常与synchronized 搭配使用 synchronized修饰的同步代码块或方法里面调用wait() 与  notify/notifyAll()方法。
+  
+  2.由于 wait() 与  notify/notifyAll() 是放在同步代码块中的，因此线程在执行它们时，肯定是进入了临界区中的，即该线程肯定是获得了锁的
+  
+  当线程执行wait()时，会把当前的锁释放，然后让出CPU，进入等待状态。
+  
+  当执行notify/notifyAll方法时，会唤醒一个处于等待该 对象锁 的线程，然后继续往下执行，直到执行完退出对象锁锁住的区域（synchronized修饰的代码块）后再释放锁。
+  从这里可以看出，notify/notifyAll()执行后，并不立即释放锁，而是要等到执行完临界区中代码后，再释放。故，在实际编程中，
+  我们应该尽量在线程调用notify/notifyAll()后，
+  立即退出临界区。即不要在notify/notifyAll()后面再写一些耗时的代码。
+  
+  3.执行notify不会立马释放对象锁，需等该同步方法或同步块执行完。注意是同步的内容执行完，而不是该线程的run方法执行完
+  
+  /create/waitnotify

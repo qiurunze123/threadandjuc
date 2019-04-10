@@ -2,8 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cc8ef784-fbbd-4cb2-8c64-561bb52779a4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/geek/daemon/DaemonGo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/geek/priority/PriorityDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/geek/WaitNotify/MyList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/geek/WaitNotify/WaitNotify2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/geek/WaitNotify/WaitNotify3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/geek/sync/Account.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/geek/sync/SyncThread.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/geek/sync/SyncThread2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/geek/sync/SyncThread3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/geek/sync/SyncThread4.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/geek/sync/SyncThread5.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/geek/sync/SyncThread6.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/geek/sync/SyncThread7.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
@@ -131,7 +140,7 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="java" value="131" />
+          <entry key="java" value="143" />
           <entry key="md" value="14" />
           <entry key="url" value="2" />
           <entry key="xml" value="5" />
@@ -139,7 +148,7 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="131" />
+          <entry key="JAVA" value="143" />
           <entry key="Markdown" value="14" />
           <entry key="PLAIN_TEXT" value="2" />
           <entry key="XML" value="5" />
@@ -148,15 +157,15 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="3" />
-          <entry key="java" value="8768" />
-          <entry key="md" value="8918" />
+          <entry key="java" value="9200" />
+          <entry key="md" value="9209" />
           <entry key="txt" value="92" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="8768" />
-          <entry key="Markdown" value="8918" />
+          <entry key="JAVA" value="9200" />
+          <entry key="Markdown" value="9209" />
           <entry key="PLAIN_TEXT" value="95" />
         </counts>
       </usages-collector>
@@ -168,8 +177,8 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="FIRST">
-              <first_editor relative-caret-position="437">
-                <caret line="113" column="41" lean-forward="true" selection-start-line="113" selection-start-column="41" selection-end-line="113" selection-end-column="41" />
+              <first_editor relative-caret-position="494">
+                <caret line="155" column="20" selection-start-line="155" selection-start-column="20" selection-end-line="155" selection-end-column="20" />
               </first_editor>
               <second_editor />
             </state>
@@ -177,100 +186,116 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/geek/daemon/DaemonGo.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/geek/WaitNotify/WaitNotify3.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="418">
-              <caret line="22" column="28" selection-start-line="22" selection-start-column="28" selection-end-line="22" selection-end-column="28" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/geek/priority/PriorityDemo.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="260">
-              <caret line="39" lean-forward="true" selection-start-line="39" selection-end-line="39" />
+            <state relative-caret-position="-394">
+              <caret line="32" column="18" lean-forward="true" selection-start-line="32" selection-start-column="18" selection-end-line="32" selection-end-column="18" />
               <folding>
-                <element signature="e#179#180#0" expanded="true" />
-                <element signature="e#210#211#0" expanded="true" />
+                <element signature="e#520#521#0" expanded="true" />
+                <element signature="e#548#549#0" expanded="true" />
+                <element signature="e#1049#1050#0" expanded="true" />
+                <element signature="e#1077#1078#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/geek/WaitNotify/MyList.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="470">
-              <caret line="124" column="15" selection-start-line="124" selection-start-column="15" selection-end-line="124" selection-end-column="15" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/geek/join/JoinGo.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="437">
-              <caret line="23" column="13" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/geek/stop/StopUnsafe.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="318">
-              <caret line="45" column="42" lean-forward="true" selection-start-line="45" selection-start-column="42" selection-end-line="45" selection-end-column="42" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/geek/stop/StopSafe2.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="149">
-              <caret line="82" column="61" selection-start-line="82" selection-start-column="50" selection-end-line="82" selection-end-column="61" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/geek/stop/YieldWhat.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="100">
-              <caret line="18" column="30" selection-start-line="18" selection-start-column="30" selection-end-line="18" selection-end-column="30" />
+            <state relative-caret-position="190">
+              <caret line="10" column="50" selection-start-line="10" selection-start-column="50" selection-end-line="10" selection-end-column="50" />
               <folding>
-                <element signature="e#205#403#0" expanded="true" />
-                <element signature="e#402#403#0" expanded="true" />
-                <element signature="e#423#621#0" expanded="true" />
-                <element signature="e#620#621#0" expanded="true" />
+                <element signature="imports" expanded="true" />
+                <element signature="e#136#144#0" expanded="true" />
+                <element signature="e#177#178#0" expanded="true" />
+                <element signature="e#208#209#0" expanded="true" />
+                <element signature="e#242#243#0" expanded="true" />
+                <element signature="e#276#277#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="jar://C:/Program Files/Java/jdk1.7.0_79/src.zip!/java/lang/Thread.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/geek/WaitNotify/WaitNotify.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="504">
-              <caret line="256" column="28" selection-start-line="256" selection-start-column="28" selection-end-line="256" selection-end-column="28" />
+            <state relative-caret-position="342">
+              <caret line="30" column="32" lean-forward="true" selection-start-line="30" selection-start-column="32" selection-end-line="30" selection-end-column="32" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/geek/WaitNotify/WaitNotify2.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-363">
+              <caret line="2" column="24" selection-start-line="2" selection-start-column="24" selection-end-line="2" selection-end-column="24" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/geek/sync/SyncThread.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="183">
+              <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
               <folding>
-                <element signature="e#14796#14797#0" expanded="true" />
-                <element signature="e#14860#14861#0" expanded="true" />
-                <element signature="e#15480#15481#0" expanded="true" />
-                <element signature="e#15546#15547#0" expanded="true" />
-                <element signature="e#17388#17389#0" expanded="true" />
-                <element signature="e#17429#17430#0" expanded="true" />
+                <element signature="e#156#157#0" expanded="true" />
+                <element signature="e#181#182#0" expanded="true" />
+                <element signature="e#650#651#0" expanded="true" />
+                <element signature="e#678#679#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="jar://C:/Program Files/Java/jdk1.7.0_79/src.zip!/java/lang/Object.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/geek/sync/SyncThread2.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="226">
-              <caret line="382" column="32" selection-start-line="382" selection-start-column="32" selection-end-line="382" selection-end-column="32" />
+            <state relative-caret-position="-192">
+              <caret line="6" column="3" selection-start-line="6" selection-start-column="3" selection-end-line="6" selection-end-column="3" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/geek/sync/SyncThread3.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="950">
+              <caret line="50" column="27" selection-start-line="50" selection-start-column="20" selection-end-line="50" selection-end-column="27" />
+              <folding>
+                <element signature="e#151#152#0" expanded="true" />
+                <element signature="e#176#177#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/geek/sync/SyncThread4.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="95">
+              <caret line="5" column="9" selection-start-line="5" selection-start-column="9" selection-end-line="5" selection-end-column="9" />
+              <folding>
+                <element signature="e#982#983#0" expanded="true" />
+                <element signature="e#1020#1021#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/geek/sync/SyncThread7.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="361">
+              <caret line="19" column="38" lean-forward="true" selection-start-line="19" selection-start-column="38" selection-end-line="19" selection-end-column="38" />
+              <folding>
+                <element signature="e#172#173#0" expanded="true" />
+                <element signature="e#197#198#0" expanded="true" />
+                <element signature="e#647#648#0" expanded="true" />
+                <element signature="e#671#672#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -309,22 +334,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/geek/threadandjuc/synchronizedgo/SynchronizedNew.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/geek/threadandjuc/synchronizedgo/CopyOnWriteArrayListGo.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/geek/threadandjuc/queue/ConcurrentLinkedQueue.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/geek/threadandjuc/queue/ConcurrentLinkedQueueGo.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/geek/threadandjuc/queue/ArrayBlockingQueuego.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/geek/threadandjuc/queue/ArrayBlockingQueueGo.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/geek/threadandjuc/juc/future/CookFuture.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/geek/threadandjuc/base/ThreadBase.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/geek/threadandjuc/base/entity/User.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/geek/threadandjuc/base/ChangeObjectThread.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/geek/threadandjuc/base/ArrayListMutiThread.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/geek/threadandjuc/base/HashMapMutiThread.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/geek/threadandjuc/base/ReenterLockBase.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/geek/threadandjuc/base/ReenterLockCondition.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/geek/threadandjuc/base/SemapDemo.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/geek/threadandjuc/base/ReadWriteLockDemo.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/geek/threadandjuc/base/CountDownLatchDemo.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/geek/threadandjuc/base/CyclicBarrierDemo.java" />
@@ -359,6 +368,22 @@
         <option value="$PROJECT_DIR$/src/main/java/com/geek/join/JoinGo.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/geek/daemon/DaemonGo.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/geek/priority/PriorityDemo.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/geek/sync/SynchronizedObject.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/geek/sync/SyncThread2.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/geek/sync/SyncThread3.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/geek/sync/Account.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/geek/sync/SyncThread5.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/geek/sync/SyncThread6.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/geek/sync/SyncThread4.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/geek/sync/SyncThread.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/geek/sync/SyncThread7.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/geek/WaitNotify/WaitNotofy.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/geek/WaitNotify/WaitNotify.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/geek/WaitNotify/SimpleWNA.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/geek/WaitNotify/WaitNotify2.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/geek/WaitNotify/MyList.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/geek/WaitNotify/Test.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/geek/WaitNotify/WaitNotify3.java" />
         <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
@@ -472,17 +497,7 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="com" type="462c0819:PsiDirectoryNode" />
               <item name="geek" type="462c0819:PsiDirectoryNode" />
-              <item name="daemon" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="threadandjuc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="threadandjuc" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="geek" type="462c0819:PsiDirectoryNode" />
-              <item name="join" type="462c0819:PsiDirectoryNode" />
+              <item name="WaitNotify" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -501,24 +516,25 @@
     <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;jar://C:/Program Files/Java/jdk1.7.0_79/src.zip!/java/lang/Thread.java" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1554810888191" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1554876799968" />
     <property name="last_opened_file_path" value="D:/多线程/akka_demo" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.geek.sync" />
       <recent name="com.geek.stop" />
       <recent name="com.geek.create" />
       <recent name="com.geek.threadandjuc.base" />
       <recent name="com.geek.threadandjuc" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\project\threadandjuc\src\main\java\com\geek\WaitNotify" />
       <recent name="D:\project\threadandjuc\src\main\java\com\geek" />
       <recent name="D:\project\threadandjuc\src\main\java\com\geek\threadandjuc2" />
       <recent name="D:\project\threadandjuc\docs" />
       <recent name="D:\project\threadandjuc\src\main\java\com\geek\threadandjuc\juc\single" />
-      <recent name="D:\project\threadandjuc\src\main\java\com\geek\threadandjuc\juc\queue" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -533,13 +549,13 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.PriorityDemo">
-    <configuration name="DaemonGo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.geek.daemon.DaemonGo" />
+  <component name="RunManager" selected="Application.WaitNotify3">
+    <configuration name="SyncThread6" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.geek.sync.SyncThread6" />
       <module name="threadandjuc" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.geek.daemon.*" />
+          <option name="PATTERN" value="com.geek.sync.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -547,12 +563,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="JoinGo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.geek.join.JoinGo" />
+    <configuration name="SyncThread7" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.geek.sync.SyncThread7" />
       <module name="threadandjuc" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.geek.join.*" />
+          <option name="PATTERN" value="com.geek.sync.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -560,12 +576,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PriorityDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.geek.priority.PriorityDemo" />
+    <configuration name="WaitNotify" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.geek.WaitNotify.WaitNotify" />
       <module name="threadandjuc" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.geek.priority.*" />
+          <option name="PATTERN" value="com.geek.WaitNotify.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -573,12 +589,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="StopSafe2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.geek.stop.StopSafe2" />
+    <configuration name="WaitNotify2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.geek.WaitNotify.WaitNotify2" />
       <module name="threadandjuc" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.geek.stop.*" />
+          <option name="PATTERN" value="com.geek.WaitNotify.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -586,12 +602,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="YieldWhat" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.geek.stop.YieldWhat" />
+    <configuration name="WaitNotify3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.geek.WaitNotify.WaitNotify3" />
       <module name="threadandjuc" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.geek.stop.*" />
+          <option name="PATTERN" value="com.geek.WaitNotify.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -608,19 +624,19 @@
     </configuration>
     <list>
       <item itemvalue="Spring Boot.ThreadandjucMainApplication" />
-      <item itemvalue="Application.StopSafe2" />
-      <item itemvalue="Application.YieldWhat" />
-      <item itemvalue="Application.JoinGo" />
-      <item itemvalue="Application.DaemonGo" />
-      <item itemvalue="Application.PriorityDemo" />
+      <item itemvalue="Application.SyncThread6" />
+      <item itemvalue="Application.SyncThread7" />
+      <item itemvalue="Application.WaitNotify" />
+      <item itemvalue="Application.WaitNotify2" />
+      <item itemvalue="Application.WaitNotify3" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.PriorityDemo" />
-        <item itemvalue="Application.DaemonGo" />
-        <item itemvalue="Application.JoinGo" />
-        <item itemvalue="Application.StopSafe2" />
-        <item itemvalue="Application.YieldWhat" />
+        <item itemvalue="Application.WaitNotify3" />
+        <item itemvalue="Application.WaitNotify2" />
+        <item itemvalue="Application.WaitNotify" />
+        <item itemvalue="Application.SyncThread7" />
+        <item itemvalue="Application.SyncThread6" />
       </list>
     </recent_temporary>
   </component>
@@ -655,7 +671,7 @@
       <workItem from="1552465960114" duration="5699000" />
       <workItem from="1552615341676" duration="3490000" />
       <workItem from="1553600335352" duration="130000" />
-      <workItem from="1554779333874" duration="13263000" />
+      <workItem from="1554779333874" duration="19751000" />
     </task>
     <task id="LOCAL-00001" summary="xiugai">
       <created>1539999075324</created>
@@ -815,13 +831,13 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="158451000" />
+    <option name="totallyTimeSpent" value="164939000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.23695421" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23695421" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -831,13 +847,13 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.7838126" visible="true" weight="0.35675675" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.7838126" visible="true" weight="0.35675675" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.4978701" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Spring" order="7" sideWeight="0.49946752" weight="0.32972974" />
-      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.58093715" weight="0.32972974" />
+      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.58093715" weight="0.19027027" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5037274" side_tool="true" weight="0.32864866" />
       <window_info anchor="bottom" id="Messages" order="10" sideWeight="0.49627262" weight="0.32864866" />
       <window_info anchor="bottom" id="Java Enterprise" order="11" />
@@ -970,80 +986,16 @@
           <properties />
           <option name="timeStamp" value="14" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/geek/sync/SyncThread.java</url>
+          <line>22</line>
+          <properties />
+          <option name="timeStamp" value="15" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://C:/Program Files/Java/jdk1.7.0_79/src.zip!/java/util/concurrent/ThreadPoolExecutor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="21470">
-          <caret line="1187" column="44" selection-start-line="1187" selection-start-column="44" selection-end-line="1187" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/geek/threadandjuc/base/ThreadLocalFalse.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="9" column="32" selection-start-line="9" selection-start-column="32" selection-end-line="9" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/geek/threadandjuc/base/ThreadLocalTrue.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="15" column="54" lean-forward="true" selection-start-line="15" selection-start-column="54" selection-end-line="15" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/geek/threadandjuc/base/AtomicIntegerDemo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="6" column="24" selection-start-line="6" selection-start-column="11" selection-end-line="6" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/geek/threadandjuc/base/DeakLock.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="520">
-          <caret line="52" column="5" lean-forward="true" selection-start-line="52" selection-start-column="5" selection-end-line="52" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/geek/threadandjuc/base/future/Data.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/geek/threadandjuc/base/future/FutureData.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/geek/threadandjuc/base/ThreadBaseCreate.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="11" selection-start-line="11" selection-end-line="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/geek/threadandjuc/juc/future/futuretype/RealData.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="25" column="20" selection-start-line="25" selection-start-column="20" selection-end-line="25" selection-end-column="20" />
-          <folding>
-            <element signature="e#375#376#0" expanded="true" />
-            <element signature="e#395#396#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/geek/threadandjuc/juc/future/futuretype/FutureController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="21" column="8" selection-start-line="21" selection-start-column="8" selection-end-line="21" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/geek/threadandjuc/juc/future/futuretype/Data.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="13" column="17" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/geek/threadandjuc2/src/main/java/com/wangwenjun/concurrency/chapter1/上课笔记.url" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/geek/threadandjuc/ThreadandjucMainApplication.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="152">
@@ -1281,21 +1233,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.7.0_79/src.zip!/java/lang/Thread.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="504">
-          <caret line="256" column="28" selection-start-line="256" selection-start-column="28" selection-end-line="256" selection-end-column="28" />
-          <folding>
-            <element signature="e#14796#14797#0" expanded="true" />
-            <element signature="e#14860#14861#0" expanded="true" />
-            <element signature="e#15480#15481#0" expanded="true" />
-            <element signature="e#15546#15547#0" expanded="true" />
-            <element signature="e#17388#17389#0" expanded="true" />
-            <element signature="e#17429#17430#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/geek/priority/PriorityDemo.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="260">
@@ -1307,11 +1244,162 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/geek/sync/Account.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="646">
+          <caret line="34" column="5" selection-start-line="34" selection-start-column="5" selection-end-line="34" selection-end-column="5" />
+          <folding>
+            <element signature="e#768#769#0" expanded="true" />
+            <element signature="e#805#806#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/geek/sync/SyncThread6.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-325">
+          <caret line="11" column="52" selection-start-line="11" selection-start-column="52" selection-end-line="11" selection-end-column="52" />
+          <folding>
+            <element signature="e#236#237#0" expanded="true" />
+            <element signature="e#261#262#0" expanded="true" />
+            <element signature="e#641#642#0" expanded="true" />
+            <element signature="e#665#666#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/geek/sync/SyncThread5.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="9" column="55" selection-start-line="9" selection-start-column="55" selection-end-line="9" selection-end-column="55" />
+          <folding>
+            <element signature="e#173#174#0" expanded="true" />
+            <element signature="e#198#199#0" expanded="true" />
+            <element signature="e#686#687#0" expanded="true" />
+            <element signature="e#714#715#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.7.0_79/src.zip!/java/lang/Thread.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="183">
+          <caret line="546" column="11" selection-start-line="546" selection-start-column="11" selection-end-line="546" selection-end-column="11" />
+          <folding>
+            <element signature="e#14796#14797#0" expanded="true" />
+            <element signature="e#14860#14861#0" expanded="true" />
+            <element signature="e#15480#15481#0" expanded="true" />
+            <element signature="e#15546#15547#0" expanded="true" />
+            <element signature="e#17388#17389#0" expanded="true" />
+            <element signature="e#17429#17430#0" expanded="true" />
+            <element signature="e#18901#18902#0" expanded="true" />
+            <element signature="e#18944#18945#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/geek/sync/SyncThread3.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="950">
+          <caret line="50" column="27" selection-start-line="50" selection-start-column="20" selection-end-line="50" selection-end-column="27" />
+          <folding>
+            <element signature="e#151#152#0" expanded="true" />
+            <element signature="e#176#177#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/geek/sync/SyncThread2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-192">
+          <caret line="6" column="3" selection-start-line="6" selection-start-column="3" selection-end-line="6" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/geek/sync/SyncThread.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="183">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+          <folding>
+            <element signature="e#156#157#0" expanded="true" />
+            <element signature="e#181#182#0" expanded="true" />
+            <element signature="e#650#651#0" expanded="true" />
+            <element signature="e#678#679#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/geek/sync/SyncThread7.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="361">
+          <caret line="19" column="38" lean-forward="true" selection-start-line="19" selection-start-column="38" selection-end-line="19" selection-end-column="38" />
+          <folding>
+            <element signature="e#172#173#0" expanded="true" />
+            <element signature="e#197#198#0" expanded="true" />
+            <element signature="e#647#648#0" expanded="true" />
+            <element signature="e#671#672#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/geek/sync/SyncThread4.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="5" column="9" selection-start-line="5" selection-start-column="9" selection-end-line="5" selection-end-column="9" />
+          <folding>
+            <element signature="e#982#983#0" expanded="true" />
+            <element signature="e#1020#1021#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/geek/WaitNotify/WaitNotify.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="30" column="32" lean-forward="true" selection-start-line="30" selection-start-column="32" selection-end-line="30" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/geek/WaitNotify/WaitNotify2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-363">
+          <caret line="2" column="24" selection-start-line="2" selection-start-column="24" selection-end-line="2" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/geek/WaitNotify/MyList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="10" column="50" selection-start-line="10" selection-start-column="50" selection-end-line="10" selection-end-column="50" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#136#144#0" expanded="true" />
+            <element signature="e#177#178#0" expanded="true" />
+            <element signature="e#208#209#0" expanded="true" />
+            <element signature="e#242#243#0" expanded="true" />
+            <element signature="e#276#277#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/geek/WaitNotify/WaitNotify3.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-394">
+          <caret line="32" column="18" lean-forward="true" selection-start-line="32" selection-start-column="18" selection-end-line="32" selection-end-column="18" />
+          <folding>
+            <element signature="e#520#521#0" expanded="true" />
+            <element signature="e#548#549#0" expanded="true" />
+            <element signature="e#1049#1050#0" expanded="true" />
+            <element signature="e#1077#1078#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="FIRST">
-          <first_editor relative-caret-position="437">
-            <caret line="113" column="41" lean-forward="true" selection-start-line="113" selection-start-column="41" selection-end-line="113" selection-end-column="41" />
+          <first_editor relative-caret-position="494">
+            <caret line="155" column="20" selection-start-line="155" selection-start-column="20" selection-end-line="155" selection-end-column="20" />
           </first_editor>
           <second_editor />
         </state>
