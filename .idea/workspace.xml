@@ -2,13 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cc8ef784-fbbd-4cb2-8c64-561bb52779a4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/docs/thread-base-3.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/thread-base-4.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/thread-base-5.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/geek/VolatileExample/AccountingSync.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/geek/VolatileExample/AccountingVol.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/geek/VolatileExample/Volatile2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/geek/VolatileExample/VolatileExample.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
@@ -154,14 +147,14 @@
         <counts>
           <entry key="dummy" value="3" />
           <entry key="java" value="9393" />
-          <entry key="md" value="9854" />
+          <entry key="md" value="9918" />
           <entry key="txt" value="92" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="JAVA" value="9393" />
-          <entry key="Markdown" value="9854" />
+          <entry key="Markdown" value="9918" />
           <entry key="PLAIN_TEXT" value="95" />
         </counts>
       </usages-collector>
@@ -169,24 +162,24 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="FIRST">
-              <first_editor relative-caret-position="380">
-                <caret line="20" column="38" selection-start-line="20" selection-start-column="38" selection-end-line="20" selection-end-column="38" />
+              <first_editor relative-caret-position="437">
+                <caret line="23" column="19" selection-start-line="23" selection-start-column="19" selection-end-line="23" selection-end-column="19" />
               </first_editor>
               <second_editor />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/docs/thread-base-5.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="FIRST">
-              <first_editor relative-caret-position="470">
-                <caret line="27" column="53" selection-start-line="27" selection-start-column="53" selection-end-line="27" selection-end-column="53" />
+              <first_editor relative-caret-position="399">
+                <caret line="21" column="10" lean-forward="true" selection-start-line="21" selection-start-column="10" selection-end-line="21" selection-end-column="10" />
               </first_editor>
               <second_editor />
             </state>
@@ -364,12 +357,12 @@
         <option value="$PROJECT_DIR$/src/main/java/com/geek/WaitNotify/WaitNotify3.java" />
         <option value="$PROJECT_DIR$/docs/thread-base-3.md" />
         <option value="$PROJECT_DIR$/docs/thread-base-4.md" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/src/main/java/com/geek/VolatileExample/VolatileExample.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/geek/VolatileExample/Volatile2.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/geek/VolatileExample/AccountingVol.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/geek/VolatileExample/AccountingSync.java" />
         <option value="$PROJECT_DIR$/docs/thread-base-5.md" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -398,10 +391,10 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="100" />
-    <option name="y" value="10" />
-    <option name="width" value="1588" />
-    <option name="height" value="788" />
+    <option name="x" value="-7" />
+    <option name="y" value="3" />
+    <option name="width" value="1378" />
+    <option name="height" value="733" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -491,7 +484,7 @@
     <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;jar://C:/Program Files/Java/jdk1.7.0_79/src.zip!/java/lang/Thread.java" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1554976940187" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1554979237271" />
     <property name="last_opened_file_path" value="D:/多线程/akka_demo" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -647,7 +640,7 @@
       <workItem from="1552615341676" duration="3490000" />
       <workItem from="1553600335352" duration="130000" />
       <workItem from="1554779333874" duration="19803000" />
-      <workItem from="1554965015954" duration="6728000" />
+      <workItem from="1554965015954" duration="8191000" />
     </task>
     <task id="LOCAL-00001" summary="xiugai">
       <created>1539999075324</created>
@@ -807,7 +800,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="171719000" />
+    <option name="totallyTimeSpent" value="173182000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -823,13 +816,13 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.7838126" visible="true" weight="0.35675675" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.7838126" weight="0.35675675" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.4978701" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Spring" order="7" sideWeight="0.49946752" weight="0.32972974" />
-      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.58093715" weight="0.19027027" />
+      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.58093715" visible="true" weight="0.19027027" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5037274" side_tool="true" weight="0.32864866" />
       <window_info anchor="bottom" id="Messages" order="10" sideWeight="0.49627262" weight="0.32864866" />
       <window_info anchor="bottom" id="Java Enterprise" order="11" />
@@ -1380,11 +1373,21 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/docs/thread-base-5.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="399">
+            <caret line="21" column="10" lean-forward="true" selection-start-line="21" selection-start-column="10" selection-end-line="21" selection-end-column="10" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="FIRST">
-          <first_editor relative-caret-position="380">
-            <caret line="20" column="38" selection-start-line="20" selection-start-column="38" selection-end-line="20" selection-end-column="38" />
+          <first_editor relative-caret-position="437">
+            <caret line="23" column="19" selection-start-line="23" selection-start-column="19" selection-end-line="23" selection-end-column="19" />
           </first_editor>
           <second_editor />
         </state>
@@ -1392,16 +1395,6 @@
       <provider editor-type-id="text-editor">
         <state relative-caret-position="449">
           <caret line="125" column="37" selection-start-line="125" selection-start-column="37" selection-end-line="125" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/docs/thread-base-5.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="FIRST">
-          <first_editor relative-caret-position="470">
-            <caret line="27" column="53" selection-start-line="27" selection-start-column="53" selection-end-line="27" selection-end-column="53" />
-          </first_editor>
-          <second_editor />
         </state>
       </provider>
     </entry>
