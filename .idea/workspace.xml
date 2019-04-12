@@ -2,9 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cc8ef784-fbbd-4cb2-8c64-561bb52779a4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/docs/thread-base-7.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/geek/reentrantlock/ReenTrantLock1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/geek/reentrantlock/ReenTrantLock2.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/thread-base-7.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/thread-base-7.md" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -131,8 +132,8 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="class" value="3" />
-          <entry key="java" value="163" />
-          <entry key="md" value="25" />
+          <entry key="java" value="167" />
+          <entry key="md" value="26" />
           <entry key="url" value="2" />
           <entry key="xml" value="5" />
         </counts>
@@ -140,8 +141,8 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CLASS" value="3" />
-          <entry key="JAVA" value="163" />
-          <entry key="Markdown" value="25" />
+          <entry key="JAVA" value="167" />
+          <entry key="Markdown" value="26" />
           <entry key="PLAIN_TEXT" value="2" />
           <entry key="XML" value="5" />
         </counts>
@@ -149,15 +150,15 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="3" />
-          <entry key="java" value="9577" />
-          <entry key="md" value="10624" />
+          <entry key="java" value="9715" />
+          <entry key="md" value="10730" />
           <entry key="txt" value="92" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="9577" />
-          <entry key="Markdown" value="10624" />
+          <entry key="JAVA" value="9715" />
+          <entry key="Markdown" value="10730" />
           <entry key="PLAIN_TEXT" value="95" />
         </counts>
       </usages-collector>
@@ -177,12 +178,68 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/docs/thread-base-7.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="FIRST">
-              <first_editor relative-caret-position="114">
-                <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+              <first_editor relative-caret-position="380">
+                <caret line="20" column="29" lean-forward="true" selection-start-line="20" selection-start-column="29" selection-end-line="20" selection-end-column="29" />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/geek/reentrantlock/ReenTrantLock2.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="576">
+              <caret line="61" column="23" selection-start-line="61" selection-start-column="23" selection-end-line="61" selection-end-column="23" />
+              <folding>
+                <element signature="e#364#365#0" expanded="true" />
+                <element signature="e#396#397#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://C:/Program Files/Java/jdk1.7.0_79/src.zip!/java/lang/Object.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="226">
+              <caret line="36" column="13" selection-start-line="36" selection-start-column="13" selection-end-line="36" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://C:/Program Files/Java/jdk1.7.0_79/src.zip!/java/util/concurrent/locks/ReentrantLock.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="92">
+              <caret line="334" column="42" selection-start-line="334" selection-start-column="42" selection-end-line="334" selection-end-column="42" />
+              <folding>
+                <element signature="e#19881#19882#0" expanded="true" />
+                <element signature="e#19928#19929#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/geek/reentrantlock/ReenTrantLock1.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="291">
+              <caret line="21" column="22" lean-forward="true" selection-start-line="21" selection-start-column="22" selection-end-line="21" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/docs/thread-base-6.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="FIRST">
+              <first_editor relative-caret-position="710">
+                <caret line="110" lean-forward="true" selection-start-line="110" selection-end-line="110" />
               </first_editor>
               <second_editor />
             </state>
@@ -223,10 +280,13 @@
       <find>AccountingSync</find>
       <find>AtomicInteger.class.getDeclaredField(&quot;value&quot;)</find>
       <find>compareAndSet</find>
+      <find>lockInterruptibly()</find>
+      <find>LockInterrupt</find>
     </findStrings>
     <replaceStrings>
       <replace />
       <replace>thread-base-2.md</replace>
+      <replace>ReenTrantLock2</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -235,8 +295,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/doc/thread-base-1.md" />
-        <option value="$PROJECT_DIR$/src/main/java/com/geek/threadandjuc/juc/future/futuretype/JdkFuture.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/geek/threadandjuc2/concurrency/chapter2/BankVersion2.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/geek/threadandjuc2/ThreadGo1.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/geek/threadandjuc2/OtherService.java" />
@@ -285,7 +343,9 @@
         <option value="$PROJECT_DIR$/docs/thread-base-6.md" />
         <option value="$PROJECT_DIR$/src/main/java/com/geek/atomic/LockFreeVector.java" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/src/main/java/com/geek/reentrantlock/ReenTrantLock1.java" />
         <option value="$PROJECT_DIR$/docs/thread-base-7.md" />
+        <option value="$PROJECT_DIR$/src/main/java/com/geek/reentrantlock/ReenTrantLock2.java" />
       </list>
     </option>
   </component>
@@ -398,7 +458,7 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="com" type="462c0819:PsiDirectoryNode" />
               <item name="geek" type="462c0819:PsiDirectoryNode" />
-              <item name="atomic" type="462c0819:PsiDirectoryNode" />
+              <item name="reentrantlock" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -417,18 +477,18 @@
     <property name="SearchEverywhereHistoryKey" value="Vector&#9;PSI&#9;JAVA://java.util.Vector&#10;AtomicStampedReference&#9;PSI&#9;JAVA://java.util.concurrent.atomic.AtomicStampedReference&#10;AtomicInteger.class&#9;FILE&#9;jar://C:/Program Files/Java/jdk1.7.0_79/jre/lib/rt.jar!/java/util/concurrent/atomic/AtomicIntegerArray.class" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1555057817857" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1555068477773" />
     <property name="last_opened_file_path" value="D:/多线程/akka_demo" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.geek.reentrantlock" />
       <recent name="com.geek.atomic" />
       <recent name="com.geek.sync" />
       <recent name="com.geek.stop" />
       <recent name="com.geek.create" />
-      <recent name="com.geek.threadandjuc.base" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\project\threadandjuc\docs" />
@@ -450,22 +510,9 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.AtomicIntegerFieldUpdater1">
+  <component name="RunManager" selected="Application.ReenTrantLock2">
     <configuration name="AtomicArray1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.geek.atomic.AtomicArray1" />
-      <module name="threadandjuc" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.geek.atomic.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="AtomicInteger2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.geek.atomic.AtomicInteger2" />
       <module name="threadandjuc" />
       <extension name="coverage">
         <pattern>
@@ -503,12 +550,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AtomicStampedReference1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.geek.atomic.AtomicStampedReference1" />
+    <configuration name="ReenTrantLock1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.geek.reentrantlock.ReenTrantLock1" />
       <module name="threadandjuc" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.geek.atomic.*" />
+          <option name="PATTERN" value="com.geek.reentrantlock.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ReenTrantLock2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.geek.reentrantlock.ReenTrantLock2" />
+      <module name="threadandjuc" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.geek.reentrantlock.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -526,18 +586,18 @@
     <list>
       <item itemvalue="Spring Boot.ThreadandjucMainApplication" />
       <item itemvalue="Application.AtomicReference1" />
-      <item itemvalue="Application.AtomicStampedReference1" />
-      <item itemvalue="Application.AtomicInteger2" />
       <item itemvalue="Application.AtomicArray1" />
       <item itemvalue="Application.AtomicIntegerFieldUpdater1" />
+      <item itemvalue="Application.ReenTrantLock1" />
+      <item itemvalue="Application.ReenTrantLock2" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ReenTrantLock2" />
+        <item itemvalue="Application.ReenTrantLock1" />
         <item itemvalue="Application.AtomicIntegerFieldUpdater1" />
         <item itemvalue="Application.AtomicArray1" />
         <item itemvalue="Application.AtomicReference1" />
-        <item itemvalue="Application.AtomicInteger2" />
-        <item itemvalue="Application.AtomicStampedReference1" />
       </list>
     </recent_temporary>
   </component>
@@ -573,7 +633,7 @@
       <workItem from="1552615341676" duration="3490000" />
       <workItem from="1553600335352" duration="130000" />
       <workItem from="1554779333874" duration="19803000" />
-      <workItem from="1554965015954" duration="17308000" />
+      <workItem from="1554965015954" duration="19847000" />
     </task>
     <task id="LOCAL-00001" summary="xiugai">
       <created>1539999075324</created>
@@ -733,14 +793,14 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="182299000" />
+    <option name="totallyTimeSpent" value="184838000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.7772109" visible="true" weight="0.23908414" />
-      <window_info id="Structure" order="1" sideWeight="0.22278911" side_tool="true" visible="true" weight="0.23908414" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.625" visible="true" weight="0.23908414" />
+      <window_info id="Structure" order="1" sideWeight="0.375" side_tool="true" visible="true" weight="0.23908414" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
       <window_info id="UI Designer" order="4" />
@@ -749,13 +809,13 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.43027028" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.7838126" weight="0.3372973" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.7838126" visible="true" weight="0.20432432" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.4978701" weight="0.29945946" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Spring" order="7" sideWeight="0.49946752" weight="0.32972974" />
-      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.58093715" visible="true" weight="0.36432433" />
+      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.58093715" weight="0.36432433" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5037274" side_tool="true" weight="0.32864866" />
       <window_info anchor="bottom" id="Messages" order="10" sideWeight="0.49627262" weight="0.32864866" />
       <window_info anchor="bottom" id="Java Enterprise" order="11" />
@@ -898,27 +958,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/geek/stop/StopSafe2.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="149">
-          <caret line="82" column="61" selection-start-line="82" selection-start-column="50" selection-end-line="82" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/geek/stop/StopUnsafe.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="318">
-          <caret line="45" column="42" lean-forward="true" selection-start-line="45" selection-start-column="42" selection-end-line="45" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="470">
-          <caret line="124" column="15" selection-start-line="124" selection-start-column="15" selection-end-line="124" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/geek/stop/YieldWhat.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="100">
@@ -936,13 +975,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="437">
           <caret line="23" column="13" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.7.0_79/src.zip!/java/lang/Object.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="226">
-          <caret line="382" column="32" selection-start-line="382" selection-start-column="32" selection-end-line="382" selection-end-column="32" />
         </state>
       </provider>
     </entry>
@@ -1325,16 +1357,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/docs/thread-base-6.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="FIRST">
-          <first_editor relative-caret-position="317">
-            <caret line="110" lean-forward="true" selection-start-line="110" selection-end-line="110" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.7.0_79/src.zip!/java/util/Vector.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1020">
@@ -1364,13 +1386,59 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/docs/thread-base-6.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="710">
+            <caret line="110" lean-forward="true" selection-start-line="110" selection-end-line="110" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/docs/thread-base-7.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="FIRST">
-          <first_editor relative-caret-position="114">
-            <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+          <first_editor relative-caret-position="380">
+            <caret line="20" column="29" lean-forward="true" selection-start-line="20" selection-start-column="29" selection-end-line="20" selection-end-column="29" />
           </first_editor>
           <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.7.0_79/src.zip!/java/util/concurrent/locks/ReentrantLock.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="334" column="42" selection-start-line="334" selection-start-column="42" selection-end-line="334" selection-end-column="42" />
+          <folding>
+            <element signature="e#19881#19882#0" expanded="true" />
+            <element signature="e#19928#19929#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.7.0_79/src.zip!/java/lang/Object.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="226">
+          <caret line="36" column="13" selection-start-line="36" selection-start-column="13" selection-end-line="36" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/geek/reentrantlock/ReenTrantLock1.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="291">
+          <caret line="21" column="22" lean-forward="true" selection-start-line="21" selection-start-column="22" selection-end-line="21" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/geek/reentrantlock/ReenTrantLock2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="576">
+          <caret line="61" column="23" selection-start-line="61" selection-start-column="23" selection-end-line="61" selection-end-column="23" />
+          <folding>
+            <element signature="e#364#365#0" expanded="true" />
+            <element signature="e#396#397#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
