@@ -2,13 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cc8ef784-fbbd-4cb2-8c64-561bb52779a4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/docs/thread-base-6.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/geek/atomic/AtomicArray1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/geek/atomic/AtomicInteger1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/geek/atomic/AtomicInteger2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/geek/atomic/AtomicIntegerFieldUpdater1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/geek/atomic/AtomicReference1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/geek/atomic/AtomicStampedReference1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/thread-base-7.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
@@ -137,8 +131,8 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="class" value="3" />
-          <entry key="java" value="161" />
-          <entry key="md" value="23" />
+          <entry key="java" value="163" />
+          <entry key="md" value="25" />
           <entry key="url" value="2" />
           <entry key="xml" value="5" />
         </counts>
@@ -146,8 +140,8 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CLASS" value="3" />
-          <entry key="JAVA" value="161" />
-          <entry key="Markdown" value="23" />
+          <entry key="JAVA" value="163" />
+          <entry key="Markdown" value="25" />
           <entry key="PLAIN_TEXT" value="2" />
           <entry key="XML" value="5" />
         </counts>
@@ -156,14 +150,14 @@
         <counts>
           <entry key="dummy" value="3" />
           <entry key="java" value="9577" />
-          <entry key="md" value="10397" />
+          <entry key="md" value="10624" />
           <entry key="txt" value="92" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="JAVA" value="9577" />
-          <entry key="Markdown" value="10397" />
+          <entry key="Markdown" value="10624" />
           <entry key="PLAIN_TEXT" value="95" />
         </counts>
       </usages-collector>
@@ -171,12 +165,24 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/docs/thread-base-6.md">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="FIRST">
-              <first_editor relative-caret-position="184">
-                <caret line="103" column="46" lean-forward="true" selection-start-line="103" selection-start-column="46" selection-end-line="103" selection-end-column="46" />
+              <first_editor relative-caret-position="392">
+                <caret line="31" column="123" selection-start-line="31" selection-start-column="123" selection-end-line="31" selection-end-column="123" />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/docs/thread-base-7.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="FIRST">
+              <first_editor relative-caret-position="114">
+                <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
               </first_editor>
               <second_editor />
             </state>
@@ -184,40 +190,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/geek/atomic/AtomicIntegerFieldUpdater1.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/geek/atomic/LockFreeVector.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="228">
-              <caret line="14" column="46" selection-start-line="14" selection-start-column="46" selection-end-line="14" selection-end-column="46" />
-              <folding>
-                <element signature="e#644#645#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://C:/Program Files/Java/jdk1.7.0_79/src.zip!/java/util/concurrent/atomic/AtomicIntegerFieldUpdater.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="196">
-              <caret line="98" column="28" selection-start-line="98" selection-start-column="28" selection-end-line="98" selection-end-column="28" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/geek/atomic/AtomicArray1.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="171">
-              <caret line="9" column="23" lean-forward="true" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://C:/Program Files/Java/jdk1.7.0_79/src.zip!/java/util/concurrent/atomic/AtomicIntegerArray.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="63">
-              <caret line="40" column="67" selection-start-line="40" selection-start-column="67" selection-end-line="40" selection-end-column="68" />
+            <state relative-caret-position="588">
+              <caret line="146" column="16" selection-start-line="146" selection-start-column="16" selection-end-line="146" selection-end-column="16" />
             </state>
           </provider>
         </entry>
@@ -259,8 +235,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/geek/threadandjuc/base/future/FutureData.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/geek/threadandjuc/juc/future/futuretype/FutureController.java" />
         <option value="$PROJECT_DIR$/doc/thread-base-1.md" />
         <option value="$PROJECT_DIR$/src/main/java/com/geek/threadandjuc/juc/future/futuretype/JdkFuture.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/geek/threadandjuc2/concurrency/chapter2/BankVersion2.java" />
@@ -301,7 +275,6 @@
         <option value="$PROJECT_DIR$/src/main/java/com/geek/VolatileExample/AccountingVol.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/geek/VolatileExample/AccountingSync.java" />
         <option value="$PROJECT_DIR$/docs/thread-base-5.md" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/src/main/java/com/geek/atomic/AtomicIntegerDemo.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/geek/atomic/AtomicInteger1.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/geek/atomic/AtomicReference1.java" />
@@ -310,6 +283,9 @@
         <option value="$PROJECT_DIR$/src/main/java/com/geek/atomic/AtomicArray1.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/geek/atomic/AtomicIntegerFieldUpdater1.java" />
         <option value="$PROJECT_DIR$/docs/thread-base-6.md" />
+        <option value="$PROJECT_DIR$/src/main/java/com/geek/atomic/LockFreeVector.java" />
+        <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/docs/thread-base-7.md" />
       </list>
     </option>
   </component>
@@ -441,7 +417,7 @@
     <property name="SearchEverywhereHistoryKey" value="Vector&#9;PSI&#9;JAVA://java.util.Vector&#10;AtomicStampedReference&#9;PSI&#9;JAVA://java.util.concurrent.atomic.AtomicStampedReference&#10;AtomicInteger.class&#9;FILE&#9;jar://C:/Program Files/Java/jdk1.7.0_79/jre/lib/rt.jar!/java/util/concurrent/atomic/AtomicIntegerArray.class" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1555056717145" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1555057817857" />
     <property name="last_opened_file_path" value="D:/多线程/akka_demo" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -455,8 +431,8 @@
       <recent name="com.geek.threadandjuc.base" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\project\threadandjuc\src\main\java\com\geek\atomic" />
       <recent name="D:\project\threadandjuc\docs" />
+      <recent name="D:\project\threadandjuc\src\main\java\com\geek\atomic" />
       <recent name="D:\project\threadandjuc\src\main\java\com\geek\VolatileExample" />
       <recent name="D:\project\threadandjuc\src\main\java\com\geek\WaitNotify" />
       <recent name="D:\project\threadandjuc\src\main\java\com\geek" />
@@ -597,7 +573,7 @@
       <workItem from="1552615341676" duration="3490000" />
       <workItem from="1553600335352" duration="130000" />
       <workItem from="1554779333874" duration="19803000" />
-      <workItem from="1554965015954" duration="16080000" />
+      <workItem from="1554965015954" duration="17308000" />
     </task>
     <task id="LOCAL-00001" summary="xiugai">
       <created>1539999075324</created>
@@ -757,14 +733,14 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="181071000" />
+    <option name="totallyTimeSpent" value="182299000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.7781403" visible="true" weight="0.23908414" />
-      <window_info id="Structure" order="1" sideWeight="0.22185971" side_tool="true" visible="true" weight="0.23908414" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.7772109" visible="true" weight="0.23908414" />
+      <window_info id="Structure" order="1" sideWeight="0.22278911" side_tool="true" visible="true" weight="0.23908414" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
       <window_info id="UI Designer" order="4" />
@@ -773,13 +749,13 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.43027028" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.7838126" visible="true" weight="0.3372973" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.7838126" weight="0.3372973" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.4978701" weight="0.29945946" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Spring" order="7" sideWeight="0.49946752" weight="0.32972974" />
-      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.58093715" weight="0.19027027" />
+      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.58093715" visible="true" weight="0.36432433" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5037274" side_tool="true" weight="0.32864866" />
       <window_info anchor="bottom" id="Messages" order="10" sideWeight="0.49627262" weight="0.32864866" />
       <window_info anchor="bottom" id="Java Enterprise" order="11" />
@@ -922,35 +898,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/geek/create/CreateThread1.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="8" column="26" selection-start-line="8" selection-start-column="26" selection-end-line="8" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/geek/create/CreateThread3.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="8" column="27" lean-forward="true" selection-start-line="8" selection-start-column="27" selection-end-line="8" selection-end-column="27" />
-          <folding>
-            <element signature="e#248#249#0" expanded="true" />
-            <element signature="e#284#285#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/geek/stop/StopSafe.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-271">
-          <caret line="45" column="18" selection-start-line="45" selection-start-column="12" selection-end-line="45" selection-end-column="18" />
-          <folding>
-            <element signature="e#850#851#0" expanded="true" />
-            <element signature="e#887#888#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/geek/stop/StopSafe2.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="149">
@@ -1229,21 +1176,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="FIRST">
-          <first_editor relative-caret-position="551">
-            <caret line="29" column="57" selection-start-line="29" selection-start-column="57" selection-end-line="29" selection-end-column="57" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="449">
-          <caret line="125" column="37" selection-start-line="125" selection-start-column="37" selection-end-line="125" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/docs/thread-base-4.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="FIRST">
@@ -1396,8 +1328,47 @@
     <entry file="file://$PROJECT_DIR$/docs/thread-base-6.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="FIRST">
-          <first_editor relative-caret-position="184">
-            <caret line="103" column="46" lean-forward="true" selection-start-line="103" selection-start-column="46" selection-end-line="103" selection-end-column="46" />
+          <first_editor relative-caret-position="317">
+            <caret line="110" lean-forward="true" selection-start-line="110" selection-end-line="110" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.7.0_79/src.zip!/java/util/Vector.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1020">
+          <caret line="89" column="14" lean-forward="true" selection-start-line="89" selection-start-column="14" selection-end-line="89" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/geek/atomic/LockFreeVector.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="588">
+          <caret line="146" column="16" selection-start-line="146" selection-start-column="16" selection-end-line="146" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="392">
+            <caret line="31" column="123" selection-start-line="31" selection-start-column="123" selection-end-line="31" selection-end-column="123" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="449">
+          <caret line="125" column="37" selection-start-line="125" selection-start-column="37" selection-end-line="125" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docs/thread-base-7.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="114">
+            <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
           </first_editor>
           <second_editor />
         </state>
