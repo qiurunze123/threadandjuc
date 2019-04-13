@@ -1,5 +1,6 @@
 package com.geek.reentrantlock;
 
+
 import java.util.concurrent.locks.ReentrantLock;
 
 /**
@@ -59,6 +60,6 @@ public class ReenTrantLock2 implements Runnable {
         t3.start();
         t4.start();
         Thread.sleep(1000);
-        //DeadlockChecker.check();
+        t3.interrupt();
     }
 }
