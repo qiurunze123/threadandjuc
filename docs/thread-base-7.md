@@ -101,3 +101,47 @@ compareAndSetState(0, acquires)
 3.死锁检测：一个非常方便的使用场景是，你可以使用n个线程访问共享资源，在每次测试阶段的线程数目是不同的，并尝试产生死锁。
 
 例如火箭发射，必须是 各种检查完成后才能发射
+
+
+**CyclicBarrier详解**
+
+说明：
+
+![整体流程](https://raw.githubusercontent.com/qiurunze123/imageall/master/threadnew42.png)
+
+
+代码详解：
+
+![整体流程](https://raw.githubusercontent.com/qiurunze123/imageall/master/threadnew41.png)
+
+1.士兵陆续前来集合
+
+2.士兵集合完毕
+
+3.barrierAction1: 打印"司令：[士兵10个，集合完毕!]"
+
+4.士兵陆续完成任务
+
+5.所有士兵的任务都执行完毕
+
+6。barrierAction2: 打印"司令：[士兵10个, 任务完成!]"
+
+barrierAction每次都是由一个线程执行的，而这个线程一般就是最后到达的那个线程
+
+**栅栏损坏**
+
+1.有一个线程发生中断或者超时，而当前线程正在等待（await），则当前线程会抛出BrokenBarrierException
+
+2.该CyclicBarrier对象被调用了reset方法
+
+3.该CyclicBarrier对象被调用await时，状态已经是"broken"了
+
+4.barrierAction抛出了未捕获的异常
+
+源码:(就不贴了 有兴趣自己看吧)
+
+CountDownLatch不同，CyclicBarrier不是基于AQS实现，而是应用ReentrantLock实现的，它的同步靠的是两个成员变量（分别是一个ReentrantLock以及从中引申出的Condition）
+
+![整体流程](https://raw.githubusercontent.com/qiurunze123/imageall/master/threadnew43.png)
+
+        https://blog.csdn.net/qq_33256688/article/details/85241557 不错
