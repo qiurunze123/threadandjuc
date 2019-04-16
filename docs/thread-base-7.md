@@ -145,3 +145,19 @@ CountDownLatch不同，CyclicBarrier不是基于AQS实现，而是应用Reentran
 ![整体流程](https://raw.githubusercontent.com/qiurunze123/imageall/master/threadnew43.png)
 
         https://blog.csdn.net/qq_33256688/article/details/85241557 不错
+        
+**LockSupport 阻塞线程**
+
+方法：
+
+![整体流程](https://raw.githubusercontent.com/qiurunze123/imageall/master/threadnew44.png)
+
+区别：
+
+![整体流程](https://raw.githubusercontent.com/qiurunze123/imageall/master/threadnew45.png)
+
+与suspend()比较 不容易引起线程冻结
+
+能够响应中断，但不抛出异常。
+
+中断响应的结果是，park()函数的返回，可以从Thread.interrupted()得到中断标志

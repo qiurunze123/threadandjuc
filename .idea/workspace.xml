@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cc8ef784-fbbd-4cb2-8c64-561bb52779a4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/geek/cyclicbarrier/CyclicBarrierDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/geek/locksupport/LockSupport2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/geek/locksupport/LockSupport3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/geek/locksupport/LockSupportDemo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docs/thread-base-7.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/thread-base-7.md" afterDir="false" />
     </list>
@@ -115,8 +117,8 @@
     <session id="1906160009">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="14" />
-          <entry key="project.open.time.1" value="3" />
+          <entry key="project.closed" value="15" />
+          <entry key="project.open.time.1" value="4" />
           <entry key="project.open.time.17" value="1" />
           <entry key="project.open.time.2" value="5" />
           <entry key="project.open.time.3" value="2" />
@@ -125,13 +127,13 @@
           <entry key="project.open.time.5" value="1" />
           <entry key="project.open.time.7" value="1" />
           <entry key="project.open.time.78" value="1" />
-          <entry key="project.opened" value="16" />
+          <entry key="project.opened" value="17" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="class" value="3" />
-          <entry key="java" value="181" />
+          <entry key="java" value="184" />
           <entry key="md" value="28" />
           <entry key="url" value="2" />
           <entry key="xml" value="5" />
@@ -140,7 +142,7 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CLASS" value="3" />
-          <entry key="JAVA" value="181" />
+          <entry key="JAVA" value="184" />
           <entry key="Markdown" value="28" />
           <entry key="PLAIN_TEXT" value="2" />
           <entry key="XML" value="5" />
@@ -149,15 +151,15 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="3" />
-          <entry key="java" value="9808" />
-          <entry key="md" value="10980" />
+          <entry key="java" value="9873" />
+          <entry key="md" value="11016" />
           <entry key="txt" value="92" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="9808" />
-          <entry key="Markdown" value="10980" />
+          <entry key="JAVA" value="9873" />
+          <entry key="Markdown" value="11016" />
           <entry key="PLAIN_TEXT" value="95" />
         </counts>
       </usages-collector>
@@ -205,12 +207,12 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/docs/thread-base-7.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="FIRST">
-              <first_editor relative-caret-position="452">
-                <caret line="146" column="69" selection-start-line="146" selection-start-column="69" selection-end-line="146" selection-end-column="69" />
+              <first_editor relative-caret-position="414">
+                <caret line="161" lean-forward="true" selection-start-line="161" selection-end-line="161" />
               </first_editor>
               <second_editor />
             </state>
@@ -218,22 +220,32 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/geek/cyclicbarrier/CyclicBarrierDemo.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/geek/locksupport/LockSupportDemo.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1412">
-              <caret line="9" column="2" selection-start-line="9" selection-start-column="2" selection-end-line="9" selection-end-column="2" />
+            <state relative-caret-position="399">
+              <caret line="28" column="9" lean-forward="true" selection-start-line="28" selection-start-column="9" selection-end-line="28" selection-end-column="9" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#222#430#0" expanded="true" />
+                <element signature="e#429#430#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="jar://C:/Program Files/Java/jdk1.7.0_79/src.zip!/java/util/concurrent/CyclicBarrier.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/geek/locksupport/LockSupport2.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="194">
-              <caret line="269" column="11" selection-start-line="269" selection-start-column="11" selection-end-line="269" selection-end-column="11" />
+            <state relative-caret-position="397">
+              <caret line="32" column="31" lean-forward="true" selection-start-line="32" selection-start-column="31" selection-end-line="32" selection-end-column="31" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/geek/locksupport/LockSupport3.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="171">
+              <caret line="23" column="48" selection-start-line="23" selection-start-column="48" selection-end-line="23" selection-end-column="48" />
             </state>
           </provider>
         </entry>
@@ -247,7 +259,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/com/geek/countdownlatchgo/example/service/Main.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="266">
-              <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+              <caret line="14" selection-start-line="14" selection-end-line="14" />
             </state>
           </provider>
         </entry>
@@ -255,8 +267,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/geek/countdownlatchgo/example2/CountDownLatch2.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="665">
-              <caret line="35" column="18" lean-forward="true" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="28" />
+            <state relative-caret-position="589">
+              <caret line="35" column="18" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="28" />
               <folding>
                 <element signature="e#266#721#0" expanded="true" />
                 <element signature="e#720#721#0" expanded="true" />
@@ -270,8 +282,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/geek/countdownlatchgo/example/service/ApplicationStartupUtil.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-266">
-              <caret line="15" column="33" lean-forward="true" selection-start-line="15" selection-start-column="33" selection-end-line="15" selection-end-column="33" />
+            <state relative-caret-position="285">
+              <caret line="15" column="33" selection-start-line="15" selection-start-column="33" selection-end-line="15" selection-end-column="33" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -282,7 +294,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="jar://C:/Program Files/Java/jdk1.7.0_79/src.zip!/java/util/concurrent/Executor.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="377">
+            <state relative-caret-position="2014">
               <caret line="139" column="9" selection-start-line="139" selection-start-column="9" selection-end-line="139" selection-end-column="9" />
             </state>
           </provider>
@@ -328,9 +340,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/geek/daemon/DaemonGo.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/geek/priority/PriorityDemo.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/geek/sync/SynchronizedObject.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/geek/sync/SyncThread2.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/geek/sync/SyncThread3.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/geek/sync/Account.java" />
@@ -378,7 +387,10 @@
         <option value="$PROJECT_DIR$/src/main/java/com/geek/countdownlatchgo/example2/test.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/geek/countdownlatchgo/example2/CountDownLatch2.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/geek/cyclicbarrier/CyclicBarrierDemo.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/geek/locksupport/LockSupportDemo.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/geek/locksupport/LockSupport2.java" />
         <option value="$PROJECT_DIR$/docs/thread-base-7.md" />
+        <option value="$PROJECT_DIR$/src/main/java/com/geek/locksupport/LockSupport3.java" />
       </list>
     </option>
   </component>
@@ -491,7 +503,7 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="com" type="462c0819:PsiDirectoryNode" />
               <item name="geek" type="462c0819:PsiDirectoryNode" />
-              <item name="cyclicbarrier" type="462c0819:PsiDirectoryNode" />
+              <item name="locksupport" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="threadandjuc" type="b2602c69:ProjectViewProjectNode" />
@@ -505,7 +517,6 @@
         </subPane>
       </pane>
       <pane id="PackagesPane" />
-      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -518,31 +529,31 @@
     <property name="SearchEverywhereHistoryKey" value="Vector&#9;PSI&#9;JAVA://java.util.Vector&#10;AtomicStampedReference&#9;PSI&#9;JAVA://java.util.concurrent.atomic.AtomicStampedReference&#10;AtomicInteger.class&#9;FILE&#9;jar://C:/Program Files/Java/jdk1.7.0_79/jre/lib/rt.jar!/java/util/concurrent/atomic/AtomicIntegerArray.class" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1555313974996" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1555382408624" />
     <property name="last_opened_file_path" value="D:/../文档/实战Java高并发程序设计-随书代码" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.0" />
   </component>
   <component name="RecentsManager">
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="com.geek.countdownlatchgo.example1" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.geek.reentrantlock" />
-      <recent name="com.geek.atomic" />
-      <recent name="com.geek.sync" />
-      <recent name="com.geek.stop" />
-      <recent name="com.geek.create" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\project\threadandjuc\src\main\java\com\geek\countdownlatchgo" />
       <recent name="D:\project\threadandjuc\docs" />
       <recent name="D:\project\threadandjuc\src\main\java\com\geek\atomic" />
       <recent name="D:\project\threadandjuc\src\main\java\com\geek\VolatileExample" />
       <recent name="D:\project\threadandjuc\src\main\java\com\geek\WaitNotify" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.geek.locksupport" />
+      <recent name="com.geek.reentrantlock" />
+      <recent name="com.geek.atomic" />
+      <recent name="com.geek.sync" />
+      <recent name="com.geek.stop" />
+    </key>
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.geek.countdownlatchgo.example1" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -557,7 +568,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.CyclicBarrierDemo">
+  <component name="RunManager" selected="Application.LockSupport3">
     <configuration name="CountDownLatch2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.geek.countdownlatchgo.example2.CountDownLatch2" />
       <module name="threadandjuc" />
@@ -584,12 +595,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.geek.countdownlatchgo.example.service.Main" />
+    <configuration name="LockSupport2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.geek.locksupport.LockSupport2" />
       <module name="threadandjuc" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.geek.countdownlatchgo.example.service.*" />
+          <option name="PATTERN" value="com.geek.locksupport.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -597,12 +608,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.geek.countdownlatchgo.Main" />
+    <configuration name="LockSupport3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.geek.locksupport.LockSupport3" />
       <module name="threadandjuc" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.geek.countdownlatchgo.*" />
+          <option name="PATTERN" value="com.geek.locksupport.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -610,12 +621,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ReenTrantLock4" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.geek.reentrantlock.ReenTrantLock4" />
+    <configuration name="LockSupportDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.geek.locksupport.LockSupportDemo" />
       <module name="threadandjuc" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.geek.reentrantlock.*" />
+          <option name="PATTERN" value="com.geek.locksupport.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -632,19 +643,19 @@
     </configuration>
     <list>
       <item itemvalue="Spring Boot.ThreadandjucMainApplication" />
-      <item itemvalue="Application.ReenTrantLock4" />
-      <item itemvalue="Application.Main" />
-      <item itemvalue="Application.Main (1)" />
       <item itemvalue="Application.CountDownLatch2" />
       <item itemvalue="Application.CyclicBarrierDemo" />
+      <item itemvalue="Application.LockSupportDemo" />
+      <item itemvalue="Application.LockSupport2" />
+      <item itemvalue="Application.LockSupport3" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.LockSupport3" />
+        <item itemvalue="Application.LockSupport2" />
+        <item itemvalue="Application.LockSupportDemo" />
         <item itemvalue="Application.CyclicBarrierDemo" />
         <item itemvalue="Application.CountDownLatch2" />
-        <item itemvalue="Application.Main (1)" />
-        <item itemvalue="Application.Main" />
-        <item itemvalue="Application.ReenTrantLock4" />
       </list>
     </recent_temporary>
   </component>
@@ -681,6 +692,7 @@
       <workItem from="1553600335352" duration="130000" />
       <workItem from="1554779333874" duration="19803000" />
       <workItem from="1554965015954" duration="20265000" />
+      <workItem from="1555379805596" duration="2373000" />
     </task>
     <task id="LOCAL-00001" summary="xiugai">
       <created>1539999075324</created>
@@ -840,7 +852,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="195734000" />
+    <option name="totallyTimeSpent" value="199056000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1020,9 +1032,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://C:/Program Files/Java/jdk1.7.0_79/src.zip!/java/util/concurrent/locks/AbstractQueuedLongSynchronizer.java" />
-    <entry file="jar://C:/Program Files/Java/jdk1.7.0_79/jre/lib/rt.jar!/java/util/concurrent/atomic/AtomicIntegerArray.class" />
-    <entry file="jar://C:/Program Files/Java/jdk1.7.0_79/jre/lib/rt.jar!/sun/misc/Unsafe.class" />
     <entry file="jar://C:/Program Files/Java/jdk1.7.0_79/src.zip!/java/util/concurrent/atomic/AtomicInteger.java" />
     <entry file="file://$PROJECT_DIR$/docs/thread-base-4.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
@@ -1067,18 +1076,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-204">
           <caret line="33" column="40" lean-forward="true" selection-start-line="33" selection-start-column="40" selection-end-line="33" selection-end-column="40" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#475#484#0" expanded="true" />
-            <element signature="e#610#830#0" expanded="true" />
-            <element signature="e#829#830#0" expanded="true" />
-            <element signature="e#872#1307#0" expanded="true" />
-            <element signature="e#1306#1307#0" expanded="true" />
-            <element signature="e#1456#2065#0" expanded="true" />
-            <element signature="e#2064#2065#0" expanded="true" />
-            <element signature="e#2107#2825#0" expanded="true" />
-            <element signature="e#2824#2825#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1086,13 +1083,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="526">
           <caret line="59" column="47" lean-forward="true" selection-start-line="59" selection-start-column="47" selection-end-line="59" selection-end-column="47" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#441#1392#0" expanded="true" />
-            <element signature="e#1391#1392#0" expanded="true" />
-            <element signature="e#1421#2540#0" expanded="true" />
-            <element signature="e#2539#2540#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1100,13 +1090,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="38">
           <caret line="23" column="33" lean-forward="true" selection-start-line="20" selection-start-column="58" selection-end-line="20" selection-end-column="59" />
-          <folding>
-            <element signature="e#189#198#0" expanded="true" />
-            <element signature="e#312#959#0" expanded="true" />
-            <element signature="e#958#959#0" expanded="true" />
-            <element signature="e#990#1709#0" expanded="true" />
-            <element signature="e#1708#1709#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1124,9 +1107,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="228">
           <caret line="14" column="46" selection-start-line="14" selection-start-column="46" selection-end-line="14" selection-end-column="46" />
-          <folding>
-            <element signature="e#644#645#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1166,10 +1146,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
           <caret line="338" column="16" selection-start-line="338" selection-start-column="16" selection-end-line="338" selection-end-column="16" />
-          <folding>
-            <element signature="e#19881#19882#0" expanded="true" />
-            <element signature="e#19928#19929#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1239,107 +1215,67 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.7.0_79/src.zip!/java/util/concurrent/Executor.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/geek/countdownlatchgo/example1/BaseHealthChecker.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/geek/countdownlatchgo/verifier/DatabaseHealthChecker.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/geek/countdownlatchgo/verifier/NetworkHealthChecker.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/geek/countdownlatchgo/Main.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/geek/countdownlatchgo/ApplicationStartupUtil.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/geek/countdownlatchgo/verifier/CacheHealthChecker.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/geek/countdownlatchgo/verifier/BaseHealthChecker.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/geek/cyclicbarrier/CyclicBarrierDemo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="377">
-          <caret line="139" column="9" selection-start-line="139" selection-start-column="9" selection-end-line="139" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/geek/countdownlatchgo/example1/BaseHealthChecker.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/geek/countdownlatchgo/verifier/DatabaseHealthChecker.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="14" column="56" selection-start-line="14" selection-start-column="56" selection-end-line="14" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/geek/countdownlatchgo/verifier/NetworkHealthChecker.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="14" column="51" lean-forward="true" selection-start-line="14" selection-start-column="51" selection-end-line="14" selection-end-column="51" />
-          <folding>
-            <element signature="e#205#206#0" expanded="true" />
-            <element signature="e#243#244#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/geek/countdownlatchgo/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/geek/countdownlatchgo/ApplicationStartupUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        <state relative-caret-position="171">
+          <caret line="9" column="2" selection-start-line="9" selection-start-column="2" selection-end-line="9" selection-end-column="2" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/geek/countdownlatchgo/verifier/CacheHealthChecker.java">
+    <entry file="jar://C:/Program Files/Java/jdk1.7.0_79/src.zip!/java/util/concurrent/CyclicBarrier.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="14" column="56" selection-start-line="14" selection-start-column="56" selection-end-line="14" selection-end-column="56" />
-          <folding>
-            <element signature="e#201#202#0" expanded="true" />
-            <element signature="e#237#238#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/geek/countdownlatchgo/verifier/BaseHealthChecker.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="4" column="15" selection-start-line="4" selection-start-column="7" selection-end-line="4" selection-end-column="15" />
-          <folding>
-            <element signature="e#690#691#0" expanded="true" />
-            <element signature="e#716#717#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="4484">
+          <caret line="269" column="11" selection-start-line="269" selection-start-column="11" selection-end-line="269" selection-end-column="11" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/geek/countdownlatchgo/example/service/verifier/BaseHealthChecker.java">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/geek/countdownlatchgo/example/service/ApplicationStartupUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-266">
-          <caret line="15" column="33" lean-forward="true" selection-start-line="15" selection-start-column="33" selection-end-line="15" selection-end-column="33" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/geek/countdownlatchgo/example/service/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="266">
-          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/geek/countdownlatchgo/example2/CountDownLatch2.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="665">
-          <caret line="35" column="18" lean-forward="true" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="28" />
+        <state relative-caret-position="589">
+          <caret line="35" column="18" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="28" />
           <folding>
             <element signature="e#266#721#0" expanded="true" />
             <element signature="e#720#721#0" expanded="true" />
             <element signature="e#740#1195#0" expanded="true" />
             <element signature="e#1194#1195#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/geek/countdownlatchgo/example/service/ApplicationStartupUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="15" column="33" selection-start-line="15" selection-start-column="33" selection-end-line="15" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.7.0_79/src.zip!/java/util/concurrent/Executor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2014">
+          <caret line="139" column="9" selection-start-line="139" selection-start-column="9" selection-end-line="139" selection-end-column="9" />
         </state>
       </provider>
     </entry>
@@ -1358,28 +1294,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.7.0_79/src.zip!/java/util/concurrent/CyclicBarrier.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/geek/locksupport/LockSupport2.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="194">
-          <caret line="269" column="11" selection-start-line="269" selection-start-column="11" selection-end-line="269" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/geek/cyclicbarrier/CyclicBarrierDemo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1412">
-          <caret line="9" column="2" selection-start-line="9" selection-start-column="2" selection-end-line="9" selection-end-column="2" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="397">
+          <caret line="32" column="31" lean-forward="true" selection-start-line="32" selection-start-column="31" selection-end-line="32" selection-end-column="31" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/docs/thread-base-7.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="FIRST">
-          <first_editor relative-caret-position="452">
-            <caret line="146" column="69" selection-start-line="146" selection-start-column="69" selection-end-line="146" selection-end-column="69" />
+          <first_editor relative-caret-position="414">
+            <caret line="161" lean-forward="true" selection-start-line="161" selection-end-line="161" />
           </first_editor>
           <second_editor />
         </state>
@@ -1387,6 +1313,24 @@
       <provider editor-type-id="text-editor">
         <state relative-caret-position="428">
           <caret line="71" column="54" lean-forward="true" selection-start-line="71" selection-start-column="54" selection-end-line="71" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/geek/locksupport/LockSupportDemo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="28" column="9" lean-forward="true" selection-start-line="28" selection-start-column="9" selection-end-line="28" selection-end-column="9" />
+          <folding>
+            <element signature="e#222#430#0" expanded="true" />
+            <element signature="e#429#430#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/geek/locksupport/LockSupport3.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="23" column="48" selection-start-line="23" selection-start-column="48" selection-end-line="23" selection-end-column="48" />
         </state>
       </provider>
     </entry>
