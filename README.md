@@ -30,3 +30,5 @@
 ####  [无锁类 CAS , ABA , Atomic ......](/docs/thread-base-6.md)
 
 ####  [JDK并发包 reentrantlock , condition , semaphone , readwritelock ,CountDownLatch,BlockingQueue.....](/docs/thread-base-7.md)
+
+####  [JDK并发包 ConcurrentHashMap 精度分析](/docs/thread-base-8.md)

@@ -161,3 +161,11 @@ CountDownLatch不同，CyclicBarrier不是基于AQS实现，而是应用Reentran
 能够响应中断，但不抛出异常。
 
 中断响应的结果是，park()函数的返回，可以从Thread.interrupted()得到中断标志
+
+**ReentrantLock 源码分析**
+
+http://www.cnblogs.com/leesf456/p/5383609.html  
+
+**BlockingQueue 阻塞队列**
+
+http://www.importnew.com/28053.html
