@@ -3,6 +3,7 @@ package com.geekq.highimporttry;
 import com.geekq.highimporttry.service.HighImportDataService;
 import com.geekq.highimporttry.timer.TimerRunner;
 import com.geekq.highimporttry.timer.TimerRunner2;
+import com.geekq.highimporttry.timer.TimerRunner3;
 import org.apache.ibatis.type.Alias;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -26,6 +27,9 @@ public class HighImportTryApplicationTests {
     @Autowired
     private TimerRunner2 timerRunner2 ;
 
+
+    @Autowired
+    private TimerRunner3 timerRunner3;
     /**
      * 导入 task 和 step 表
      */
@@ -82,4 +86,11 @@ public class HighImportTryApplicationTests {
     }
 
 
+    @Test
+    public void importAll3() throws InterruptedException {
+
+        timerRunner3.timeGo();
+
+        Thread.currentThread().sleep(50000);
+    }
 }

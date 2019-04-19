@@ -83,8 +83,7 @@ public class TimerRunner2 {
                 if (recordHandleImport) {
                     logger.info("import_x_x_x 该数据已导入完毕2 ====!");
                 } else {
-                    highImportDataService.recordHandleImport(day);
-
+//                    highImportDataService.recordHandleImport(day);
                     List<ImportDataTask> importDataTasks = importDataTaskDao.queryTaskDatas(Constant.IMPORTTYPE.point.name(), day);
                     logger.info("每天需要处理 importDataTasks size : {}", importDataTasks.size());
 
