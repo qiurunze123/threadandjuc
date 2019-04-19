@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.geekq.highimporttry.mapper.ImportDataTaskDao">
+  <resultMap id="BaseResultMap" type="com.geekq.highimporttry.entity.ImportDataTask">
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="day" jdbcType="VARCHAR" property="day" />
+    <result column="type" jdbcType="VARCHAR" property="type" />
+    <result column="status" jdbcType="INTEGER" property="status" />
+    <result column="create_time" jdbcType="TIMESTAMP" property="createTime" />
+    <result column="update_time" jdbcType="TIMESTAMP" property="updateTime" />
+    <result column="version" jdbcType="INTEGER" property="version" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    id, day, type, status, create_time, update_time, version
+  </sql>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select
+    <include refid="Base_Column_List" />
+    from import_data_task
+    where id = #{id,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from import_data_task
+    where id = #{id,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="com.geekq.highimporttry.entity.ImportDataTask">
+    <selectKey keyProperty="id" order="AFTER" resultType="java.lang.Integer">
+      SELECT LAST_INSERT_ID()
+    </selectKey>
+    insert into import_data_task (day, type, status,
+      create_time, update_time, version
+      )
+    values (#{day,jdbcType=VARCHAR}, #{type,jdbcType=VARCHAR}, #{status,jdbcType=INTEGER},
+      #{createTime,jdbcType=TIMESTAMP}, #{updateTime,jdbcType=TIMESTAMP}, #{version,jdbcType=INTEGER}
+      )
+  </insert>
+  <insert id="insertSelective" parameterType="com.geekq.highimporttry.entity.ImportDataTask">
+    <selectKey keyProperty="id" order="AFTER" resultType="java.lang.Integer">
+      SELECT LAST_INSERT_ID()
+    </selectKey>
+    insert into import_data_task
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="day != null">
+        day,
+      </if>
+      <if test="type != null">
+        type,
+      </if>
+      <if test="status != null">
+        status,
+      </if>
+      <if test="createTime != null">
+        create_time,
+      </if>
+      <if test="updateTime != null">
+        update_time,
+      </if>
+      <if test="version != null">
+        version,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="day != null">
+        #{day,jdbcType=VARCHAR},
+      </if>
+      <if test="type != null">
+        #{type,jdbcType=VARCHAR},
+      </if>
+      <if test="status != null">
+        #{status,jdbcType=INTEGER},
+      </if>
+      <if test="createTime != null">
+        #{createTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="updateTime != null">
+        #{updateTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="version != null">
+        #{version,jdbcType=INTEGER},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.geekq.highimporttry.entity.ImportDataTask">
+    update import_data_task
+    <set>
+      <if test="day != null">
+        day = #{day,jdbcType=VARCHAR},
+      </if>
+      <if test="type != null">
+        type = #{type,jdbcType=VARCHAR},
+      </if>
+      <if test="status != null">
+        status = #{status,jdbcType=INTEGER},
+      </if>
+      <if test="createTime != null">
+        create_time = #{createTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="updateTime != null">
+        update_time = #{updateTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="version != null">
+        version = #{version,jdbcType=INTEGER},
+      </if>
+    </set>
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.geekq.highimporttry.entity.ImportDataTask">
+    update import_data_task
+    set day = #{day,jdbcType=VARCHAR},
+      type = #{type,jdbcType=VARCHAR},
+      status = #{status,jdbcType=INTEGER},
+      create_time = #{createTime,jdbcType=TIMESTAMP},
+      update_time = #{updateTime,jdbcType=TIMESTAMP},
+      version = #{version,jdbcType=INTEGER}
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+
+  <select id="queryTaskDatas" resultMap="BaseResultMap">
+    select
+    <include refid="Base_Column_List" />
+    from import_data_task where type = #{type,jdbcType=VARCHAR} and day=  #{day,jdbcType=VARCHAR}
+  </select>
+
+  <update id="updateByTaskId">
+    update import_data_task
+    set status = #{status,jdbcType=INTEGER} ,update_time = #{updateTime,jdbcType=TIMESTAMP}, version=version+1
+    where id = #{taskId,jdbcType=INTEGER}
+  </update>
+
+  <select id="queryNotDealTask" resultType="java.lang.Integer">
+    select
+    count(*)
+    from import_data_task where type = #{type,jdbcType=VARCHAR} and day= #{day,jdbcType=VARCHAR} and  status = #{status,jdbcType=INTEGER}
+  </select>
+
+  <select id="queryTodayTaskIsImport" resultType="java.lang.Integer">
+    select
+    count(*)
+    from import_data_task where  day=  #{day,jdbcType=VARCHAR}
+  </select>
+</mapper>
