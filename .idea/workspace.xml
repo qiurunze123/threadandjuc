@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cc8ef784-fbbd-4cb2-8c64-561bb52779a4" name="Default Changelist" comment="">
+<<<<<<< HEAD
       <change afterPath="$PROJECT_DIR$/src/main/java/com/geek/condition/Condition1.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/com/geek/readwritelock/ReadWriteLock1.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/com/geek/readwritelock/ReadWriteLock2.java" afterDir="false" />
@@ -9,9 +10,13 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docs/thread-base-7.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/thread-base-7.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/geek/threadandjuc/juc/countdownlatch/CountDownLatchTest2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/geek/threadandjuc/juc/countdownlatch/CountDownLatchTest2.java" afterDir="false" />
+=======
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+>>>>>>> d8fa6e47085b616b3751e0a91d5f6ce3147d5504
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
+    <ignored path="$PROJECT_DIR$/high-import-try/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -119,8 +124,8 @@
     <session id="1906160009">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="14" />
-          <entry key="project.open.time.1" value="3" />
+          <entry key="project.closed" value="15" />
+          <entry key="project.open.time.1" value="4" />
           <entry key="project.open.time.17" value="1" />
           <entry key="project.open.time.2" value="5" />
           <entry key="project.open.time.3" value="2" />
@@ -129,40 +134,47 @@
           <entry key="project.open.time.5" value="1" />
           <entry key="project.open.time.7" value="1" />
           <entry key="project.open.time.78" value="1" />
-          <entry key="project.opened" value="16" />
+          <entry key="project.opened" value="17" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="class" value="3" />
-          <entry key="java" value="167" />
-          <entry key="md" value="26" />
+          <entry key="class" value="7" />
+          <entry key="gitignore" value="1" />
+          <entry key="java" value="251" />
+          <entry key="md" value="35" />
+          <entry key="properties" value="4" />
           <entry key="url" value="2" />
-          <entry key="xml" value="5" />
+          <entry key="xml" value="23" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CLASS" value="3" />
-          <entry key="JAVA" value="167" />
-          <entry key="Markdown" value="26" />
-          <entry key="PLAIN_TEXT" value="2" />
-          <entry key="XML" value="5" />
+          <entry key="CLASS" value="7" />
+          <entry key="JAVA" value="251" />
+          <entry key="Markdown" value="35" />
+          <entry key="PLAIN_TEXT" value="3" />
+          <entry key="Properties" value="4" />
+          <entry key="XML" value="23" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="3" />
-          <entry key="java" value="9715" />
-          <entry key="md" value="10731" />
+          <entry key="java" value="11800" />
+          <entry key="md" value="11735" />
+          <entry key="properties" value="46" />
           <entry key="txt" value="92" />
+          <entry key="xml" value="48" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="9715" />
-          <entry key="Markdown" value="10731" />
+          <entry key="JAVA" value="11800" />
+          <entry key="Markdown" value="11735" />
           <entry key="PLAIN_TEXT" value="95" />
+          <entry key="Properties" value="46" />
+          <entry key="XML" value="48" />
         </counts>
       </usages-collector>
     </session>
@@ -199,38 +211,82 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+<<<<<<< HEAD
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/docs/thread-base-7.md">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="541">
               <caret line="123" lean-forward="true" selection-start-line="123" selection-end-line="123" />
+=======
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="FIRST">
+              <first_editor relative-caret-position="232">
+                <caret line="35" column="40" selection-start-line="35" selection-start-column="39" selection-end-line="35" selection-end-column="40" />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/docs/thread-base-9.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="FIRST">
+              <first_editor relative-caret-position="19">
+                <caret line="1" column="7" selection-start-line="1" selection-start-column="7" selection-end-line="1" selection-end-column="7" />
+              </first_editor>
+              <second_editor />
+>>>>>>> d8fa6e47085b616b3751e0a91d5f6ce3147d5504
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+<<<<<<< HEAD
         <entry file="file://$PROJECT_DIR$/src/main/java/com/geek/readwritelock/ReadWriteLock1.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="110">
               <caret line="5" column="70" selection-start-line="5" selection-start-column="70" selection-end-line="5" selection-end-column="70" />
+=======
+        <entry file="file://$PROJECT_DIR$/high-import-try/src/test/java/com/geekq/highimporttry/HighImportTryApplicationTests.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="479">
+              <caret line="90" lean-forward="true" selection-start-line="90" selection-end-line="90" />
+>>>>>>> d8fa6e47085b616b3751e0a91d5f6ce3147d5504
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+<<<<<<< HEAD
         <entry file="file://$PROJECT_DIR$/src/main/java/com/geek/readwritelock/ReadWriteLock2.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="176">
               <caret line="8" column="2" selection-start-line="8" selection-start-column="2" selection-end-line="8" selection-end-column="2" />
+=======
+        <entry file="file://$PROJECT_DIR$/high-import-try/src/main/java/com/geekq/highimporttry/timer/TimerRunner3.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-410">
+              <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
+>>>>>>> d8fa6e47085b616b3751e0a91d5f6ce3147d5504
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+<<<<<<< HEAD
         <entry file="file://$PROJECT_DIR$/src/main/java/com/geek/threadandjuc/juc/countdownlatch/CountDownLatchTest1.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-17">
               <caret line="42" column="9" lean-forward="true" selection-start-line="42" selection-start-column="9" selection-end-line="42" selection-end-column="9" />
+=======
+        <entry file="file://$PROJECT_DIR$/high-import-try/src/main/java/com/geekq/highimporttry/mapper/ImportDataStepDao.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="343">
+              <caret line="25" column="25" selection-start-line="25" selection-start-column="25" selection-end-line="25" selection-end-column="25" />
+>>>>>>> d8fa6e47085b616b3751e0a91d5f6ce3147d5504
               <folding>
                 <element signature="e#266#676#0" expanded="true" />
                 <element signature="e#675#676#0" expanded="true" />
@@ -242,19 +298,51 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+<<<<<<< HEAD
         <entry file="file://$PROJECT_DIR$/src/main/java/com/geek/threadandjuc/juc/countdownlatch/CountDownLatchTest2.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="442">
               <caret line="67" selection-start-line="67" selection-end-line="67" />
+=======
+        <entry file="file://$PROJECT_DIR$/high-import-try/src/main/java/com/geekq/highimporttry/mapper/ImportDataStepMapper.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="286">
+              <caret line="186" column="2" selection-start-line="186" selection-start-column="2" selection-end-line="186" selection-end-column="2" />
+>>>>>>> d8fa6e47085b616b3751e0a91d5f6ce3147d5504
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+<<<<<<< HEAD
         <entry file="file://$PROJECT_DIR$/src/main/java/com/geek/semaphore/Semaphore1.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="318">
               <caret line="24" column="52" lean-forward="true" selection-start-line="24" selection-start-column="52" selection-end-line="24" selection-end-column="52" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+=======
+        <entry file="file://$PROJECT_DIR$/high-import-try/src/main/java/com/geekq/highimporttry/entity/ImportDataTask.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="76">
+              <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+>>>>>>> d8fa6e47085b616b3751e0a91d5f6ce3147d5504
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+<<<<<<< HEAD
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/geek/threadandjuc/base/SemapDemo.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="88">
+              <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+=======
+        <entry file="file://$PROJECT_DIR$/high-import-try/src/main/java/com/geekq/highimporttry/timer/CyclicBarrierTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="93">
+              <caret line="17" column="16" selection-start-line="17" selection-start-column="16" selection-end-line="17" selection-end-column="43" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -263,15 +351,20 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/geek/threadandjuc/base/SemapDemo.java">
+        <entry file="file://$PROJECT_DIR$/high-import-try/src/main/java/com/geekq/highimporttry/service/HighImportDataServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="88">
-              <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+            <state relative-caret-position="157">
+              <caret line="189" selection-start-line="189" selection-end-line="189" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+>>>>>>> d8fa6e47085b616b3751e0a91d5f6ce3147d5504
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+<<<<<<< HEAD
         <entry file="file://$PROJECT_DIR$/src/main/java/com/geek/reentrantlock/ReenTrantLock2.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="354">
@@ -279,6 +372,14 @@
               <folding>
                 <element signature="e#364#365#0" expanded="true" />
                 <element signature="e#396#397#0" expanded="true" />
+=======
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/geek/cyclicbarrier/CyclicBarrierDemo.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="288">
+              <caret line="47" column="36" selection-start-line="47" selection-end-line="48" />
+              <folding>
+                <element signature="imports" expanded="true" />
+>>>>>>> d8fa6e47085b616b3751e0a91d5f6ce3147d5504
               </folding>
             </state>
           </provider>
@@ -311,11 +412,17 @@
       <find>compareAndSet</find>
       <find>LockInterrupt</find>
       <find>lockInterruptibly()</find>
+      <find>lock</find>
+      <find>com.we.bill.entity.</find>
+      <find>com.geekq.highimporttry</find>
+      <find>todayIsTryImport</find>
+      <find>CyclicBarrier</find>
     </findStrings>
     <replaceStrings>
       <replace />
       <replace>thread-base-2.md</replace>
       <replace>ReenTrantLock2</replace>
+      <replace>com.geekq.highimporttry.entity.</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -324,6 +431,7 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+<<<<<<< HEAD
         <option value="$PROJECT_DIR$/src/main/java/com/geek/stop/StopSafe.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/geek/stop/YieldWhat.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/geek/stop/StopSafe2.java" />
@@ -360,13 +468,15 @@
         <option value="$PROJECT_DIR$/src/main/java/com/geek/atomic/AtomicInteger2.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/geek/atomic/AtomicArray1.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/geek/atomic/AtomicIntegerFieldUpdater1.java" />
+=======
+>>>>>>> d8fa6e47085b616b3751e0a91d5f6ce3147d5504
         <option value="$PROJECT_DIR$/docs/thread-base-6.md" />
         <option value="$PROJECT_DIR$/src/main/java/com/geek/atomic/LockFreeVector.java" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/src/main/java/com/geek/reentrantlock/ReenTrantLock1.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/geek/reentrantlock/ReenTrantLock2.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/geek/reentrantlock/ReenTrantLock3.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/geek/reentrantlock/ReenTrantLock4.java" />
+<<<<<<< HEAD
         <option value="$PROJECT_DIR$/src/main/java/com/geek/condition/Condition1.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/geek/semaphore/Semaphore1.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/geek/threadandjuc/juc/countdownlatch/CountDownLatchTest2.java" />
@@ -374,7 +484,53 @@
         <option value="$PROJECT_DIR$/src/main/java/com/geek/readwritelock/ReadWriteLock1.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/geek/readwritelock/ReadWriteLock2.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/geek/readwritelock/ReadWriteLock3.java" />
+=======
+        <option value="$PROJECT_DIR$/src/main/java/com/geek/countdownlatchgo/Main.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/geek/countdownlatchgo/example1/Main.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/geek/countdownlatchgo/example1/ApplicationStartupUtil.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/geek/countdownlatchgo/example1/BaseHealthChecker.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/geek/countdownlatchgo/example1/verifier/BaseHealthChecker.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/geek/countdownlatchgo/ApplicationStartupUtil.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/geek/countdownlatchgo/example/service/verifier/BaseHealthChecker.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/geek/countdownlatchgo/example/service/ApplicationStartupUtil.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/geek/countdownlatchgo/example2/test.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/geek/countdownlatchgo/example2/CountDownLatch2.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/geek/locksupport/LockSupportDemo.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/geek/locksupport/LockSupport3.java" />
+>>>>>>> d8fa6e47085b616b3751e0a91d5f6ce3147d5504
         <option value="$PROJECT_DIR$/docs/thread-base-7.md" />
+        <option value="$PROJECT_DIR$/docs/thread-base-8.md" />
+        <option value="$PROJECT_DIR$/src/main/java/com/geek/threadandjuc/juc/ConcurrentHashMap.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/geek/locksupport/LockSupport2.java" />
+        <option value="$PROJECT_DIR$/high-import-try/src/main/java/com/geekq/highimporttry/entity/ImportDataStep.java" />
+        <option value="$PROJECT_DIR$/high-import-try/src/main/java/com/geekq/highimporttry/entity/ImportPointKey.java" />
+        <option value="$PROJECT_DIR$/high-import-try/src/main/java/com/geekq/highimporttry/mapper/ImportDataStepDao.java" />
+        <option value="$PROJECT_DIR$/high-import-try/src/main/java/com/geekq/highimporttry/mapper/ImportDataTaskDao.java" />
+        <option value="$PROJECT_DIR$/high-import-try/src/main/java/com/geekq/highimporttry/mapper/ImportDataStepMapper.xml" />
+        <option value="$PROJECT_DIR$/high-import-try/src/main/java/com/geekq/highimporttry/mapper/ImportDataTaskMapper.xml" />
+        <option value="$PROJECT_DIR$/high-import-try/src/main/java/com/geekq/highimporttry/mapper/ImportPointMapper.xml" />
+        <option value="$PROJECT_DIR$/high-import-try/src/main/java/com/geekq/highimporttry/HighImportTryApplication.java" />
+        <option value="$PROJECT_DIR$/high-import-try/src/main/java/com/geekq/highimporttry/mapper/ImportPointDao.java" />
+        <option value="$PROJECT_DIR$/high-import-try/src/main/java/com/geekq/highimporttry/util/Constant.java" />
+        <option value="$PROJECT_DIR$/high-import-try/src/main/java/com/geekq/highimporttry/entity/Point.java" />
+        <option value="$PROJECT_DIR$/high-import-try/src/main/java/com/geekq/highimporttry/mapper/PointMapper.xml" />
+        <option value="$PROJECT_DIR$/high-import-try/src/main/java/com/geekq/highimporttry/util/DateUtil.java" />
+        <option value="$PROJECT_DIR$/high-import-try/src/main/java/com/geekq/highimporttry/service/HighImportDataService.java" />
+        <option value="$PROJECT_DIR$/high-import-try/src/main/java/com/geekq/highimporttry/service/BillRecordPointInsertTask.java" />
+        <option value="$PROJECT_DIR$/high-import-try/src/main/java/com/geekq/highimporttry/controller/TestController.java" />
+        <option value="$PROJECT_DIR$/high-import-try/src/main/java/com/geekq/highimporttry/mapper/PointDao.java" />
+        <option value="$PROJECT_DIR$/high-import-try/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/high-import-try/src/main/java/com/geekq/highimporttry/timer/TimerRunner.java" />
+        <option value="$PROJECT_DIR$/high-import-try/pom.xml" />
+        <option value="$PROJECT_DIR$/high-import-try/src/main/java/com/geekq/highimporttry/timer/TimerRunner2.java" />
+        <option value="$PROJECT_DIR$/high-import-try/src/test/java/com/geekq/highimporttry/HighImportTryApplicationTests.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/geek/threadandjuc/juc/cyclicbarrier/CyclicBarrierTest1.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/geek/cyclicbarrier/CyclicBarrierDemo.java" />
+        <option value="$PROJECT_DIR$/high-import-try/src/main/java/com/geekq/highimporttry/timer/CyclicBarrierTest.java" />
+        <option value="$PROJECT_DIR$/high-import-try/src/main/java/com/geekq/highimporttry/service/HighImportDataServiceImpl.java" />
+        <option value="$PROJECT_DIR$/high-import-try/src/main/java/com/geekq/highimporttry/timer/TimerRunner3.java" />
+        <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/docs/thread-base-9.md" />
       </list>
     </option>
   </component>
@@ -403,9 +559,10 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="y" value="29" />
-    <option name="width" value="1920" />
-    <option name="height" value="1024" />
+    <option name="x" value="-19" />
+    <option name="y" value="73" />
+    <option name="width" value="1364" />
+    <option name="height" value="536" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -418,13 +575,15 @@
         </expanded-state>
         <selected-state>
           <State>
-            <id>AlibabaAvoidManuallyCreateThread</id>
+            <id>AlibabaThreadPoolCreation</id>
           </State>
         </selected-state>
       </profile-state>
     </entry>
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -441,7 +600,7 @@
             <path>
               <item name="threadandjuc" type="b2602c69:ProjectViewProjectNode" />
               <item name="threadandjuc" type="462c0819:PsiDirectoryNode" />
-              <item name=".idea" type="462c0819:PsiDirectoryNode" />
+              <item name="docs" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="threadandjuc" type="b2602c69:ProjectViewProjectNode" />
@@ -486,7 +645,11 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="com" type="462c0819:PsiDirectoryNode" />
               <item name="geek" type="462c0819:PsiDirectoryNode" />
+<<<<<<< HEAD
               <item name="readwritelock" type="462c0819:PsiDirectoryNode" />
+=======
+              <item name="countdownlatchgo" type="462c0819:PsiDirectoryNode" />
+>>>>>>> d8fa6e47085b616b3751e0a91d5f6ce3147d5504
             </path>
             <path>
               <item name="threadandjuc" type="b2602c69:ProjectViewProjectNode" />
@@ -496,7 +659,30 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="com" type="462c0819:PsiDirectoryNode" />
               <item name="geek" type="462c0819:PsiDirectoryNode" />
-              <item name="reentrantlock" type="462c0819:PsiDirectoryNode" />
+              <item name="countdownlatchgo" type="462c0819:PsiDirectoryNode" />
+              <item name="example" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="threadandjuc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="threadandjuc" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="geek" type="462c0819:PsiDirectoryNode" />
+              <item name="countdownlatchgo" type="462c0819:PsiDirectoryNode" />
+              <item name="example" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="threadandjuc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="threadandjuc" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="geek" type="462c0819:PsiDirectoryNode" />
+              <item name="cyclicbarrier" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="threadandjuc" type="b2602c69:ProjectViewProjectNode" />
@@ -505,11 +691,15 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="threadandjuc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="threadandjuc" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="AndroidView" />
       <pane id="PackagesPane" />
     </panes>
   </component>
@@ -520,18 +710,25 @@
     <property name="RequestMappingsPanelWidth0" value="75" />
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="RequestMappingsPanelWidth2" value="75" />
-    <property name="SearchEverywhereHistoryKey" value="Vector&#9;PSI&#9;JAVA://java.util.Vector&#10;AtomicStampedReference&#9;PSI&#9;JAVA://java.util.concurrent.atomic.AtomicStampedReference&#10;AtomicInteger.class&#9;FILE&#9;jar://C:/Program Files/Java/jdk1.7.0_79/jre/lib/rt.jar!/java/util/concurrent/atomic/AtomicIntegerArray.class" />
+    <property name="SearchEverywhereHistoryKey" value="ConcurrentHashMap&#9;PSI&#9;JAVA://org.hibernate.validator.internal.util.CollectionHelper#newConcurrentHashMap&#10;Vector&#9;PSI&#9;JAVA://java.util.Vector&#10;AtomicStampedReference&#9;PSI&#9;JAVA://java.util.concurrent.atomic.AtomicStampedReference&#10;AtomicInteger.class&#9;FILE&#9;jar://C:/Program Files/Java/jdk1.7.0_79/jre/lib/rt.jar!/java/util/concurrent/atomic/AtomicIntegerArray.class" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+<<<<<<< HEAD
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1555216252828" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../文档/实战Java高并发程序设计-随书代码" />
+=======
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1555690896049" />
+    <property name="jdk.selected.JAVA_MODULE" value="1.8" />
+    <property name="last_opened_file_path" value="D:/../文档/实战Java高并发程序设计-随书代码" />
+>>>>>>> d8fa6e47085b616b3751e0a91d5f6ce3147d5504
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.0" />
   </component>
   <component name="RecentsManager">
+<<<<<<< HEAD
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.geek.readwritelock" />
       <recent name="com.geek.reentrantlock" />
@@ -539,12 +736,24 @@
       <recent name="com.geek.sync" />
       <recent name="com.geek.stop" />
     </key>
+=======
+>>>>>>> d8fa6e47085b616b3751e0a91d5f6ce3147d5504
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\project\threadandjuc\docs" />
+      <recent name="D:\project\threadandjuc\high-import-try\src\main\java\com\geekq\highimporttry\mapper" />
+      <recent name="D:\project\threadandjuc\high-import-try\src\main\java\com\geekq\highimporttry\entity" />
+      <recent name="D:\project\threadandjuc\src\main\java\com\geek\countdownlatchgo" />
       <recent name="D:\project\threadandjuc\src\main\java\com\geek\atomic" />
-      <recent name="D:\project\threadandjuc\src\main\java\com\geek\VolatileExample" />
-      <recent name="D:\project\threadandjuc\src\main\java\com\geek\WaitNotify" />
-      <recent name="D:\project\threadandjuc\src\main\java\com\geek" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.geekq.highimporttry.timer" />
+      <recent name="com.geekq.highimporttry.util" />
+      <recent name="com.geekq.highimporttry.service" />
+      <recent name="com.geekq.highimporttry.entity" />
+      <recent name="com.geekq.highimporttry.mapper" />
+    </key>
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.geek.countdownlatchgo.example1" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -559,6 +768,7 @@
       </list>
     </option>
   </component>
+<<<<<<< HEAD
   <component name="RunManager" selected="Application.ReadWriteLock2">
     <configuration name="CountDownLatchTest1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.geek.threadandjuc.juc.countdownlatch.CountDownLatchTest1" />
@@ -566,6 +776,15 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.geek.threadandjuc.juc.countdownlatch.*" />
+=======
+  <component name="RunManager" selected="JUnit.HighImportTryApplicationTests.importAll3">
+    <configuration name="CyclicBarrierDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.geek.cyclicbarrier.CyclicBarrierDemo" />
+      <module name="threadandjuc" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.geek.cyclicbarrier.*" />
+>>>>>>> d8fa6e47085b616b3751e0a91d5f6ce3147d5504
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -573,12 +792,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+<<<<<<< HEAD
     <configuration name="CountDownLatchTest2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.geek.threadandjuc.juc.countdownlatch.CountDownLatchTest2" />
       <module name="threadandjuc" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.geek.threadandjuc.juc.countdownlatch.*" />
+=======
+    <configuration name="CyclicBarrierTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.geekq.highimporttry.timer.CyclicBarrierTest" />
+      <module name="high-import-try" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.geekq.highimporttry.timer.*" />
+>>>>>>> d8fa6e47085b616b3751e0a91d5f6ce3147d5504
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -586,12 +814,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+<<<<<<< HEAD
     <configuration name="ReadWriteLock1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.geek.readwritelock.ReadWriteLock1" />
       <module name="threadandjuc" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.geek.readwritelock.*" />
+=======
+    <configuration name="CyclicBarrierTest1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.geek.threadandjuc.juc.cyclicbarrier.CyclicBarrierTest1" />
+      <module name="threadandjuc" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.geek.threadandjuc.juc.cyclicbarrier.*" />
+>>>>>>> d8fa6e47085b616b3751e0a91d5f6ce3147d5504
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -599,28 +836,59 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+<<<<<<< HEAD
     <configuration name="ReadWriteLock2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.geek.readwritelock.ReadWriteLock2" />
       <module name="threadandjuc" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.geek.readwritelock.*" />
+=======
+    <configuration name="HighImportTryApplicationTests.importAll2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="high-import-try" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.geekq.highimporttry.*" />
+>>>>>>> d8fa6e47085b616b3751e0a91d5f6ce3147d5504
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="com.geekq.highimporttry" />
+      <option name="MAIN_CLASS_NAME" value="com.geekq.highimporttry.HighImportTryApplicationTests" />
+      <option name="METHOD_NAME" value="importAll2" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+<<<<<<< HEAD
     <configuration name="Semaphore1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.geek.semaphore.Semaphore1" />
       <module name="threadandjuc" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.geek.semaphore.*" />
+=======
+    <configuration name="HighImportTryApplicationTests.importAll3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="high-import-try" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.geekq.highimporttry.*" />
+>>>>>>> d8fa6e47085b616b3751e0a91d5f6ce3147d5504
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="com.geekq.highimporttry" />
+      <option name="MAIN_CLASS_NAME" value="com.geekq.highimporttry.HighImportTryApplicationTests" />
+      <option name="METHOD_NAME" value="importAll3" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HighImportTryApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="high-import-try" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.geekq.highimporttry.HighImportTryApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -634,6 +902,7 @@
     </configuration>
     <list>
       <item itemvalue="Spring Boot.ThreadandjucMainApplication" />
+<<<<<<< HEAD
       <item itemvalue="Application.Semaphore1" />
       <item itemvalue="Application.CountDownLatchTest1" />
       <item itemvalue="Application.CountDownLatchTest2" />
@@ -647,6 +916,22 @@
         <item itemvalue="Application.CountDownLatchTest2" />
         <item itemvalue="Application.CountDownLatchTest1" />
         <item itemvalue="Application.Semaphore1" />
+=======
+      <item itemvalue="Spring Boot.HighImportTryApplication" />
+      <item itemvalue="JUnit.HighImportTryApplicationTests.importAll2" />
+      <item itemvalue="Application.CyclicBarrierDemo" />
+      <item itemvalue="JUnit.HighImportTryApplicationTests.importAll3" />
+      <item itemvalue="Application.CyclicBarrierTest1" />
+      <item itemvalue="Application.CyclicBarrierTest" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.HighImportTryApplicationTests.importAll3" />
+        <item itemvalue="Application.CyclicBarrierTest" />
+        <item itemvalue="Application.CyclicBarrierDemo" />
+        <item itemvalue="JUnit.HighImportTryApplicationTests.importAll2" />
+        <item itemvalue="Application.CyclicBarrierTest1" />
+>>>>>>> d8fa6e47085b616b3751e0a91d5f6ce3147d5504
       </list>
     </recent_temporary>
   </component>
@@ -683,6 +968,7 @@
       <workItem from="1553600335352" duration="130000" />
       <workItem from="1554779333874" duration="19803000" />
       <workItem from="1554965015954" duration="20265000" />
+      <workItem from="1555379805596" duration="38415000" />
     </task>
     <task id="LOCAL-00001" summary="xiugai">
       <created>1539999075324</created>
@@ -841,15 +1127,65 @@
     <option name="localTasksCounter" value="23" />
     <servers />
   </component>
+  <component name="TestHistory">
+    <history-entry file="HighImportTryApplicationTests_importAll3 - 2019.04.19 at 16h 55m 04s.xml">
+      <configuration name="HighImportTryApplicationTests.importAll3" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="HighImportTryApplicationTests_importAll3 - 2019.04.19 at 16h 55m 49s.xml">
+      <configuration name="HighImportTryApplicationTests.importAll3" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="HighImportTryApplicationTests_importAll3 - 2019.04.19 at 16h 57m 18s.xml">
+      <configuration name="HighImportTryApplicationTests.importAll3" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="HighImportTryApplicationTests_importAll3 - 2019.04.19 at 16h 58m 58s.xml">
+      <configuration name="HighImportTryApplicationTests.importAll3" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="HighImportTryApplicationTests_importAll3 - 2019.04.19 at 16h 59m 54s.xml">
+      <configuration name="HighImportTryApplicationTests.importAll3" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="HighImportTryApplicationTests_importAll3 - 2019.04.19 at 17h 00m 39s.xml">
+      <configuration name="HighImportTryApplicationTests.importAll3" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="HighImportTryApplicationTests_importAll3 - 2019.04.19 at 17h 02m 06s.xml">
+      <configuration name="HighImportTryApplicationTests.importAll3" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="HighImportTryApplicationTests_importAll3 - 2019.04.19 at 17h 03m 25s.xml">
+      <configuration name="HighImportTryApplicationTests.importAll3" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="HighImportTryApplicationTests_importAll3 - 2019.04.19 at 17h 04m 11s.xml">
+      <configuration name="HighImportTryApplicationTests.importAll3" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="HighImportTryApplicationTests_importAll3 - 2019.04.19 at 17h 05m 23s.xml">
+      <configuration name="HighImportTryApplicationTests.importAll3" configurationId="JUnit" />
+    </history-entry>
+  </component>
   <component name="TimeTrackingManager">
+<<<<<<< HEAD
     <option name="totallyTimeSpent" value="196408000" />
+=======
+    <option name="totallyTimeSpent" value="235098000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+>>>>>>> d8fa6e47085b616b3751e0a91d5f6ce3147d5504
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="29" width="1920" height="1024" extended-state="0" />
+    <frame x="-19" y="73" width="1364" height="536" extended-state="0" />
     <editor active="true" />
     <layout>
+<<<<<<< HEAD
       <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.6241497" visible="true" weight="0.2249467" />
       <window_info id="Structure" order="1" sideWeight="0.37585035" side_tool="true" visible="true" weight="0.23908414" />
+=======
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.760095" visible="true" weight="0.29938745" />
+      <window_info id="Structure" order="1" sideWeight="0.23990498" side_tool="true" weight="0.28700745" />
+>>>>>>> d8fa6e47085b616b3751e0a91d5f6ce3147d5504
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
       <window_info id="UI Designer" order="4" />
@@ -858,19 +1194,24 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.43027028" />
+<<<<<<< HEAD
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.7838126" visible="true" weight="0.3165548" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.4978701" weight="0.29865772" />
+=======
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.7838126" weight="0.28432432" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.4978701" weight="0.652973" />
+>>>>>>> d8fa6e47085b616b3751e0a91d5f6ce3147d5504
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32972974" />
       <window_info anchor="bottom" id="Spring" order="7" sideWeight="0.49946752" weight="0.32972974" />
-      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.58093715" weight="0.32997763" />
+      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.58093715" visible="true" weight="0.21975309" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5037274" side_tool="true" weight="0.32864866" />
-      <window_info anchor="bottom" id="Messages" order="10" sideWeight="0.49627262" weight="0.3277405" />
+      <window_info anchor="bottom" id="Messages" order="10" sideWeight="0.49627262" weight="0.32756758" />
       <window_info anchor="bottom" id="Java Enterprise" order="11" />
       <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="13" show_stripe_button="false" />
-      <window_info anchor="bottom" id="FindBugs-IDEA" order="14" />
+      <window_info anchor="bottom" id="FindBugs-IDEA" order="14" weight="0.32972974" />
       <window_info anchor="bottom" id="LuaCheck" order="15" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -1005,156 +1346,264 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/geek/reentrantlock/ReenTrantLock2.java</url>
-          <line>24</line>
+          <line>25</line>
           <properties />
           <option name="timeStamp" value="18" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/geek/cyclicbarrier/CyclicBarrierDemo.java</url>
+          <line>33</line>
+          <properties />
+          <option name="timeStamp" value="22" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/geek/cyclicbarrier/CyclicBarrierDemo.java</url>
+          <line>37</line>
+          <properties />
+          <option name="timeStamp" value="23" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
+  <component name="debuggerHistoryManager">
+    <expressions id="evaluateExpression">
+      <expression>
+        <expression-string>importDataTask.getId()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
+  </component>
   <component name="editorHistoryManager">
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/src/main/java/com/geek/VolatileExample/AccountingSync.java">
+=======
+    <entry file="jar://C:/Program Files/Java/jdk1.7.0_79/src.zip!/java/util/concurrent/locks/AbstractQueuedSynchronizer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="2" column="27" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="27" />
+        <state relative-caret-position="168">
+          <caret line="1096" column="25" lean-forward="true" selection-start-line="1096" selection-start-column="25" selection-end-line="1096" selection-end-column="25" />
+          <folding>
+            <element signature="e#41190#41191#0" expanded="true" />
+            <element signature="e#41247#41248#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.7.0_79/src.zip!/java/util/concurrent/locks/AbstractQueuedSynchronizer.java" />
-    <entry file="jar://C:/Program Files/Java/jdk1.7.0_79/src.zip!/java/util/concurrent/locks/AbstractQueuedLongSynchronizer.java" />
-    <entry file="jar://C:/Program Files/Java/jdk1.7.0_79/jre/lib/rt.jar!/java/util/concurrent/atomic/AtomicIntegerArray.class" />
-    <entry file="jar://C:/Program Files/Java/jdk1.7.0_79/jre/lib/rt.jar!/sun/misc/Unsafe.class" />
-    <entry file="jar://C:/Program Files/Java/jdk1.7.0_79/src.zip!/java/util/concurrent/atomic/AtomicInteger.java" />
-    <entry file="file://$PROJECT_DIR$/docs/thread-base-4.md">
+    <entry file="jar://C:/Program Files/Java/jdk1.7.0_79/src.zip!/java/util/concurrent/locks/AbstractOwnableSynchronizer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="71" column="25" selection-start-line="71" selection-start-column="25" selection-end-line="71" selection-end-column="25" />
+          <folding>
+            <element signature="e#1623#1624#0" expanded="true" />
+            <element signature="e#1663#1664#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.7.0_79/src.zip!/java/util/concurrent/locks/ReentrantLock.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="205" column="11" selection-start-line="205" selection-start-column="11" selection-end-line="205" selection-end-column="11" />
+          <folding>
+            <element signature="e#9168#9169#0" expanded="true" />
+            <element signature="e#9195#9196#0" expanded="true" />
+            <element signature="e#12262#12263#0" expanded="true" />
+            <element signature="e#12310#12311#0" expanded="true" />
+            <element signature="e#19881#19882#0" expanded="true" />
+            <element signature="e#19928#19929#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docs/thread-base-7.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="FIRST">
-          <first_editor relative-caret-position="1482">
-            <caret line="78" column="54" lean-forward="true" selection-start-line="78" selection-start-column="54" selection-end-line="78" selection-end-column="54" />
+          <first_editor relative-caret-position="444">
+            <caret line="166" column="48" selection-start-line="166" selection-start-column="48" selection-end-line="166" selection-end-column="48" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="428">
+          <caret line="71" column="54" lean-forward="true" selection-start-line="71" selection-start-column="54" selection-end-line="71" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docs/thread-base-8.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="95">
+            <caret line="5" column="55" selection-start-line="5" selection-start-column="55" selection-end-line="5" selection-end-column="55" />
           </first_editor>
           <second_editor />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/docs/thread-base-3.md">
+    <entry file="jar://$USER_HOME$/.m2/repository/org/hibernate/hibernate-validator/5.3.5.Final/hibernate-validator-5.3.5.Final.jar!/org/hibernate/validator/internal/util/CollectionHelper.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="35" column="49" selection-start-line="35" selection-start-column="49" selection-end-line="35" selection-end-column="49" />
+          <folding>
+            <element signature="e#911#912#0" expanded="true" />
+            <element signature="e#957#958#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/geek/threadandjuc/juc/ConcurrentHashMap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.7.0_79/src.zip!/java/util/concurrent/ConcurrentHashMap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="213">
+          <caret line="868" column="8" selection-start-line="868" selection-start-column="8" selection-end-line="868" selection-end-column="8" />
+          <folding>
+            <element signature="e#33317#33318#0" expanded="true" />
+            <element signature="e#33411#33412#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/geek/locksupport/LockSupport2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="302">
+          <caret line="27" column="72" selection-start-line="27" selection-start-column="72" selection-end-line="27" selection-end-column="72" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/high-import-try/.gitignore">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/high-import-try/HELP.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="FIRST">
-          <first_editor relative-caret-position="-1178">
-            <caret line="13" column="39" lean-forward="true" selection-start-line="13" selection-end-line="14" />
-          </first_editor>
+          <first_editor />
           <second_editor />
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.7.0_79/jre/lib/rt.jar!/java/util/concurrent/atomic/AtomicReference.class" />
-    <entry file="file://$PROJECT_DIR$/docs/thread-base-5.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="FIRST">
-          <first_editor relative-caret-position="209">
-            <caret line="11" column="7" lean-forward="true" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="7" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/high-import-try/src/main/java/com/geekq/highimporttry/entity/ImportPointKey.java">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/geek/atomic/AtomicInteger1.java">
+    <entry file="file://$PROJECT_DIR$/high-import-try/src/main/java/com/geekq/highimporttry/entity/ImportPoint.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="52">
-          <caret line="8" column="25" selection-start-line="8" selection-start-column="25" selection-end-line="8" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.7.0_79/src.zip!/java/util/concurrent/atomic/AtomicReference.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/geek/atomic/AtomicInteger2.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-204">
-          <caret line="33" column="40" lean-forward="true" selection-start-line="33" selection-start-column="40" selection-end-line="33" selection-end-column="40" />
+        <state relative-caret-position="95">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#475#484#0" expanded="true" />
-            <element signature="e#610#830#0" expanded="true" />
-            <element signature="e#829#830#0" expanded="true" />
-            <element signature="e#872#1307#0" expanded="true" />
-            <element signature="e#1306#1307#0" expanded="true" />
-            <element signature="e#1456#2065#0" expanded="true" />
-            <element signature="e#2064#2065#0" expanded="true" />
-            <element signature="e#2107#2825#0" expanded="true" />
-            <element signature="e#2824#2825#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/geek/atomic/AtomicStampedReference1.java">
+    <entry file="file://$PROJECT_DIR$/high-import-try/src/main/java/com/geekq/highimporttry/mapper/ImportDataTaskDao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="526">
-          <caret line="59" column="47" lean-forward="true" selection-start-line="59" selection-start-column="47" selection-end-line="59" selection-end-column="47" />
+        <state relative-caret-position="183">
+          <caret line="12" column="23" selection-start-line="12" selection-start-column="23" selection-end-line="12" selection-end-column="23" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#441#1392#0" expanded="true" />
-            <element signature="e#1391#1392#0" expanded="true" />
-            <element signature="e#1421#2540#0" expanded="true" />
-            <element signature="e#2539#2540#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/geek/atomic/AtomicReference1.java">
+    <entry file="file://$PROJECT_DIR$/high-import-try/src/main/java/com/geekq/highimporttry/mapper/ImportDataTaskMapper.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="38">
-          <caret line="23" column="33" lean-forward="true" selection-start-line="20" selection-start-column="58" selection-end-line="20" selection-end-column="59" />
+          <caret line="2" column="49" selection-start-line="2" selection-start-column="49" selection-end-line="2" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/high-import-try/src/main/java/com/geekq/highimporttry/util/Constant.java">
+>>>>>>> d8fa6e47085b616b3751e0a91d5f6ce3147d5504
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="6" column="22" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/high-import-try/src/main/java/com/geekq/highimporttry/entity/Point.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/high-import-try/src/main/java/com/geekq/highimporttry/mapper/ImportPointMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2147">
+          <caret line="113" column="2" selection-start-line="113" selection-start-column="2" selection-end-line="113" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.m2/repository/org/springframework/spring-core/5.1.6.RELEASE/spring-core-5.1.6.RELEASE.jar!/org/springframework/util/CollectionUtils.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="26" column="22" selection-start-line="26" selection-start-column="22" selection-end-line="26" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/high-import-try/src/main/java/com/geekq/highimporttry/util/DateUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="646">
+          <caret line="36" column="44" selection-start-line="36" selection-start-column="44" selection-end-line="36" selection-end-column="44" />
           <folding>
-            <element signature="e#189#198#0" expanded="true" />
-            <element signature="e#312#959#0" expanded="true" />
-            <element signature="e#958#959#0" expanded="true" />
-            <element signature="e#990#1709#0" expanded="true" />
-            <element signature="e#1708#1709#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#1159#1160#0" expanded="true" />
+            <element signature="e#1217#1218#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.7.0_79/src.zip!/java/util/concurrent/atomic/AtomicStampedReference.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/geek/atomic/AtomicArray1.java">
+    <entry file="jar://$USER_HOME$/.m2/repository/org/springframework/spring-test/5.1.6.RELEASE/spring-test-5.1.6.RELEASE.jar!/org/springframework/test/context/junit4/SpringJUnit4ClassRunner.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="9" column="23" lean-forward="true" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
+        <state relative-caret-position="142">
+          <caret line="96" selection-start-line="96" selection-end-line="96" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.7.0_79/src.zip!/java/util/concurrent/atomic/AtomicIntegerArray.java" />
-    <entry file="jar://C:/Program Files/Java/jdk1.7.0_79/src.zip!/java/util/concurrent/atomic/AtomicIntegerFieldUpdater.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/geek/atomic/AtomicIntegerFieldUpdater1.java">
+    <entry file="file://$PROJECT_DIR$/high-import-try/src/main/java/com/geekq/highimporttry/mapper/ImportPointDao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="14" column="46" selection-start-line="14" selection-start-column="46" selection-end-line="14" selection-end-column="46" />
+        <state relative-caret-position="608">
+          <caret line="32" selection-start-line="32" selection-end-line="32" />
           <folding>
-            <element signature="e#644#645#0" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.7.0_79/src.zip!/java/util/Vector.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/geek/atomic/LockFreeVector.java">
+    <entry file="file://$PROJECT_DIR$/high-import-try/src/main/java/com/geekq/highimporttry/controller/TestController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="588">
-          <caret line="146" column="16" selection-start-line="146" selection-start-column="16" selection-end-line="146" selection-end-column="16" />
+        <state relative-caret-position="161">
+          <caret line="22" column="49" selection-start-line="22" selection-start-column="49" selection-end-line="22" selection-end-column="49" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#587#588#0" expanded="true" />
+            <element signature="e#623#624#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/docs/thread-base-6.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="FIRST">
-          <first_editor relative-caret-position="710">
-            <caret line="110" lean-forward="true" selection-start-line="110" selection-end-line="110" />
-          </first_editor>
-          <second_editor />
+    <entry file="file://$PROJECT_DIR$/high-import-try/src/main/java/com/geekq/highimporttry/entity/ImportDataStep.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="8" selection-start-column="8" selection-end-column="38" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.7.0_79/src.zip!/java/lang/Object.java" />
-    <entry file="jar://C:/Program Files/Java/jdk1.7.0_79/src.zip!/java/util/concurrent/locks/ReentrantLock.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/geek/threadandjuc/juc/future/futuretype/FutureController.java">
+    <entry file="file://$PROJECT_DIR$/high-import-try/src/main/java/com/geekq/highimporttry/mapper/PointDao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="21" column="8" selection-start-line="21" selection-start-column="8" selection-end-line="21" selection-end-column="8" />
+        <state relative-caret-position="152">
+          <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/high-import-try/src/main/java/com/geekq/highimporttry/mapper/PointMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" column="54" selection-start-line="2" selection-start-column="54" selection-end-line="2" selection-end-column="54" />
         </state>
       </provider>
     </entry>
@@ -1165,59 +1614,134 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
+    <entry file="file://$PROJECT_DIR$/high-import-try/src/main/resources/application.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="507">
-          <caret line="31" column="113" selection-start-line="31" selection-start-column="113" selection-end-line="31" selection-end-column="113" />
-        </state>
-      </provider>
-      <provider editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="FIRST">
-          <first_editor relative-caret-position="392">
-            <caret line="31" column="119" selection-start-line="31" selection-start-column="119" selection-end-line="31" selection-end-column="119" />
-          </first_editor>
-          <second_editor />
+        <state relative-caret-position="475">
+          <caret line="25" selection-start-line="25" selection-end-line="25" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/geek/threadandjuc/juc/future/futuretype/Data.java">
+    <entry file="file://$PROJECT_DIR$/high-import-try/src/main/java/com/geekq/highimporttry/timer/TimerRunner.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="13" column="17" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/geek/threadandjuc/ThreadandjucMainApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="9" column="10" selection-start-line="9" selection-start-column="10" selection-end-line="9" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/geek/threadandjuc/base/CountTask.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="183">
-          <caret line="31" column="58" selection-start-line="31" selection-start-column="58" selection-end-line="31" selection-end-column="58" />
+        <state relative-caret-position="114">
+          <caret line="36" selection-start-line="36" selection-end-line="36" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
+    <entry file="jar://C:/Program Files/Java/jdk1.7.0_79/src.zip!/java/lang/Object.java" />
+    <entry file="jar://C:/Program Files/Java/jdk1.7.0_79/src.zip!/java/util/concurrent/locks/ReentrantLock.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/geek/threadandjuc/juc/future/futuretype/FutureController.java">
+=======
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_91/src.zip!/java/util/concurrent/ThreadPoolExecutor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="1295" column="11" selection-start-line="1295" selection-start-column="11" selection-end-line="1295" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_91/src.zip!/java/util/concurrent/ThreadFactory.java">
+>>>>>>> d8fa6e47085b616b3751e0a91d5f6ce3147d5504
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="456">
+          <caret line="57" column="17" selection-start-line="57" selection-start-column="17" selection-end-line="57" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/high-import-try/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="501">
+          <caret line="65" column="29" selection-start-line="65" selection-start-column="24" selection-end-line="65" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.m2/repository/com/google/guava/guava/25.1-jre/guava-25.1-jre.jar!/com/google/common/util/concurrent/ThreadFactoryBuilder.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="19" column="39" selection-start-line="19" selection-start-column="19" selection-end-line="19" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/high-import-try/src/main/java/com/geekq/highimporttry/service/BillRecordPointInsertTask.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="122">
+          <caret line="26" column="11" selection-start-line="26" selection-start-column="11" selection-end-line="26" selection-end-column="11" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docs/thread-base-2.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="240">
+            <caret line="152" column="38" selection-start-line="152" selection-start-column="38" selection-end-line="152" selection-end-column="38" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/geek/countdownlatchgo/example/service/ApplicationStartupUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="15" column="33" selection-start-line="15" selection-start-column="33" selection-end-line="15" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/geek/countdownlatchgo/example/service/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="9" column="32" lean-forward="true" selection-start-line="9" selection-start-column="32" selection-end-line="9" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/high-import-try/src/main/java/com/geekq/highimporttry/service/HighImportDataService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="18" column="16" selection-start-line="18" selection-start-column="16" selection-end-line="18" selection-end-column="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/src/main/java/com/geek/threadandjuc/juc/future/futuretype/JdkFuture.java">
+=======
+    <entry file="file://$PROJECT_DIR$/high-import-try/src/main/java/com/geekq/highimporttry/HighImportTryApplication.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="13" column="20" selection-start-line="13" selection-start-column="20" selection-end-line="13" selection-end-column="20" />
+        <state relative-caret-position="76">
+          <caret line="6" column="41" selection-start-line="6" selection-start-column="41" selection-end-line="6" selection-end-column="41" />
+          <folding>
+            <element signature="e#357#358#0" expanded="true" />
+            <element signature="e#432#433#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="jar:///usr/lib/jvm/java-8-openjdk-amd64/jre/lib/rt.jar!/java/lang/Thread.class">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/geek/threadandjuc/juc/cyclicbarrier/CyclicBarrierTest1.java">
+>>>>>>> d8fa6e47085b616b3751e0a91d5f6ce3147d5504
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="258" column="16" selection-start-line="258" selection-start-column="16" selection-end-line="258" selection-end-column="16" />
+        <state relative-caret-position="118">
+          <caret line="34" column="17" lean-forward="true" selection-start-line="34" selection-start-column="17" selection-end-line="34" selection-end-column="17" />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/high-import-try/src/main/java/com/geekq/highimporttry/timer/TimerRunner2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1273">
+          <caret line="24" column="20" lean-forward="true" selection-start-line="24" selection-start-column="20" selection-end-line="24" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/src/main/java/com/geek/threadandjuc/juc/future/futuretype/FutureData.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
@@ -1229,12 +1753,29 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="462">
           <caret line="25" column="23" selection-start-line="25" selection-start-column="23" selection-end-line="25" selection-end-column="23" />
+=======
+    <entry file="file://$PROJECT_DIR$/high-import-try/src/main/java/com/geekq/highimporttry/timer/CyclicBarrierTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="93">
+          <caret line="17" column="16" selection-start-line="17" selection-start-column="16" selection-end-line="17" selection-end-column="43" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/geek/cyclicbarrier/CyclicBarrierDemo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="47" column="36" selection-start-line="47" selection-end-line="48" />
+>>>>>>> d8fa6e47085b616b3751e0a91d5f6ce3147d5504
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/src/main/java/com/geek/condition/Condition1.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="154">
@@ -1259,11 +1800,18 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+=======
+    <entry file="file://$PROJECT_DIR$/high-import-try/src/main/java/com/geekq/highimporttry/entity/ImportDataTask.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+>>>>>>> d8fa6e47085b616b3751e0a91d5f6ce3147d5504
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/geek/reentrantlock/ReenTrantLock4.java">
+    <entry file="file://$PROJECT_DIR$/high-import-try/src/main/java/com/geekq/highimporttry/service/HighImportDataServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state>
           <caret line="10" column="3" lean-forward="true" selection-start-line="10" selection-start-column="3" selection-end-line="10" selection-end-column="3" />
         </state>
@@ -1363,12 +1911,67 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="541">
           <caret line="123" lean-forward="true" selection-start-line="123" selection-end-line="123" />
+=======
+        <state relative-caret-position="157">
+          <caret line="189" selection-start-line="189" selection-end-line="189" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
-      <provider editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+    </entry>
+    <entry file="file://$PROJECT_DIR$/high-import-try/src/main/java/com/geekq/highimporttry/mapper/ImportDataStepMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="186" column="2" selection-start-line="186" selection-start-column="2" selection-end-line="186" selection-end-column="2" />
+>>>>>>> d8fa6e47085b616b3751e0a91d5f6ce3147d5504
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/high-import-try/src/main/java/com/geekq/highimporttry/mapper/ImportDataStepDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="343">
+          <caret line="25" column="25" selection-start-line="25" selection-start-column="25" selection-end-line="25" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/high-import-try/src/main/java/com/geekq/highimporttry/timer/TimerRunner3.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-410">
+          <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/high-import-try/src/test/java/com/geekq/highimporttry/HighImportTryApplicationTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="479">
+          <caret line="90" lean-forward="true" selection-start-line="90" selection-end-line="90" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="FIRST">
-          <first_editor relative-caret-position="266">
-            <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+          <first_editor relative-caret-position="232">
+            <caret line="35" column="40" selection-start-line="35" selection-start-column="39" selection-end-line="35" selection-end-column="40" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="507">
+          <caret line="31" column="113" selection-start-line="31" selection-start-column="113" selection-end-line="31" selection-end-column="113" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docs/thread-base-9.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="19">
+            <caret line="1" column="7" selection-start-line="1" selection-start-column="7" selection-end-line="1" selection-end-column="7" />
           </first_editor>
           <second_editor />
         </state>

@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.geekq.highimporttry.mapper.ImportPointDao" >
+  <resultMap id="BaseResultMap" type="com.geekq.highimporttry.entity.ImportPoint" >
+    <id column="day" property="day" jdbcType="VARCHAR" />
+    <id column="userId" property="userid" jdbcType="INTEGER" />
+    <result column="availablePoints" property="availablepoints" jdbcType="DECIMAL" />
+    <result column="frozenPoints" property="frozenpoints" jdbcType="DECIMAL" />
+    <result column="create_time" property="createTime" jdbcType="TIMESTAMP" />
+  </resultMap>
+  <sql id="Base_Column_List" >
+    day, userId, availablePoints, frozenPoints, create_time
+  </sql>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="com.geekq.highimporttry.entity.ImportPointKey" >
+    select 
+    <include refid="Base_Column_List" />
+    from import_point
+    where day = #{day,jdbcType=VARCHAR}
+      and userId = #{userid,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="com.geekq.highimporttry.entity.ImportPointKey" >
+    delete from import_point
+    where day = #{day,jdbcType=VARCHAR}
+      and userId = #{userid,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="com.geekq.highimporttry.entity.ImportPoint" >
+    insert into import_point (day, userId, availablePoints, 
+      frozenPoints, create_time)
+    values (#{day,jdbcType=VARCHAR}, #{userid,jdbcType=INTEGER}, #{availablepoints,jdbcType=DECIMAL}, 
+      #{frozenpoints,jdbcType=DECIMAL}, #{createTime,jdbcType=TIMESTAMP})
+  </insert>
+  <insert id="insertSelective" parameterType="com.geekq.highimporttry.entity.ImportPoint" >
+    insert into import_point
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="day != null" >
+        day,
+      </if>
+      <if test="userid != null" >
+        userId,
+      </if>
+      <if test="availablepoints != null" >
+        availablePoints,
+      </if>
+      <if test="frozenpoints != null" >
+        frozenPoints,
+      </if>
+      <if test="createTime != null" >
+        create_time,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="day != null" >
+        #{day,jdbcType=VARCHAR},
+      </if>
+      <if test="userid != null" >
+        #{userid,jdbcType=INTEGER},
+      </if>
+      <if test="availablepoints != null" >
+        #{availablepoints,jdbcType=DECIMAL},
+      </if>
+      <if test="frozenpoints != null" >
+        #{frozenpoints,jdbcType=DECIMAL},
+      </if>
+      <if test="createTime != null" >
+        #{createTime,jdbcType=TIMESTAMP},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.geekq.highimporttry.entity.ImportPoint" >
+    update import_point
+    <set >
+      <if test="availablepoints != null" >
+        availablePoints = #{availablepoints,jdbcType=DECIMAL},
+      </if>
+      <if test="frozenpoints != null" >
+        frozenPoints = #{frozenpoints,jdbcType=DECIMAL},
+      </if>
+      <if test="createTime != null" >
+        create_time = #{createTime,jdbcType=TIMESTAMP},
+      </if>
+    </set>
+    where day = #{day,jdbcType=VARCHAR}
+      and userId = #{userid,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.geekq.highimporttry.entity.ImportPoint" >
+    update import_point
+    set availablePoints = #{availablepoints,jdbcType=DECIMAL},
+      frozenPoints = #{frozenpoints,jdbcType=DECIMAL},
+      create_time = #{createTime,jdbcType=TIMESTAMP}
+    where day = #{day,jdbcType=VARCHAR}
+      and userId = #{userid,jdbcType=INTEGER}
+  </update>
+
+  <insert id="insertBatch">
+    INSERT INTO ${table} (day, userId, availablePoints,frozenPoints, create_time) VALUES
+    <foreach collection="list" item="item" index="index"
+             separator=",">
+      (${day}, #{item.user,jdbcType=INTEGER}, #{item.availablePoints,jdbcType=DECIMAL},
+      #{item.frozenPoints,jdbcType=DECIMAL}, #{createTime})
+    </foreach>
+  </insert>
+
+  <select id="queryDaily" resultMap="BaseResultMap" >
+    select
+    <include refid="Base_Column_List" />
+    from ${table}
+    where day = #{day,jdbcType=VARCHAR}
+    <if test="userId != null" >
+      and userId = #{userId,jdbcType=INTEGER}
+    </if>
+    order by userId desc limit #{startIndex,jdbcType=INTEGER},#{offset,jdbcType=INTEGER}
+  </select>
+
+  <select id="selectByDayAndUserIdRange" resultMap="BaseResultMap" >
+    select
+    <include refid="Base_Column_List" />
+    from import_point_${monthString}
+    where day = #{day,jdbcType=VARCHAR}
+    <![CDATA[
+      and userId > #{rangeStart} and userId <= #{rangeEnd}
+    ]]>
+
+  </select>
+
+  <select id="queryAllUserIdByDay" resultType="int" >
+    select
+    DISTINCT userId
+    from ${table}
+    where day = #{day,jdbcType=VARCHAR} order by userId desc
+  </select>
+
+  <select id="queryAllUserIdByMonth" resultType="int" >
+    select
+    DISTINCT userId
+    from ${table}
+    where left(day,6) = #{day,jdbcType=VARCHAR} order by userId desc
+  </select>
+
+  <select id="queryDailyTotal" resultType="int" >
+    select
+    count(1)
+    from ${table}
+    where day = #{day,jdbcType=VARCHAR}
+    <if test="userId != null" >
+      and userId = #{userId,jdbcType=INTEGER}
+    </if>
+  </select>
+  <select id="selectMaxUserIdPoint" resultMap="BaseResultMap">
+    select
+    <include refid="Base_Column_List" />
+    from import_point_${monthString}
+    where day = #{dateString}
+    and userId > #{startIndex}
+    order by userId
+    limit 1 offset #{offset}
+  </select>
+
+  <select id="selectMaxPointByDay" resultMap="BaseResultMap">
+    select
+    <include refid="Base_Column_List" />
+    from import_point_${monthString}
+    where day = #{dateString}
+    order by userId desc
+    limit 1
+  </select>
+  <delete id="deleteByDay">
+    delete from ${table}
+    where day = #{day,jdbcType=VARCHAR}
+  </delete>
+
+</mapper>

@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.geekq.highimporttry.mapper.ImportDataStepDao">
+  <resultMap id="BaseResultMap" type="com.geekq.highimporttry.entity.ImportDataStep">
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="task_id" jdbcType="INTEGER" property="taskId" />
+    <result column="range_start" jdbcType="BIGINT" property="rangeStart" />
+    <result column="range_end" jdbcType="BIGINT" property="rangeEnd" />
+    <result column="day" jdbcType="VARCHAR" property="day" />
+    <result column="type" jdbcType="VARCHAR" property="type" />
+    <result column="status" jdbcType="INTEGER" property="status" />
+    <result column="msg" jdbcType="VARCHAR" property="msg" />
+    <result column="create_time" jdbcType="TIMESTAMP" property="createTime" />
+    <result column="update_time" jdbcType="TIMESTAMP" property="updateTime" />
+    <result column="version" jdbcType="INTEGER" property="version" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    id, task_id, range_start, range_end, day, type, status, msg, create_time, update_time, 
+    version
+  </sql>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from import_data_step
+    where id = #{id,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from import_data_step
+    where id = #{id,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="com.geekq.highimporttry.entity.ImportDataStep">
+    <selectKey keyProperty="id" order="AFTER" resultType="java.lang.Integer">
+      SELECT LAST_INSERT_ID()
+    </selectKey>
+    insert into import_data_step (task_id, range_start, range_end, 
+      day, type, status, 
+      msg, create_time, update_time, 
+      version)
+    values (#{taskId,jdbcType=INTEGER}, #{rangeStart,jdbcType=BIGINT}, #{rangeEnd,jdbcType=BIGINT}, 
+      #{day,jdbcType=VARCHAR}, #{type,jdbcType=VARCHAR}, #{status,jdbcType=INTEGER}, 
+      #{msg,jdbcType=VARCHAR}, #{createTime,jdbcType=TIMESTAMP}, #{updateTime,jdbcType=TIMESTAMP}, 
+      #{version,jdbcType=INTEGER})
+  </insert>
+
+  <insert id="insertBatch" parameterType="java.util.List">
+    INSERT  INTO import_data_step (
+    task_id, range_start, range_end,
+    day, type, status,
+    msg, create_time, update_time,version
+    ) VALUES
+    <foreach collection="list" item="item" index="index"
+             separator=",">
+      (#{item.taskId,jdbcType=INTEGER}, #{item.rangeStart,jdbcType=BIGINT}, #{item.rangeEnd,jdbcType=BIGINT},
+      #{item.day,jdbcType=VARCHAR}, #{item.type,jdbcType=VARCHAR}, #{item.status,jdbcType=INTEGER},
+      #{item.msg,jdbcType=VARCHAR}, #{item.createTime,jdbcType=TIMESTAMP}, #{item.updateTime,jdbcType=TIMESTAMP},
+      #{item.version,jdbcType=INTEGER})
+    </foreach>
+  </insert>
+  <insert id="insertSelective" parameterType="com.geekq.highimporttry.entity.ImportDataStep">
+    <selectKey keyProperty="id" order="AFTER" resultType="java.lang.Integer">
+      SELECT LAST_INSERT_ID()
+    </selectKey>
+    insert into import_data_step
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="taskId != null">
+        task_id,
+      </if>
+      <if test="rangeStart != null">
+        range_start,
+      </if>
+      <if test="rangeEnd != null">
+        range_end,
+      </if>
+      <if test="day != null">
+        day,
+      </if>
+      <if test="type != null">
+        type,
+      </if>
+      <if test="status != null">
+        status,
+      </if>
+      <if test="msg != null">
+        msg,
+      </if>
+      <if test="createTime != null">
+        create_time,
+      </if>
+      <if test="updateTime != null">
+        update_time,
+      </if>
+      <if test="version != null">
+        version,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="taskId != null">
+        #{taskId,jdbcType=INTEGER},
+      </if>
+      <if test="rangeStart != null">
+        #{rangeStart,jdbcType=BIGINT},
+      </if>
+      <if test="rangeEnd != null">
+        #{rangeEnd,jdbcType=BIGINT},
+      </if>
+      <if test="day != null">
+        #{day,jdbcType=VARCHAR},
+      </if>
+      <if test="type != null">
+        #{type,jdbcType=VARCHAR},
+      </if>
+      <if test="status != null">
+        #{status,jdbcType=INTEGER},
+      </if>
+      <if test="msg != null">
+        #{msg,jdbcType=VARCHAR},
+      </if>
+      <if test="createTime != null">
+        #{createTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="updateTime != null">
+        #{updateTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="version != null">
+        #{version,jdbcType=INTEGER},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.geekq.highimporttry.entity.ImportDataStep">
+    update import_data_step
+    <set>
+      <if test="taskId != null">
+        task_id = #{taskId,jdbcType=INTEGER},
+      </if>
+      <if test="rangeStart != null">
+        range_start = #{rangeStart,jdbcType=BIGINT},
+      </if>
+      <if test="rangeEnd != null">
+        range_end = #{rangeEnd,jdbcType=BIGINT},
+      </if>
+      <if test="day != null">
+        day = #{day,jdbcType=VARCHAR},
+      </if>
+      <if test="type != null">
+        type = #{type,jdbcType=VARCHAR},
+      </if>
+      <if test="status != null">
+        status = #{status,jdbcType=INTEGER},
+      </if>
+      <if test="msg != null">
+        msg = #{msg,jdbcType=VARCHAR},
+      </if>
+      <if test="createTime != null">
+        create_time = #{createTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="updateTime != null">
+        update_time = #{updateTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="version != null">
+        version = #{version,jdbcType=INTEGER},
+      </if>
+    </set>
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.geekq.highimporttry.entity.ImportDataStep">
+    update import_data_step
+    set task_id = #{taskId,jdbcType=INTEGER},
+      range_start = #{rangeStart,jdbcType=BIGINT},
+      range_end = #{rangeEnd,jdbcType=BIGINT},
+      day = #{day,jdbcType=VARCHAR},
+      type = #{type,jdbcType=VARCHAR},
+      status = #{status,jdbcType=INTEGER},
+      msg = #{msg,jdbcType=VARCHAR},
+      create_time = #{createTime,jdbcType=TIMESTAMP},
+      update_time = #{updateTime,jdbcType=TIMESTAMP},
+      version = #{version,jdbcType=INTEGER}
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+
+  <update id="updateByStepId" >
+    update import_data_step
+    set
+      status = #{status,jdbcType=INTEGER},update_time = #{updateTime,jdbcType=TIMESTAMP}, version=version+1
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+
+  <select id="queryAllStepNotDealAndFail" resultMap="BaseResultMap">
+    select
+    <include refid="Base_Column_List" />
+    from import_data_step where type = #{type,jdbcType=VARCHAR}
+    and day=  #{day,jdbcType=VARCHAR} and task_id = #{taskId,jdbcType=INTEGER} and status in (0,2)
+  </select>
+  <select id="queryStepByTypeAndDay" resultMap="BaseResultMap">
+    select
+    <include refid="Base_Column_List" />
+    from import_data_step where type = #{type,jdbcType=VARCHAR} order by range_end desc limit 1
+  </select>
+  <select id="queryNotDealStep" resultMap="BaseResultMap">
+    select
+    <include refid="Base_Column_List" />
+    from import_data_step where status = #{status,jdbcType=INTEGER}
+  </select>
+
+  <select id="queryCountNotDealStep" resultType="java.lang.Integer">
+    select
+    count(*)
+    from import_data_step where status in (0,2) and day=  #{day,jdbcType=VARCHAR}
+  </select>
+
+  <select id="queryTodayStepIsImportSuccess" resultType="java.lang.Integer">
+    select
+    count(*)
+    from import_data_step where status in  (0,2) and day=  #{day,jdbcType=VARCHAR}
+  </select>
+
+</mapper>

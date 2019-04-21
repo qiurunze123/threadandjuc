@@ -38,7 +38,7 @@ public class CyclicBarrierTest1 {
                 Thread.sleep(1000*(new Random()).nextInt(8));
                 System.out.println(name+"准备好了。。。。。");
                 //barrier的await方法 在所有参与者 都在此barrier上 调用await方法   方法之前一直等待
-//                barrier.await();
+                barrier.await();
                 //设置等待时间 如果等待了一秒 线程还没有就位 则自己继续运行 但是会导致barrier被标记为一个已经被破坏的barrier
                 barrier.await(2, TimeUnit.SECONDS);
             } catch (InterruptedException e) {

@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.geekq.highimporttry.mapper.PointDao" >
+  <resultMap id="BaseResultMap" type="com.geekq.highimporttry.entity.Point" >
+    <id column="pointId" property="pointId" jdbcType="INTEGER" />
+    <result column="availablePoints" property="availablePoints" jdbcType="DECIMAL" />
+    <result column="frozenPoints" property="frozenPoints" jdbcType="DECIMAL" />
+    <result column="version" property="version" jdbcType="INTEGER" />
+    <result column="user_" property="user" jdbcType="INTEGER" />
+    <result column="last_update_time" property="lastUpdateTime" jdbcType="TIMESTAMP" />
+    <result column="delayUpdateMode" property="delayUpdateMode" jdbcType="TINYINT" />
+    <result column="latest_point_log_id" property="latestPointLogId" jdbcType="INTEGER" />
+  </resultMap>
+  <sql id="Base_Column_List" >
+    pointId, availablePoints, frozenPoints, version, user_, last_update_time, delayUpdateMode, 
+    latest_point_log_id
+  </sql>
+
+    <select id="getPointByUserId"  resultMap="BaseResultMap" parameterType="java.lang.Integer">
+        select
+        <include refid="Base_Column_List" />
+        from point
+        where user_ = #{userId}
+    </select>
+
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Integer" >
+    select 
+    <include refid="Base_Column_List" />
+    from point
+    where pointId = #{pointId,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer" >
+    delete from point
+    where pointId = #{pointId,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="com.geekq.highimporttry.entity.Point" >
+    insert into point (pointId, availablePoints, frozenPoints, 
+      version, user_, last_update_time, 
+      delayUpdateMode, latest_point_log_id)
+    values (#{pointId,jdbcType=INTEGER}, #{availablePoints,jdbcType=DECIMAL}, #{frozenPoints,jdbcType=DECIMAL}, 
+      #{version,jdbcType=INTEGER}, #{user,jdbcType=INTEGER}, #{lastUpdateTime,jdbcType=TIMESTAMP}, 
+      #{delayUpdateMode,jdbcType=TINYINT}, #{latestPointLogId,jdbcType=INTEGER})
+  </insert>
+
+  <insert id="insertSelective" parameterType="com.geekq.highimporttry.entity.Point" >
+    insert into point
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="pointId != null" >
+        pointId,
+      </if>
+      <if test="availablePoints != null" >
+        availablePoints,
+      </if>
+      <if test="frozenPoints != null" >
+        frozenPoints,
+      </if>
+      <if test="version != null" >
+        version,
+      </if>
+      <if test="user != null" >
+        user_,
+      </if>
+      <if test="lastUpdateTime != null" >
+        last_update_time,
+      </if>
+      <if test="delayUpdateMode != null" >
+        delayUpdateMode,
+      </if>
+      <if test="latestPointLogId != null" >
+        latest_point_log_id,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="pointId != null" >
+        #{pointId,jdbcType=INTEGER},
+      </if>
+      <if test="availablePoints != null" >
+        #{availablePoints,jdbcType=DECIMAL},
+      </if>
+      <if test="frozenPoints != null" >
+        #{frozenPoints,jdbcType=DECIMAL},
+      </if>
+      <if test="version != null" >
+        #{version,jdbcType=INTEGER},
+      </if>
+      <if test="user != null" >
+        #{user,jdbcType=INTEGER},
+      </if>
+      <if test="lastUpdateTime != null" >
+        #{lastUpdateTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="delayUpdateMode != null" >
+        #{delayUpdateMode,jdbcType=TINYINT},
+      </if>
+      <if test="latestPointLogId != null" >
+        #{latestPointLogId,jdbcType=INTEGER},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByid" parameterType="com.geekq.highimporttry.entity.Point" >
+    update point
+    <set >
+      <if test="availablePoints != null" >
+        availablePoints = #{availablePoints,jdbcType=DECIMAL},
+      </if>
+      <if test="frozenPoints != null" >
+        frozenPoints = #{frozenPoints,jdbcType=DECIMAL},
+      </if>
+      <if test="user != null" >
+        user_ = #{user,jdbcType=INTEGER},
+      </if>
+      <if test="lastUpdateTime != null" >
+        last_update_time = #{lastUpdateTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="delayUpdateMode != null" >
+        delayUpdateMode = #{delayUpdateMode,jdbcType=TINYINT},
+      </if>
+      <if test="latestPointLogId != null" >
+        latest_point_log_id = #{latestPointLogId,jdbcType=INTEGER},
+      </if>
+        version = version + 1
+    </set>
+    where pointId = #{pointId} and version = #{version}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.geekq.highimporttry.entity.Point" >
+    update point
+    set availablePoints = #{availablePoints,jdbcType=DECIMAL},
+      frozenPoints = #{frozenPoints,jdbcType=DECIMAL},
+      user_ = #{user,jdbcType=INTEGER},
+      last_update_time = #{lastUpdateTime,jdbcType=TIMESTAMP},
+      delayUpdateMode = #{delayUpdateMode,jdbcType=TINYINT},
+      latest_point_log_id = #{latestPointLogId,jdbcType=INTEGER},
+      version = version + 1
+    where pointId = #{pointId,jdbcType=INTEGER} and version = #{version}
+  </update>
+
+  <select id="queryAllByOffset" resultMap="BaseResultMap">
+    SELECT * from point
+    ORDER by pointId ASC
+    limit #{limit} offset #{offset}
+  </select>
+
+  <select id="getCount" resultType="java.lang.Integer">
+    SELECT COUNT(*)  FROM point
+  </select>
+
+  <select id="getMaxPointId" resultType="java.lang.Long">
+    SELECT max(pointId) FROM point
+  </select>
+
+  <select id="queryAllByPointId" resultMap="BaseResultMap">
+    SELECT * FROM point  where pointid BETWEEN #{start,jdbcType=BIGINT} and #{end,jdbcType=BIGINT}
+  </select>
+
+</mapper>
