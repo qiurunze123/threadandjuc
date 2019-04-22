@@ -65,7 +65,5 @@ public class CountDownLatchTest2 {
                 }
             }
         },"t1").start();
-
-
     }
 }
