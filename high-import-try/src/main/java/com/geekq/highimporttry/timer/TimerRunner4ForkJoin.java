@@ -27,8 +27,6 @@ public class TimerRunner4ForkJoin extends RecursiveAction {
     @Autowired
     private ImportDataStepDao importDataStepDao;
 
-    private static final int IMPORT_TASK_AND_STEP_RETRY_TIME = 5;
-
 
     /**
      * ThreadFactoryBuilder是一个Builder设计模式的应用,可以设置守护进程、错误处理器、线程名字
@@ -45,14 +43,14 @@ public class TimerRunner4ForkJoin extends RecursiveAction {
 
     private int start;
     private int end;
-    private int id ;
     private String day ;
+    private List<ImportDataStep> steps ;
 
-    public TimerRunner4ForkJoin(int start, int end , int id ) {
+    public TimerRunner4ForkJoin(int start, int end ,  String day , List<ImportDataStep> steps  ) {
         this.start = start;
         this.end = end;
-        this.id = id;
         this.day = day ;
+        this.steps =steps ;
     }
     /**
      * fork / join
@@ -60,8 +58,20 @@ public class TimerRunner4ForkJoin extends RecursiveAction {
 
     @Override
     protected void compute() {
-        List<ImportDataStep> steps = importDataStepDao.queryAllStepNotDealAndFail(id,
-                day, Constant.IMPORTTYPE.point.name());
+        /**
+         * 如果任务小于 THREAD_HOLD
+         */
+        boolean canCompute = (end - start) <= THREAD_HOLD;
+        if (canCompute) {
+            highImportDataService.insertPointTaskStep(steps);
+        }else{
+            int middle = (start + end) / 2;
+            TimerRunner4ForkJoin left = new TimerRunner4ForkJoin(start, middle,day,steps);
+            TimerRunner4ForkJoin right = new TimerRunner4ForkJoin(middle + 1, end,day,steps);
+            logger.info("=========== steps =========== " , steps);
+            left.fork();
+            right.fork();
+        }
     }
 
 
