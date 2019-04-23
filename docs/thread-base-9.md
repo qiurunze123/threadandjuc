@@ -11,6 +11,15 @@ interface ExecutorService extends Executor
 
 
 
+**线程池运行流程**
+
+![整体流程](https://raw.githubusercontent.com/qiurunze123/imageall/master/threadpool8.png)
+
+
+
+
+
+
 一般线程池的使用，往往都是使用这个接口  
 
 ExecutorService executor = Executors.newFixOrCachedThreadPool(args...);
