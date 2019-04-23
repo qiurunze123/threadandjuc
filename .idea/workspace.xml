@@ -138,7 +138,7 @@
         <counts>
           <entry key="dummy" value="3" />
           <entry key="java" value="12138" />
-          <entry key="md" value="11846" />
+          <entry key="md" value="11850" />
           <entry key="properties" value="46" />
           <entry key="txt" value="92" />
           <entry key="xml" value="51" />
@@ -147,7 +147,7 @@
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="JAVA" value="12138" />
-          <entry key="Markdown" value="11846" />
+          <entry key="Markdown" value="11850" />
           <entry key="PLAIN_TEXT" value="95" />
           <entry key="Properties" value="46" />
           <entry key="XML" value="51" />
@@ -201,8 +201,8 @@
         <entry file="file://$PROJECT_DIR$/docs/thread-base-9.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="FIRST">
-              <first_editor relative-caret-position="266">
-                <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+              <first_editor relative-caret-position="171">
+                <caret line="15" column="76" selection-start-line="15" selection-start-column="76" selection-end-line="15" selection-end-column="76" />
               </first_editor>
               <second_editor />
             </state>
@@ -369,7 +369,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-355" />
     <option name="y" value="121" />
     <option name="width" value="1936" />
@@ -440,7 +440,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;jar://C:/Program Files/Java/jdk1.8.0_91/src.zip!/java/util/concurrent/ThreadPoolExecutor.java&#10;Th&#9;FILE&#9;jar://C:/Program Files/Java/jdk1.8.0_91/src.zip!/java/util/concurrent/ThreadPoolExecutor.java&#10;Executors&#9;FILE&#9;jar://C:/Program Files/Java/jdk1.8.0_91/src.zip!/java/util/concurrent/Executors.java&#10;Executor&#9;FILE&#9;jar://C:/Program Files/Java/jdk1.8.0_91/jre/lib/rt.jar!/java/util/concurrent/Executor.class&#10;absta&#9;PSI&#9;JAVA://org.springframework.amqp.rabbit.listener.adapter.AbstractAdaptableMessageListener&#10;exec&#9;FILE&#9;jar://C:/Program Files/Java/jdk1.8.0_91/src.zip!/java/util/concurrent/Executors.java&#10;ThreadPoolExecutor&#9;FILE&#9;jar://C:/Program Files/Java/jdk1.8.0_91/src.zip!/java/util/concurrent/ThreadPoolExecutor.java" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1555990719436" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1555998005245" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -508,7 +508,7 @@
       <workItem from="1554779333874" duration="19803000" />
       <workItem from="1554965015954" duration="20265000" />
       <workItem from="1555379805596" duration="39193000" />
-      <workItem from="1555899072527" duration="17215000" />
+      <workItem from="1555899072527" duration="17852000" />
     </task>
     <task id="LOCAL-00001" summary="xiugai">
       <created>1539999075324</created>
@@ -667,10 +667,11 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="253091000" />
+    <option name="totallyTimeSpent" value="253728000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.35494882" visible="true" weight="0.27316293" />
       <window_info id="Structure" order="1" sideWeight="0.6450512" side_tool="true" weight="0.27316293" />
@@ -1075,8 +1076,8 @@
     <entry file="file://$PROJECT_DIR$/docs/thread-base-9.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="FIRST">
-          <first_editor relative-caret-position="266">
-            <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+          <first_editor relative-caret-position="171">
+            <caret line="15" column="76" selection-start-line="15" selection-start-column="76" selection-end-line="15" selection-end-column="76" />
           </first_editor>
           <second_editor />
         </state>
