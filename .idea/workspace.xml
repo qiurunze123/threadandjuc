@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="cc8ef784-fbbd-4cb2-8c64-561bb52779a4" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/thread-base-9.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/thread-base-9.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/thread-base-8.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/thread-base-8.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -118,7 +118,7 @@
           <entry key="class" value="9" />
           <entry key="gitignore" value="1" />
           <entry key="java" value="302" />
-          <entry key="md" value="42" />
+          <entry key="md" value="43" />
           <entry key="properties" value="4" />
           <entry key="url" value="2" />
           <entry key="xml" value="27" />
@@ -128,7 +128,7 @@
         <counts>
           <entry key="CLASS" value="9" />
           <entry key="JAVA" value="302" />
-          <entry key="Markdown" value="42" />
+          <entry key="Markdown" value="43" />
           <entry key="PLAIN_TEXT" value="3" />
           <entry key="Properties" value="4" />
           <entry key="UML" value="3" />
@@ -139,7 +139,7 @@
         <counts>
           <entry key="dummy" value="3" />
           <entry key="java" value="12138" />
-          <entry key="md" value="11855" />
+          <entry key="md" value="11878" />
           <entry key="properties" value="46" />
           <entry key="txt" value="92" />
           <entry key="xml" value="51" />
@@ -148,7 +148,7 @@
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="JAVA" value="12138" />
-          <entry key="Markdown" value="11855" />
+          <entry key="Markdown" value="11878" />
           <entry key="PLAIN_TEXT" value="95" />
           <entry key="Properties" value="46" />
           <entry key="XML" value="51" />
@@ -203,7 +203,19 @@
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="FIRST">
               <first_editor relative-caret-position="399">
-                <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+                <caret line="21" column="52" selection-start-line="21" selection-start-column="52" selection-end-line="21" selection-end-column="52" />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/docs/thread-base-8.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="FIRST">
+              <first_editor relative-caret-position="672">
+                <caret line="281" selection-start-line="281" selection-end-line="281" />
               </first_editor>
               <second_editor />
             </state>
@@ -325,7 +337,6 @@
         <option value="$PROJECT_DIR$/src/main/java/com/geek/locksupport/LockSupportDemo.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/geek/locksupport/LockSupport3.java" />
         <option value="$PROJECT_DIR$/docs/thread-base-7.md" />
-        <option value="$PROJECT_DIR$/docs/thread-base-8.md" />
         <option value="$PROJECT_DIR$/src/main/java/com/geek/threadandjuc/juc/ConcurrentHashMap.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/geek/locksupport/LockSupport2.java" />
         <option value="$PROJECT_DIR$/high-import-try/src/main/java/com/geekq/highimporttry/entity/ImportDataStep.java" />
@@ -360,6 +371,7 @@
         <option value="$PROJECT_DIR$/high-import-try/src/main/java/com/geekq/highimporttry/timer/TimerRunner3.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/geek/threadpoolexector/ThreadPoolExector3.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/geek/threadpoolexector/ThreadPoolExector1.java" />
+        <option value="$PROJECT_DIR$/docs/thread-base-8.md" />
         <option value="$PROJECT_DIR$/docs/thread-base-9.md" />
       </list>
     </option>
@@ -441,7 +453,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;jar://C:/Program Files/Java/jdk1.8.0_91/src.zip!/java/util/concurrent/ThreadPoolExecutor.java&#10;Th&#9;FILE&#9;jar://C:/Program Files/Java/jdk1.8.0_91/src.zip!/java/util/concurrent/ThreadPoolExecutor.java&#10;Executors&#9;FILE&#9;jar://C:/Program Files/Java/jdk1.8.0_91/src.zip!/java/util/concurrent/Executors.java&#10;Executor&#9;FILE&#9;jar://C:/Program Files/Java/jdk1.8.0_91/jre/lib/rt.jar!/java/util/concurrent/Executor.class&#10;absta&#9;PSI&#9;JAVA://org.springframework.amqp.rabbit.listener.adapter.AbstractAdaptableMessageListener&#10;exec&#9;FILE&#9;jar://C:/Program Files/Java/jdk1.8.0_91/src.zip!/java/util/concurrent/Executors.java&#10;ThreadPoolExecutor&#9;FILE&#9;jar://C:/Program Files/Java/jdk1.8.0_91/src.zip!/java/util/concurrent/ThreadPoolExecutor.java" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1556000084299" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1556093936973" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -509,7 +521,7 @@
       <workItem from="1554779333874" duration="19803000" />
       <workItem from="1554965015954" duration="20265000" />
       <workItem from="1555379805596" duration="39193000" />
-      <workItem from="1555899072527" duration="18481000" />
+      <workItem from="1555899072527" duration="19714000" />
     </task>
     <task id="LOCAL-00001" summary="xiugai">
       <created>1539999075324</created>
@@ -668,13 +680,13 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="254357000" />
+    <option name="totallyTimeSpent" value="255590000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.35494882" visible="true" weight="0.27316293" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.35494882" visible="true" weight="0.27316293" />
       <window_info id="Structure" order="1" sideWeight="0.6450512" side_tool="true" weight="0.27316293" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -690,7 +702,7 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32972974" />
       <window_info anchor="bottom" id="Spring" order="7" sideWeight="0.49946752" weight="0.32972974" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="8" sideWeight="0.58093715" visible="true" weight="0.15891892" />
+      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.58093715" visible="true" weight="0.15891892" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5037274" side_tool="true" weight="0.32864866" />
       <window_info anchor="bottom" id="Messages" order="10" sideWeight="0.49627262" weight="0.32756758" />
       <window_info anchor="bottom" id="Java Enterprise" order="11" />
@@ -1074,11 +1086,21 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/docs/thread-base-8.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="672">
+            <caret line="281" selection-start-line="281" selection-end-line="281" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/docs/thread-base-9.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="FIRST">
           <first_editor relative-caret-position="399">
-            <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+            <caret line="21" column="52" selection-start-line="21" selection-start-column="52" selection-end-line="21" selection-end-column="52" />
           </first_editor>
           <second_editor />
         </state>
