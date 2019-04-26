@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cc8ef784-fbbd-4cb2-8c64-561bb52779a4" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/geek/future/FutureMain.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/geek/future/RealData.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/thread-base-8.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/thread-base-8.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -117,7 +118,7 @@
           <entry key="JIGSAW/rt" value="1" />
           <entry key="class" value="9" />
           <entry key="gitignore" value="1" />
-          <entry key="java" value="302" />
+          <entry key="java" value="305" />
           <entry key="md" value="43" />
           <entry key="properties" value="4" />
           <entry key="url" value="2" />
@@ -127,7 +128,7 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CLASS" value="9" />
-          <entry key="JAVA" value="302" />
+          <entry key="JAVA" value="305" />
           <entry key="Markdown" value="43" />
           <entry key="PLAIN_TEXT" value="3" />
           <entry key="Properties" value="4" />
@@ -138,8 +139,8 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="3" />
-          <entry key="java" value="12138" />
-          <entry key="md" value="11878" />
+          <entry key="java" value="12191" />
+          <entry key="md" value="11880" />
           <entry key="properties" value="46" />
           <entry key="txt" value="92" />
           <entry key="xml" value="51" />
@@ -147,8 +148,8 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="12138" />
-          <entry key="Markdown" value="11878" />
+          <entry key="JAVA" value="12191" />
+          <entry key="Markdown" value="11880" />
           <entry key="PLAIN_TEXT" value="95" />
           <entry key="Properties" value="46" />
           <entry key="XML" value="51" />
@@ -198,14 +199,48 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/docs/thread-base-9.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="FIRST">
-              <first_editor relative-caret-position="399">
-                <caret line="21" column="52" selection-start-line="21" selection-start-column="52" selection-end-line="21" selection-end-column="52" />
+              <first_editor relative-caret-position="437">
+                <caret line="23" column="17" lean-forward="true" selection-start-line="23" selection-start-column="17" selection-end-line="23" selection-end-column="17" />
               </first_editor>
               <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/geek/future/FutureMain.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="95">
+              <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
+              <folding>
+                <element signature="e#403#411#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/geek/daemon/DaemonGo.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="285">
+              <caret line="15" column="34" selection-start-line="15" selection-start-column="34" selection-end-line="15" selection-end-column="34" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/geek/future/RealData.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="304">
+              <caret line="16" column="33" selection-start-line="16" selection-start-column="33" selection-end-line="16" selection-end-column="33" />
+              <folding>
+                <element signature="e#174#175#0" expanded="true" />
+                <element signature="e#201#202#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -280,24 +315,6 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/high-import-try/src/main/java/com/geekq/highimporttry/service/BillRecordPointInsertTask.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="760">
-              <caret line="50" column="82" selection-start-line="50" selection-start-column="82" selection-end-line="50" selection-end-column="82" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/high-import-try/src/main/java/com/geekq/highimporttry/service/HighImportDataService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="152">
-              <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
@@ -322,8 +339,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/geek/reentrantlock/ReenTrantLock3.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/geek/reentrantlock/ReenTrantLock4.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/geek/countdownlatchgo/Main.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/geek/countdownlatchgo/example1/Main.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/geek/countdownlatchgo/example1/ApplicationStartupUtil.java" />
@@ -373,6 +388,8 @@
         <option value="$PROJECT_DIR$/src/main/java/com/geek/threadpoolexector/ThreadPoolExector1.java" />
         <option value="$PROJECT_DIR$/docs/thread-base-8.md" />
         <option value="$PROJECT_DIR$/docs/thread-base-9.md" />
+        <option value="$PROJECT_DIR$/src/main/java/com/geek/future/RealData.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/geek/future/FutureMain.java" />
       </list>
     </option>
   </component>
@@ -383,10 +400,9 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-355" />
-    <option name="y" value="121" />
-    <option name="width" value="1936" />
-    <option name="height" value="1056" />
+    <option name="x" value="-7" />
+    <option name="width" value="974" />
+    <option name="height" value="1047" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -443,6 +459,26 @@
               <item name="com" type="462c0819:PsiDirectoryNode" />
               <item name="geek" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="threadandjuc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="threadandjuc" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="geek" type="462c0819:PsiDirectoryNode" />
+              <item name="daemon" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="threadandjuc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="threadandjuc" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="geek" type="462c0819:PsiDirectoryNode" />
+              <item name="future" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -453,7 +489,12 @@
   </component>
   <component name="PropertiesComponent">
     <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;jar://C:/Program Files/Java/jdk1.8.0_91/src.zip!/java/util/concurrent/ThreadPoolExecutor.java&#10;Th&#9;FILE&#9;jar://C:/Program Files/Java/jdk1.8.0_91/src.zip!/java/util/concurrent/ThreadPoolExecutor.java&#10;Executors&#9;FILE&#9;jar://C:/Program Files/Java/jdk1.8.0_91/src.zip!/java/util/concurrent/Executors.java&#10;Executor&#9;FILE&#9;jar://C:/Program Files/Java/jdk1.8.0_91/jre/lib/rt.jar!/java/util/concurrent/Executor.class&#10;absta&#9;PSI&#9;JAVA://org.springframework.amqp.rabbit.listener.adapter.AbstractAdaptableMessageListener&#10;exec&#9;FILE&#9;jar://C:/Program Files/Java/jdk1.8.0_91/src.zip!/java/util/concurrent/Executors.java&#10;ThreadPoolExecutor&#9;FILE&#9;jar://C:/Program Files/Java/jdk1.8.0_91/src.zip!/java/util/concurrent/ThreadPoolExecutor.java" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1556093936973" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1556245902591" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\project\threadandjuc\src\main\java\com\geek\future" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -467,7 +508,20 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.FutureMain">
+    <configuration name="FutureMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.geek.future.FutureMain" />
+      <module name="threadandjuc" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.geek.future.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ThreadPoolExector3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.geek.threadpoolexector.ThreadPoolExector3" />
       <module name="threadandjuc" />
@@ -481,8 +535,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Application.ThreadPoolExector3" />
+      <item itemvalue="Application.FutureMain" />
+    </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.FutureMain" />
         <item itemvalue="Application.ThreadPoolExector3" />
       </list>
     </recent_temporary>
@@ -521,7 +580,7 @@
       <workItem from="1554779333874" duration="19803000" />
       <workItem from="1554965015954" duration="20265000" />
       <workItem from="1555379805596" duration="39193000" />
-      <workItem from="1555899072527" duration="19714000" />
+      <workItem from="1555899072527" duration="23379000" />
     </task>
     <task id="LOCAL-00001" summary="xiugai">
       <created>1539999075324</created>
@@ -680,13 +739,13 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="255590000" />
+    <option name="totallyTimeSpent" value="259255000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.35494882" visible="true" weight="0.27316293" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.35494882" visible="true" weight="0.27316293" />
       <window_info id="Structure" order="1" sideWeight="0.6450512" side_tool="true" weight="0.27316293" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -696,13 +755,13 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.43027028" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.7838126" weight="0.28216216" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.7838126" visible="true" weight="0.28216216" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.4978701" weight="0.652973" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32972974" />
       <window_info anchor="bottom" id="Spring" order="7" sideWeight="0.49946752" weight="0.32972974" />
-      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.58093715" visible="true" weight="0.15891892" />
+      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.58093715" weight="0.4908108" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5037274" side_tool="true" weight="0.32864866" />
       <window_info anchor="bottom" id="Messages" order="10" sideWeight="0.49627262" weight="0.32756758" />
       <window_info anchor="bottom" id="Java Enterprise" order="11" />
@@ -1099,10 +1158,38 @@
     <entry file="file://$PROJECT_DIR$/docs/thread-base-9.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="FIRST">
-          <first_editor relative-caret-position="399">
-            <caret line="21" column="52" selection-start-line="21" selection-start-column="52" selection-end-line="21" selection-end-column="52" />
+          <first_editor relative-caret-position="437">
+            <caret line="23" column="17" lean-forward="true" selection-start-line="23" selection-start-column="17" selection-end-line="23" selection-end-column="17" />
           </first_editor>
           <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/geek/daemon/DaemonGo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="15" column="34" selection-start-line="15" selection-start-column="34" selection-end-line="15" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/geek/future/RealData.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="16" column="33" selection-start-line="16" selection-start-column="33" selection-end-line="16" selection-end-column="33" />
+          <folding>
+            <element signature="e#174#175#0" expanded="true" />
+            <element signature="e#201#202#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/geek/future/FutureMain.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
+          <folding>
+            <element signature="e#403#411#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
