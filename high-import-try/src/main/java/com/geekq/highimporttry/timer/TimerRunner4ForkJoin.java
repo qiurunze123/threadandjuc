@@ -1,3 +1,4 @@
+/*
 package com.geekq.highimporttry.timer;
 
 import com.geekq.highimporttry.entity.ImportDataStep;
@@ -28,11 +29,13 @@ public class TimerRunner4ForkJoin extends RecursiveAction {
     private ImportDataStepDao importDataStepDao;
 
 
-    /**
+    */
+/**
      * ThreadFactoryBuilder是一个Builder设计模式的应用,可以设置守护进程、错误处理器、线程名字
      * <p>
      * guava
-     */
+     *//*
+
     private ExecutorService executorService = new ThreadPoolExecutor(2, 2,
             10L, TimeUnit.SECONDS,
             new LinkedBlockingQueue<Runnable>(),
@@ -52,15 +55,19 @@ public class TimerRunner4ForkJoin extends RecursiveAction {
         this.day = day ;
         this.steps =steps ;
     }
-    /**
+    */
+/**
      * fork / join
-     */
+     *//*
+
 
     @Override
     protected void compute() {
-        /**
+        */
+/**
          * 如果任务小于 THREAD_HOLD
-         */
+         *//*
+
         boolean canCompute = (end - start) <= THREAD_HOLD;
         if (canCompute) {
             highImportDataService.insertPointTaskStep(steps);
@@ -78,3 +85,4 @@ public class TimerRunner4ForkJoin extends RecursiveAction {
 
 
 }
+*/

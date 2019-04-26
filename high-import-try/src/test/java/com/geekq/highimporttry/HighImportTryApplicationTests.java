@@ -2,10 +2,7 @@ package com.geekq.highimporttry;
 
 import com.geekq.highimporttry.entity.ImportDataStep;
 import com.geekq.highimporttry.service.HighImportDataService;
-import com.geekq.highimporttry.timer.TimerRunner;
-import com.geekq.highimporttry.timer.TimerRunner2;
-import com.geekq.highimporttry.timer.TimerRunner3;
-import com.geekq.highimporttry.timer.TimerRunner4ForkJoin;
+import com.geekq.highimporttry.timer.*;
 import com.geekq.highimporttry.util.Constant;
 import org.apache.ibatis.type.Alias;
 import org.checkerframework.checker.units.qual.A;
@@ -36,8 +33,12 @@ public class HighImportTryApplicationTests {
     @Autowired
     private TimerRunner3 timerRunner3;
 
+//    @Autowired
+//    private TimerRunner4ForkJoin timerRunner4ForkJoin ;
+
     @Autowired
-    private TimerRunner4ForkJoin timerRunner4ForkJoin ;
+    private TimerRunnerFutureTask timerRunnerFutureTask;
+
     /**
      * 导入 task 和 step 表
      */
@@ -108,5 +109,11 @@ public class HighImportTryApplicationTests {
 //        TimerRunner4ForkJoin timerRunner4ForkJoin = new TimerRunner4ForkJoin()
 
 //        Thread.currentThread().sleep(50000);
+    }
+
+    @Test
+    public void importFuture() throws InterruptedException {
+
+        timerRunnerFutureTask.timeGo();
     }
 }

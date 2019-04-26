@@ -5,14 +5,11 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.FutureTask;
 
-/**
- * future -- task
- */
 public class FutureMain {
     public static void main(String[] args) throws InterruptedException, ExecutionException {
         //构造FutureTask
-        FutureTask<String> future = new FutureTask<String>(new RealData("a"));
-        ExecutorService executor = Executors.newFixedThreadPool(1);
+        FutureTask<Integer> future = new FutureTask<Integer>(new RealData(0));
+        ExecutorService executor = Executors.newFixedThreadPool(5);
         //执行FutureTask，相当于上例中的 client.request("a") 发送请求
         //在这里开启线程进行RealData的call()执行
         executor.submit(future);

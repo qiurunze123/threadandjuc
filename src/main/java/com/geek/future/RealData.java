@@ -2,22 +2,18 @@ package com.geek.future;
 
 import java.util.concurrent.Callable;
 
-public class RealData implements Callable<String> {
-    private String para;
-    public RealData(String para){
+public class RealData implements Callable<Integer> {
+    private Integer para;
+    public RealData(Integer para){
     	this.para=para;
     }
 	@Override
-	public String call() throws Exception {
-    	
+	public Integer call() throws Exception {
+
     	StringBuffer sb=new StringBuffer();
-        for (int i = 0; i < 10; i++) {
-        	sb.append(para);
-            try {
-                Thread.sleep(1000);
-            } catch (InterruptedException e) {
-            }
+        for (int i = 0; i < 1000; i++) {
+            para ++;
         }
-        return sb.toString();
+        return para;
 	}
 }
