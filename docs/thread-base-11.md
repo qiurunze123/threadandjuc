@@ -1,4 +1,31 @@
 
+**不变模式**
+
+不变模式的核心思想:
+
+在并行开发过程中，为确保数据的一致性和正确性，又必要对对象进行同步，但是同步操作对系统性能有相当的损耗。
+因此可以使用一种不可改变的对象，依靠其不变形来确保并行操作在没有同步的情况下依旧保持一致性和正确性
+
+不变模式的使用场景主要包括两个条件：
+
+a. 当对象创建后，其内部状态和数据不再发生任何改变
+
+b.对象需求被共享、被多线程频繁访问
+
+在Java语言中，不变模式的实现很简单，只需要注意一下4点：
+
+a. 去除所有setter方法以及可以修改自身属性的方法
+
+b. 将所有属性设置为private的，并用final标记，确保其不可修改
+
+c. 确保没有子类可以继承该类
+
+d. 有一个可以创建完整对象的构造函数
+
+ JDK中不变模式的实例有很多 ：
+ 
+ ![整体流程](https://raw.githubusercontent.com/qiurunze123/imageall/master/threadnew54.png)
+
 
 **future的一些详解**
 
@@ -38,6 +65,11 @@ Future的cancel方法可以取消任务的执行，它有一布尔参数，参�
 **代码执行 future future2**
 
 ![整体流程](https://raw.githubusercontent.com/qiurunze123/imageall/master/threadnew53.png)
+
+原理：
+
+![整体流程](https://raw.githubusercontent.com/qiurunze123/imageall/master/threadnew55.png)
+
 
 
 
@@ -144,3 +176,4 @@ SynchronousQueue经常用来,一端或者双端严格遵守"单工"(单工作者
 优先任务队列是带有执行优先级的队列，它通过PriorityBlockingQueue实现，可以控制任务的只想你个先后顺序。它是一个特殊的无界队列。
 
 
+![整体流程](https://raw.githubusercontent.com/qiurunze123/imageall/master/threadnew56.png)
