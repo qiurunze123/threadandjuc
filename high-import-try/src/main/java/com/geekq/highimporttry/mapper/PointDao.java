@@ -1,5 +1,6 @@
 package com.geekq.highimporttry.mapper;
 
+import com.geekq.highimporttry.entity.ImportDataStep;
 import com.geekq.highimporttry.entity.Point;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
@@ -40,6 +41,5 @@ public interface PointDao {
     public long getMaxPointId();
 
     public List<Point> queryAllByPointId(@Param("start") Long start, @Param("end") Long end);
-
 
 }

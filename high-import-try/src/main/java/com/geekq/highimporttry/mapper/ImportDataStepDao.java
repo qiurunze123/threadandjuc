@@ -36,5 +36,4 @@ public interface ImportDataStepDao {
 
     public Integer queryTodayStepIsImportSuccess(String day);
 
-
 }

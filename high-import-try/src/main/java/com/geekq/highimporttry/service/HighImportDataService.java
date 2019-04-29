@@ -1,6 +1,7 @@
 package com.geekq.highimporttry.service;
 
 import com.geekq.highimporttry.entity.ImportDataStep;
+import com.geekq.highimporttry.entity.Point;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -18,4 +19,9 @@ public interface HighImportDataService {
 
     public void insertPointTaskStep(List<ImportDataStep> steps);
 
+    /**
+     * 线程池 查询
+     */
+
+    public List<Point> recordHandlePoints(List<ImportDataStep> steps);
 }

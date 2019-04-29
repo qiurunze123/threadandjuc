@@ -9,6 +9,7 @@ import com.geekq.highimporttry.mapper.ImportPointDao;
 import com.geekq.highimporttry.mapper.PointDao;
 import com.geekq.highimporttry.util.Constant;
 import com.geekq.highimporttry.util.DateUtil;
+import com.google.common.util.concurrent.ThreadFactoryBuilder;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -21,9 +22,7 @@ import org.springframework.util.CollectionUtils;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
-import java.util.concurrent.ExecutorService;
-import java.util.concurrent.Executors;
-import java.util.concurrent.TimeUnit;
+import java.util.concurrent.*;
 
 /**
  * @author 邱润泽 bullock
@@ -211,6 +210,25 @@ public class HighImportDataServiceImpl implements HighImportDataService {
                 logger.error("数据插入失败！！回滚！此次批次失败的start! {},{},继续下一批次start ", step.getRangeStart(), e);
             }
         }
+    }
+
+    private ExecutorService executorService = new ThreadPoolExecutor(2, 2,
+            10L, TimeUnit.SECONDS,
+            new LinkedBlockingQueue<Runnable>(),
+            new ThreadFactoryBuilder().setNameFormat("高可用改造专用线程池-%d").build());
+    @Override
+    public List<Point> recordHandlePoints(List<ImportDataStep> steps) {
+
+        for (ImportDataStep step:steps){
+            executorService.execute(new Runnable() {
+                @Override
+                public void run() {
+                    pointDao.queryAllByPointId(step.getRangeStart(),step.getRangeEnd());
+                }
+            });
+
+        }
+        return null;
     }
 
 
