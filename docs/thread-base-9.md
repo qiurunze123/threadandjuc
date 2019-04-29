@@ -45,6 +45,11 @@ interface ExecutorService extends Executor
 
 　　largestPoolSize只是一个用来起记录作用的变量，用来记录线程池中曾经有过的最大线程数目，跟线程池的容量没有任何关系
 
+四种拒绝策略：
+
+AbortPolicy 策略、CallerRunsPolicy策略、 DiscardOledestPolicy策略、DiscardPolicy策略
+
+
 https://www.jianshu.com/p/e6a8048d0446 数据源 与 事务问题   
 
 定义AOP共同使用时，事务不起作用
