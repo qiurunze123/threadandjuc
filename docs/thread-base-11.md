@@ -1,4 +1,46 @@
 
+
+**future的一些详解**
+
+future 作用:去除了主函数的等待时间，并使得原本需要等待的时间段可以用于处理其他业务逻辑
+--------------------- 
+
+Callable是类似于Runnable的接口，实现Callable接口的类和实现Runnable的类都是可被其它线程执行的任务
+
+Callable和Runnable有几点不同：
+
+Callable规定的方法是call()，而Runnable规定的方法是run()；
+
+Callable的任务执行后可返回值，而Runnable的任务是不能返回值的；
+
+call()方法可抛出异常，而run()方法是不能抛出异常的；
+
+运行Callable任务可拿到一个Future对象；
+
+Future 表示异步计算的结果。它提供了检查计算是否完成的方法，以等待计算的完成，并检索计算的结果。
+
+通过Future对象可了解任务执行情况，可取消任务的执行，还可获取任务执行的结果。
+
+Future的cancel方法可以取消任务的执行，它有一布尔参数，参数为true表示立即中断任务的执行，参数为false表示允许正在运行的任务运行完成。Future的get方法等待计算完成，获取计算结果
+
+
+一个FutureTask新建出来，state就是NEW状态；COMPETING和INTERRUPTING用的进行时，
+表示瞬时状态，存在时间极短(为什么要设立这种状态？？？不解)；NORMAL代表顺利完成；EXCEPTIONAL代表执行过程出现异常；CANCELED代表执行过程被取消；INTERRUPTED被中断
+
+2）执行过程顺利完成：NEW -> COMPLETING -> NORMAL
+
+3）执行过程出现异常：NEW -> COMPLETING -> EXCEPTIONAL
+
+4）执行过程被取消：NEW -> CANCELLED
+
+5）执行过程中，线程中断：NEW -> INTERRUPTING -> INTERRUPTED
+
+**代码执行 future future2**
+
+![整体流程](https://raw.githubusercontent.com/qiurunze123/imageall/master/threadnew53.png)
+
+
+
 **生产者消费者**
 
 
