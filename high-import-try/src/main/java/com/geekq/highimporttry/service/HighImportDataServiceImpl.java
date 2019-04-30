@@ -216,6 +216,7 @@ public class HighImportDataServiceImpl implements HighImportDataService {
             10L, TimeUnit.SECONDS,
             new LinkedBlockingQueue<Runnable>(),
             new ThreadFactoryBuilder().setNameFormat("高可用改造专用线程池-%d").build());
+
     @Override
     public List<Point> recordHandlePoints(List<ImportDataStep> steps) {
 

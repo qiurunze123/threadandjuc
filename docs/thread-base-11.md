@@ -1,7 +1,7 @@
 
 **单例模式**
 
-/singleton/
+代码详见 /singleton/
 
 **不变模式**
 

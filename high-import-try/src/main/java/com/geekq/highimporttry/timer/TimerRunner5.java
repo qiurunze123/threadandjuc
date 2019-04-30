@@ -17,6 +17,10 @@ import java.util.List;
 
 /**
  * @author 邱润泽 bullock
+ *
+ * 利用 future  task 来 多线程查询 需要的数据
+ *
+ * 数据分批次
  */
 @Service
 public class TimerRunner5 {
