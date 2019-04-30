@@ -43,6 +43,9 @@
 
 ####  [并发断点调试 JDK新特性 .....  ](/docs/thread-base-13.md)
 
+####  [锁优化 .....  ](/docs/thread-base-13.md)
+
+
 =========================================================================
 
 
@@ -50,21 +53,21 @@
 | ID | Problem  | Article | 
 | --- | ---   | :--- |
 | 000 |数据如何分片 | [解决思路](/docs/code-solve.md) |
-| 001 |如何实现高可用 | [解决思路](/docs/jemter-solve.md) |
+| 001 |如何实现高可用 | [解决思路](/docs/code-solve.md) |
 | 003 |如何实现高性能|[解决思路](/docs/code-solve.md)  |
 | 003 |如何实现高可靠 |[解决思路](/docs/code-solve.md)  |
 | 004 |如何自定义线程池以及使用与导入🙋🐓 |[解决思路](/docs/code-solve.md)  |
 | 005 |如何利用CountDownLatch使用与导入|[解决思路](/docs/code-solve.md)  |
 | 006 |表的设计与思考 |[解决思路](/docs/code-solve.md)  |
 | 007 |如何控制数据一致性 |[解决思路](/docs/code-solve.md)  |
-| 008 |如何是实现幂等性 |[解决思路](/docs/code-solve.md)  |
+| 008 |如何实现幂等性 |[解决思路](/docs/code-solve.md)  |
 | 009 |如何使用ForkJoin进行使用与导入 |[解决思路](/docs/code-solve.md)  |
 | 010 |如何使用栅栏进行使用与导入 |[解决思路](/docs/code-solve.md)  |
-| 011 |数据的导入性能数据 |[解决思路](/docs/code-solve.md)  |
-| 012 |Apollo 的安装与使用 |[解决思路](/docs/code-solve.md)  |
-| 013 |为什么需要一个环境隔离系统来维护环境数据 |[解决思路](/docs/code-solve.md)  |
-| 014 |定时任务的开启与一些小的技巧|[解决思路](/docs/code-solve.md)  |
-| 015 |服务波动怎么解决数据不丢失 |[解决思路](/docs/code-solve.md) |
+| 011 |数据的导入性能 -- 数据 |[解决思路](/docs/code-solve.md)  |
+| 012 |为什么需要一个环境隔离系统来维护环境数据 |[解决思路](/docs/code-solve.md)  |
+| 013 |定时任务的开启与一些小的技巧|[解决思路](/docs/code-solve.md)  |
+| 014 |服务波动怎么解决数据不丢失 |[解决思路](/docs/code-solve.md) |
+| 015 |数据报警?(简单版) |[解决思路](/docs/code-solve.md) |
 
 
 
