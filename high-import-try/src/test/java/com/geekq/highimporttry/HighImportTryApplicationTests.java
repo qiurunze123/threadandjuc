@@ -33,6 +33,9 @@ public class HighImportTryApplicationTests {
     @Autowired
     private TimerRunner3 timerRunner3;
 
+    @Autowired
+    private TimerRunner5 timerRunner5;
+
 //    @Autowired
 //    private TimerRunner4ForkJoin timerRunner4ForkJoin ;
 
@@ -115,5 +118,12 @@ public class HighImportTryApplicationTests {
     public void importFuture() throws InterruptedException {
 
         timerRunnerFutureTask.timeGo();
+    }
+
+    @Test
+    public void getImportFuture() throws InterruptedException {
+
+        timerRunner5.timeGo();
+        Thread.sleep(5000);
     }
 }

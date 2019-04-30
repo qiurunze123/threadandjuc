@@ -212,23 +212,29 @@ public class HighImportDataServiceImpl implements HighImportDataService {
         }
     }
 
-    private ExecutorService executorService = new ThreadPoolExecutor(2, 2,
+    private ExecutorService executorService = new ThreadPoolExecutor(4, 4,
             10L, TimeUnit.SECONDS,
             new LinkedBlockingQueue<Runnable>(),
             new ThreadFactoryBuilder().setNameFormat("高可用改造专用线程池-%d").build());
     @Override
     public List<Point> recordHandlePoints(List<ImportDataStep> steps) {
 
-        for (ImportDataStep step:steps){
-            executorService.execute(new Runnable() {
-                @Override
-                public void run() {
-                    pointDao.queryAllByPointId(step.getRangeStart(),step.getRangeEnd());
-                }
-            });
+        System.out.println("多线程查询======== start");
 
+        List<Point> points =new ArrayList<>();
+        for (ImportDataStep step:steps){
+            Future<List<Point>> future =  executorService.submit(new HighImportDataPointFuture(step,pointDao));
+            try {
+                points.addAll(future.get());
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            } catch (ExecutionException e) {
+                e.printStackTrace();
+            }
         }
-        return null;
+
+        System.out.println("多线程查询======== point "+points.size()+" 条数==============");
+        return points;
     }
 
 
