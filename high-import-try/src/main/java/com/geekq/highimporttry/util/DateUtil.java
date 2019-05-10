@@ -60,6 +60,7 @@ public class DateUtil {
         now.set(Calendar.MINUTE, 0);
         now.set(Calendar.SECOND, 0);
         now.set(Calendar.MILLISECOND, 0);
+
         return now.getTime();
     }
 

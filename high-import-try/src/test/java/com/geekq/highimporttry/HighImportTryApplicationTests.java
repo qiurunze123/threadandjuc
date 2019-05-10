@@ -6,6 +6,7 @@ import com.geekq.highimporttry.timer.*;
 import com.geekq.highimporttry.util.Constant;
 import org.apache.ibatis.type.Alias;
 import org.checkerframework.checker.units.qual.A;
+import org.joda.time.DateTime;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mybatis.spring.annotation.MapperScan;
@@ -69,6 +70,16 @@ public class HighImportTryApplicationTests {
         highImportDataService.recordHandleImport("20190415");
 
         Thread.currentThread().sleep(50000);
+    }
+    @Test
+    public void joda() throws InterruptedException {
+
+        DateTime dateTime = new DateTime(2000, 1, 1, 0, 0, 0, 0);
+        System.out.println(dateTime.plusDays(90).toString("E MM/dd/yyyy HH:mm:ss.SSS"));
+
+        DateTime dt1 = new DateTime();
+        System.out.println(dt1);
+
     }
 
 

@@ -72,6 +72,11 @@
             <artifactId>guava</artifactId>
             <version>25.1-jre</version>
         </dependency>
+        <dependency>
+            <groupId>joda-time</groupId>
+            <artifactId>joda-time</artifactId>
+            <scope>test</scope>
+        </dependency>
     </dependencies>
 
     <build>
