@@ -1,6 +1,23 @@
 
 **valatile 解析**
 
+| ID | Problem  | Article | 
+| --- | ---   | :--- |
+| 000 |volatile是什么 | [解决思路](/docs/volatile.md) |
+| 001 |JMM内存模型值之可见性 | [解决思路](/docs/volatile.md) |
+| 002 |可见性验证说明 | [解决思路](/docs/volatile.md) |
+| 003 |volatile不保证原子性 | [解决思路](/docs/volatile.md) |
+| 004 |volatile指令重构排序 | [解决思路](/docs/volatile.md) |
+| 005 |单例模式在多线程下可能存在的问题 | [解决思路](/docs/volatile.md) |
+| 006 |单例模式volatile分析| [解决思路](/docs/volatile.md) |
+
+=======================================================================================================================
+
+
+
+
+
+
 
                 synchronized                              | volatile
              
