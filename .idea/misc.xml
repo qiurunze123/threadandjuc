@@ -6,6 +6,7 @@
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/high-import-try/pom.xml" />
+        <option value="$PROJECT_DIR$/learnguava/pom.xml" />
       </list>
     </option>
   </component>
