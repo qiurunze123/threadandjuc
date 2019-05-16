@@ -41,7 +41,8 @@ public class SplitterTest {
         assertThat(result.get(1), equalTo(" world"));
 
         result = Splitter.on("|").trimResults().omitEmptyStrings().splitToList("hello | world|||");
-        assertThat(result.get(0), equalTo("hello "));
+        System.out.println(result);
+        assertThat(result.get(0), equalTo("hello"));
         assertThat(result.get(1), equalTo("world"));
     }
 
