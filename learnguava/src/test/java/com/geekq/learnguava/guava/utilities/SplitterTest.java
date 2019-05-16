@@ -133,7 +133,7 @@ public class SplitterTest {
 
 
     /**
-     * 分割 map
+     * 分割 mapwithKeyValueSeparator   返回  withKeyValueSeparator传递map项key/value
      */
     @Test
     public void testSplitOnSplitToMap() {

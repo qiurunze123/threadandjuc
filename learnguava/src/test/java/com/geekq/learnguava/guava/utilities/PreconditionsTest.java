@@ -14,9 +14,24 @@ import static org.junit.Assert.fail;
 
 
 /**
- * Precondition
- * Objects
- * assert key word(statement)
+ public User login(String userName,String password){
+ if(StringUtils.isEmpty(userName) || StringUtils.isEmpty(password)){
+ throw new RuntimeException("用户名或密码不能为空");
+ }
+ User user = userService.queryUserByUserNameAndPassword(userName,password);
+ if(null == user){
+ throw new RuntimeException("用户名或密码错误");
+ }
+ //…………………………………………省略业务逻辑…………………………………………
+
+ ===================================================================================================================
+
+ public User login(String userName,String password){
+ Preconditions.checkArgument(!(StringUtils.isEmpty(userName) || StringUtils.isEmpty(password)),"用户名或密码不能为空");
+ User user = userService.queryUserByUserNameAndPassword(userName,password);
+ Preconditions.checkNotNull(user,"用户名或密码错误");
+ //…………………………………………省略业务逻辑…………………………………………
+ }
  */
 public class PreconditionsTest {
 
