@@ -19,7 +19,7 @@ public class MonitorClient
         final EventBus eventBus = new EventBus();
         eventBus.register(new FileChangeListener());
 
-        TargetMonitor monitor = new DirectoryTargetMonitor(eventBus, "G:\\Teaching\\汪文君Google Guava实战视频\\monitor");
+        TargetMonitor monitor = new DirectoryTargetMonitor(eventBus, "G:\\Teaching\\qiurunze\\monitor");
         ScheduledExecutorService executorService = Executors.newSingleThreadScheduledExecutor();
         executorService.schedule(() ->
         {
