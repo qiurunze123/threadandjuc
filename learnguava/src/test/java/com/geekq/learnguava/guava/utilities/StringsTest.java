@@ -77,6 +77,8 @@ public class StringsTest {
 
         /**
          * countIn 返回sequence中匹配到的字符计数  is(char match): 返回匹配指定字符的Matcher
+         *
+         * breakingWhitespace 去除空格  collapseFrom 替换成想要的字符
          */
         assertThat(CharMatcher.is('A').countIn("Alex Sharing the Google Guava to Us"), equalTo(1));
         assertThat(CharMatcher.breakingWhitespace().collapseFrom("      hello Guava     ", '*'), equalTo("*hello*Guava*"));

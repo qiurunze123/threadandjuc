@@ -28,7 +28,6 @@ public class SplitterTest {
 //        List<String> result = Splitter.on("|").splitToList("hello|world");
 
         List<String> result = Splitter.on("|").splitToList("hello|world");
-
         for (String re : result) {
             logger.info(re);
         }
@@ -101,7 +100,7 @@ public class SplitterTest {
      */
     @Test
     public void testSplitOnSplitLimit() {
-        List<String> result = Splitter.on("#").limit(3).splitToList("hello#world#java#google#scala");
+        List<String> result = Splitter.on("#").splitToList("hello#world#java#google#scala");
         logger.info(result.toString());
         assertThat(result, notNullValue());
         assertThat(result.size(), equalTo(3));
