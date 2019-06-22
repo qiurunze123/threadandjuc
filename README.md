@@ -49,6 +49,18 @@
 | 005 |AtomicStampedReference版本号原子引用 | [解决思路](/docs/CASandABA.md) |
 | 006 |ABA问题的解决| [解决思路](/docs/CASandABA.md) |
 
+
+####  [公平锁,非公平锁，可重入锁，递归锁，自旋锁等的理解..](/docs/lock.md)
+
+| ID | Problem  | Article | 
+| --- | ---   | :--- |
+| 000 |公平锁 | [解决思路](/docs/lock.md) |
+| 001 |非公平锁 | [解决思路](/docs/lock.md) |
+| 002 |可重入锁 | [解决思路](/docs/lock.md) |
+| 003 |递归锁 | [解决思路](/docs/lock.md) |
+| 004 |自旋锁 | [解决思路](/docs/lock.md) |
+| 005 |手写自旋锁 | [解决思路](/docs/lock.md) |
+
 ####  [AQS .....](/docs/thread-base-14.md)
 
 ####  [JDK并发包 reentrantlock , condition , semaphone , readwritelock ,CountDownLatch,BlockingQueue.....](/docs/thread-base-7.md)
