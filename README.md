@@ -61,6 +61,16 @@
 | 004 |自旋锁 | [解决思路](/docs/lock.md) |
 | 005 |手写自旋锁 | [解决思路](/docs/lock.md) |
 
+####  [阻塞队列..](/docs/blocking.md)
+
+| ID | Problem  | Article | 
+| --- | ---   | :--- |
+| 000 |队列和阻塞队列 | [解决思路](/docs/blocking.md) |
+| 001 |怎么使用阻塞队列好处是什么 | [解决思路](/docs/blocking.md) |
+| 002 |BlockingQueue核心方法 | [解决思路](/docs/blocking.md) |
+| 003 |设计梳理种类分析 | [解决思路](/docs/blocking.md) |
+| 004 |使用方式与使用场景 | [解决思路](/docs/blocking.md) |
+
 ####  [AQS .....](/docs/thread-base-14.md)
 
 ####  [JDK并发包 reentrantlock , condition , semaphone , readwritelock ,CountDownLatch,BlockingQueue.....](/docs/thread-base-7.md)
