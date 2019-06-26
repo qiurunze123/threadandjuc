@@ -23,5 +23,8 @@
    ![整体流程](https://raw.githubusercontent.com/qiurunze123/imageall/master/blocking2.png)
 
    ![整体流程](https://raw.githubusercontent.com/qiurunze123/imageall/master/blocking3.png)
+   
+   对于非阻塞队列，一般情况下建议使用offer、poll和peek三个方法，不建议使用add和remove方法。因为使用offer、poll和peek三个方法可以通过返回值判断操作成功与否，
+   而使用add和remove方法却不能达到这样的效果。注意，非阻塞队列中的方法都没有进行同步措施。
 
 ### 队列种类分析 
