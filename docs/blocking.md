@@ -20,3 +20,8 @@
 
 在concurrent包 发布以前,在多线程环境下,我们每个程序员都必须自己去控制这些细节,尤其还要兼顾效率和线程安全,而这会给我们的程序带来不小的复杂度.
 
+   ![整体流程](https://raw.githubusercontent.com/qiurunze123/imageall/master/blocking2.png)
+
+   ![整体流程](https://raw.githubusercontent.com/qiurunze123/imageall/master/blocking3.png)
+
+### 队列种类分析 
