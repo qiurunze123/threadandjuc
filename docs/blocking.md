@@ -28,3 +28,23 @@
    而使用add和remove方法却不能达到这样的效果。注意，非阻塞队列中的方法都没有进行同步措施。
 
 ### 队列种类分析 
+
+`ArrayBlockingQueue ：一个由数组支持的有界队列
+`
+
+`LinkedBlockingQueue ：一个由链接节点支持的可选有界队列 最大值 大约21亿
+`
+
+`PriorityBlockingQueue ：一个由优先级堆支持的无界优先级队列
+`
+
+`DelayQueue ：一个由优先级堆支持的、基于时间的调度队列
+`
+
+`SynchronousQueue :不存储元素的阻塞队列及生产一个没有数据缓冲的BlockingQueue，生产者线程对其的插入操作put必须等待消费者的移除操作take，反过来也一样 不然就阻塞着`
+
+### 生产者和消费者模式 
+
+传统版:com.geek.blockingdemo.ProdComsumerTraditionDemo
+
+阻塞队列版: com.geek.blockingdemo.ProdComsumerBlockingQueueDemo
