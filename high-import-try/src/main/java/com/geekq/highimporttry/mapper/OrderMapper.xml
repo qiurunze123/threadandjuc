@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.geekq.highimporttry.mapper.OrderMapper" >
+  <resultMap id="BaseResultMap" type="com.geekq.highimporttry.entity.Order" >
+    <id column="order_id" property="orderId" jdbcType="BIGINT" />
+    <result column="name" property="name" jdbcType="VARCHAR" />
+  </resultMap>
+  <sql id="Base_Column_List" >
+    order_id, name
+  </sql>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Long" >
+    select 
+    <include refid="Base_Column_List" />
+    from order1
+    where order_id = #{order_id,jdbcType=BIGINT}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Long" >
+    delete from order1
+    where order_id = #{order_id,jdbcType=BIGINT}
+  </delete>
+  <insert id="insert" parameterType="com.geekq.highimporttry.entity.Order" >
+    insert into order1 (order_id, name)
+    values (#{order_id,jdbcType=BIGINT}, #{name,jdbcType=VARCHAR})
+  </insert>
+  <insert id="insertSelective" parameterType="com.geekq.highimporttry.entity.Order" >
+    insert into order1
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="order_id != null" >
+        order_id,
+      </if>
+      <if test="name != null" >
+        name,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="order_id != null" >
+        #{order_id,jdbcType=BIGINT},
+      </if>
+      <if test="name != null" >
+        #{name,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.geekq.highimporttry.entity.Order" >
+    update order1
+    <set >
+      <if test="name != null" >
+        name = #{name,jdbcType=VARCHAR},
+      </if>
+    </set>
+    where order_id = #{order_id,jdbcType=BIGINT}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.geekq.highimporttry.entity.Order" >
+    update order1
+    set name = #{name,jdbcType=VARCHAR}
+    where order_id = #{order_id,jdbcType=BIGINT}
+  </update>
+
+  <select id="getOrders" resultMap="BaseResultMap">
+    select    <include refid="Base_Column_List" /> from order1
+  </select>
+</mapper>

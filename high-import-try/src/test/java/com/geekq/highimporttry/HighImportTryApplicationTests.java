@@ -43,6 +43,9 @@ public class HighImportTryApplicationTests {
     @Autowired
     private TimerRunnerFutureTask timerRunnerFutureTask;
 
+    @Autowired
+    private BlockingRunTask blockingRunTask;
+
     /**
      * 导入 task 和 step 表
      */
@@ -60,6 +63,10 @@ public class HighImportTryApplicationTests {
     }
 
 
+    @Test
+    public void blockingRunTask(){
+        blockingRunTask.dealOrderTask();
+    }
     /**
      *  import ——  point
      * @throws InterruptedException
