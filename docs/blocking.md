@@ -50,3 +50,5 @@
 阻塞队列版: com.geek.blockingdemo.ProdComsumerBlockingQueueDemo
 
 ### 使用场景 利用多线程和队列进行解耦
+
+com.geekq.highimporttry.timer.BlockingRunTask
