@@ -69,8 +69,9 @@
 | 001 |怎么使用阻塞队列好处是什么 | [解决思路](/docs/blocking.md) |
 | 002 |BlockingQueue核心方法 | [解决思路](/docs/blocking.md) |
 | 003 |设计梳理种类分析 | [解决思路](/docs/blocking.md) |
-| 004 |使用方式与使用场景 | [解决思路](/docs/blocking.md) |
+| 004 |使用方式与使用场景 | [解决思路](/docs/blocking.md) |\
 
+####  [插播 synchronized和lock 的区别 彻底分析..](/docs/sandl.md)
 
 #### [风骚的线程池..](/docs/Threadpool.md)
 
