@@ -48,3 +48,20 @@
 
 ![整体流程](https://raw.githubusercontent.com/qiurunze123/imageall/master/tp2.png)
  
+#### 谈一谈拒绝策略 
+
+等待队列也已经排满了,再也塞不下新的任务了同时,
+
+线程池的max也到达了,无法接续为新任务服务
+
+这时我们需要拒绝策略机制合理的处理这个问题.
+
+AbortPolicy:直接抛出异常组织系统正常工作
+
+CallerRunPolicy：只要线程池未关团，该策略直接在调用者线程中，运行当前被丢弃的任务
+
+DiscardOldestPolicy：丢弃最老的一个请隶，尝试再次提交当前任务
+
+DiscardPolicy:直接丢弃任务不予处理也不抛出异常，如果需要自定义拒绝簽略可以实现RejectdExceutionHandler接口
+
+已上的内置策略均实现了rejectExcutionHandler接口
