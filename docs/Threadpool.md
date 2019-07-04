@@ -16,3 +16,35 @@
    线程池是通过Executor框架实现的,该框架中用到了Executor,Executors,ExecutorService,ThreadPoolExecutor这几个类.
    
    ![整体流程](https://raw.githubusercontent.com/qiurunze123/imageall/master/tp1.png)
+
+#### 线程池运行流程
+
+ **线程池运行流程**
+ 
+ ![整体流程](https://raw.githubusercontent.com/qiurunze123/imageall/master/theradpool8.png)
+#### 线程池7大参数解析
+
+ 1.corepoolsize 线程池常驻核心线程数 
+ 
+     在创建了线程池后,当有请求任务来之后,就会安排池中的线程去执行请求任务,近视理解为今日当值线程
+     
+     当线程池中的线程数目达到corePoolSize后,就会把到达的任务放入到缓存队列当中. 
+     
+ 2.maximumPoolSize 线程池能够容乃同时执行的最大线程数 >=1
+ 
+ 3.keepaliveTime 多余的空闲线程的存活时间当空闲线程时间达到keepAliveTime的值时多余线程会被销毁
+ 
+     只有当线程池中的线程数大于corePoolSize时keepAliveTime才会起作用,知道线程中的线程数不大于corepoolSIze,
+ 
+ 4.unit keepAliveTime 的单位
+ 
+ 5.workQueue 任务队列 被提交但是尚未被执行的任务
+ 
+ 6.threadFactory 表示生成线程池中工作线程的线程工厂用户创建新线程一般用默认的即可
+ 
+ 7.handler 拒绝策略当线程池满了并且工作线程数大于等于线程池的最大显示数时来如何拒绝
+ 
+#### 底层工作原理
+
+![整体流程](https://raw.githubusercontent.com/qiurunze123/imageall/master/tp1.png)
+ 

@@ -81,7 +81,10 @@
 | 001 |线程池使用 | [解决思路](/docs/Threadpool.md) |
 | 002 |手写线程池 | [解决思路](/docs/Threadpool.md) |
 | 003 |线程池参数介绍 | [解决思路](/docs/Threadpool.md) |
-| 004 |线程池底层工作原理 | [解决思路](/docs/Threadpool.md) |
+| 004 |线程池生产上如何合理配置线程池| [解决思路](/docs/Threadpool.md) |
+| 005 |线程池谈一谈拒绝策略 | [解决思路](/docs/Threadpool.md) |
+| 006 |如何自定义线程池 | [解决思路](/docs/Threadpool.md) |
+| 007 |在工作中你是如何配置线程池的 | [解决思路](/docs/Threadpool.md) |
 
 ####  [AQS .....](/docs/thread-base-14.md)
 
