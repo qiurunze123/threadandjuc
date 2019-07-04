@@ -46,5 +46,5 @@
  
 #### 底层工作原理
 
-![整体流程](https://raw.githubusercontent.com/qiurunze123/imageall/master/tp1.png)
+![整体流程](https://raw.githubusercontent.com/qiurunze123/imageall/master/tp2.png)
  
