@@ -77,6 +77,9 @@
 | 004 |使用方式与使用场景 | [解决思路](/docs/blocking.md) |\
 
 ####  [插播 synchronized和lock 的区别 彻底分析..](/docs/sandl.md)
+| ID | Problem  | Article | 
+| --- | ---   | :--- |
+| 000 |synchronized和lock 的区别| [解决思路](/docs/sandl.md) |
 
 #### [风骚的线程池..](/docs/Threadpool.md)
 
@@ -132,6 +135,9 @@
 | 013 |定时任务的开启与一些小的技巧|[解决思路](/docs/code-solve.md)  |
 | 014 |服务波动怎么解决数据不丢失 |[解决思路](/docs/code-solve.md) |
 | 015 |数据报警?(简单版) |[解决思路](/docs/code-solve.md) |
+
+##### disrupto并发框架分析（传说这是一个每秒能处理600万订单的东东）
+
 
 
 ##### Guava 全操作 DEMO分析
