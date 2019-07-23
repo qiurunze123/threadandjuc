@@ -6,9 +6,14 @@
 
 > QQ : [3341386488](3341386488)
 
-> QQ群 :
+> QQ群（秒杀群）:
 
  ![整体流程](https://raw.githubusercontent.com/qiurunze123/imageall/master/qq.png)
+ 
+ > QQ群（高并发多线程）:
+ 
+ ![整体流程](https://raw.githubusercontent.com/qiurunze123/imageall/master/高并发.png)
+
  
  多线程从基础到进阶，分析入坑出坑，以及工作实操,最后会分享一个项目，针对如何进行大数据量（经测试几亿数据完全搞的定）进行安全高可用的策略，
  示例为高可用高可靠高性能 三高导入系统 DEMO分析 ,如何进行数据分片,数据导入,计算,多线程策略等等 本文属于进阶系列，有问题或者更好的想法可以一起探讨！ 
