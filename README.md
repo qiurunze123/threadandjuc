@@ -26,93 +26,45 @@
 ###  [如要提交代码请先看--提交合并代码规范提交者的后面都会有署名方便大家问问题](/docs/code-criterion.md)
 ###  [多线程之前更新版本 -- 请进代码路径：com.geek.threadandjuc](/docs/thread-base-1.md)
 
-####  [java并行程序基础](/docs/thread-base-3.md)
+####  [java并行程序基础(已完成)](/docs/thread-base-3.md)
 
-####  [java内存模型和线程安全](/docs/thread-base-4.md)
+####  [java内存模型和线程安全(已完成)](/docs/thread-base-4.md)
 
-####  [valatile 专题解析](/docs/thread-base-5.md)
+####  [valatile 专题解析(已完成)](/docs/thread-base-5.md)
 
-| ID | Problem  | Article | 
-| --- | ---   | :--- |
-| 000 |volatile是什么 | [解决思路](/docs/volatile.md) |
-| 001 |JMM内存模型值之可见性 | [解决思路](/docs/volatile.md) |
-| 002 |可见性验证说明 | [解决思路](/docs/volatile.md) |
-| 003 |volatile不保证原子性 | [解决思路](/docs/volatile.md) |
-| 004 |volatile指令重构排序 | [解决思路](/docs/volatile.md) |
-| 005 |单例模式在多线程下可能存在的问题 | [解决思路](/docs/volatile.md) |
-| 006 |单例模式volatile分析| [解决思路](/docs/volatile.md) |
+####  [无锁类 CAS , ABA , Atomic ......(已完成)](/docs/thread-base-6.md)
 
-####  [无锁类 CAS , ABA , Atomic ......](/docs/thread-base-6.md)
+####  [公平锁,非公平锁，可重入锁，递归锁，自旋锁等的理解..(已完成)](/docs/lock.md)
 
-| ID | Problem  | Article | 
-| --- | ---   | :--- |
-| 000 |CAS是什么 | [解决思路](/docs/CASandABA.md) |
-| 001 |CAS底层原理 | [解决思路](/docs/CASandABA.md) |
-| 002 |CAS缺点 | [解决思路](/docs/CASandABA.md) |
-| 003 |ABA问题 | [解决思路](/docs/CASandABA.md) |
-| 004 |AtomicReference原子引用 | [解决思路](/docs/CASandABA.md) |
-| 005 |AtomicStampedReference版本号原子引用 | [解决思路](/docs/CASandABA.md) |
-| 006 |ABA问题的解决| [解决思路](/docs/CASandABA.md) |
+####  [阻塞队列..(已完成)](/docs/blocking.md)
 
+####  [插播 synchronized和lock 的区别 彻底分析..(已完成)](/docs/sandl.md)
 
-####  [公平锁,非公平锁，可重入锁，递归锁，自旋锁等的理解..](/docs/lock.md)
+#### [风骚的线程池..(已完成)](/docs/Threadpool.md)
 
-| ID | Problem  | Article | 
-| --- | ---   | :--- |
-| 000 |公平锁 | [解决思路](/docs/lock.md) |
-| 001 |非公平锁 | [解决思路](/docs/lock.md) |
-| 002 |可重入锁 | [解决思路](/docs/lock.md) |
-| 003 |递归锁 | [解决思路](/docs/lock.md) |
-| 004 |自旋锁 | [解决思路](/docs/lock.md) |
-| 005 |手写自旋锁 | [解决思路](/docs/lock.md) |
+####  [AQS .....(有待分析)](/docs/thread-base-14.md)
 
-####  [阻塞队列..](/docs/blocking.md)
+####  [JDK并发包 reentrantlock , condition , semaphone , readwritelock ,CountDownLatch,BlockingQueue.....(粗略版已完成)](/docs/thread-base-7.md)
 
-| ID | Problem  | Article | 
-| --- | ---   | :--- |
-| 000 |队列和阻塞队列 | [解决思路](/docs/blocking.md) |
-| 001 |怎么使用阻塞队列好处是什么 | [解决思路](/docs/blocking.md) |
-| 002 |BlockingQueue核心方法 | [解决思路](/docs/blocking.md) |
-| 003 |设计梳理种类分析 | [解决思路](/docs/blocking.md) |
-| 004 |使用方式与使用场景 | [解决思路](/docs/blocking.md) |\
+####  [JDK并发包 ConcurrentHashMap 精度分析(粗略版已完成)](/docs/thread-base-8.md)
 
-####  [插播 synchronized和lock 的区别 彻底分析..](/docs/sandl.md)
-| ID | Problem  | Article | 
-| --- | ---   | :--- |
-| 000 |synchronized和lock 的区别| [解决思路](/docs/sandl.md) |
+####  [JDK 线程池高度解析(粗略版已完成) ](/docs/thread-base-9.md)
 
-#### [风骚的线程池..](/docs/Threadpool.md)
+####  [JDK ForkJoin 模式精度分析(粗略版已完成)  ](/docs/thread-base-10.md)
 
-| ID | Problem  | Article | 
-| --- | ---   | :--- |
-| 000 |为什么使用线程池又什么好处和优势| [解决思路](/docs/Threadpool.md) |
-| 001 |线程池使用 | [解决思路](/docs/Threadpool.md) |
-| 002 |手写线程池 | [解决思路](/docs/Threadpool.md) |
-| 003 |线程池参数介绍 | [解决思路](/docs/Threadpool.md) |
-| 004 |线程池生产上如何合理配置线程池| [解决思路](/docs/Threadpool.md) |
-| 005 |线程池谈一谈拒绝策略 | [解决思路](/docs/Threadpool.md) |
-| 006 |如何自定义线程池 | [解决思路](/docs/Threadpool.md) |
-| 007 |在工作中你是如何配置线程池的 | [解决思路](/docs/Threadpool.md) |
+####  [JDK 单例模式 不变模式 Future模式 生产者 消费者 ....... (粗略版已完成) ](/docs/thread-base-11.md)
 
-####  [AQS .....](/docs/thread-base-14.md)
+####  [NIO AIO 详解 (粗略版已完成) ](/docs/thread-base-12.md)
 
-####  [JDK并发包 reentrantlock , condition , semaphone , readwritelock ,CountDownLatch,BlockingQueue.....](/docs/thread-base-7.md)
+####  [并发断点调试 JDK新特性 .....  (粗略版已完成)](/docs/thread-base-13.md)
 
-####  [JDK并发包 ConcurrentHashMap 精度分析](/docs/thread-base-8.md)
+####  [锁优化 ..... (有待分析) ](/docs/thread-base-13.md)
 
-####  [JDK 线程池高度解析 ](/docs/thread-base-9.md)
-
-####  [JDK ForkJoin 模式精度分析  ](/docs/thread-base-10.md)
-
-####  [JDK 单例模式 不变模式 Future模式 生产者 消费者 .......  ](/docs/thread-base-11.md)
-
-####  [NIO AIO 详解  ](/docs/thread-base-12.md)
-
-####  [并发断点调试 JDK新特性 .....  ](/docs/thread-base-13.md)
-
-####  [锁优化 .....  ](/docs/thread-base-13.md)
-
-
+####  [数据伪共享 false—shareing disruptor前传..... ](/docs/false-shareing.md)
+ 
+     更新此问题的出发点是 **disruptor框架和百度的分布式id生成策略** 
+     https://github.com/baidu/uid-generator/blob/master/README.zh_cn.md
+      
 =========================================================================
 
 
@@ -136,8 +88,10 @@
 | 014 |服务波动怎么解决数据不丢失 |[解决思路](/docs/code-solve.md) |
 | 015 |数据报警?(简单版) |[解决思路](/docs/code-solve.md) |
 
-##### disrupto并发框架分析（传说这是一个每秒能处理600万订单的东东）
-
+##### disruptor并发框架分析（传说这是一个每秒能处理600万订单的东东）
+| ID | Problem  | Article | 
+| --- | ---   | :--- |
+| 000 |数据如何分片 | [解决思路](/docs/code-solve.md) |
 
 
 ##### Guava 全操作 DEMO分析

@@ -1,3 +1,8 @@
+### 导航
+
+| ID | Problem  | Article | 
+| --- | ---   | :--- |
+| 000 |synchronized和lock 的区别| [解决思路](/docs/sandl.md) |
 #### synchronized 和 lock 区别 
 
     1.synchronized 是关键字属于JVM层面 

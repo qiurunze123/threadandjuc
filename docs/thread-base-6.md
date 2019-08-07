@@ -1,4 +1,16 @@
 
+### 导航
+| ID | Problem  | Article | 
+| --- | ---   | :--- |
+| 000 |CAS是什么 | [解决思路](/docs/CASandABA.md) |
+| 001 |CAS底层原理 | [解决思路](/docs/CASandABA.md) |
+| 002 |CAS缺点 | [解决思路](/docs/CASandABA.md) |
+| 003 |ABA问题 | [解决思路](/docs/CASandABA.md) |
+| 004 |AtomicReference原子引用 | [解决思路](/docs/CASandABA.md) |
+| 005 |AtomicStampedReference版本号原子引用 | [解决思路](/docs/CASandABA.md) |
+| 006 |ABA问题的解决| [解决思路](/docs/CASandABA.md) |
+
+
 **什么是CAS算法**
 
 原理：

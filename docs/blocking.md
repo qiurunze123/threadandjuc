@@ -1,3 +1,11 @@
+### 导航
+| ID | Problem  | Article | 
+| --- | ---   | :--- |
+| 000 |队列和阻塞队列 | [解决思路](/docs/blocking.md) |
+| 001 |怎么使用阻塞队列好处是什么 | [解决思路](/docs/blocking.md) |
+| 002 |BlockingQueue核心方法 | [解决思路](/docs/blocking.md) |
+| 003 |设计梳理种类分析 | [解决思路](/docs/blocking.md) |
+| 004 |使用方式与使用场景 | [解决思路](/docs/blocking.md) |
 ### 队列与阻塞队列
 
 阻塞队列可以阻塞，非阻塞队列不能阻塞，只能使用队列wait(),notify()进行队列消息传送。
