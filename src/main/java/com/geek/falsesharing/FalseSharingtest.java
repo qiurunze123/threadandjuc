@@ -1,11 +1,15 @@
 package com.geek.falsesharing;
 
+import java.util.concurrent.locks.ReentrantLock;
+
 /**
  * @author 邱润泽 bullock
  */
 public class FalseSharingtest {
 
     public static void main(String[] args) throws InterruptedException {
+
+        ReentrantLock lock = new ReentrantLock();
         testPointer(new Pointer());
     }
 
