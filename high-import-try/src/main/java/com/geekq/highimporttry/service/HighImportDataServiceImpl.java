@@ -51,24 +51,20 @@ public class HighImportDataServiceImpl implements HighImportDataService {
     @Override
     public void recordHandle(String day) {
 
-        System.out.println("111111");
+        logger.warn("数据导入 start!  day:{}", day);
+        //导入 -- 时间 等初始化
         ImportDataTask pointTask = this.queryPointTask(day);
+
+        //根据数据数量 来初始化 数据范围
         List<ImportDataStep> pointSteps = this.queryPointSteps(pointTask);
 
-        /**
-         * 保证数据一致性
-         */
+        //保证数据一致性
         DefaultTransactionDefinition definition = new DefaultTransactionDefinition();
         TransactionStatus transaction = transactionManager.getTransaction(definition);
         try {
-            /**
-             * 插入 task表
-             */
+            // 插入 task表
             importDataTaskDao.insert(pointTask);
-
-            /**
-             * 插入step 表
-             */
+            //  插入step 表
             for (ImportDataStep stat : pointSteps) {
                 stat.setTaskId(pointTask.getId());
             }
@@ -82,7 +78,13 @@ public class HighImportDataServiceImpl implements HighImportDataService {
 
     @Override
     public void recordHandleImport(String day) {
-        ExecutorService executor = Executors.newFixedThreadPool(5);
+        //自定义线程池
+        ExecutorService executor = new ThreadPoolExecutor(4, 4,
+                10L, TimeUnit.SECONDS,
+                new LinkedBlockingQueue<Runnable>(),
+                new ThreadFactoryBuilder().setNameFormat("高可用改造专用线程池-%d").build());
+
+
         try {
             BillRecordPointInsertTask pointInsertTask = new BillRecordPointInsertTask(importDataTaskDao, importDataStepDao,
                     day, this);

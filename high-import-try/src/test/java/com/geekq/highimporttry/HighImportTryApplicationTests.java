@@ -1,6 +1,8 @@
 package com.geekq.highimporttry;
 
 import com.geekq.highimporttry.entity.ImportDataStep;
+import com.geekq.highimporttry.entity.Point;
+import com.geekq.highimporttry.mapper.PointDao;
 import com.geekq.highimporttry.service.HighImportDataService;
 import com.geekq.highimporttry.timer.*;
 import com.geekq.highimporttry.util.Constant;
@@ -15,6 +17,9 @@ import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 
+import java.math.BigDecimal;
+import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
 @RunWith(SpringRunner.class)
@@ -36,6 +41,8 @@ public class HighImportTryApplicationTests {
 
     @Autowired
     private TimerRunner5 timerRunner5;
+    @Autowired
+    private PointDao pointDao;
 
 //    @Autowired
 //    private TimerRunner4ForkJoin timerRunner4ForkJoin ;
@@ -144,4 +151,26 @@ public class HighImportTryApplicationTests {
         timerRunner5.timeGo();
         Thread.sleep(5000);
     }
+
+
+    @Test
+    public void createMillionData()  {
+
+        List<Point> points = new ArrayList<>();
+        for (int i = 0; i <1000 ; i++) {
+            Point point =new Point();
+            point.setUser(i);
+            point.setAvailablePoints(new BigDecimal(100000));
+            point.setDelayUpdateMode(i);
+            point.setFrozenPoints(new BigDecimal(100000));
+            point.setLastUpdateTime(new Date());
+            point.setPointId(i);
+            point.setLatestPointLogId(i);
+            point.setVersion(0);
+            points.add(point);
+        }
+        pointDao.insertBatch(points,new Date());
+
+    }
+
 }

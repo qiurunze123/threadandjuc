@@ -42,6 +42,18 @@
       #{delayUpdateMode,jdbcType=TINYINT}, #{latestPointLogId,jdbcType=INTEGER})
   </insert>
 
+  <insert id="insertBatch">
+    INSERT INTO point (pointId, availablePoints, frozenPoints,
+    version, user_, last_update_time,
+    delayUpdateMode, latest_point_log_id) VALUES
+    <foreach collection="list" item="item" index="index"
+             separator=",">
+      (#{item.pointId,jdbcType=INTEGER}, #{item.availablePoints,jdbcType=DECIMAL}, #{item.frozenPoints,jdbcType=DECIMAL},
+      #{item.version,jdbcType=INTEGER}, #{item.user,jdbcType=INTEGER}, #{item.lastUpdateTime,jdbcType=TIMESTAMP},
+      #{item.delayUpdateMode,jdbcType=TINYINT}, #{item.latestPointLogId,jdbcType=INTEGER})
+    </foreach>
+  </insert>
+
   <insert id="insertSelective" parameterType="com.geekq.highimporttry.entity.Point" >
     insert into point
     <trim prefix="(" suffix=")" suffixOverrides="," >

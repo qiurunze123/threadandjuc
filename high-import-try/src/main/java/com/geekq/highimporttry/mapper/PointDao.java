@@ -5,6 +5,7 @@ import com.geekq.highimporttry.entity.Point;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
 
+import java.util.Date;
 import java.util.List;
 
 public interface PointDao {
@@ -27,6 +28,8 @@ public interface PointDao {
     int deleteByPrimaryKey(Integer pointid);
 
     int insert(Point record);
+
+    public Integer insertBatch(@Param("list") List<Point> list, @Param("createTime") Date date);
 
     int insertSelective(Point record);
 

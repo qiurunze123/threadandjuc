@@ -13,6 +13,9 @@ import java.util.List;
 public interface HighImportDataService {
 
 
+    /**
+     * 获取分片数据范围
+     */
     public void recordHandle(String day);
 
     public void recordHandleImport(String day);
