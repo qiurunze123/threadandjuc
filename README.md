@@ -46,6 +46,9 @@
 
 ####  [JDK并发包 reentrantlock , condition , semaphone , readwritelock ,CountDownLatch,BlockingQueue.....(粗略版已完成)](/docs/thread-base-7.md)
 
+####  [reentrantlock 源码分析 com.geek.reentrantlock.ReentrantLockDetails ](/docs/thread-base-7.md)
+
+
 ####  [JDK并发包 ConcurrentHashMap 精度分析(粗略版已完成)](/docs/thread-base-8.md)
 
 ####  [JDK 线程池高度解析(粗略版已完成) ](/docs/thread-base-9.md)

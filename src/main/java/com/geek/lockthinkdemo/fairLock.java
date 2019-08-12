@@ -8,7 +8,7 @@ import java.util.concurrent.locks.ReentrantLock;
 public class fairLock {
 
         /**
-         *     true 表示 ReentrantLock 的公平锁
+         *     true 表示 ReentrantLockDetails 的公平锁
          */
         private  ReentrantLock lock = new ReentrantLock(false);
 

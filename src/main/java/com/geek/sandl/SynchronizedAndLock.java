@@ -11,7 +11,7 @@ import java.util.concurrent.locks.ReentrantLock;
 class ShareRecourse{
 
     private int number = 1;
-    private Lock lock = new ReentrantLock();
+    private Lock lock = new ReentrantLock(true);
     private Condition c1 = lock.newCondition();
     private Condition c2 = lock.newCondition();
     private Condition c3 = lock.newCondition();

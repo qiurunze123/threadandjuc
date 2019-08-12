@@ -8,7 +8,7 @@ import java.util.concurrent.*;
 import java.util.concurrent.atomic.AtomicInteger;
 import java.util.concurrent.locks.AbstractQueuedSynchronizer;
 import java.util.concurrent.locks.Condition;
-import java.util.concurrent.locks.ReentrantLock;
+import java.util.concurrent.locks.ReentrantLockDetails;
 
 */
 /**
@@ -36,7 +36,7 @@ public class ThreadPoolExecutor1 extends AbstractExecutorService {
         private static final int TIDYING = 1073741824;
         private static final int TERMINATED = 1610612736;
         private final BlockingQueue<Runnable> workQueue;
-        private final ReentrantLock mainLock;
+        private final ReentrantLockDetails mainLock;
         private final HashSet<java.util.concurrent.ThreadPoolExecutor.Worker> workers;
         private final Condition termination;
         private int largestPoolSize;
@@ -111,7 +111,7 @@ public class ThreadPoolExecutor1 extends AbstractExecutorService {
                     return;
                 }
 
-                ReentrantLock var2 = this.mainLock;
+                ReentrantLockDetails var2 = this.mainLock;
                 var2.lock();
 
                 try {
@@ -137,7 +137,7 @@ public class ThreadPoolExecutor1 extends AbstractExecutorService {
             SecurityManager var1 = System.getSecurityManager();
             if (var1 != null) {
                 var1.checkPermission(shutdownPerm);
-                ReentrantLock var2 = this.mainLock;
+                ReentrantLockDetails var2 = this.mainLock;
                 var2.lock();
 
                 try {
@@ -155,7 +155,7 @@ public class ThreadPoolExecutor1 extends AbstractExecutorService {
         }
 
         private void interruptWorkers() {
-            ReentrantLock var1 = this.mainLock;
+            ReentrantLockDetails var1 = this.mainLock;
             var1.lock();
 
             try {
@@ -172,7 +172,7 @@ public class ThreadPoolExecutor1 extends AbstractExecutorService {
         }
 
         private void interruptIdleWorkers(boolean var1) {
-            ReentrantLock var2 = this.mainLock;
+            ReentrantLockDetails var2 = this.mainLock;
             var2.lock();
 
             try {
@@ -259,7 +259,7 @@ public class ThreadPoolExecutor1 extends AbstractExecutorService {
                             var20 = new java.util.concurrent.ThreadPoolExecutor.Worker(var1);
                             Thread var6 = var20.thread;
                             if (var6 != null) {
-                                ReentrantLock var7 = this.mainLock;
+                                ReentrantLockDetails var7 = this.mainLock;
                                 var7.lock();
 
                                 try {
@@ -305,7 +305,7 @@ public class ThreadPoolExecutor1 extends AbstractExecutorService {
         }
 
         private void addWorkerFailed(java.util.concurrent.ThreadPoolExecutor.Worker var1) {
-            ReentrantLock var2 = this.mainLock;
+            ReentrantLockDetails var2 = this.mainLock;
             var2.lock();
 
             try {
@@ -326,7 +326,7 @@ public class ThreadPoolExecutor1 extends AbstractExecutorService {
                 this.decrementWorkerCount();
             }
 
-            ReentrantLock var3 = this.mainLock;
+            ReentrantLockDetails var3 = this.mainLock;
             var3.lock();
 
             try {
@@ -445,7 +445,7 @@ public class ThreadPoolExecutor1 extends AbstractExecutorService {
 
         public ThreadPoolExecutor1(int var1, int var2, long var3, TimeUnit var5, BlockingQueue<Runnable> var6, ThreadFactory var7, RejectedExecutionHandler var8) {
             this.ctl = new AtomicInteger(ctlOf(-536870912, 0));
-            this.mainLock = new ReentrantLock();
+            this.mainLock = new ReentrantLockDetails();
             this.workers = new HashSet();
             this.termination = this.mainLock.newCondition();
             if (var1 >= 0 && var2 > 0 && var2 >= var1 && var3 >= 0L) {
@@ -493,7 +493,7 @@ public class ThreadPoolExecutor1 extends AbstractExecutorService {
         }
 
         public void shutdown() {
-            ReentrantLock var1 = this.mainLock;
+            ReentrantLockDetails var1 = this.mainLock;
             var1.lock();
 
             try {
@@ -509,7 +509,7 @@ public class ThreadPoolExecutor1 extends AbstractExecutorService {
         }
 
         public List<Runnable> shutdownNow() {
-            ReentrantLock var2 = this.mainLock;
+            ReentrantLockDetails var2 = this.mainLock;
             var2.lock();
 
             List var1;
@@ -541,7 +541,7 @@ public class ThreadPoolExecutor1 extends AbstractExecutorService {
 
         public boolean awaitTermination(long var1, TimeUnit var3) throws InterruptedException {
             long var4 = var3.toNanos(var1);
-            ReentrantLock var6 = this.mainLock;
+            ReentrantLockDetails var6 = this.mainLock;
             var6.lock();
 
             boolean var7;
@@ -739,7 +739,7 @@ public class ThreadPoolExecutor1 extends AbstractExecutorService {
         }
 
         public int getPoolSize() {
-            ReentrantLock var1 = this.mainLock;
+            ReentrantLockDetails var1 = this.mainLock;
             var1.lock();
 
             int var2;
@@ -753,7 +753,7 @@ public class ThreadPoolExecutor1 extends AbstractExecutorService {
         }
 
         public int getActiveCount() {
-            ReentrantLock var1 = this.mainLock;
+            ReentrantLockDetails var1 = this.mainLock;
             var1.lock();
 
             try {
@@ -775,7 +775,7 @@ public class ThreadPoolExecutor1 extends AbstractExecutorService {
         }
 
         public int getLargestPoolSize() {
-            ReentrantLock var1 = this.mainLock;
+            ReentrantLockDetails var1 = this.mainLock;
             var1.lock();
 
             int var2;
@@ -789,7 +789,7 @@ public class ThreadPoolExecutor1 extends AbstractExecutorService {
         }
 
         public long getTaskCount() {
-            ReentrantLock var1 = this.mainLock;
+            ReentrantLockDetails var1 = this.mainLock;
             var1.lock();
 
             try {
@@ -812,7 +812,7 @@ public class ThreadPoolExecutor1 extends AbstractExecutorService {
         }
 
         public long getCompletedTaskCount() {
-            ReentrantLock var1 = this.mainLock;
+            ReentrantLockDetails var1 = this.mainLock;
             var1.lock();
 
             try {
@@ -831,7 +831,7 @@ public class ThreadPoolExecutor1 extends AbstractExecutorService {
         }
 
         public String toString() {
-            ReentrantLock var5 = this.mainLock;
+            ReentrantLockDetails var5 = this.mainLock;
             var5.lock();
 
             long var1;
