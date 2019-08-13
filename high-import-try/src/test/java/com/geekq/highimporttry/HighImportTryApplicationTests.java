@@ -21,6 +21,9 @@ import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
+import java.util.concurrent.CountDownLatch;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
@@ -152,25 +155,46 @@ public class HighImportTryApplicationTests {
         Thread.sleep(5000);
     }
 
+    private int threadCount = 5; //子线程数
 
+    private CountDownLatch countDownLatch = new CountDownLatch(threadCount) ;
+
+    /**
+     * 共 1000000 万 数据
+     * @throws InterruptedException
+     */
     @Test
-    public void createMillionData()  {
+    public void createMillionData() throws InterruptedException {
 
-        List<Point> points = new ArrayList<>();
-        for (int i = 0; i <1000 ; i++) {
-            Point point =new Point();
-            point.setUser(i);
-            point.setAvailablePoints(new BigDecimal(100000));
-            point.setDelayUpdateMode(i);
-            point.setFrozenPoints(new BigDecimal(100000));
-            point.setLastUpdateTime(new Date());
-            point.setPointId(i);
-            point.setLatestPointLogId(i);
-            point.setVersion(0);
-            points.add(point);
+        ExecutorService executorService  = Executors.newFixedThreadPool(5);
+        for (int i = 1; i < 6; i++) {
+             executorService.execute(new Runnable() {
+                @Override
+                public void run() {
+                    try {
+                        List<Point> points = new ArrayList<>();
+                        for (int i = 1; i <100000 ; i++) {
+                            Point point =new Point();
+                            point.setUser(i);
+                            point.setAvailablePoints(new BigDecimal(100000));
+                            point.setDelayUpdateMode(i);
+                            point.setFrozenPoints(new BigDecimal(100000));
+                            point.setLastUpdateTime(new Date());
+                            point.setLatestPointLogId(i);
+                            point.setVersion(0);
+                            points.add(point);
+                        }
+                        pointDao.insertBatch(points,new Date());
+                    }finally {
+                        countDownLatch.countDown();
+                    }
+
+                }
+            });
         }
-        pointDao.insertBatch(points,new Date());
-
+        System.out.println("== 处理中 == ");
+        countDownLatch.await();
+        System.out.println("== 插入结束 == ");
     }
 
 }
