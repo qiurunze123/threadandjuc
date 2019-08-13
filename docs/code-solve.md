@@ -29,6 +29,20 @@ three-high-import 项目意义在于利用多线程进行千万级别导入,实�
 
    ![整体流程](https://raw.githubusercontent.com/qiurunze123/imageall/master/highimport11.png)
 
+#### 项目运行 在数据准备完毕后 可运行 该测试用例 其他的多线程测试用例为另外实现方法 也可运行
+
+      /**
+         *  import ——  point
+         * @throws InterruptedException
+         */
+        @Test
+        public void importAll() throws InterruptedException {
+    
+            timerRunner.timeGo();
+    
+            Thread.currentThread().sleep(50000);
+        }
+
 
 #### 表设计思想
 

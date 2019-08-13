@@ -159,7 +159,12 @@ public class HighImportTryApplicationTests {
 
     private CountDownLatch countDownLatch = new CountDownLatch(threadCount) ;
 
-    /**
+    /**  select count(*) from point;
+     select count(*) from  import_point_201908 ;
+     delete from import_point_201908 ;
+     delete from point ;
+     delete from import_data_step ;
+     delete from import_data_task ;
      * 共 1000000 万 数据
      * @throws InterruptedException
      */
