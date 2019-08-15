@@ -34,10 +34,11 @@
 ###  [如要提交代码请先看--提交合并代码规范提交者的后面都会有署名方便大家问问题](/docs/code-criterion.md)
 ###  [多线程之前更新版本 -- 请进代码路径：com.geek.threadandjuc](/docs/thread-base-1.md)
  
- ###多线程基础与进阶更新
+### 多线程基础与进阶更新
  
  | ID | Problem  | Article | 
  | --- | ---   | :--- |
+ | 重点 |AQS--一切的基础 Doug Lee 是个天才 (太大等待更新) | [解决思路](/docs/AQS.md) |
  | 000 |java并行程序基础(已完成) | [解决思路](/docs/thread-base-3.md) |
  | 001 |java内存模型和线程安全(已完成) | [解决思路](/docs/thread-base-4.md) |
  | 003 |valatile 专题解析(已完成) |[解决思路](/docs/thread-base-5.md)  |
@@ -47,7 +48,7 @@
  | 006 |插播 synchronized和lock 的区别 彻底分析..(已完成) |[解决思路](/docs/sandl.md)  |
  | 007 |风骚的线程池..(已完成) |[解决思路](/docs/Threadpool.md)  |
  | 008 |AQS .....(有待分析) |[解决思路](/docs/thread-base-14.md)  |
- | 009 |JDK并发包 reentrantlock , condition , semaphone , readwritelock ,CountDownLatch,BlockingQueue.....(粗略版已完成) |[解决思路](/docs/thread-base-7.md)  |
+ | 009 |JDK并发包reentrantlock,condition , semaphone , readwritelock ,CountDownLatch...(粗略版已完成) |[解决思路](/docs/thread-base-7.md)  |
  | 010 |CountDownLatch |[解决思路](/docs/CountDownLatch.md)  |
  | 011 |reentrantlock 源码分析 com.geek.reentrantlock.ReentrantLockDetails  |[解决思路](/docs/thread-base-7.md)  |
  | 012 |JDK并发包 ConcurrentHashMap 精度分析(粗略版已完成) |[解决思路](/docs/thread-base-8.md)  |
