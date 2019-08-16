@@ -7,8 +7,8 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="high-import-try" />
-        <module name="learnguava" />
         <module name="threadandjuc" />
+        <module name="learnguava" />
       </profile>
     </annotationProcessing>
   </component>
