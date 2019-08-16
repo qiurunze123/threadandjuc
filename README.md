@@ -38,7 +38,7 @@
  
  | ID | Problem  | Article | 
  | --- | ---   | :--- |
- | 重点 |AQS--一切的基础 Doug Lee 是个天才 (太大等待更新) | [解决思路](/docs/AQS.md) |
+ | 重点 |AQS--一切的基础 Doug Lee 是个天才 | [解决思路](/docs/AQS.md) |
  | 000 |java并行程序基础(已完成) | [解决思路](/docs/thread-base-3.md) |
  | 001 |java内存模型和线程安全(已完成) | [解决思路](/docs/thread-base-4.md) |
  | 003 |valatile 专题解析(已完成) |[解决思路](/docs/thread-base-5.md)  |
