@@ -11,9 +11,9 @@
 | 003 |AQS独占式同步状态获取与释放|
 | 004 |AQS方法解读|
 | 005 |AQS节点在同步队列的增加和移出|
-| 006 |ReentrantLock分析|
-| 007 |ReadAndWriteLoak分析|
-| 008 |Condition分析|
+| 006 |ReentrantLock分析(等待更新)|
+| 007 |ReadAndWriteLoak分析(等待更新)|
+| 008 |Condition分析(等待更新)|
 
 
 #### 什么是AQS
