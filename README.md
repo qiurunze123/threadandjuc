@@ -61,15 +61,3 @@
  | 019 |数据伪共享 false—shareing disruptor前传..... )   |[解决思路]((/docs/false-shareing.md))  |
      更新此问题的出发点是 **disruptor框架和百度的分布式id生成策略** 
      https://github.com/baidu/uid-generator/blob/master/README.zh_cn.md
-=========================================================================
-
-##### disruptor并发框架分析（传说这是一个每秒能处理600万订单的东东）
-| ID | Problem  | Article | 
-| --- | ---   | :--- |
-| 000 |disruptor 框架简介 | [解决思路](/docs/code-solve.md) |
-
-
-##### Guava 全操作 DEMO分析
-
- [Guava -- Use](/docs/Guava.md) 
-
