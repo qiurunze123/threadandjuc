@@ -6,9 +6,12 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="dubbolearn-consumer" />
+        <module name="dubbolearn-rely" />
+        <module name="dubbolearn-service" />
         <module name="high-import-try" />
-        <module name="threadandjuc" />
         <module name="learnguava" />
+        <module name="threadandjuc" />
       </profile>
     </annotationProcessing>
   </component>
