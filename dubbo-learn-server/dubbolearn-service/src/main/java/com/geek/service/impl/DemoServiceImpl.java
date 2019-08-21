@@ -15,4 +15,14 @@ public class DemoServiceImpl implements DemoService {
         System.out.println(" === name === "+ name);
         return "hello";
     }
+
+    @Override
+    public String testSync1(String name, Integer count) {
+        return name+count;
+    }
+
+    @Override
+    public String testSync2(String name, Integer count) {
+        return name+count;
+    }
 }

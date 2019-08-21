@@ -17,6 +17,9 @@
     <dubbo:protocol name="dubbo" port="-1" />
 
     <!-- 声明需要暴露的服务接口 -->
-    <dubbo:service interface="com.geek.service.DemoService"
-                   ref="demoService" timeout="10000" />
+    <dubbo:service interface="com.geek.service.DemoService" ref="demoService" timeout="10000" ></dubbo:service>
+
+    <dubbo:service interface="com.geek.service.BackService" ref="backService" timeout="10000" />
+
+
 </beans>

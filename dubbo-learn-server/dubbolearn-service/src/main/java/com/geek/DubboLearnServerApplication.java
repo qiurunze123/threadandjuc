@@ -7,8 +7,8 @@ import org.springframework.context.annotation.ImportResource;
 import java.io.IOException;
 
 @SpringBootApplication
-// 使用 dubbo.xml 配置
-@ImportResource(value = {"classpath:dubbo.xml"})
+// 使用 dubbo-provider.xml 配置
+@ImportResource(value = {"classpath:dubbo-provider.xml"})
 public class DubboLearnServerApplication {
 
     public static void main(String[] args) {

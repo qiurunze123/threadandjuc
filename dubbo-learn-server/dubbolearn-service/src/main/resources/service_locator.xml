@@ -15,5 +15,5 @@
     <!-- 扫描文件（自动将service层注入） -->
     <context:component-scan base-package="com.geek.service"/>
     <aop:aspectj-autoproxy/>
-    <!--<import resource="classpath:dubbo.xml"/>-->
+    <!--<import resource="classpath:dubbo-provider.xml"/>-->
 </beans>
