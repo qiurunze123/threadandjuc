@@ -1,0 +1,12 @@
+
+<hibernate-mapping package="com.geek.entity">
+  <class table="article" name="Article">
+    <id name="id" column="id">
+      <generator class="native" />
+    </id>
+    <property name="title" column="title" />
+    <property name="author" column="author" />
+    <property name="content" column="content" />
+    <property name="createTime" column="createtime" />
+  </class>
+</hibernate-mapping>

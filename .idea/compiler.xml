@@ -11,7 +11,7 @@
         <module name="dubbolearn-service" />
         <module name="high-import-try" />
         <module name="learnguava" />
-        <module name="threadandjuc" />
+        <module name="mybatis-learn" />
       </profile>
     </annotationProcessing>
   </component>

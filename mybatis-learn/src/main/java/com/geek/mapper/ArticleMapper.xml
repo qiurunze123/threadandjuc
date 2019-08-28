@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.geek.mapper.ArticleMapper">
+    <resultMap id="articleResult" type="Article">
+        <id property="id" column="id"/>
+        <result property="title" column="title"/>
+        <result property="type" column="type"
+                typeHandler="com.geek.constanst.ArticleTypeHandler"/>
+        <result property="content" column="content"/>
+        <result property="createTime" column="createtime"/>
+        <!--一对一-->
+        <association property="author" javaType="Author"
+                     resultMap="authorResult"/>
+    </resultMap>
+
+    <resultMap id="authorResult" type="Author">
+        <id property="id" column="author_id"/>
+        <result property="name" column="name"/>
+        <result property="age" column="age"/>
+        <result property="sex" column="sex"
+                typeHandler="org.apache.ibatis.type.EnumOrdinalTypeHandler"/>
+        <result property="email" column="email"/>
+    </resultMap>
+
+    <resultMap id="BaseResultMap" type="Article">
+        <id property="id" column="id"/>
+        <result property="title" column="title"/>
+        <result property="content" column="content"/>
+        <result property="createTime" column="createtime"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+    id, title,author,content,createTime
+  </sql>
+
+
+    <select id="findByAuthorAndCreateTime" resultMap="BaseResultMap">
+
+        select
+        <include refid="Base_Column_List"/>
+        from article WHERE author = #{author} and createtime>#{createTime}
+    </select>
+
+
+    <select id="findOne" resultMap="articleResult">
+    SELECT
+    ar.id, ar.author_id, ar.title, ar.type, ar.content,
+    ar.createtime, au.name, au.age, au.sex, au.email FROM
+    article ar, author au
+    WHERE
+    ar.author_id = au.id AND ar.id = #{id}
+</select>
+
+</mapper>

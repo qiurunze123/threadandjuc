@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans-4.0.xsd
+        http://www.springframework.org/schema/context
+        http://www.springframework.org/schema/context/spring-context-4.0.xsd "
+>
+
+<context:property-placeholder location="jdbc.properties"/>
+    <!-- 配置数据源 -->
+    <bean id="dataSource"
+          class="org.apache.ibatis.datasource.pooled.PooledDataSource">
+        <property name="driver" value="${spring.datasource.driver-class-name}"/>
+        <property name="url" value="${spring.datasource.url}"/>
+        <property name="username" value="${spring.datasource.username}"/>
+        <property name="password" value="${spring.datasource.password}"/>
+    </bean>
+
+
+    <!-- SqlSessionFactory -->
+    <bean id="sqlSessionFactory"
+          class="org.mybatis.spring.SqlSessionFactoryBean">
+        <!--  mybatis-config.xml 路径 -->
+        <property name="configLocation"
+                  value="mybatis-config3.xml"/>
+        <!--  SqlSessionFactory 配置数据源在这个上面引用数据源配置 -->
+        <property name="dataSource" ref="dataSource"/>
+        <!--  SQL 映射文件 -->
+        <property name="mapperLocations" value="com/geek/mapper/*.xml"/>
+    </bean>
+
+
+    <!--  MapperScannerConfigurer -->
+    <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
+        <!--配置Dao接口所在的包-->
+        <property name="basePackage" value="com.geek.mapper"/>
+    </bean>
+</beans>

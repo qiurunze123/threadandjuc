@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.geek.mapper.ArticleMapper">
+  <resultMap id="BaseResultMap" type="com.geek.entity.Article">
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <id column="title" jdbcType="VARCHAR" property="title" />
+    <id column="author" jdbcType="VARCHAR" property="author" />
+    <id column="content" jdbcType="VARCHAR" property="content" />
+    <id column="createTime" jdbcType="TIMESTAMP" property="createTime" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    id, title,author,content,createTime
+  </sql>
+
+
+  <select id="findByAuthorAndCreateTime" resultMap="BaseResultMap" >
+
+    select <include refid="Base_Column_List"/>
+    from article WHERE author = #{author}  and createtime>#{createTime}
+  </select>
+</mapper>
