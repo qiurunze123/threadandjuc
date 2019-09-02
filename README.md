@@ -62,3 +62,9 @@
  | 019 |数据伪共享 false—shareing disruptor前传..... )   |[解决思路]((/docs/false-shareing.md))  |
      更新此问题的出发点是 **disruptor框架和百度的分布式id生成策略** 
      https://github.com/baidu/uid-generator/blob/master/README.zh_cn.md
+     
+### mybatis 设计和分析
+
+| ID | Problem  | Article | 
+ | --- | ---   | :--- |
+ | 重点 |设计模式的几个原则 | [解决思路](/docs/desigin.md) |
