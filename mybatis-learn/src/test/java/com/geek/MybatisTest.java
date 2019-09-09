@@ -1,5 +1,6 @@
 package com.geek;
 
+import com.alibaba.fastjson.JSON;
 import com.geek.entity.Article;
 import com.geek.mapper.ArticleMapper;
 import org.apache.ibatis.io.Resources;
@@ -35,10 +36,21 @@ public class MybatisTest {
             ArticleMapper articleDao = session.getMapper(ArticleMapper.class);
             Article articles = articleDao.
                     findByAuthorAndCreateTime("qiurunze", "2018-06-10");
-            System.out.println("===================="+articles.getAuthor()+"=================");
+
+            System.out.println("===================="+ JSON.toJSONString(articles) +"=================");
+            SqlSession session2 = sqlSessionFactory.openSession();
+            ArticleMapper articleDao2 = session2.getMapper(ArticleMapper.class);
+            Article articles1 = articleDao2.
+                    findByAuthorAndCreateTime("qiurunze", "2018-06-10");
+            System.out.println("===================="+JSON.toJSONString(articles1)+"=================");
+
+            session2.commit();
+            session2.close();
+
         } finally {
             session.commit();
             session.close();
+
         }
     }
 }
