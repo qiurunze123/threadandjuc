@@ -1,0 +1,25 @@
+package com.geekagain.createthreads;
+
+/**
+ * @author 邱润泽 bullock
+ */
+public class BothRunnableThread {
+
+    public static void main(String[] args) {
+        new Thread(new Runnable() {
+            @Override
+            public void run() {
+                System.out.println("i come from runnbale ");
+            }
+
+        })
+        //在重写这块得run方法实际上已经覆盖掉了 父类得run方法 经典得三行代码已经被覆盖 即便target传入也没有用
+        {
+            @Override
+            public void run() {
+                System.out.println(" i cmme from thread ");
+            }
+        }.start();
+
+    }
+}
