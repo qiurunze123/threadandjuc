@@ -6,13 +6,30 @@
 
 > QQ : [3341386488](3341386488)
 
-> QQ群（秒杀群）:
+> QQ群 : [453259026](453259026) 
 
- ![整体流程](https://raw.githubusercontent.com/qiurunze123/imageall/master/qq.png)
+介绍 :    
+
+```diff
+
++ this will be highlighted in green
+- this will be highlighted in red
+
+```
  
- > QQ群（高并发多线程）:
- 
- ![整体流程](https://raw.githubusercontent.com/qiurunze123/imageall/master/高并发.png)
+**你真的知道如何使用多线程吗?**
+
+**你真的知道多线程有几种实现方式吗?** 
+
+**你真的知道如何中断多线程吗?**
+
+**你真的知道线程的全部生命周期吗?**
+
+**你真的知道线程的并发安全吗?**
+
+**你真的知道死锁和如何在企业解决这些问题吗?**
+
+
 
  
  **重点**
@@ -34,7 +51,7 @@
 ###  [如要提交代码请先看--提交合并代码规范提交者的后面都会有署名方便大家问问题](/docs/code-criterion.md)
 ###  [多线程之前更新版本 -- 请进代码路径：com.geek.threadandjuc](/docs/thread-base-1.md)
  
-### 多线程基础与进阶更新
+### 多线程进阶更新
  
  | ID | Problem  | Article | 
  | --- | ---   | :--- |
