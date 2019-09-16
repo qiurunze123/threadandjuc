@@ -12,7 +12,6 @@ public class RigihtWayStopThreadInProd implements Runnable {
                 throwInMethod();
             } catch (InterruptedException e) {
                 System.out.println("保存日志 停止程序");
-                e.printStackTrace();
             }
         }
     }

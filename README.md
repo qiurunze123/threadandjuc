@@ -56,11 +56,11 @@
   
  | ID | Problem  | Article | 
  | --- | ---   | :--- |
- | 了解 |你需要直到的几个概念 | [解决思路](/docs/thread-base-0000.md) |
+ | 了解 |你需要知道的几个概念 | [解决思路](/docs/thread-base-0000.md) |
  | 000 |多线程到底有几种实现方式 | [解决思路](/docs/thread-base-000.md) |
  | 001 |多线程使用runnable与继承Thread类有什么区别 | [解决思路](/docs/thread-base-001.md) |
  | 002 |多线程如何正确优雅的中断线程 |[解决思路](/docs/thread-base-002.md)  |
- | 003 | |[解决思路](/docs/thread-base-003.md)  |
+ | 003 |多线程的生命周期状态纽机流转 |[解决思路](/docs/thread-base-003.md)  |
  | 004 | |[解决思路](/docs/thread-base-004.md)  |
  | 005 | |[解决思路](/docs/thread-base-005.md)  |
  | 006 | |[解决思路](/docs/thread-base-006.md)  |
