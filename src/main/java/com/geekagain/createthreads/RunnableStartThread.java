@@ -3,11 +3,12 @@ package com.geekagain.createthreads;
 /**
  * @author 邱润泽 bullock
  */
-public class RunnableStyle implements Runnable {
+public class RunnableStartThread implements Runnable {
 
     public static void main(String[] args) {
-        Thread thread = new Thread(new RunnableStyle());
+        Thread thread = new Thread(new RunnableStartThread());
         thread.start();
+//        thread.start();
     }
     @Override
     public void run() {

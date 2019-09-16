@@ -6,7 +6,7 @@ import java.util.TimerTask;
 /**
  * @author 邱润泽 bullock
  */
-public class DemoTimerTask {
+public class TimerTaskThread {
 
     public static void main(String[] args) {
         Timer timer = new Timer();
@@ -15,6 +15,6 @@ public class DemoTimerTask {
             public void run() {
                 System.out.println(Thread.currentThread().getName());
             }
-        },100,100);
+        },1000,1000);
     }
 }

@@ -3,7 +3,7 @@ package com.geekagain.createthreads;
 /**
  * @author 邱润泽 bullock
  */
-public class BothRunnableThread {
+public class RunnableThreadHow {
 
     public static void main(String[] args) {
         new Thread(new Runnable() {
@@ -13,7 +13,7 @@ public class BothRunnableThread {
             }
 
         })
-        //在重写这块得run方法实际上已经覆盖掉了 父类得run方法 经典得三行代码已经被覆盖 即便target传入也没有用
+        //在重写这块得run方法实际上已经覆盖掉了 父类得run方法 继承thread被重写  即便target传入也没有用
         {
             @Override
             public void run() {
