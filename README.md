@@ -48,9 +48,24 @@
  
  [![Travis](https://img.shields.io/badge/language-Java-yellow.svg)](https://github.com/qiurunze123)
  
- 
 ###  [如要提交代码请先看--提交合并代码规范提交者的后面都会有署名方便大家问问题](/docs/code-criterion.md)
 ###  [多线程之前更新版本 -- 请进代码路径：com.geek.threadandjuc](/docs/thread-base-1.md)
+ 
+### 多线程基础更新
+  
+ | ID | Problem  | Article | 
+ | --- | ---   | :--- |
+ | 000 |多线程到底有几种实现方式 | [解决思路](/docs/thread-base-000.md) |
+ | 001 |多线程使用runnable与继承Thread类有什么区别 | [解决思路](/docs/thread-base-001.md) |
+ | 002 | |[解决思路](/docs/thread-base-002.md)  |
+ | 003 | |[解决思路](/docs/thread-base-003.md)  |
+ | 004 | |[解决思路](/docs/thread-base-004.md)  |
+ | 005 | |[解决思路](/docs/thread-base-005.md)  |
+ | 006 | |[解决思路](/docs/thread-base-006.md)  |
+ | 007 | |[解决思路](/docs/thread-base-007.md)  |
+ | 008 | |[解决思路](/docs/thread-base-008.md)  |
+ | 009 | |[解决思路](/docs/thread-base-009.md)  |
+ 
  
 ### 多线程进阶更新
  
@@ -60,7 +75,7 @@
  | 重点 |Future模式精度分析 Future 模式 | [解决思路](/docs/Future.md) |
  | 000 |java并行程序基础(已完成) | [解决思路](/docs/thread-base-3.md) |
  | 001 |java内存模型和线程安全(已完成) | [解决思路](/docs/thread-base-4.md) |
- | 003 |valatile 专题解析(已完成) |[解决思路](/docs/thread-base-5.md)  |
+ | 002 |valatile 专题解析(已完成) |[解决思路](/docs/thread-base-5.md)  |
  | 003 |无锁类 CAS , ABA , Atomic ......(已完成) |[解决思路](/docs/thread-base-6.md)  |
  | 004 |公平锁,非公平锁，可重入锁，递归锁，自旋锁等的理解..(已完成) |[解决思路](/docs/lock.md)  |
  | 005 |阻塞队列..(已完成) |[解决思路](/docs/blocking.md)  |
