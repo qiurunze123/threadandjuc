@@ -1,7 +1,8 @@
 package com.geekagain.stopthread;
 
 /**
- * @author 邱润泽 bullock 在catch 子语句中调用Thread.currentThread.interrupt()来恢复设置中断状态
+ * @author 邱润泽 bullock
+ * 在catch 子语句中调用Thread.currentThread.interrupt()来恢复设置中断状态
  * 以便于在后续得执行中依然能够检查到刚才发生了中断
  */
 public class RigihtWayStopThreadInProdTwo implements Runnable {
