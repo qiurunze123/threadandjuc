@@ -11,8 +11,13 @@ public class RightWayStopThreadWithSleepEveryLoop {
             public void run() {
                 int num = 0;
                 try {
-//                     && !Thread.currentThread().isInterrupted() 如果是循环则不需要
-                    while (num <= 10000) {
+                    /*
+                     * 不管循环里是否调用过线程阻塞的方法如sleep、join、wait，这里还是需要加上
+                     * !Thread.currentThread().isInterrupted()条件，虽然抛出异常后退出了循环，显
+                     * 得用阻塞的情况下是多余的，但如果调用了阻塞方法但没有阻塞时，这样会更安全、更及时。
+                     */
+
+                    while (num <= 10000 &&!Thread.currentThread().isInterrupted()) {
                         if (num % 100 == 0) {
                             System.out.println(num+" we is  100 multiple");
                         }

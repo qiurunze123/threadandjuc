@@ -9,12 +9,8 @@ public class RightWayStopThreadWithSleep {
         Runnable runnable = new Runnable() {
             @Override
             public void run() {
-                int num =0;
-                while(num<=300&&!Thread.currentThread().isInterrupted()){
-                    if(num%100 == 0){
-                        System.out.println( "we is  100 multiple");
-                    }
-                    num++;
+                while(!Thread.currentThread().isInterrupted()){
+                    System.out.println("再有sleep的情况下 中断线程了");
                 }
                 try {
                     Thread.sleep(1000);

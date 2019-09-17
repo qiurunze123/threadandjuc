@@ -5,21 +5,17 @@ package com.geekagain.stopthread;
  *
  * 没有 sleep 或者wait 方法如何停止线程
  */
-public class RightWayStopThreadWithoutSleep implements Runnable{
+public class RightWayStopThreadWithoutSleepAndWait implements Runnable{
     @Override
     public void run() {
-        int num =0;
-        while(!Thread.currentThread().isInterrupted()&&num<=Integer.MAX_VALUE /2){
-            if(num%10000 == 0){
-                System.out.println(num+"是10000得倍数");
-            }
-            num++;
+        while(!Thread.currentThread().isInterrupted()){
+            System.out.println("在没有sleep等方法结束了线程!");
         }
         System.out.println("任务结束了");
     }
 
     public static void main(String[] args) throws InterruptedException {
-        Thread thread = new Thread(new RightWayStopThreadWithoutSleep());
+        Thread thread = new Thread(new RightWayStopThreadWithoutSleepAndWait());
         thread.start();
         Thread.sleep(1000);
         thread.interrupt();
