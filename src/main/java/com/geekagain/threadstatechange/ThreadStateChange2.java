@@ -1,5 +1,6 @@
 package com.geekagain.threadstatechange;
 
+import java.util.concurrent.TimeUnit;
 import java.util.concurrent.locks.LockSupport;
 
 /**
@@ -40,10 +41,12 @@ public class ThreadStateChange2 implements Runnable {
 
     @Override
     public void run() {
-        synchronized (this){
+        synchronized (this) {
             try {
-//                Thread.sleep(2000);
-                LockSupport.parkNanos(2000);
+
+                // Thread.sleep(2000);
+                // Nanos toNanos 时间
+                LockSupport.parkNanos(TimeUnit.SECONDS.toNanos(2));
                 wait();
             } catch (InterruptedException e) {
                 e.printStackTrace();

@@ -61,7 +61,7 @@
  | 001 |多线程使用runnable与继承Thread类有什么区别 | [解决思路](/docs/thread-base-001.md) |
  | 002 |多线程如何正确优雅的中断线程 |[解决思路](/docs/thread-base-002.md)  |
  | 003 |多线程的生命周期状态纽机流转 |[解决思路](/docs/thread-base-003.md)  |
- | 004 | |[解决思路](/docs/thread-base-004.md)  |
+ | 004 |多线程重要属性|[解决思路](/docs/thread-base-004.md)  |
  | 005 | |[解决思路](/docs/thread-base-005.md)  |
  | 006 | |[解决思路](/docs/thread-base-006.md)  |
  | 007 | |[解决思路](/docs/thread-base-007.md)  |
