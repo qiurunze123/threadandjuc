@@ -6,5 +6,4 @@ https://docs.oracle.com/javase/8/docs/api/index.html?java/lang/Thread.State.html
  
  ![整体流程](https://raw.githubusercontent.com/qiurunze123/imageall/master/threadbase003.png)
  
- 
- 
+ 此为准确流转图 
