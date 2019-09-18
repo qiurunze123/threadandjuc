@@ -27,3 +27,32 @@
       为什么新建的线程为10几因为 还有许多别的线程初始化了
       
    ![整体流程](https://raw.githubusercontent.com/qiurunze123/imageall/master/threadbase004-1.png)
+   
+   
+#### 线程名称
+
+ 默认名称： Thread-
+ 
+       Thread(Runnable target, AccessControlContext acc) {
+             init(null, target, "Thread-" + nextThreadNum(), 0, acc);
+         }
+     
+         //自增synchronized 可以保证线程没有重名的情况
+         private static synchronized int nextThreadNum() {
+             return threadInitNumber++;
+         }
+         
+  1.使用Thread类中的方法setName(名字) void setName(String name) 改变线程名称，使之与参数 name 相同
+  
+  2.创建一个带参数的构造方法,参数传递线程的名称;调用父类的带参构造方法,把线程名称传递给父类,让父类(Thread)给子线程起一个名字 Thread(String name) 分配新的 Thread 对象。
+
+#### 守护线程
+
+   ![整体流程](https://raw.githubusercontent.com/qiurunze123/imageall/master/threadbase004-2.png)
+
+为什么不提倡使用守护线程?
+
+   ![整体流程](https://raw.githubusercontent.com/qiurunze123/imageall/master/threadbase004-3.png)
+
+
+#### 线程优先级
