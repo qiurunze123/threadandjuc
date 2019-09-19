@@ -62,11 +62,11 @@
  | 002 |多线程如何正确优雅的中断线程 |[解决思路](/docs/thread-base-002.md)  |
  | 003 |多线程的生命周期状态纽机流转 |[解决思路](/docs/thread-base-003.md)  |
  | 004 |多线程重要属性|[解决思路](/docs/thread-base-004.md)  |
- | 005 | |[解决思路](/docs/thread-base-005.md)  |
- | 006 | |[解决思路](/docs/thread-base-006.md)  |
- | 007 | |[解决思路](/docs/thread-base-007.md)  |
- | 008 | |[解决思路](/docs/thread-base-008.md)  |
- | 009 | |[解决思路](/docs/thread-base-009.md)  |
+ | 005 |多线程异常处理机制|[解决思路](/docs/thread-base-005.md)  |
+ | 006 |多线程wait notify notifyall join sleep yield作用与方法详细解读 |[解决思路](/docs/thread-base-006.md)  |
+ | 007 |多线程可能会带来什么问题 |[解决思路](/docs/thread-base-007.md)  |
+ | 008 |多种单例模式 |[解决思路](/docs/thread-base-008.md)  |
+ | 009 |小结|[解决思路](/docs/thread-base-009.md)  |
  
  
 ### 多线程进阶更新
