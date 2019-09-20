@@ -3,37 +3,30 @@ package com.geekagain.joingo;
 /**
  * @author 邱润泽 bullock
  */
-public class Join1 {
+public class JoinInterrupt {
 
-    public static void main(String[] args) throws InterruptedException {
-        Thread thread = new Thread(new Runnable() {
+    public static void main(String[] args) {
+        Thread mainThread = Thread.currentThread();
+        Thread thread1 = new Thread(new Runnable() {
             @Override
             public void run() {
                 try {
-                    Thread.sleep(1000);
+                    mainThread.interrupt();
+                    Thread.sleep(5000);
+                    System.out.println("Thread1 finished.");
                 } catch (InterruptedException e) {
-                    e.printStackTrace();
+                    System.out.println("子线程中断");
                 }
-                System.out.println(Thread.currentThread().getName() + "执行完毕");
             }
         });
-        Thread thread2 = new Thread(new Runnable() {
-            @Override
-            public void run() {
-                try {
-                    Thread.sleep(1000);
-                } catch (InterruptedException e) {
-                    e.printStackTrace();
-                }
-                System.out.println(Thread.currentThread().getName() + "执行完毕");
-            }
-        });
-
-        thread.start();
-        thread2.start();
-        System.out.println("开始等待子线程运行完毕");
-        thread.join();
-        thread2.join();
-        System.out.println("所有子线程执行完毕");
+        thread1.start();
+        System.out.println("等待子线程运行完毕");
+        try {
+            thread1.join();
+        } catch (InterruptedException e) {
+            System.out.println(Thread.currentThread().getName()+"主线程中断了");
+            thread1.interrupt();
+        }
+        System.out.println("子线程已运行完毕");
     }
 }

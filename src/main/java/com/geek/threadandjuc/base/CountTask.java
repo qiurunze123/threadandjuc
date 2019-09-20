@@ -40,8 +40,8 @@ public class CountTask extends RecursiveTask<Long> {
 //            countTask2.fork();
 //            invokeAll(countTask1, countTask2);
 //
-//            Long join1 = countTask1.join();
-//            Long join2 = countTask2.join();
+//            Long join1 = countTask1.joingo();
+//            Long join2 = countTask2.joingo();
 //
 //            // 结果合并
 //            sum = join1 + join2;

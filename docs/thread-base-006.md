@@ -49,6 +49,18 @@ PrintOddEvenTwoThreadVersion2 wait notify实现
 sleep 方法可以让线程进入Waiting状态 并且不占用CPU资源但是不会释放锁 直到规定时间后在执行 休眠期间如果被中断会抛出异常并清楚中断状态
 
 
+#### join 作用和方法
 
+新的线程加入我们 我们要等待他执行完再出发
+
+join 期间 线程的状态是 WAITING 状态 com.geekagain.joingo
+
+
+#### yield 作用和方法
+
+使当前线程从执行状态（运行状态）变为可执行态（就绪状态）。cpu会从众多的可执行态里选择，
+也就是说，当前也就是刚刚的那个线程还是有可能会被再次执行到的，并不是说一定会执行其他线程而该线程在下一次中不会执行到了
+
+com.geekagain.yieldgo
 
 
