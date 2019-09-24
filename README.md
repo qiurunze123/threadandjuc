@@ -69,8 +69,6 @@
  | 006 |多线程wait notify notifyall join sleep yield作用与方法详细解读 |[解决思路](/docs/thread-base-006.md)  |
  | 007 |多线程可能会带来什么问题 |[解决思路](/docs/thread-base-007.md)  |
  | 008 |多种单例模式 |[解决思路](/docs/thread-base-008.md)  |
- | 009 |小结|[解决思路](/docs/thread-base-009.md)  |
- 
  
 ### 多线程进阶更新
  
@@ -102,3 +100,7 @@
      更新此问题的出发点是 **disruptor框架和百度的分布式id生成策略** 
      https://github.com/baidu/uid-generator/blob/master/README.zh_cn.md
      
+ #### 不知不觉 更新了小半年 从基础到并发到项目直接应用 许多地方不是很好但是是对一个人的考验 从明白到应用到写出来是一个繁琐的过程
+ #### 耗时耗力不过很庆幸自己没有放弃终究是完成了 最后希望得到大家的指正与意见也希望帮助更多的人 
+ 
+      千岩万壑不辞劳 远看防止出处高 溪涧岂能留得住 终归大海做波涛 2019/9/24
