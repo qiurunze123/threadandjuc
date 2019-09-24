@@ -7,36 +7,39 @@ import java.util.concurrent.atomic.AtomicInteger;
 /**
  * @author 邱润泽 bullock
  */
-public class MuliThreadsError implements Runnable {
+public class ThreadSafeError3 implements Runnable {
 
-
-    static MuliThreadsError instance = new MuliThreadsError();
+    static ThreadSafeError3 instance = new ThreadSafeError3();
+    int index = 0;
+    final boolean[] marked = new boolean[1000000];
 
     static AtomicInteger realIndex = new AtomicInteger();
-    static AtomicInteger wrongIndex = new AtomicInteger();
-    static  volatile CyclicBarrier cyclicBarrier1 = new CyclicBarrier(2);
+    static AtomicInteger wrongCount = new AtomicInteger();
 
-    static  volatile CyclicBarrier cyclicBarrier2 = new CyclicBarrier(2);
+    static volatile CyclicBarrier cyclicBarrier1 =new CyclicBarrier(2);
+    static volatile CyclicBarrier cyclicBarrier2 =new CyclicBarrier(2);
 
-    final boolean[] marked = new boolean[100000];
+
     public static void main(String[] args) throws InterruptedException {
-       Thread t1 =  new Thread(instance);
-        Thread t2 =  new Thread(instance);
-        t1.start();
-        t2.start();
-        t1.join();
-        t2.join();
-        System.out.println("表面上的结果：  "+instance.index);
-        System.out.println("真正运行的结果：  "+realIndex.get());
-        System.out.println("错误次数：  "+wrongIndex.get());
+        Thread thread1 = new Thread(instance);
+        Thread thread2 = new Thread(instance);
+        thread1.start();
+        thread2.start();
+        thread1.join();
+        thread2.join();
+        System.out.println("表面上的结果为  ： " + instance.index);
+        System.out.println("真正运行的次数  ： " + realIndex.get());
+        System.out.println("错误次数  ： " + wrongCount.get());
 
+        for (; ; ) {
+            ;
+        }
     }
-    int index = 0 ;
+
     @Override
     public void run() {
-        for (int i =0;i<10000;i++){
-
-            marked[0]=true;
+        marked[0] = true;
+        for (int i = 0; i < 10000; i++) {
             try {
                 cyclicBarrier2.reset();
                 cyclicBarrier1.await();
@@ -55,11 +58,10 @@ public class MuliThreadsError implements Runnable {
                 e.printStackTrace();
             }
             realIndex.incrementAndGet();
-            //俩个线程同时到这里
-            synchronized (instance) {
+            synchronized (instance) {//不仅保证原子性 还可以保证可见性
                 if (marked[index]&&marked[index-1]) {
-                    System.out.println("发生错误 ：" + index);
-                    wrongIndex.incrementAndGet();
+                    System.out.println("发生错误" + index);
+                    wrongCount.incrementAndGet();
                 }
                 marked[index] = true;
             }

@@ -74,6 +74,7 @@
  
  | ID | Problem  | Article | 
  | --- | ---   | :--- |
+ | 重点 |多线程安全问题 | [解决思路](/docs/JMM.md) |
  | 重点 |JMM多线程内存模型 | [解决思路](/docs/JMM.md) |
  | 重点 |AQS--一切的基础 Doug Lee 是个天才 | [解决思路](/docs/AQS.md) |
  | 重点 |Future模式精度分析 Future 模式 | [解决思路](/docs/Future.md) |
@@ -99,7 +100,16 @@
  | 019 |数据伪共享 false—shareing disruptor前传..... )   |[解决思路]((/docs/false-shareing.md))  |
      更新此问题的出发点是 **disruptor框架和百度的分布式id生成策略** 
      https://github.com/baidu/uid-generator/blob/master/README.zh_cn.md
-     
+
+### 多线程安全专题
+ | ID | Problem  | Article | 
+ | --- | ---   | :--- |
+ | 001 | 一共有几类线程安全的问题 | [解决思路](/docs/threadsafe001.md) |
+ | 002 | 哪些场景需要额外注意线程安全问题| [解决思路](/docs/threadsafe002.md) |
+ | 003 |多线程切换上下文 | [解决思路](/docs/threadsafe003.md) |
+
+
+
  #### 不知不觉 更新了小半年 从基础到并发到项目直接应用 许多地方不是很好但是是对一个人的考验 从明白到应用到写出来是一个繁琐的过程
  #### 耗时耗力不过很庆幸自己没有放弃终究是完成了 最后希望得到大家的指正与意见也希望帮助更多的人 
  
