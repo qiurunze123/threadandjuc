@@ -76,6 +76,7 @@
  
  | ID | Problem  | Article | 
  | --- | ---   | :--- |
+ | 重点 |JMM多线程内存模型 | [解决思路](/docs/JMM.md) |
  | 重点 |AQS--一切的基础 Doug Lee 是个天才 | [解决思路](/docs/AQS.md) |
  | 重点 |Future模式精度分析 Future 模式 | [解决思路](/docs/Future.md) |
  | 000 |java并行程序基础(已完成) | [解决思路](/docs/thread-base-3.md) |

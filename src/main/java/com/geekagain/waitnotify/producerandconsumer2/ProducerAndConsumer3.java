@@ -13,6 +13,9 @@ import java.util.LinkedList;
 public class ProducerAndConsumer3 {
 
 
+    private static Object object = "3";
+
+
     public static void main(String[] args) {
         EnevtStorage eventStorage = new EnevtStorage();
 
