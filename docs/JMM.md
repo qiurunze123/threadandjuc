@@ -60,6 +60,12 @@
    volatile变量的写先发生于读 这就保证了volatile的可见性
    
    ![整体流程](https://raw.githubusercontent.com/qiurunze123/imageall/master/happens-before2.png)
+   
+   近朱者赤 FieldVisibility.java 给b加volatile 会影响全局实现轻量级同步
+   
+   b 之前写入的代码 对读取b后的代码都可见 所以在writerThread 里面对a的赋值一定会对readerThread里面的读取可见
+   所以这里a即使不加valitile 只要b读到3就可以由happens-before的原则保证读取到的都是3而不是1 
+   
 
    ④ 线程启动
    
