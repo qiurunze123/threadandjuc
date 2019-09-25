@@ -3,7 +3,8 @@
 
 | ID | Problem  | Article | 
 | --- | ---   | :--- |
-| 000 |volatile是什么 | [解决思路](/docs/volatile.md) |
+| 000 |volatile是什么 | [解决思路](/docs/========) |
+| 000-1 |volatile 使用场合 | [解决思路](/docs/volatile.md) |
 | 001 |JMM内存模型值之可见性 | [解决思路](/docs/volatile.md) |
 | 002 |可见性验证说明 | [解决思路](/docs/volatile.md) |
 | 003 |volatile不保证原子性 | [解决思路](/docs/volatile.md) |
@@ -11,13 +12,25 @@
 | 005 |单例模式在多线程下可能存在的问题 | [解决思路](/docs/volatile.md) |
 | 006 |单例模式volatile分析| [解决思路](/docs/volatile.md) |
 
-=======================================================================================================================
 
 
+### volatile 是什么 ?
 
+ 1.volatile 是一种同步机制 必synchronized和lock更轻量 因为 volatile并不会发生上下文切换等开销很大的行为
+ 
+ 2.如果一个变量被修饰成volatile 那么JVM就知道这个变量可能会被并发修改
+ 
+ 3.能力小 volatile 做不到synchronized那样的原子性 
+ 
+### volatile 使用的场合
 
+1.不适用a++等操作 why ? 因为volatile不保证原子性 例子：VolatileDemo1 运行结果表明，volatile没有保证原子性，出现丢失写值的情况（值覆盖）
 
-
+2.适用场合 boolean flag 如果一个变量共享 自始至终被多个线程赋值 而没有其他操作 因为赋值自身是有原子性的 而volatile 又保证了可见性 所以线程安全 com.geekagain.volatilego.uservolatile
+  
+  **但是不依赖于该变量的上一个状态**
+  
+3.作为刷新之前变量的触发器 FieldVisibility
 
                 synchronized                              | volatile
              
