@@ -98,6 +98,8 @@
  | 017 |并发断点调试 JDK新特性 .....  (粗略版已完成) |[解决思路](/docs/thread-base-13.md)  |
  | 018 |锁优化 ..... (有待分析)   |[解决思路]((/docs/thread-base-13.md))  |
  | 019 |数据伪共享 false—shareing disruptor前传..... )   |[解决思路]((/docs/false-shareing.md))  |
+ | 020 |原子性小讲  |[解决思路]((/docs/atom.md))  |
+
      更新此问题的出发点是 **disruptor框架和百度的分布式id生成策略** 
      https://github.com/baidu/uid-generator/blob/master/README.zh_cn.md
 
