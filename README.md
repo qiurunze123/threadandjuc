@@ -109,6 +109,7 @@
  | 001 | 一共有几类线程安全的问题 | [解决思路](/docs/threadsafe001.md) |
  | 002 | 哪些场景需要额外注意线程安全问题| [解决思路](/docs/threadsafe001.md) |
  | 003 |多线程切换上下文 | [解决思路](/docs/threadsafe001.md) |
+ | 004 |死锁特辑| [解决思路](/docs/threadsafe001.md) |
 
 
 
