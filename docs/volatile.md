@@ -85,3 +85,18 @@ atomicInteger 解决原子性问题
     所以当一条线程访问instance不为null时，由于instance实例未必已完成初始化，也就造成了线程安全问题。
     
     所以在  private static volatile SingletonDemo instance =null; 加volatile
+    
+    
+ 实现原理:
+    
+  ![整体流程](https://raw.githubusercontent.com/qiurunze123/imageall/master/threadnew8.png)
+    
+ happens-before 6大原则：
+    
+ ![整体流程](https://raw.githubusercontent.com/qiurunze123/imageall/master/threadnew9.png)
+    
+  对于这个valatile 的规则 写先发生于读 保证了可见性 /VolatileExample/VolatileExample  /VolatileExample/Volatile2
+    
+  i++问题解决方法：加锁！/VolatileExample/AccountingSync
+    
+ https://juejin.im/post/5ae9b41b518825670b33e6c4 推荐 博客

@@ -13,6 +13,8 @@
      ③ 需要一个标准让多线程可预期
  2.JMM是什么
  
+ ![整体流程](https://raw.githubusercontent.com/qiurunze123/imageall/master/jmm100.png)
+ 
       ① Java memory model 需要各个JVM来遵守JMM规范以便开发者利用这些规范来开发多线程的程序
        如果没有这样的一个JMM内存模型来规范 那么可能经过不同的规则重排序之后导致不同虚拟机
        上运行的结果不一样 产生很大的问题
