@@ -76,6 +76,7 @@
  | --- | ---   | :--- |
  | 重点 |多线程安全问题 | [解决思路](/docs/JMM.md) |
  | 重点 |JMM多线程内存模型 | [解决思路](/docs/JMM.md) |
+ | 重点 |死锁专题分析 | [解决思路](/docs/dlock.md) |
  | 重点 |AQS--一切的基础 Doug Lee 是个天才 | [解决思路](/docs/AQS.md) |
  | 重点 |Future模式精度分析 Future 模式 | [解决思路](/docs/Future.md) |
  | 000 |java并行程序基础(已完成) | [解决思路](/docs/thread-base-3.md) |
@@ -85,7 +86,6 @@
  | 004 |公平锁,非公平锁，可重入锁，递归锁，自旋锁等的理解..(已完成) |[解决思路](/docs/lock.md)  |
  | 005 |阻塞队列..(已完成) |[解决思路](/docs/blocking.md)  |
  | 006 |插播 synchronized和lock 的区别 彻底分析..(已完成) |[解决思路](/docs/sandl.md)  |
- | 007 |风骚的线程池..(已完成) |[解决思路](/docs/Threadpool.md)  |
  | 008 |AQS .....(有待分析) |[解决思路](/docs/thread-base-14.md)  |
  | 009 |JDK并发包reentrantlock,condition , semaphone , readwritelock ,CountDownLatch...(粗略版已完成) |[解决思路](/docs/thread-base-7.md)  |
  | 010 |CountDownLatch |[解决思路](/docs/CountDownLatch.md)  |
@@ -110,7 +110,6 @@
  | 002 | 哪些场景需要额外注意线程安全问题| [解决思路](/docs/threadsafe001.md) |
  | 003 |多线程切换上下文 | [解决思路](/docs/threadsafe001.md) |
  | 004 |死锁特辑| [解决思路](/docs/threadsafe001.md) |
-
 
 
  #### 不知不觉 更新了小半年 从基础到并发到项目直接应用 许多地方不是很好但是是对一个人的考验 从明白到应用到写出来是一个繁琐的过程
