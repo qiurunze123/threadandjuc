@@ -142,8 +142,9 @@ BlockingQueue ：实现是线程安全的。所有排队方法都可以使用内
 
 对应线程池队列：
 
-有界的任务队列可以使用ArrayBlockingQueue实现。当使用有界队列时，若有新的任务需要执行，如果线程池的实际线程数小于corePoolSize，则会优先创建新的线程，若大于corePoolSize，则会将新任务假如等待队列。若等待队列已满，无法加入，在总线程数，不大于maximumPoolSize的前提下，创建新的进程执行任务。若大于maximumPoolSize，则执行拒绝策略。
-
+有界的任务队列可以使用ArrayBlockingQueue实现。当使用有界队列时，若有新的任务需要执行，如果线程池的实际线程数小于corePoolSize，
+则会优先创建新的线程，若大于corePoolSize，则会将新任务假如等待队列。
+若等待队列已满，无法加入，在总线程数，不大于maximumPoolSize的前提下，创建新的进程执行任务。若大于maximumPoolSize，则执行拒绝策略。
 
 2.延迟队列DelayQueue
 
@@ -178,6 +179,8 @@ SynchronousQueue经常用来,一端或者双端严格遵守"单工"(单工作者
 对应线程池队列：
 
 优先任务队列是带有执行优先级的队列，它通过PriorityBlockingQueue实现，可以控制任务的只想你个先后顺序。它是一个特殊的无界队列。
-
-
 ![整体流程](https://raw.githubusercontent.com/qiurunze123/imageall/master/threadnew56.png)
+
+#### 拒绝策略
+
+

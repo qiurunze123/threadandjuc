@@ -49,7 +49,7 @@ public class BlockingRunTask {
             return ;
         }
 
-        ExecutorService executorService = new ThreadPoolExecutor(4, 4,
+        ThreadPoolExecutor executorService = new ThreadPoolExecutor(4, 4,
                 10L, TimeUnit.SECONDS,
                 new LinkedBlockingQueue<Runnable>(),
                 new ThreadFactoryBuilder().setNameFormat("高可用改造专用线程池-%d").build());

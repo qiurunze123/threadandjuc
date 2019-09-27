@@ -72,7 +72,7 @@
 
 AbortPolicy:直接抛出异常组织系统正常工作
 
-CallerRunPolicy：只要线程池未关团，该策略直接在调用者线程中，运行当前被丢弃的任务
+CallerRunPolicy：只要线程池未关闭，该策略直接在调用者线程中，运行当前被丢弃的任务
 
 DiscardOldestPolicy：丢弃最老的一个请隶，尝试再次提交当前任务
 
