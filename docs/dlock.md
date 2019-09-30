@@ -67,5 +67,4 @@ threadMXbean
 概述：
 
      https://baike.baidu.com/item/%E5%93%B2%E5%AD%A6%E5%AE%B6%E5%B0%B1%E9%A4%90%E9%97%AE%E9%A2%98/10929794?fr=aladdin
-     
      死锁： 每个人都饿了拿起左边的筷子永远都在等右边的筷子 
