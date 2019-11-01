@@ -10,7 +10,7 @@
         <module name="dubbolearn-rely" />
         <module name="dubbolearn-service" />
         <module name="high-import-try" />
-        <module name="learnguava" />
+        <module name="learnguavaandstream" />
         <module name="mybatis-learn" />
       </profile>
     </annotationProcessing>

@@ -19,11 +19,15 @@ import org.springframework.test.context.junit4.SpringRunner;
 
 import java.math.BigDecimal;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Date;
 import java.util.List;
 import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
+import java.util.stream.Collectors;
+import java.util.stream.IntStream;
+import java.util.stream.Stream;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
@@ -71,6 +75,76 @@ public class HighImportTryApplicationTests {
         }
 
     }
+
+
+
+    @Test
+    public void streamCode(){
+        int[] nums = { 1, 2, 3 };
+        // 外部迭代
+        int sum = 0;
+        for (int i : nums) {
+            sum += i;
+        }
+        System.out.println("结果为：" + sum);
+
+        // 使用stream的内部迭代
+        // map就是中间操作（返回stream的操作）
+        // sum就是终止操作
+        IntStream.of(nums).parallel();
+
+    }
+
+    @Test
+    public void testCreateStream() {
+        //利用Stream.of方法创建流
+        Stream<String> stream = Stream.of("hello", "world", "Java8");
+        stream.forEach(System.out::println);
+        System.out.println("##################");
+        //利用Stream.iterate方法创建流
+        Stream.iterate(10, n -> n + 1)
+                .limit(5)
+                .collect(Collectors.toList())
+                .forEach(System.out::println);
+        System.out.println("##################");
+        //利用Stream.generate方法创建流
+        Stream.generate(Math::random)
+                .limit(5)
+                .forEach(System.out::println);
+        System.out.println("##################");
+        //从现有的集合中创建流
+        List<String> strings = Arrays.asList("hello", "world", "Java8");
+        String string = strings.stream().collect(Collectors.joining(","));
+        System.out.println(string);
+    }
+
+
+
+    /*
+     * @Author 欧阳思海
+     * @Description 字符串与流之间的转换
+     * @Date 9:41 2019/9/2
+     * @Param []
+     * @return void
+     **/
+    @Test
+    public void testString2Stream() {
+        String s = "hello world Java8".codePoints()//转换成流
+                .collect(StringBuffer::new,
+                        StringBuffer::appendCodePoint,
+                        StringBuffer::append)//将流转换为字符串
+                .toString();
+
+        String s1 = "hello world Java8".chars()//转换成流
+                .collect(StringBuffer::new,
+                        StringBuffer::appendCodePoint,
+                        StringBuffer::append)//将流转换为字符串
+                .toString();
+
+        System.out.println(s+"=============="+s1);
+    }
+
+
 
 
     @Test
