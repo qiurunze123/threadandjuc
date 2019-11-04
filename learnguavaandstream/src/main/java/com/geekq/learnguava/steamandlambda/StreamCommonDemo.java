@@ -11,7 +11,7 @@ import java.util.stream.Stream;
 /**
  * @author 邱润泽 bullock
  */
-public class Test6 {
+public class StreamCommonDemo {
 
 
     public static void main(String[] args) {
@@ -113,6 +113,7 @@ public class Test6 {
         //
         //Stream的最终操作可以将Stream转成其他形式，如计算出流中元素的个数、将流装换成集合、以及元素的遍历等。
         //
+
 
 
 
