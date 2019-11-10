@@ -6,13 +6,23 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="dubbolearn-consumer" />
-        <module name="dubbolearn-rely" />
         <module name="dubbolearn-service" />
-        <module name="high-import-try" />
         <module name="learnguavaandstream" />
+        <module name="learnguava" />
+        <module name="dubbolearn-rely" />
         <module name="mybatis-learn" />
+        <module name="high-import-try" />
+        <module name="dubbolearn-consumer" />
       </profile>
     </annotationProcessing>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="dubbolearn-consumer" options="-parameters" />
+      <module name="dubbolearn-rely" options="-parameters" />
+      <module name="dubbolearn-service" options="-parameters" />
+      <module name="high-import-try" options="-parameters" />
+      <module name="learnguava" options="-parameters" />
+    </option>
   </component>
 </project>
