@@ -63,7 +63,8 @@
  | 000 |多线程到底有几种实现方式 | [解决思路](/docs/thread-base-000.md) |
  | 001 |多线程使用runnable与继承Thread类有什么区别 | [解决思路](/docs/thread-base-001.md) |
  | 002 |多线程如何正确优雅的中断线程 |[解决思路](/docs/thread-base-002.md)  |
- | 003 |多线程的生命周期状态纽机流转 |[解决思路](/docs/thread-base-003.md)  |
+ | 003 |多线程的生命周期状态纽机流转错误错误说法？ |[解决思路](/docs/thread-base-003-1.md)  |
+ | 003-1 |多线程的生命周期状态纽机流转 |[解决思路](/docs/thread-base-003.md)  |
  | 004 |多线程重要属性|[解决思路](/docs/thread-base-004.md)  |
  | 005 |多线程异常处理机制|[解决思路](/docs/thread-base-005.md)  |
  | 006 |多线程wait notify notifyall join sleep yield作用与方法详细解读 |[解决思路](/docs/thread-base-006.md)  |

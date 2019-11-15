@@ -8,11 +8,11 @@
         <outputRelativeToContentRoot value="true" />
         <module name="dubbolearn-service" />
         <module name="learnguavaandstream" />
+        <module name="dubbolearn-consumer" />
         <module name="learnguava" />
-        <module name="dubbolearn-rely" />
         <module name="mybatis-learn" />
         <module name="high-import-try" />
-        <module name="dubbolearn-consumer" />
+        <module name="dubbolearn-rely" />
       </profile>
     </annotationProcessing>
   </component>
