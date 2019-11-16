@@ -8,11 +8,12 @@
         <outputRelativeToContentRoot value="true" />
         <module name="dubbolearn-service" />
         <module name="learnguavaandstream" />
-        <module name="dubbolearn-consumer" />
         <module name="learnguava" />
+        <module name="dubbolearn-rely" />
         <module name="mybatis-learn" />
         <module name="high-import-try" />
-        <module name="dubbolearn-rely" />
+        <module name="dubbolearn-consumer" />
+        <module name="thread-interview" />
       </profile>
     </annotationProcessing>
   </component>
@@ -23,6 +24,7 @@
       <module name="dubbolearn-service" options="-parameters" />
       <module name="high-import-try" options="-parameters" />
       <module name="learnguava" options="-parameters" />
+      <module name="thread-interview" options="-parameters" />
     </option>
   </component>
 </project>
