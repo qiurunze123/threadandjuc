@@ -78,6 +78,7 @@
  | --- | ---   | :--- |
  | 重点 |多线程安全问题 | [解决思路](/docs/JMM.md) |
  | 重点 |JMM多线程内存模型 | [解决思路](/docs/JMM.md) |
+ | important-1 |JMM多线程内存模型 | [解决思路](/docs/JMM-1.md) |
  | 重点 |死锁专题分析 | [解决思路](/docs/dlock.md) |
  | 重点 |AQS--一切的基础 Doug Lee 是个天才 | [解决思路](/docs/AQS.md) |
  | 重点 |Future模式精度分析 Future 模式 | [解决思路](/docs/Future.md) |
