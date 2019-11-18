@@ -56,6 +56,21 @@
 
  ### 3.原子性  Happens-Before原则     
    
+   原子性 大家都知道要么都执行要么都不执行 是不可分割的 i++就不是原子性的
+   
+ #### 原子操作有哪些??2rr                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  dc r
+   
+   除了long和double之外的基本类型（int byte .....）
+  
+   所有引用reference的赋值操作 不管是32位机器还是64位机器
+  
+   java.concurrent.Atomic.* 包中所有类的原子操作
+   
+  为什么long 和double 不是原子性的??
+  
+  ![整体流程](https://raw.githubusercontent.com/qiurunze123/imageall/master/threadjmm10.png)
+
+  
   ![整体流程](https://raw.githubusercontent.com/qiurunze123/imageall/master/jmm100.png)
   
    | ID | Problem  |
@@ -133,5 +148,7 @@
 
   ![整体流程](https://github.com/qiurunze123/threadandjuc/blob/master/docs/thread-base-5.md)
   
-
+   双重锁检验 Singleton6 double-check 为什么??
+   
+   
 
