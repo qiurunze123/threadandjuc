@@ -11,7 +11,7 @@ CAS 是 compareAndSwap的缩写  比较交换 类似于java中的乐观锁
  
 底层大部分都是有unsafe完成，unsafe自己属于JDK-- sun包下的，在我查看源码发现unsafe是 是CAS的核心类 
 由于Java 方法无法直接访问底层 ,需要通过本地(native)方法来访问,UnSafe相当于一个后门,基于该类可以直接操作特定的内存数据.
-UnSafe类在于sun.misc包中,其内部方法操作可以向C的指针一样直接操作内存,因为Java中CAS操作的助兴依赖于UNSafe类的方法.
+UnSafe类在于sun.misc包中,其内部方法操作可以向C的指针一样直接操作内存,因为Java中CAS操作的执行依赖于UNSafe类的方法.
 
 `**注意UnSafe类中所有的方法都是native修饰的,也就是说UnSafe类中的方法都是直接调用操作底层资源执行响应的任务**` 
   
@@ -32,6 +32,7 @@ UnSafe类在于sun.misc包中,其内部方法操作可以向C的指针一样直�
        public final int getAndAddInt(Object var1, long var2, int var4) {
               int var5;
               do {
+                  //兄弟们告诉我var1 和var2 定位到的内存地址的值是多少
                   var5 = this.getIntVolatile(var1, var2);
               } while(!this.compareAndSwapInt(var1, var2, var5, var5 + var4));
       
@@ -61,7 +62,8 @@ UnSafe类在于sun.misc包中,其内部方法操作可以向C的指针一样直�
       CAS并发原语提现在Java语言中就是sun.miscUnSaffe类中的各个方法.调用UnSafe类中的CAS方法,
       JVM会帮我实现CAS汇编指令.这是一种完全依赖于硬件 功能,通过它实现了原子操作,再次强调,
       由于CAS是一种系统原语,原语属于操作系统用于范畴,是由若干条指令组成,
-      用于完成某个功能的一个过程,并且原语的执行必须是连续的,在执行过程中不允许中断,也即是说CAS是一条原子指令,不会造成所谓的数据不一致的问题.
+      用于完成某个功能的一个过程,并且原语的执行必须是连续的,在执行过程中不允许中断,也即是说CAS是一条原子指令
+      ,不会造成所谓的数据不一致的问题.
   
 ### CAS缺点 
 
