@@ -20,6 +20,10 @@
 
 ![整体流程](https://raw.githubusercontent.com/qiurunze123/imageall/master/aqs0.png)
 
+AQS的全称是AbstractQueuedSynchronizer，它的定位是为Java中几乎所有的锁和同步器提供一个基础框架。
+
+AQS是基于FIFO的队列实现的，并且内部维护了一个状态变量state，通过原子更新这个状态变量state即可以实现加锁解锁操作
+
 比如 独占式锁 ReentrantLock ....和共享式锁 countdownlatch , Semaphore 都基于AbstractQueuedSynchronizer一个共同的基类
 根据AQS我们可以很简单的构建出自己的同步器
 
@@ -31,6 +35,22 @@
 而非公平锁，线程获取的锁的时候，无视等待队列直接获取锁。ReentrantLock和ReentrantReadWriteLock.Writelock是独占锁
 
 共享锁：同一个时候能够被多个线程获取的锁，能被共享的锁。JUC包中ReentrantReadWriteLock.ReadLock，CyclicBarrier，CountDownLatch和Semaphore都是共享锁。
+
+#### 核心源码
+
+      AbstractQueuedSynchronizer 分析
+      
+      我们可以看到AQS的全称是AbstractQueuedSynchronizer，它本质上是一个抽象类，
+      说明它本质上应该是需要子类来实现的，那么子类实现一个同步器需要实现哪些方法呢
+
+![整体流程](https://raw.githubusercontent.com/qiurunze123/imageall/master/threadsafe11.png)
+
+    1.AQS是Java中几乎所有锁和同步器的一个基础框架，这里说的是“几乎”，因为有极个别确实没有通过AQS来实现
+    
+    2.AQS中维护了一个队列，这个队列使用双链表实现，用于保存等待锁排队的线程
+    
+    3.AQS中维护了一个状态变量，控制这个状态变量就可以实现加锁解锁操作了
+
 
 #### AQS同步器结构与设置节点 
 

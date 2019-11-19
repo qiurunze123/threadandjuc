@@ -6,15 +6,15 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="dubbolearn-consumer" />
-        <module name="dubbolearn-rely" />
         <module name="dubbolearn-service" />
-        <module name="high-import-try" />
-        <module name="learnguava" />
         <module name="learnguavaandstream" />
-        <module name="mybatis-learn" />
-        <module name="thread-interview" />
         <module name="threadinterview" />
+        <module name="dubbolearn-consumer" />
+        <module name="learnguava" />
+        <module name="mybatis-learn" />
+        <module name="high-import-try" />
+        <module name="dubbolearn-rely" />
+        <module name="thread-interview" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
