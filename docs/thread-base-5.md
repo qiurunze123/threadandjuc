@@ -122,6 +122,3 @@ volatile实现禁止指令重排优化，从而避免多线程环境下程序出
 3.提供可可见性
 
 4.提供happens-before保证
-
-5.volatile 可以使得long 和double 的赋值是原子性的
-    

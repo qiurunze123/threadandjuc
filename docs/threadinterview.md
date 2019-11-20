@@ -15,9 +15,11 @@ java多线程juc
 
 1. ##### 开篇题 实现多线程的方式有几种方式你确定吗? 
 
- 实现多线程的方式有几种方式? 
+ 实现多线程的方式有几种方式?
  
  https://github.com/qiurunze123/threadandjuc/blob/master/docs/thread-base-000.md
+ 
+   bothRunnableThread 结果是什么??
 
  threadbase ThreadinterviewApplicationTests
  
@@ -52,7 +54,7 @@ java多线程juc
 
 ### 线程JMM内存模型
 
-  1. ##### java内存模型+java对象模型+jvm内存模型
+  1. ##### JMM内存模型+java对象模型+jvm内存模型
    
    https://github.com/qiurunze123/threadandjuc/blob/master/docs/JMM-1.md
 
