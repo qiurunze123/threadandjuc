@@ -25,7 +25,6 @@
      在最开始 是会发生这一系列问题的 存在不同的平台运行起来效果不一样 即使你的指令一样但是也会出现不一致的效果
      这个时候就出现了java内存模型来进行统一规范
 
-      
  3.JMM的重点内容
  
    1.重排序 ThreadJmm1 ThreadJmm2
@@ -76,8 +75,6 @@
   ![整体流程](https://raw.githubusercontent.com/qiurunze123/imageall/master/threadjmm10.png)
 
   
-  ![整体流程](https://raw.githubusercontent.com/qiurunze123/imageall/master/jmm100.png)
-  
    | ID | Problem  |
    | --- | ---   |
    | 001 |什么是Happens-Before原则 |
@@ -88,7 +85,7 @@
    ①happens-before 规则是用来解决可见性问题的 **在时间上A动作在B动作之前发生 B能保证看到A
    这就是happens-before**
    
-   ② 俩个操作可以用happens-before来确定他们的执行顺序 **如果一个操作happens-before与另一个操作
+   ② 俩个操作可以用happens-before来确定他们的执行顺序 **如果一个操作happens-before于另一个操作
    那么我们就说第一个操作对于第二个操作时可见的**
    
    什么不是happens-before
@@ -148,8 +145,6 @@
 
  
 ####  volatile 如何保证 
-
-  ![img](https://raw.githubusercontent.com/qiurunze123/imageall/master/threadjmm7.png)
 
   ![整体流程](https://github.com/qiurunze123/threadandjuc/blob/master/docs/thread-base-5.md)
    

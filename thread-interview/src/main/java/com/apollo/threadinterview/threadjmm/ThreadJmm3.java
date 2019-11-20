@@ -3,9 +3,9 @@ package com.apollo.threadinterview.threadjmm;
 /**
  * @author 邱润泽 bullock
  *
- * a=3  b=2
+ * a=3   b=2
  * a=1   b=2
- * a=3    b=3
+ * a=3   b=3
  *
  * 两个线程的通信是有一定的延迟和代价的 主从同步需要付出一定时间代价
  *
