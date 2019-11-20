@@ -52,13 +52,13 @@ java多线程juc
 
 ### 线程JMM内存模型
 
-  1. #####  为什么出现了java内存模型 他是什么底层原理??
+  1. ##### java内存模型+java对象模型+jvm内存模型
+   
+   https://github.com/qiurunze123/threadandjuc/blob/master/docs/JMM-1.md
+
+  2. #####  为什么出现了java内存模型 ？
   
-   https://github.com/qiurunze123/threadandjuc/blob/master/docs/JMM-1.md
-   
-  2.. ##### java内存模型+java对象模型+jvm内存模型
-   
-   https://github.com/qiurunze123/threadandjuc/blob/master/docs/JMM-1.md
+   https://github.com/qiurunze123/threadandjuc/blob/master/docs/JMM.md
 
   3. ##### JMM重点内容
      

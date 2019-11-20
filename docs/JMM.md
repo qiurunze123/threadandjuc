@@ -1,18 +1,13 @@
 ### JMM 内存模型
 
-#### 1.JMM是什么
+#### 1.JMM是什么 为什么需要JMM ??
+ 
+ 全称java memory model 是一组规范  
  
  ![整体流程](https://raw.githubusercontent.com/qiurunze123/imageall/master/threadjmm4.png)
  
-#### 2.为什么需要JMM ??
- 
- ![整体流程](https://raw.githubusercontent.com/qiurunze123/imageall/master/threadjmm5.png)
-
 迫切需要一个标准来让我们多线程运行的结果可预期 综上原因JMM这个规范就出来了 各个jvm的实现需要遵守JMM规范
 以便于像我们这样的开发者可以利用这些规范更方便的开发多线程的程序
-
-
-#### 什么是JMM底层原理
 
 1.从java代码到CPU指令
 
@@ -24,7 +19,7 @@
      （jvm会根据不同的操作系统和平台的不同把字节码翻译成不同的机器指令）
      4.机器指令可以直接在CPU上运行 也就是最终指令
      
-2.java内存模型应运而出?
+2.为什么需要JMM java内存模型应运而出?
 
      JVM实现不用的翻译 不同的CPU平台的机器指令有千差万别无法保证并发安全效果一致
      在最开始 是会发生这一系列问题的 存在不同的平台运行起来效果不一样 即使你的指令一样但是也会出现不一致的效果
@@ -37,7 +32,7 @@
    
    为什么要重排序??
    
-  ![img](https://raw.githubusercontent.com/qiurunze123/imageall/master/threadjmm5.png)
+  ![img](https://raw.githubusercontent.com/qiurunze123/imageall/master/threadjmm5.jpg)
    
    2.可见性 ThreadJmm3 解决ThreadJmm4
    
