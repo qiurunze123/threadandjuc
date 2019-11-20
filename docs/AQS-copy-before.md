@@ -1,5 +1,20 @@
 ### AbstractQueuedSynchronizer 详细解析 一切的基础 
 
+| ID | Problem  |
+| --- | ---   |
+| 重点 |什么是AQS|
+| 基础 |AQS锁类别与在使用者|
+| 了解 |AQS同步器的结构与设置节点||
+| 000 |AQS队列结构节点和同步队列|
+| 001 |AQS使用方式和设计模式|
+| 002 |AQS独占锁共享锁子类覆盖流程|
+| 003 |AQS独占式同步状态获取与释放|
+| 004 |AQS方法解读|
+| 005 |AQS节点在同步队列的增加和移出|
+| 006 |ReentrantLock分析(等待更新)|
+| 007 |ReadAndWriteLoak分析(等待更新)|
+| 008 |Condition分析(等待更新)|
+
 
 #### 什么是AQS
 
@@ -179,8 +194,7 @@ AQS内部维护了一个CHL同步队列 来管理锁 线程首先会尝试获取
             }
         }
     
-  ![整体流程](https://raw.githubusercontent.com/qiurunze123/imageall/master/aqs7.png)
-  
+    
     上述的方法通过使用compareAndSetTail(pred, node)方法来确保节点能够被线程安全的添加到CHL尾部。
     在这里线程安全的添加到CHL是很重要的，如果不是线程安全的向CHL中添加节点，那么在一个线程获取到同步状态后，
     其它线程因为获取同步状态失败而并发的向CHL中添加节点时，CHL就不能保证数据的正确性了。
@@ -334,202 +348,69 @@ tryRelease(arg)方法是自定义同步器实现的方法，如果释放同步�
     该方法在释放同步状态后，将会唤醒后续处于等待状态的节点。
     因为存在多个线程同时释放同步状态，因此tryReleaseShared(arg)方法必须保证线程安全，一般是通过循环和CAS来完成的
     
-#### ReentrantLock 锁讲解 独占锁
 
-ReentrantLock独有得功能
 
-            1.可指定式公平锁还是非公平锁
-            2.提供了Condition类 可以分组唤醒需要唤醒得线程
-            3.提供中断线程得机制lock.lockInterruptibly()
-            
-            
-##### 流程
+#### AQS队列结构节点和同步队列 
 
-以ReentrantLock重入锁为例state初始化为0 表示未锁定状态 A线程lock()会调用tryAcquire 独占该锁并将state+1
+使用volatile修饰保证线程可见性
 
-以后 其他线程在tryAcquire()时就会失效 知道A线程unlock()到state=0（一直释放锁）为止 其他线程才有机会获取该锁
+AQS == AbstractQueuedSynchronizer, 队列同步器，它是Java并发用来构建锁和其他同步组件的基础框架 在内部有一个FIFO（先进先出队列）
 
-当然 释放锁之前 A线程自己是可以重复获取此锁得state会累加 这就是可重入概念 但是要注意获取多少次就要释放多少次才能回到0
+同步器应用 子类通过继承同步器来实现一些抽象方法，子类主要利用同步器提供的方法来进行状态 state 修改
 
-##### 底层分析
+修改状态的三种方法：
 
-###### 获取
-首先我们看到得是一个sync这么一个抽象类 既然是抽象类那么一定有他得实现 FairSync(公平锁) NonfairSync(非公平锁)
-    //transient不透明的 别的线程也就没法看见
-    private transient Thread exclusiveOwnerThread;
-     ==========================================================================
-     1. tryAcquire先尝试获取"锁",获取了就不进入后续流程2. 
-    获取AQS中的state变量,代表抽象概念的锁.
-    
-         protected final boolean tryAcquire(int acquires) {
-                final Thread current = Thread.currentThread();
-                //查看状态
-                int c = getState();
-                if (c == 0) {
-               //值为0,那么当前独占性变量还未被线程占有
-               //如果当前阻塞队列上没有先来的线程在等待,UnfairSync这里的实现就不一致 就不排队了 不直接扔到AQS队列 直接搞一梭子哪个线程
-               CPU优先分给他了 就优先去操作 谁成功了谁就获得这把锁 设置成独占
-               
-               hasQueuedPredecessors
-               加入了同步队列中当前节点是否有前驱节点的判断，如果该方法返回true，
-               则表示有线程比当前线程更早地请求获取锁，因此需要等待前驱线程获取并释放锁之后才能继续获取锁。
-               
-                    if (!hasQueuedPredecessors() &&
-                                //成功cas,那么代表当前线程获得该变量的所有权,也就是说成功获得锁
-                        compareAndSetState(0, acquires)) {
-                                    // setExclusiveOwnerThread将本线程设置为独占性变量所有者线程
-                        setExclusiveOwnerThread(current);
-                        return true;
-                    }
-                }
-                
-                //主要说明重入功能
-                
-                  //如果该线程已经获取了独占性变量的所有权,那么根据重入性
-                   //原理,将state值进行加1,表示多次lock
-                   //由于已经获得锁,该段代码只会被一个线程同时执行,所以不需要
-                  //进行任何并行处理
-                else if (current == getExclusiveOwnerThread()) {
-                    int nextc = c + acquires;
-                    if (nextc < 0)
-                        throw new Error("Maximum lock count exceeded");
-                    setState(nextc);
-                    return true;
-                }
-                return false;
-        }
-        
-        
-###### 释放        
-        
-         protected final boolean tryRelease(int releases) {
-                    int c = getState() - releases;
-                    if (Thread.currentThread() != getExclusiveOwnerThread())
-                        throw new IllegalMonitorStateException();
-                    boolean free = false;
-                    if (c == 0) {
-                        free = true;
-                        setExclusiveOwnerThread(null);
-                    }
-                    setState(c);
-                    return free;
-                }
-                
-                
-#### CountDownLatch详解 共享锁
+**getState() 获取当前的同步状态**
 
-![整体流程](https://raw.githubusercontent.com/qiurunze123/imageall/master/countdownlatch1.png)
+**setState(int newState) 设置当前同步状态**
 
-##### 获取
-    protected int tryAcquireShared(int acquires) {
-                return (getState() == 0) ? 1 : -1;
-            }
-    判断 state 值是否为0，为0 返回1，否则返回 -1
+**compareAndSetState(int expect,int update) 使用CAS设置当前状态该方法能够保证状态设置的原子性**
 
-private volatile int state;
-在 CountDownLatch 中这个 state 值就是计数器，在调用 await 方法的时候，将值赋给 state
+#### AQS使用方式和设计模式 
 
-    
-    private void doAcquireSharedInterruptibly(int arg)
-            throws InterruptedException {
-            //加入等待队列                      
-            final Node node = addWaiter(Node.SHARED);
-            boolean failed = true;
-            // 进入 CAS 循环
-            try {
-                for (;;) {
-                    //当一个节点(关联一个线程)进入等待队列后， 获取此节点的 prev 节点 
-                    final Node p = node.predecessor();
-                    // 如果获取到的 prev 是 head，也就是队列中第一个等待线程
-                    if (p == head) {
-                        // 再次尝试申请 反应到 CountDownLatch 就是查看是否还有线程需要等待(state是否为0)
-                        int r = tryAcquireShared(arg);
-                        // 如果 r >=0 说明 没有线程需要等待了 state==0
-                        if (r >= 0) {
-                            //尝试将第一个线程关联的节点设置为 head 
-                            setHeadAndPropagate(node, r);
-                            p.next = null; // help GC
-                            failed = false;
-                            return;
-                        }
-                    }
-                    //经过自旋tryAcquireShared后，state还不为0，就会到这里，第一次的时候，waitStatus是0
-                    那么node的waitStatus就会被置为SIGNAL，第二次再走到这里，就会用LockSupport的park方法把当前线程阻塞住
-                    if (shouldParkAfterFailedAcquire(p, node) &&
-                        parkAndCheckInterrupt())
-                        throw new InterruptedException();
-                }
-            } finally {
-                if (failed)
-                    cancelAcquire(node);
-            }
-        }
-        
-##### 释放
+AQS使用的是模板模式（父类定义一个骨架子类去实现在调用的时候调用父类的方法就可以了）子类继承父类然后重写指定的方法
 
-当执行 CountDownLatch 的 countDown（）方法，将计数器减一，也就是state减一，当减到0的时候
-待队列中的线程被释放。是调用 AQS 的 releaseShared 方法来实现的
-    
-    // AQS类
-    public final boolean releaseShared(int arg) {
-            // arg 为固定值 1
-            // 如果计数器state 为0 返回true，前提是调用 countDown() 之前不能已经为0
-            if (tryReleaseShared(arg)) {
-                // 唤醒等待队列的线程
-                doReleaseShared();
-                return true;
-            }
-            return false;
-        }
-    
-    // CountDownLatch 重写的方法
-    protected boolean tryReleaseShared(int releases) {
-                // Decrement count; signal when transition to zero
-                // 依然是循环+CAS配合 实现计数器减1
-                for (;;) {
-                    int c = getState();
-                    if (c == 0)
-                        return false;
-                    int nextc = c-1;
-                    if (compareAndSetState(c, nextc))
-                        return nextc == 0;
-                }
-            }
-    
-    /// AQS类
-     private void doReleaseShared() {
-            for (;;) {
-                Node h = head;
-                if (h != null && h != tail) {
-                    int ws = h.waitStatus;
-                    // 如果节点状态为SIGNAL，则他的next节点也可以尝试被唤醒
-                    if (ws == Node.SIGNAL) {
-                        if (!compareAndSetWaitStatus(h, Node.SIGNAL, 0))
-                            continue;            // loop to recheck cases
-                        unparkSuccessor(h);
-                    }
-                    // 将节点状态设置为PROPAGATE，表示要向下传播，依次唤醒
-                    else if (ws == 0 &&
-                             !compareAndSetWaitStatus(h, 0, Node.PROPAGATE))
-                        continue;                // loop on failed CAS
-                }
-                if (h == head)                   // loop if head changed
-                    break;
-            }
-        }
-因为这是共享型的，当计数器为 0 后，会唤醒等待队列里的所有线程，所有调用了 await() 方法的线程都被唤醒，并发执行
+AQS中需要重写的方法有哪些呢？
 
-这种情况对应到的场景是，有多个线程需要等待一些动作完成，比如一个线程完成初始化动作，其他5个线程都需要用到初始化的结果
+    protected boolean tryAcquire(int arg) : 独占式获取同步状态，试着获取，成功返回true，反之为false
+    protected boolean tryRelease(int arg) ：独占式释放同步状态，等待中的其他线程此时将有机会获取到同步状态；
+    protected int tryAcquireShared(int arg) ：共享式获取同步状态，返回值大于等于0，代表获取成功；反之获取失败；
+    protected boolean tryReleaseShared(int arg) ：共享式释放同步状态，成功为true，失败为false
+    protected boolean isHeldExclusively() ： 是否在独占模式下被线程占用。
+ 
+#### AQS独占锁共享锁子类覆盖流程
 
-那么在初始化线程调用 countDown 之前，其他5个线程都处在等待状态。一旦初始化线程调用了 countDown ，其他5个线程都被唤醒，开始执行。
+![整体流程](https://raw.githubusercontent.com/qiurunze123/imageall/master/aqs2.png)
 
-总结
-1、AQS 分为独占模式和共享模式，CountDownLatch 使用了它的共享模式。
+已reentrantLock为例 子类继承AbstractQueuedSynchronizer 之后来实现对应需要重写的方法
 
-2、AQS 当第一个等待线程（被包装为 Node）要入队的时候，要保证存在一个 head 节点，这个 head 节点不关联线程，也就是一个虚节点。
+#### AQS独占式同步状态获取与释放
 
-3、当队列中的等待节点（关联线程的，非 head 节点）抢到锁，将这个节点设置为 head 节点。
+![整体流程](https://raw.githubusercontent.com/qiurunze123/imageall/master/aqs4.png)
 
-4、第一次自旋抢锁失败后，waitStatus 会被设置为 -1（SIGNAL），第二次再失败，就会被 LockSupport 阻塞挂起。
+此图为独占式同步状态获取释放的全部流程 
 
-5、如果一个节点的前置节点为 SIGNAL 状态，则这个节点可以尝试抢占锁。
+#### 独占式锁的获取 图示 
+
+![整体流程](https://raw.githubusercontent.com/qiurunze123/imageall/master/aqs7.png)
+
+整体流程： 
+
+调用同步器的acquire(int arg)方法可以获取同步状态，该方法对中断不敏感，即线程获取同步状态失败后进入同步队列，后续对线程进行中断操作时，线程不会从同步队列中移除。
+
+    (1) 当前线程实现通过tryAcquire()方法尝试获取锁，获取成功的话直接返回，如果尝试失败的话，
+    进入等待队列排队等待，可以保证线程安全（CAS）的获取同步状态。
+
+    (2) 如果尝试获取锁失败的话，构造同步节点（独占式的Node.EXCLUSIVE），通过addWaiter(Node node,int args)方法
+    ,将节点加入到同步队列的队列尾部。
+
+    (3) 最后调用acquireQueued(final Node node, int args)方法，使该节点以死循环的方式获取同步状态，
+    如果获取不到，则阻塞节点中的线程。acquireQueued方法当前线程在死循环中获取同步状态，
+    而只有前驱节点是头节点的时候才能尝试获取锁（同步状态）（ p == head && tryAcquire(arg)）。
+
+
+
+
+
+![整体流程](https://raw.githubusercontent.com/qiurunze123/imageall/master/aqs6.png)
+![整体流程](https://raw.githubusercontent.com/qiurunze123/imageall/master/aqs1.png)
