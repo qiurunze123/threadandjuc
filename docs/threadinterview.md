@@ -19,7 +19,7 @@ java多线程juc
  
  https://github.com/qiurunze123/threadandjuc/blob/master/docs/thread-base-000.md
 
- threadbase
+ threadbase ThreadinterviewApplicationTests
  
 2. ##### 多线程状态流转你真的确定吗?
 
@@ -27,7 +27,7 @@ java多线程juc
  https://github.com/qiurunze123/threadandjuc/blob/master/docs/thread-base-003-1.md 
  https://github.com/qiurunze123/threadandjuc/blob/master/docs/thread-base-003.md
  
- threadstate
+ threadstate ThreadinterviewApplicationTests
 
 3. ##### Object 中的线程方法
    
