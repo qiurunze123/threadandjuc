@@ -18,7 +18,7 @@ import java.util.concurrent.ConcurrentHashMap;
  * 唤醒阶段
  * notify 是唤醒一个 notifyall 唤醒多个
  * 例子：  有四个线程 第四个获得了锁 如果使用notify那么就会选取一个被唤醒 如果使用notifyall 那么就会被唤醒多个
- * 至于那个会抢到monitor锁那么就要看线程的调度了
+ * 至于哪个会抢到monitor锁那么就要看线程的调度了
  *
  * ===========================================================
  *
@@ -27,8 +27,9 @@ import java.util.concurrent.ConcurrentHashMap;
  * 加入一个线程使用了wait方法 但是 自身中断了 那么他就会抛出interrupt异常 并释放掉当前的锁
  * ====================================================================
  *
- * 1.代码执行顺序 ？？？
- * 2.wait会释放掉monitor锁 ？？？
+ * 大家思考
+ * 1.代码执行顺序
+ * 2.wait会释放掉monitor锁吗?
  *
  * */
 public class WaitAndNotify1 {

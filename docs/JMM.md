@@ -1,19 +1,10 @@
 ### JMM 内存模型
 
- | ID | Problem  |
- | --- | ---   |
- | 001 |JMM是什么,为什么需要JMM|
- | 002 |JMM的重点内容|
- 
-  
- 2.JMM是什么 为什么需要JMM
- 
- JMM是什么
+#### 1.JMM是什么
  
  ![整体流程](https://raw.githubusercontent.com/qiurunze123/imageall/master/threadjmm4.png)
-
  
- 为什么需要JMM ??
+#### 2.为什么需要JMM ??
  
  ![整体流程](https://raw.githubusercontent.com/qiurunze123/imageall/master/threadjmm5.png)
 
@@ -58,7 +49,7 @@
    
    原子性 大家都知道要么都执行要么都不执行 是不可分割的 i++就不是原子性的
    
- #### 原子操作有哪些??2rr                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  dc r
+ #### 原子操作有哪些??                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               dc r
    
    除了long和double之外的基本类型（int byte .....）
   
@@ -147,8 +138,6 @@
   ![img](https://raw.githubusercontent.com/qiurunze123/imageall/master/threadjmm7.png)
 
   ![整体流程](https://github.com/qiurunze123/threadandjuc/blob/master/docs/thread-base-5.md)
-  
-   双重锁检验 Singleton6 double-check 为什么??
    
    
 

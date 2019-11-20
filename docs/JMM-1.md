@@ -24,7 +24,7 @@
 
 1.java对象模型
 
-   ![img](https://raw.githubusercontent.com/qiurunze123/imageall/master/threadjmm1.png)
+   ![img](https://raw.githubusercontent.com/qiurunze123/imageall/master/threadjmm2.png)
     
     
     首先这个图分为三个区域 左上角是栈 左下角是方法去 右边的这个是堆 首先我们会在左下角的方法区把这个类的信息创建出来instanceklass
