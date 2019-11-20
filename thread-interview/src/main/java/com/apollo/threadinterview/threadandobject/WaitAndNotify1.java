@@ -27,21 +27,22 @@ import java.util.concurrent.ConcurrentHashMap;
  * 加入一个线程使用了wait方法 但是 自身中断了 那么他就会抛出interrupt异常 并释放掉当前的锁
  * ====================================================================
  *
- * 大家思考
+ * 大家思考下面代码俩个问题??
+ *
  * 1.代码执行顺序
- * 2.wait会释放掉monitor锁吗?
+ * 2.wait会释放掉monitor锁吗
  *
  * */
 public class WaitAndNotify1 {
 
     public static Object object = new Object();
 
-    static class Thread1 extends Thread {
+    static class Thread0 extends Thread {
 
         @Override
         public void run() {
             synchronized (object) {
-                System.out.println(Thread.currentThread().getName() + "开始执行了");
+                System.out.println(Thread.currentThread().getName() + "开始执行了===");
                 try {
                     object.wait();
                 } catch (InterruptedException e) {
@@ -52,7 +53,7 @@ public class WaitAndNotify1 {
         }
     }
 
-    static class Thread2 extends Thread {
+    static class Thread1 extends Thread {
 
         @Override
         public void run() {
@@ -64,11 +65,11 @@ public class WaitAndNotify1 {
     }
 
     public static void main(String[] args) throws InterruptedException {
+        Thread0 thread0 = new Thread0();
         Thread1 thread1 = new Thread1();
-        Thread2 thread2 = new Thread2();
         //保证notify先执行
-        thread1.start();
+        thread0.start();
         Thread.sleep(200);
-        thread2.start();
+        thread1.start();
     }
 }

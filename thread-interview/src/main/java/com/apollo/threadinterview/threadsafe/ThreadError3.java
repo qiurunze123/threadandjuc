@@ -7,9 +7,6 @@ import java.util.Map;
  * @auther 邱润泽 bullock
  * @date 2019/11/17
  *
- * 这个图俩个人都很绅士导致谁都不愿起身 就造成了死锁
- *
- * 死锁
  */
 public class ThreadError3{
 

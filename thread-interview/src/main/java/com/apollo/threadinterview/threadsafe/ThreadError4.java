@@ -4,7 +4,7 @@ package com.apollo.threadinterview.threadsafe;
  * 描述：     初始化未完毕，就this赋值 1,1
  *
  * 在主函数 sleep 105毫秒的时候 是 打印
- *  10 的时候 就是 1.0
+ *               10 的时候 就是 1.0
  */
 public class ThreadError4 {
 
@@ -12,8 +12,8 @@ public class ThreadError4 {
 
     public static void main(String[] args) throws InterruptedException {
         new PointMaker().start();
-//        Thread.sleep(10);
-        Thread.sleep(105);
+        Thread.sleep(10);
+//        Thread.sleep(200);
         if (point != null) {
             System.out.println(point);
         }
@@ -26,8 +26,10 @@ class Point {
 
     public Point(int x, int y) throws InterruptedException {
         this.x = x;
+        System.out.println("================= y:"+y);
         ThreadError4.point = this;
         Thread.sleep(100);
+        System.out.println("================= y:"+y);
         this.y = y;
     }
 

@@ -4,12 +4,10 @@
 
 ### wait 和 notify 基本讲解
 
-    作用+用法 ： 阻塞阶段 唤醒阶段 遇到中断
+    作用+用法 ： 阻塞 唤醒 遇到中断
     
-    代码演示
-    
-    特点性质  1.用必须现拥有monitor锁
-             2.只能唤醒其中一个 
+    特点性质  1.用的必须先拥有monitor锁
+             2.notify 只能唤醒其中一个  notifyall 全部唤醒
              3.属于object object 是所有对象的父类 意味着任何对象都可以调用它
              4.wait 和notify相对于来说比较底层 类似功能condition 
 

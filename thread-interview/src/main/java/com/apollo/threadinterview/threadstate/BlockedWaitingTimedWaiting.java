@@ -12,7 +12,7 @@ public class BlockedWaitingTimedWaiting implements Runnable{
         Thread thread2 = new Thread(runnable);
         thread2.start();
         try {
-            Thread.sleep(5);
+            Thread.sleep(10);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }

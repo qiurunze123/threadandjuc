@@ -13,6 +13,7 @@ public class NewRunnableTerminated implements Runnable {
         thread.start();
         System.out.println(thread.getState());
         try {
+            //休眠10s 证明线程正在运行
             Thread.sleep(10);
         } catch (InterruptedException e) {
             e.printStackTrace();

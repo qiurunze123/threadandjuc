@@ -20,6 +20,8 @@ https://docs.oracle.com/javase/8/docs/api/index.html?java/lang/Thread.State.html
  
  阻塞状态： 一般习惯而言 把blocked(被阻塞)  waiting 等待 Time_waiting(计时等待) 都被称为阻塞状态
  
+ //========================== 异常情况（请看下章 object wait 和 notify ） ===================================
+ 
  1.   如果发生异常，可以直接跳到终止TERMINATED状态，不必再遵循路径，比如可以从WAITING直接到TERMINATED。
  
  2.   从Object.wait()刚被唤醒时，通常不能立刻抢到monitor锁，那就会从WAITING先进入BLOCKED状态，抢到锁后再转换到RUNNABLE状态。

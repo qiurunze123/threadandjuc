@@ -47,7 +47,6 @@ public class WaitNotifyReleaseOwnMonitor {
                 synchronized (resourceA) {
                     System.out.println("ThreadB got resourceA lock.");
                     System.out.println("ThreadB tries to resourceB lock.");
-
                     synchronized (resourceB) {
                         System.out.println("ThreadB got resourceB lock.");
                     }

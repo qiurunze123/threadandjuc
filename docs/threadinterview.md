@@ -23,19 +23,23 @@ java多线程juc
  
 2. ##### 多线程状态流转你真的确定吗?
 
+  请看下面得说法对吗? 
+  https://github.com/qiurunze123/threadandjuc/blob/master/docs/thread-base-003-1.md 
+
+
  有哪些不同的多线程生命周期? 
- https://github.com/qiurunze123/threadandjuc/blob/master/docs/thread-base-003-1.md 
  https://github.com/qiurunze123/threadandjuc/blob/master/docs/thread-base-003.md
  
- threadstate ThreadinterviewApplicationTests
+ threadstate 
 
 3. ##### Object 中的线程方法
    
+ https://github.com/qiurunze123/threadandjuc/blob/master/docs/thread-base-003-2.md
+ 
+ threadandobject
+ 
  讲解 wait notify notifyall（很多并发工具类的原理）
  
- threadandobject 
- 
- https://github.com/qiurunze123/threadandjuc/blob/master/docs/thread-base-003-2.md
 
 ### 线程安全问题
 
@@ -46,15 +50,14 @@ java多线程juc
 
    https://github.com/qiurunze123/threadandjuc/blob/master/docs/threadsafe001.md
 
-
 ### 线程JMM内存模型
 
-  1. ##### java内存模型+java对象模型+jvm内存模型
-   
-   https://github.com/qiurunze123/threadandjuc/blob/master/docs/JMM-1.md
-
-  2. ##### 什么是底层原理?? 为什么出现了java内存模型
+  1. #####  为什么出现了java内存模型 他是什么底层原理??
   
+   https://github.com/qiurunze123/threadandjuc/blob/master/docs/JMM-1.md
+   
+  2.. ##### java内存模型+java对象模型+jvm内存模型
+   
    https://github.com/qiurunze123/threadandjuc/blob/master/docs/JMM-1.md
 
   3. ##### JMM重点内容

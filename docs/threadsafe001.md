@@ -12,9 +12,9 @@
      
      threadsaft -- ThreadError1
      
-     解决：返回副本
+     解决:内存可见 JUC原子类操作
      
-     ![img](https://raw.githubusercontent.com/qiurunze123/imageall/master/threaderror1.png)
+![img](https://raw.githubusercontent.com/qiurunze123/imageall/master/threaderror1.png)
      
 #### 2.活跃性问题: 死锁 活锁 饥饿锁 ......
      
@@ -30,8 +30,6 @@
           3.构造函数中运行线程
           
      threadsaft -- ThreadError3 ThreadError4
-   
-![整体流程](https://raw.githubusercontent.com/qiurunze123/imageall/master/threadsafe002.png)
 
 ### 3.各种需要考虑线程的安全情况 
  
@@ -41,7 +39,7 @@
  
  3.不同数据之间存在捆绑关系的时候 （ip和端口号 进行原子合并操作）
  
- 4.我们使用其他类的时候 如果对方没有生命自己是线程安全的  比如 hashmap 就提醒是线程不安全的 我们就知道要使用安全的map ConcurrentHashMap
+ 4.我们使用其他类的时候 如果对方没有声明自己是线程安全的  比如 hashmap 就提醒是线程不安全的 我们就知道要使用安全的map ConcurrentHashMap
    
 ### 4.为什么会有线程性能问题
    

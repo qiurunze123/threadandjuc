@@ -33,6 +33,7 @@ public class ThreadError2 implements Runnable{
         if (flag == 1) {
             synchronized (o1) {
                 try {
+                    //确保 第二个线程拿到锁
                     Thread.sleep(500);
                 } catch (InterruptedException e) {
                     e.printStackTrace();
