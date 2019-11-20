@@ -115,6 +115,12 @@
  | 004 |死锁特辑| [解决思路](/docs/threadsafe001.md) |
 
 
+
+### 多线程juc 分享 
+
+ https://github.com/qiurunze123/threadandjuc/blob/master/docs/threadinterview.md
+
+
  #### 不知不觉 更新了小半年 从基础到并发到项目直接应用 许多地方不是很好但是是对一个人的考验 从明白到应用到写出来是一个繁琐的过程
  #### 耗时耗力不过很庆幸自己没有放弃终究是完成了 最后希望得到大家的指正与意见也希望帮助更多的人 
  
