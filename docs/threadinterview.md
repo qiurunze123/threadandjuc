@@ -76,10 +76,6 @@ java多线程juc
    
    https://github.com/qiurunze123/threadandjuc/blob/master/docs/thread-base-6.md
    
-   2. ##### 集合安全类
-   
-   https://github.com/qiurunze123/threadandjuc/blob/master/docs/copyonwritearraylist.md
-   
    2. ##### AQS基础
    
    https://github.com/qiurunze123/threadandjuc/blob/master/docs/AQS.md
