@@ -14,18 +14,16 @@
 
 CAS 是 compare And Swap 的缩写  比较交换 类似于java中的乐观锁 
 
-假如我们要修改一个值 之前的做法就是从内存中去除这个值然后比较 然后更改 但是在咱们现在的CAS操作 只是是一个指令级别 
-指令级别 是可以保证原子操作的
-
  ![整体流程](https://raw.githubusercontent.com/qiurunze123/imageall/master/casunsafe.png)
  
- 如果没成功 是在自旋 CAS操作 一直到成功为止 
-
 ![整体流程](https://raw.githubusercontent.com/qiurunze123/imageall/master/threadnew10.png)
 
 #### CAS底层原理 
 
 atomicInteger.getAndIncrement() 方法为什么可以避免i++ 问题呢??
+
+假如我们要修改一个值 之前的做法就是从内存中去取这个值然后比较 然后更改 但是在咱们现在的CAS操作 只是是一个指令级别 
+指令级别 是可以保证原子操作的
 
 ![整体流程](https://raw.githubusercontent.com/qiurunze123/imageall/master/casunsafe.png)
  

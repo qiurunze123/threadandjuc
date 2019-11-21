@@ -20,6 +20,9 @@ public class CasDemo {
         //比较并交换
         System.out.println("结论= "+atomicInteger.compareAndSet(5,2020));
 
+        System.out.println("结论= "+atomicInteger.getAndIncrement());
+
+
         System.out.println("------"+atomicInteger.get()+"---------");
 
     }
