@@ -9,6 +9,7 @@ import java.util.concurrent.CountDownLatch;
  *
  *  * 1 a=1;x=b(0) ; b=1;y=a(1) 最终结果是x=0 y=1
  *  * 2 b=1;y=a(0) ; a=1;x=b(1) 最终结果是x=1 y=0 将线程1和2 调换下顺序会有大概率发生
+ *  ******** 需要保持同时执行才可以 所以 countdowmlatch  来保持线程同步 *********
  *  * 3 b=1;a=1;   x=b(1) ;y=a(1) 最终结果是x=1 y=1
  *
  *  这三个结果都是默认得是 执行得顺序不会变才会发生得 我们交替的无非是 线程a和线程b顺序
@@ -33,6 +34,7 @@ public class ThreadJmm2 {
         int i = 0;
         for (; ; ) {
             i++;
+            //保持第二次进入的时候又是原始状态
             x = 0;
             y = 0;
             a = 0;
@@ -78,7 +80,7 @@ public class ThreadJmm2 {
 //                break;
 //            }
                 if (x == 0 && y == 0) {
-                System.out.println(result);
+                System.out.println("============="+result+"==============");
                 break;
             } else {
                 System.out.println(result);

@@ -21,66 +21,77 @@
  
  全称java memory model 是一组规范  
  
- ![整体流程](https://raw.githubusercontent.com/qiurunze123/imageall/master/threadjmm4.png)
+ ![img](https://raw.githubusercontent.com/qiurunze123/imageall/master/threadjmm4.png)
  
 迫切需要一个标准来让我们多线程运行的结果可预期 综上原因JMM这个规范就出来了 各个jvm的实现需要遵守JMM规范
 以便于像我们这样的开发者可以利用这些规范更方便的开发多线程的程序
 
 ### 3.JMM的重点内容
 
+  ![img](https://raw.githubusercontent.com/qiurunze123/imageall/master/jmm100.png)
+
  ##### 1.重排序 
    
    ThreadJmm1 ThreadJmm2
    
+  ![img](https://raw.githubusercontent.com/qiurunze123/imageall/master/threadjmm120.jpg)
+   
    为什么要重排序??
    
   ![img](https://raw.githubusercontent.com/qiurunze123/imageall/master/threadjmm5.jpg)
-   
-   2.可见性 ThreadJmm3 解决ThreadJmm4
+  
+  可以提高处理速度
+  
+  重排序的三种情况:
+  
+  ![img](https://raw.githubusercontent.com/qiurunze123/imageall/master/threadjmm121.jpg)
+
+  2.可见性 ThreadJmm3 解决ThreadJmm4
    
   ![img](https://raw.githubusercontent.com/qiurunze123/imageall/master/threadjmm6.png)
   
-   
-   
+  3.volatile 如何解决
+  
+  ![整体流程](https://raw.githubusercontent.com/qiurunze123/imageall/master/volatile100.png)
+
  ##### 2.可见性
  
- 为什么会有可见性问题 why可见性??
+ ###### 1.为什么会有可见性问题 why可见性??
  
  ![整体流程](https://raw.githubusercontent.com/qiurunze123/imageall/master/threadjmm8.png)
  
- 从上到下的速度是逐渐变快的 我们之所以不直接从RAM拿内存 主要是因为这样会极大降低我们的速度 但是这样就有可能
+ 从内存到cpu 是有多层缓存的 从上到下的速度是逐渐变快的 我们之所以不直接从RAM拿内存 主要是因为这样会极大降低我们的速度 但是这样就有可能
  导致内存不同步问题 比如core4 连接L1缓存 然后跑到L2 但是 左边的L2还没反应过来 所以导致同一个值带不同时刻都不一样
  
- JMM怎么解决的??
+  总结一下：
+  1.高速缓存的容量比主内存小 但是速度仅次于寄存器 所以在cpu 与主内存之间就多了缓存层
+  
+  2.线程之间的共享变量的可先行问题不是直接有多核引起的 而是由多缓存引起的
+  
+  3.假如所有核心都用一个缓存 那么也就不存在内存可见性问题
+  
+  4. 但是每个核心都会将自己需要的数据读取到缓存中 数据修改后也是写入缓存中 等待刷新主内存 所以会导致有些核心读取的只是过期的值
+ ###### 2.JMM怎么解决的??
  
  开辟出来了主内存和工作内存
  
  ![整体流程](https://raw.githubusercontent.com/qiurunze123/imageall/master/threadjmm9.png)
  
+ ![整体流程](https://raw.githubusercontent.com/qiurunze123/imageall/master/threadjmm102.png)
+ 
  ![整体流程](https://raw.githubusercontent.com/qiurunze123/imageall/master/jmm100.png)
  
-       JMM规定了所有的变量都存储在主内存（Main Memory）中。每个线程还有自己的工作内存（Working Memory）, 
-       线程的工作内存中保存了该线程使用到的变量的主内存的副本拷贝，线程对变量的所有操作（读取、赋值等）都必须在工作内存中进行，
-       而不能直接读写主内存中的变量（volatile变量仍然有工作内存的拷贝，但是由于它特殊的操作顺序性规定，所以看起来如同直接在主内存中读写访问一般）
-       不同的线程之间也无法直接访问对方工作内存中的变量，线程之间值的传递都需要通过主内存来完成。
+总结一下：
 
- ### 3.原子性  Happens-Before原则     
-   
-   原子性 大家都知道要么都执行要么都不执行 是不可分割的 i++就不是原子性的
-   
- #### 原子操作有哪些??                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               dc r
-   
-   除了long和double之外的基本类型（int byte .....）
-  
-   所有引用reference的赋值操作 不管是32位机器还是64位机器
-  
-   java.concurrent.Atomic.* 包中所有类的原子操作
-   
-  为什么long 和double 不是原子性的??
-  
-  ![整体流程](https://raw.githubusercontent.com/qiurunze123/imageall/master/threadjmm10.png)
+1.所有的变量都存储在主内存中同时每个线程也有自己的独立的工作内存 工作内存中的变量内容都是主内存中的拷贝
 
-  
+2. 线程不能直接读取主内存中的值 而是只能操作自己工作内存中的变量 然后同步到主内存中
+
+3.主内存时多个线程共享的 但线程间不共享工作内存 如果西纳城见需要通信 必须借助主内存中转完成
+
+-- 所有共享变量存在于主内存中 但线程间不共享工作内存 如果线程间需要通信必须借助主内存中转完成
+
+ ###### 3.Happens-Before原则     
    | ID | Problem  |
    | --- | ---   |
    | 001 |什么是Happens-Before原则 |
@@ -131,11 +142,11 @@
    
    ④ 线程启动
    
-   Thread对象的start（）方法happen—before此线程的每一个动作
+   Thread对象的start（）方法启动起来就能可能这个线程启动之前的每一个动作
    
    ⑤ 线程join
    
-   如果线程A执行操作ThreadB.join()并成功返回，那么线程B中的任意操作happens-before于线程A从ThreadB.join()操作成功返回
+   join()之后的语句一定可以看到那个等待线程的的所有语句保证刚才的语句一定能执行完毕 一定可以看得到 等你真正运行完毕 我在执行后面的语句
    
    ⑥ 传递性
    
@@ -143,16 +154,48 @@
    
    ⑦ 中断
    
-   对线程interrupt()方法的调用happen—before发生于被中断线程的代码检测到中断时事件的发生
+一个线程如果被其他线程interrupt是 那么就检测中断（isInterrupted）或者抛出InterruptedException 一定能看到
    
    ⑧ 工具类happens-before原则
    
    ![整体流程](https://raw.githubusercontent.com/qiurunze123/imageall/master/happens-before.png)
 
+CountDownLatch 比如我释放之前你必须达到释放的条件
+
  
 ### volatile 如何保证 可见性的呢??
 
   ![整体流程](https://github.com/qiurunze123/threadandjuc/blob/master/docs/thread-base-5.md)
+ 
+  ### 3.原子性
+    
+    原子性 大家都知道要么都执行要么都不执行 是不可分割的 i++就不是原子性的
+    
+   ![整体流程](https://github.com/qiurunze123/threadandjuc/blob/master/docs/threadjmm123.md)
+    
+    i++ 一行代码有三个动作 目前i等于几 然后加上去 然后再写进去 这是三个指令 对于这三个指令而言是可以随意乱序的 
+    比如我第一个线程执行完第一个指令 执行第二个指令之后 突然跑过去第二个线程执行第一个第二个指令 然后再跑回来执行i=2
+    此时又跑回去对于第二个线程而言 一开始i=1的时候 像读取当前i的值 但是 那个时候 线程1还没有把i写回去 所以线程2当时读的i
+    就是=1于是经过 这么俩个乱序的操作 俩个线程都会把2写回去实际上就少加了1 synchorized 可以 解决
+    
+  #### 原子操作有哪些??                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               dc r
+    
+  ##### java 中原子操作有哪些?? 默认的原子操作很少
+    
+    除了long和double之外的基本类型（int byte .....）
+   
+    所有引用reference的赋值操作 不管是32位机器还是64位机器
+   
+    java.concurrent.Atomic.* 包中所有类的原子操作
+    
+   为什么long 和double 不是原子性的??
+   
+   ![整体流程](https://raw.githubusercontent.com/qiurunze123/imageall/master/threadjmm10.png)
+
+总结 ： 在32位得JVM中 long 和 double 操作不是原子的 但是在64位jvm上是原子得
+       
+       不必担心 商用Java虚拟机 不回出现 已经自动保证了原子性 
+
    
    
 

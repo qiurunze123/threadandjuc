@@ -1,31 +1,34 @@
 package com.apollo.threadinterview.threadjmm;
 
 /**
- * @author 邱润泽 bullock
- *
- * 解决 volatile 强制每次读取的都是我们每次修改后的
+ * 描述：     演示可见性带来的问题
  */
-public class ThreadJmm4 {
-   volatile int a = 1;
-   volatile int b = 2;
+public class FieldVisibilityMind {
+
+     int a = 1;
+     int c =90;
+     int d= 100;
+    volatile int b = 2;
 
     private void change() {
         a = 3;
-        b = a;
+        c=1000;
+        d=200;
+        //触发器
+        b=0;
     }
 
+
     private void print() {
-        System.out.println("b="+b+";a="+a);
-
-        if(a==1&&b==3) {
-            System.out.println("b=" + b + ";a=" + a+"===================================");
+        if(b==0){
+            System.out.println("b=" + b + ";a=" + a+";c="+c+"d:=="+d);
         }
-
+        System.out.println("b=" + b + ";a=" + a);
     }
 
     public static void main(String[] args) {
         while (true) {
-            ThreadJmm4 test = new ThreadJmm4();
+            FieldVisibilityMind test = new FieldVisibilityMind();
             new Thread(new Runnable() {
                 @Override
                 public void run() {
@@ -52,4 +55,6 @@ public class ThreadJmm4 {
         }
 
     }
+
+
 }
