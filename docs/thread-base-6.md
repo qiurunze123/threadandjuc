@@ -87,29 +87,28 @@ UnSafe类在于sun.misc包中,其内部方法操作可以向C的指针一样直�
    
   5.线程A重新获取value值,因为变量value是volatile修饰,所以其他线程对他的修改,线程A总是能够看到,线程A继续执行compareAndSwapInt方法进行比较替换,直到成功.
   
-  
-##### 为什么要用CAS而不用synchronize锁??
-
-synchronize一段时间内只允许一个线程访问 虽然一致性得到了保障但是并发性下降 用的
-
-                 do {
-                     var5 = this.getIntVolatile(var1, var2);
-                    } while(!this.compareAndSwapInt(var1, var2, var5, var5 + var4));
-                 
-                 没有加锁 可以反复的比较 直到比较成功那一刻为止
-                                                            
- synchronize 是基于阻塞锁的机制 所以使用的时候就会出现这么几个问题
-   
-       1.被阻塞的线程优先级很高
-       2.拿到锁的线程一直不释放锁怎么办
-       3.大量的竞争消耗cpu 同时带来死锁和其他线程安全的问题
-       4.粒度较大 在一些方法中适用会显得比较笨拙 比如 计数器
-
 ##### 底层汇编  
 ![整体流程](https://raw.githubusercontent.com/qiurunze123/imageall/master/cas2.png)
   
   在多处理器情况下必须使用lock指令加锁来完成。从这个例子就可以比较清晰的了解CAS的底层实现了，
   当然不同的操作系统和处理器的实现会有所不同，大家可以自行了解。 `计算机并发原语`是叫这个吧哈哈！！
+  
+##### 为什么要用CAS而不用synchronize锁??
+  
+  synchronize一段时间内只允许一个线程访问 虽然一致性得到了保障但是并发性下降 用的
+  
+                   do {
+                       var5 = this.getIntVolatile(var1, var2);
+                      } while(!this.compareAndSwapInt(var1, var2, var5, var5 + var4));
+                   
+                   没有加锁 可以反复的比较 直到比较成功那一刻为止
+                                                              
+   synchronize 是基于阻塞锁的机制 所以使用的时候就会出现这么几个问题
+     
+         1.被阻塞的线程优先级很高
+         2.拿到锁的线程一直不释放锁怎么办
+         3.大量的竞争消耗cpu 同时带来死锁和其他线程安全的问题
+         4.粒度较大 在一些方法中适用会显得比较笨拙 比如 计数器
   
 #### CAS缺点
 
@@ -143,6 +142,7 @@ synchronize一段时间内只允许一个线程访问 虽然一致性得到了�
     
     T1 提交上去的是 2019 2 对不起 你低于3版本 需要重新去拿 版本3的值再去做操作 
     
-     
-  ABADemo
+ 比较两个对象的地址是否相等 AtomicReferenceDemo
 
+  ABADemo   ABADemo 带版本号得
+  
