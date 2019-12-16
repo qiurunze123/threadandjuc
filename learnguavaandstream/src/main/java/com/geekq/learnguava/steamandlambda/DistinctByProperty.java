@@ -20,6 +20,8 @@ public class DistinctByProperty {
             list.add(new Book("Learning Freemarker", 150));
             list.add(new Book("Spring MVC", 200));
             list.add(new Book("Hibernate", 300));
+
+            System.out.println("22222222");
         }
         list.stream().filter(distinctByKey(b -> b.getName()))
                 .forEach(b -> System.out.println(b.getName()+ "," + b.getPrice()));
