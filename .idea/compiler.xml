@@ -6,15 +6,25 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="dubbolearn-consumer" />
-        <module name="dubbolearn-rely" />
-        <module name="dubbolearn-service" />
         <module name="high-import-try" />
         <module name="learnguava" />
         <module name="learnguavaandstream" />
-        <module name="mybatis-learn" />
         <module name="thread-interview" />
         <module name="threadinterview" />
+      </profile>
+      <profile name="Annotation profile for dubbo-learn-server" enabled="true">
+        <sourceOutputDir name="../target/generated-sources/annotations" />
+        <sourceTestOutputDir name="../target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="dubbolearn-consumer" />
+        <module name="dubbolearn-rely" />
+        <module name="dubbolearn-service" />
+      </profile>
+      <profile name="Annotation profile for threadandjuc" enabled="true">
+        <sourceOutputDir name="../../target/generated-sources/annotations" />
+        <sourceTestOutputDir name="../../target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="mybatis-learn" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -29,7 +39,7 @@
       <module name="high-import-try" options="-parameters" />
       <module name="learnguava" options="-parameters" />
       <module name="thread-interview" options="-parameters" />
-      <module name="threadinterview" options="-parameters" />
+      <module name="threadinterview" options="" />
     </option>
   </component>
 </project>
