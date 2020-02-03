@@ -20,15 +20,10 @@
         <module name="dubbolearn-rely" />
         <module name="dubbolearn-service" />
       </profile>
-      <profile name="Annotation profile for threadandjuc" enabled="true">
-        <sourceOutputDir name="../../target/generated-sources/annotations" />
-        <sourceTestOutputDir name="../../target/generated-test-sources/test-annotations" />
-        <outputRelativeToContentRoot value="true" />
-        <module name="mybatis-learn" />
-      </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="learnguava" target="1.8" />
+      <module name="mybatis-learn" target="1.7" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">

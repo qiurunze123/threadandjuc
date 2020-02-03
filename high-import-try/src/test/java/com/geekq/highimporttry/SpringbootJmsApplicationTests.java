@@ -1,5 +1,6 @@
 package com.geekq.highimporttry;
 
+import com.alibaba.fastjson.JSON;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -28,16 +29,7 @@ public class SpringbootJmsApplicationTests {
      */
     @Test
     public void sendTxtMail() {
-        SimpleMailMessage simpleMailMessage = new SimpleMailMessage();
-        // 设置收件人，寄件人
-        simpleMailMessage.setTo(new String[]{"3341386488@qq.com", "3341386488@qq.com"});
-        simpleMailMessage.setFrom("QiuRunZe_key@163.com");
-        simpleMailMessage.setSubject("Spring Boot Mail 邮件测试【文本】");
-        simpleMailMessage.setText("这里是一段简单文本。");
-        // 发送邮件
-        mailSender.send(simpleMailMessage);
 
-        System.out.println("邮件已发送");
     }
 
     /**

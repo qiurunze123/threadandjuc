@@ -4,6 +4,7 @@ import com.apollo.threadinterview.threadbase.RunnableStyle;
 import com.apollo.threadinterview.threadbase.ThreadStyle;
 import javafx.concurrent.Task;
 import lombok.extern.slf4j.Slf4j;
+import net.minidev.json.JSONAwareEx;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
@@ -45,6 +46,10 @@ class ThreadinterviewApplicationTests {
         RunnableStyle runnableStyle =new RunnableStyle();
         Thread thread = new Thread(runnableStyle);
         thread.start();
+    }
+
+    @Test
+    public void implThreadTes1t() {
     }
 
     @Test
