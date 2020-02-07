@@ -120,6 +120,7 @@
  | --- | ---   | :--- |
  | 001 |JDK 线程池高度解析(大致了解版本) | [解决思路](/docs/thread-base-9.md) |
  | 002 |线程池是什么 | [解决思路](/docs/threadpool0001.md) |
+ | 002-1 |多次创建线程的劣势 | [解决思路](/docs/threadpool0001.md) |
  | 003 |什么时候使用线程池 | [解决思路](/docs/threadpool0001.md) |
  | 004 |线程池的优势| [解决思路](/docs/threadpool0001.md) |
  | 005 |Executor框架| [解决思路](/docs/threadpool0001.md) |
