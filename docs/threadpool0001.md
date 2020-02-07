@@ -167,4 +167,69 @@
       4、DiscardPolicy：直接丢弃任务；
       上面的4种策略都是ThreadPoolExecutor的内部类。
       当然也可以根据应用场景实现RejectedExecutionHandler接口，自定义饱和策略，如
-      记录日志或持久化存储不能处理的任务。
+      记录日志或持久化存储不能处理的任务
+
+#### 线程池监控
+
+    public long getTaskCount() //线程池已执行与未执行的任务总数
+    public long getCompletedTaskCount() //已完成的任务数
+    public int getPoolSize() //线程池当前的线程数
+    public int getActiveCount() //线程池中正在执行任务的线程数量
+    
+### 线程池源码分析
+
+#### execute 方法 
+
+整体就是类似上面的整个流程
+
+    public void execute(Runnable command) {
+    //如果任务为空则抛异常
+            if (command == null)
+                throw new NullPointerException();
+            //clt记录着runState和workerCount
+            int c = ctl.get();
+            
+            //workerCountOf方法取出低29位的值，表示当前活动的线程数
+            //如果当前活动线程数小于corePoolSize，则新建一个线程放入线程池中
+            //并把任务添加到该线程中
+            
+            if (workerCountOf(c) < corePoolSize) {
+            
+            //addWorker中的第二个参数表示限制添加线程的数量是根据corePoolSize来判断还是maximumPoolSize来判断
+            //如果为true，根据corePoolSize来判断 如果为false，则根据maximumPoolSize来判断
+            
+                if (addWorker(command, true))
+                    return;
+                //如果添加失败，则重新获取ctl值
+                c = ctl.get();
+            }
+            
+            //如果当前线程池是运行状态并且任务添加到队列成功
+            if (isRunning(c) && workQueue.offer(command)) {
+            //重新检查状态 如果不是运行状态 由于之前已经入队那么需要移除该command 
+            //执行移除和检查成功后 -- handler使用拒绝策略 对该任务进行处理 整个方法返回
+            
+                int recheck = ctl.get();
+                if (! isRunning(recheck) && remove(command))
+                    reject(command);
+                    
+             获取线程池中的有效线程数，如果数量是0，则执行addWorker方法
+             * 这里传入的参数表示：
+             * 1. 第一个参数为null，表示在线程池中创建一个线程，但不去启动；
+             * 2. 第二个参数为false，将线程池的有限线程数量的上限设置为
+             maximumPoolSize，添加线程时根据maximumPoolSize来判断
+             
+                else if (workerCountOf(recheck) == 0)
+                    addWorker(null, false);
+            }
+            
+            //如果线程执行到这里那么说明
+            //* 1. 线程池已经不是RUNNING状态；
+              * 2. 线程池是RUNNING状态，但workerCount >= corePoolSize并且
+              workQueue已满。
+              * 这时，再次调用addWorker方法，但第二个参数传入为false，将线程池的有限
+              线程数量的上限设置为maximumPoolSize；
+              * 如果失败则拒绝该任务
+            else if (!addWorker(command, false))
+                reject(command);
+        }
