@@ -136,7 +136,7 @@
  | 011-4 |runWorker方法| [解决思路](/docs/threadpool0001.md) |
  | 011-5 |getTask方法| [解决思路](/docs/threadpool0001.md) |
  | 011-6 |processWorkerExit方法| [解决思路](/docs/threadpool0001.md) |
- | 011-7 |线程池的源码分析| [解决思路](/docs/threadpool0001.md) |
+ | 011-7 |小结 | [解决思路](/docs/threadpool0001.md) |
  | 012 |手写线程池代码| [解决思路](/docs/threadpool0001.md) |
 
 

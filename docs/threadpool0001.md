@@ -618,3 +618,16 @@ getTask方法用来从阻塞队列中取任务，代码如下：
        
        
 ![整体流程](https://raw.githubusercontent.com/qiurunze123/imageall/master/pool5.png)
+
+
+### 小结
+
+    分析了线程的创建，任务的提交，状态的转换以及线程池的关闭；
+    这里通过execute 方法来展开线程池的工作流程， execute 方法通过
+    corePoolSize，maximumPoolSize以及阻塞队列的大小来判断决定传入的任务应该
+    被立即执行，还是应该添加到阻塞队列中，还是应该拒绝任务。
+    介绍了线程池关闭时的过程，也分析了shutdown方法与getTask方法存在竞态
+    条件；
+    在获取任务时，要通过线程池的状态来判断应该结束工作线程还是阻塞线程等待
+    新的任务，也解释了为什么关闭线程池时要中断工作线程以及为什么每一个worker
+    都需要lock
