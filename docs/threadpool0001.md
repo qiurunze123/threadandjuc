@@ -642,6 +642,8 @@ getTask方法用来从阻塞队列中取任务，代码如下：
 
 ### 手写线程池代码
 
+![整体流程](https://raw.githubusercontent.com/qiurunze123/imageall/master/手写线程池.png)
+
 threadpoolexecutor-example 为手写线程池代码
 
 ### 小结
