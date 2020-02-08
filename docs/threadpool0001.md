@@ -365,6 +365,26 @@
        
 #### Worker类讲解
 
+     private final class Worker
+            extends AbstractQueuedSynchronizer
+            implements Runnable
+        {
+            /**
+             * This class will never be serialized, but we provide a
+             * serialVersionUID to suppress a javac warning.
+             */
+            private static final long serialVersionUID = 6138294804551838833L;
+
+        Worker(Runnable firstTask) {
+            setState(-1); // inhibit interrupts until runWorker
+            this.firstTask = firstTask;
+            this.thread = getThreadFactory().newThread(this);
+        }
+        public void run() {
+            runWorker(this);
+        }
+
+
     线程池中每一个线程都被封装成了一个worker类 ThreadPool维护的其实就是一组Worker对象 请参考JDK目录
     Worker类继承AQS并且实现了Runnable接口 注意其中的firstTask和thread属性 firstTask用来保存他传入的任务
     thread是在调用构造方法的时候通过threadFactory来创建的线程用来处理任务的线程

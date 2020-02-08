@@ -78,7 +78,7 @@
  | --- | ---   | :--- |
  | 重点 |多线程安全问题 | [解决思路](/docs/JMM.md) |
  | 重点 |JMM多线程内存模型 | [解决思路](/docs/JMM.md) |
- | important-1 |JMM多线程内存模型 | [解决思路](/docs/JMM-1.md) |
+ | impo-1 |JMM多线程内存模型 | [解决思路](/docs/JMM-1.md) |
  | 重点 |死锁专题分析 | [解决思路](/docs/dlock.md) |
  | 重点 |AQS--一切的基础 Doug Lee 是个天才 | [解决思路](/docs/AQS.md) |
  | 重点 |Future模式精度分析 Future 模式 | [解决思路](/docs/Future.md) |
@@ -90,12 +90,12 @@
  | 005 |阻塞队列..(已完成) |[解决思路](/docs/blocking.md)  |
  | 006 |插播 synchronized和lock 的区别 彻底分析..(已完成) |[解决思路](/docs/sandl.md)  |
  | 008 |AQS .....(有待分析) |[解决思路](/docs/thread-base-14.md)  |
- | 009 |JDK并发包reentrantlock,condition , semaphone , readwritelock ,CountDownLatch...(粗略版已完成) |[解决思路](/docs/thread-base-7.md)  |
- | 010 |CountDownLatch |[解决思路](/docs/CountDownLatch.md)  |
- | 011 |reentrantlock 源码分析 com.geek.reentrantlock.ReentrantLockDetails  |[解决思路](/docs/thread-base-7.md)  |
+ | 009 |JDK并发包reentrantlock,condition , semaphone ，readwritelock |[解决思路](/docs/thread-base-7.md)  |
+ | 010 |countDownLatch |[解决思路](/docs/CountDownLatch.md)  |
+ | 011 |reentrantlock 源码分析 ReentrantLockDetails  |[解决思路](/docs/thread-base-7.md)  |
  | 012 |JDK并发包 ConcurrentHashMap 精度分析(粗略版已完成) |[解决思路](/docs/thread-base-8.md)  |
  | 014 |JDK ForkJoin 模式精度分析(粗略版已完成) |[解决思路](/docs/thread-base-10.md)  |
- | 015 |JDK 单例模式 不变模式 Future模式 生产者 消费者 ....... (粗略版已完成)） |[解决思路](/docs/thread-base-11.md)  |
+ | 015 |JDK 单例模式 不变模式 Future模式 生产者 消费者 ... (粗略版已完成)） |[解决思路](/docs/thread-base-11.md)  |
  | 016 |NIO AIO 详解 (粗略版已完成)|[解决思路](/docs/thread-base-12.md)  |
  | 017 |并发断点调试 JDK新特性 .....  (粗略版已完成) |[解决思路](/docs/thread-base-13.md)  |
  | 018 |锁优化 ..... (有待分析)   |[解决思路]((/docs/thread-base-13.md))  |

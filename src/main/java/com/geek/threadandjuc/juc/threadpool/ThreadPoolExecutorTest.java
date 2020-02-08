@@ -19,13 +19,14 @@ public class ThreadPoolExecutorTest {
 //		ThreadPoolExecutor1 executor = new ThreadPoolExecutor1(3,3,0,TimeUnit.SECONDS,new LinkedBlockingQueue<Runnable>(1),new DiscardOldestPolicy());
 //		ThreadPoolExecutor1 executor = new ThreadPoolExecutor1(3,3,0,TimeUnit.SECONDS,new LinkedBlockingQueue<Runnable>(1),new DiscardPolicy());
 		ThreadPoolExecutor executor = new ThreadPoolExecutor(3,3,0,TimeUnit.SECONDS,new LinkedBlockingQueue<Runnable>(1),new MyPolicy());
-		
+
+
 		//ThreadPoolExecutor1 executor = new ThreadPoolExecutor1(7,7,60L,TimeUnit.SECONDS,new LinkedBlockingQueue<Runnable>());
 		for(int i=0;i<8;i++){
 			MyTask task = new MyTask(i);
 			executor.submit(task);
 		}
-		
+
 		executor.shutdown();
 	}
 }
