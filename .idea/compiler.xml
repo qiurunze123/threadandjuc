@@ -11,17 +11,14 @@
         <module name="learnguavaandstream" />
         <module name="thread-interview" />
         <module name="threadinterview" />
-      </profile>
-      <profile name="Annotation profile for dubbo-learn-server" enabled="true">
-        <sourceOutputDir name="../target/generated-sources/annotations" />
-        <sourceTestOutputDir name="../target/generated-test-sources/test-annotations" />
-        <outputRelativeToContentRoot value="true" />
-        <module name="dubbolearn-consumer" />
-        <module name="dubbolearn-rely" />
-        <module name="dubbolearn-service" />
+        <module name="threadpoolexecutor-example" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="dubbolearn" target="1.8" />
+      <module name="dubbolearn-consumer" target="1.7" />
+      <module name="dubbolearn-rely" target="1.7" />
+      <module name="dubbolearn-service" target="1.7" />
       <module name="learnguava" target="1.8" />
       <module name="mybatis-learn" target="1.7" />
     </bytecodeTargetLevel>

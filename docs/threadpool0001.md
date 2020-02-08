@@ -640,6 +640,10 @@ getTask方法用来从阻塞队列中取任务，代码如下：
 ![整体流程](https://raw.githubusercontent.com/qiurunze123/imageall/master/pool5.png)
 
 
+### 手写线程池代码
+
+threadpoolexecutor-example 为手写线程池代码
+
 ### 小结
 
     分析了线程的创建，任务的提交，状态的转换以及线程池的关闭；
@@ -651,3 +655,5 @@ getTask方法用来从阻塞队列中取任务，代码如下：
     在获取任务时，要通过线程池的状态来判断应该结束工作线程还是阻塞线程等待
     新的任务，也解释了为什么关闭线程池时要中断工作线程以及为什么每一个worker
     都需要lock
+    
+    

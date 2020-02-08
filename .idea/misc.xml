@@ -14,6 +14,7 @@
     </option>
     <option name="ignoredFiles">
       <set>
+        <option value="$PROJECT_DIR$/dubbo-learn-server/pom.xml" />
         <option value="$PROJECT_DIR$/mybatis-learn/pom.xml" />
       </set>
     </option>

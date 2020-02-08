@@ -37,7 +37,8 @@
 ```
  
  **重点这个是先行项目---可先下滑了解基础和进阶**
- 
+ **手写线程池，线程池底层源码解析已更新**
+
  ### [three-high-import 高可用 高可靠 高性能 三高多线程导入系统（该项目意义为理论贯通)](/docs/code-solve.md)
  
  ### [进行线程拆分分配资源](/docs/code-solve-split.md)
@@ -138,7 +139,6 @@
  | 011-6 |processWorkerExit方法| [解决思路](/docs/threadpool0001.md) |
  | 011-7 |小结 | [解决思路](/docs/threadpool0001.md) |
  | 012 |手写线程池代码| [解决思路](/docs/threadpool0001.md) |
-
 
 ### 多线程juc 分享 
 
