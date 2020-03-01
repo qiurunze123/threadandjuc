@@ -3,7 +3,6 @@ package com.geekq.highimporttry.timer;
 import com.geekq.highimporttry.entity.Order;
 import com.geekq.highimporttry.mapper.OrderMapper;
 import com.google.common.util.concurrent.ThreadFactoryBuilder;
-import org.checkerframework.checker.units.qual.A;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;

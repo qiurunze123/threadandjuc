@@ -1,18 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
-    <parent>
-        <groupId>org.springframework.boot</groupId>
-        <artifactId>spring-boot-starter-parent</artifactId>
-        <version>2.1.4.RELEASE</version>
-        <relativePath/> <!-- lookup parent from repository -->
-    </parent>
-    <groupId>com.geekq</groupId>
-    <artifactId>high-import-try</artifactId>
+    <groupId>com.gqrz</groupId>
+    <artifactId>sphereg</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>high-import-try</name>
-    <description>多线程高性能导入重试</description>
+    <name>sphereg</name>
+    <description>sphereG</description>
 
     <properties>
         <java.version>1.8</java.version>
@@ -61,11 +55,11 @@
 
         <!--         如果使用数据治理，则引入本部分shardingsphere依赖，并且注释掉上面引用的sharding-jdbc-->
         <!--         数据治理-->
-        <!--        <dependency>-->
-        <!--            <groupId>org.apache.shardingsphere</groupId>-->
-        <!--            <artifactId>sharding-jdbc-orchestration-spring-boot-starter</artifactId>-->
-        <!--            <version>4.0.0-RC2</version>-->
-        <!--        </dependency>-->
+<!--        <dependency>-->
+<!--            <groupId>org.apache.shardingsphere</groupId>-->
+<!--            <artifactId>sharding-jdbc-orchestration-spring-boot-starter</artifactId>-->
+<!--            <version>4.0.0-RC2</version>-->
+<!--        </dependency>-->
         <!--若使用zookeeper, 请加入下面Maven坐标-->
         <!--        <dependency>-->
         <!--            <groupId>org.apache.shardingsphere</groupId>-->
@@ -91,52 +85,9 @@
             <artifactId>fastjson</artifactId>
             <version>1.2.59</version>
         </dependency>
-
-            <dependency>
-                <groupId>org.apache.commons</groupId>
-                <artifactId>commons-lang3</artifactId>
-                <version>3.8.1</version>
-            </dependency>
-
-        <!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-test -->
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-test</artifactId>
-            <version>2.2.4.RELEASE</version>
-            <scope>test</scope>
-        </dependency>
-
-        <dependency>
-            <groupId>org.aspectj</groupId>
-            <artifactId>aspectjweaver</artifactId>
-            <version>1.9.2</version>
-        </dependency>
-
-        <dependency>
-            <groupId>com.alibaba</groupId>
-            <artifactId>druid</artifactId>
-            <version>1.1.20</version>
-        </dependency>
-
-
-
-
     </dependencies>
 
     <build>
-        <resources>
-            <resource>
-                <directory>src/main/java</directory>
-                <includes>
-                    <include>**/*.xml</include>
-                </includes>
-                <filtering>false</filtering>
-            </resource>
-            <resource>
-                <directory>src/main/resources</directory>
-                <filtering>false</filtering>
-            </resource>
-        </resources>
         <pluginManagement>
             <plugins>
                 <plugin>

@@ -2,16 +2,12 @@ package com.geekq.highimporttry;
 
 import com.geekq.highimporttry.entity.ImportDataStep;
 import com.geekq.highimporttry.entity.Point;
+import com.geekq.highimporttry.logic.ImportDataTaskLogic;
 import com.geekq.highimporttry.mapper.PointDao;
 import com.geekq.highimporttry.service.HighImportDataService;
 import com.geekq.highimporttry.timer.*;
-import com.geekq.highimporttry.util.Constant;
-import org.apache.ibatis.type.Alias;
-import org.checkerframework.checker.units.qual.A;
-import org.joda.time.DateTime;
 import org.junit.Test;
 import org.junit.runner.RunWith;
-import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -51,6 +47,9 @@ public class HighImportTryApplicationTests {
     @Autowired
     private PointDao pointDao;
 
+    @Autowired
+    private ImportDataTaskLogic importDataTaskLogic;
+
 //    @Autowired
 //    private TimerRunner4ForkJoin timerRunner4ForkJoin ;
 
@@ -66,7 +65,7 @@ public class HighImportTryApplicationTests {
     @Test
     public void contextLoads() {
 
-        highImportDataService.recordHandle("20190415");
+        highImportDataService.recordHandle("20200224");
 
         try {
             Thread.currentThread().sleep(50000);
@@ -76,7 +75,18 @@ public class HighImportTryApplicationTests {
 
     }
 
+    @Test
+    public void testHintF() {
 
+        importDataTaskLogic.maxId(20200224+"");
+
+        try {
+            Thread.currentThread().sleep(50000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+
+    }
 
     @Test
     public void streamCode(){
@@ -161,16 +171,6 @@ public class HighImportTryApplicationTests {
         highImportDataService.recordHandleImport("20190415");
 
         Thread.currentThread().sleep(50000);
-    }
-    @Test
-    public void joda() throws InterruptedException {
-
-        DateTime dateTime = new DateTime(2000, 1, 1, 0, 0, 0, 0);
-        System.out.println(dateTime.plusDays(90).toString("E MM/dd/yyyy HH:mm:ss.SSS"));
-
-        DateTime dt1 = new DateTime();
-        System.out.println(dt1);
-
     }
 
 

@@ -6,12 +6,14 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="high-import-try" />
-        <module name="learnguava" />
         <module name="learnguavaandstream" />
-        <module name="thread-interview" />
         <module name="threadinterview" />
         <module name="threadpoolexecutor-example" />
+        <module name="learnguava" />
+        <module name="sphereg-S" />
+        <module name="high-import-try" />
+        <module name="teexample" />
+        <module name="thread-interview" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -19,8 +21,8 @@
       <module name="dubbolearn-consumer" target="1.7" />
       <module name="dubbolearn-rely" target="1.7" />
       <module name="dubbolearn-service" target="1.7" />
-      <module name="learnguava" target="1.8" />
-      <module name="mybatis-learn" target="1.7" />
+      <module name="grzq-sphere" target="8" />
+      <module name="mybatis-learn" target="8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
@@ -28,10 +30,13 @@
       <module name="dubbolearn-consumer" options="-parameters" />
       <module name="dubbolearn-rely" options="-parameters" />
       <module name="dubbolearn-service" options="-parameters" />
-      <module name="high-import-try" options="-parameters" />
+      <module name="grzq-sphere" options="-parameters &quot;-XDignore.symbol.file=true -Xlint&quot;" />
+      <module name="high-import-try" options="-parameters &quot;-XDignore.symbol.file=true -Xlint&quot;" />
       <module name="learnguava" options="-parameters" />
+      <module name="sphereg-S" options="&quot;-XDignore.symbol.file=true -Xlint&quot;" />
+      <module name="teexample" options="-parameters" />
       <module name="thread-interview" options="-parameters" />
-      <module name="threadinterview" options="" />
+      <module name="threadinterview" options="-parameters" />
     </option>
   </component>
 </project>
