@@ -21,10 +21,11 @@ public interface HighImportDataService {
     public void recordHandleImport(String day);
 
     public void insertPointTaskStep(List<ImportDataStep> steps);
-
     /**
      * 线程池 查询
      */
 
     public List<Point> recordHandlePoints(List<ImportDataStep> steps);
+
+    public void  importData(String data);
 }

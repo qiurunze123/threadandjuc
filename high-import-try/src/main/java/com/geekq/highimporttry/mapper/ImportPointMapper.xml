@@ -122,12 +122,6 @@
 
   </select>
 
-  <select id="queryAllUserIdByDay" resultType="int" >
-    select
-    DISTINCT userId
-    from ${table}
-    where day = #{day,jdbcType=VARCHAR} order by userId desc
-  </select>
 
   <select id="queryAllUserIdByMonth" resultType="int" >
     select
@@ -167,5 +161,12 @@
     delete from ${table}
     where day = #{day,jdbcType=VARCHAR}
   </delete>
+
+  <select id="queryAllUserIdByDay" resultType="int" >
+    select
+    DISTINCT userId
+    from ${table}
+    where day = #{day,jdbcType=VARCHAR} order by userId desc
+  </select>
 
 </mapper>

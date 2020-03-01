@@ -1,16 +1,15 @@
-package com.geekq.highimporttry.mapper;
+package com.geekq.highimporttry.logic;
 
 import com.geekq.highimporttry.entity.ImportPoint;
 import com.geekq.highimporttry.entity.ImportPointKey;
 import com.geekq.highimporttry.entity.Point;
 import org.apache.ibatis.annotations.Param;
-import org.springframework.stereotype.Repository;
 
 import java.util.Date;
 import java.util.List;
 
-@Repository
-public interface ImportPointDao {
+public interface ImportPointLogic {
+
     int deleteByPrimaryKey(ImportPointKey key);
 
     int insert(ImportPoint record);
@@ -70,6 +69,4 @@ public interface ImportPointDao {
                                                 @Param("day") String day,
                                                 @Param("rangeStart") Long rangeStart,
                                                 @Param("rangeEnd") Long rangeEnd);
-
-    public String isExistTable(@Param("database") String database ,@Param("tableName") String tableName );
 }

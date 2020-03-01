@@ -26,6 +26,9 @@ public class Constant {
      * 账单不需要抽取数据的日期(表示该日期数据已经抽取,或者已通过其它方式导入)
      */
     public static final String BILL_HAS_IMPORT_DATA_DATE = "BILL_HAS_IMPORT_DATA_DATE";
+    public static final int IMPORT_TASK_AND_STEP_RETRY_TIME = 5;
+
+    public static final String BILL_2 ="bill_2" ;
 
     /**
      *  .......

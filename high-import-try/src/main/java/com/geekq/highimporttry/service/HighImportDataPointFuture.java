@@ -3,6 +3,7 @@ package com.geekq.highimporttry.service;
 import com.geekq.highimporttry.entity.ImportDataStep;
 import com.geekq.highimporttry.entity.ImportDataTask;
 import com.geekq.highimporttry.entity.Point;
+import com.geekq.highimporttry.logic.PointLogic;
 import com.geekq.highimporttry.mapper.ImportDataStepDao;
 import com.geekq.highimporttry.mapper.ImportDataTaskDao;
 import com.geekq.highimporttry.mapper.PointDao;
@@ -23,17 +24,17 @@ public class HighImportDataPointFuture implements Callable<List<Point>> {
     private static final Logger logger = LoggerFactory.getLogger(HighImportDataPointFuture.class);
 
     private ImportDataStep step;
-    private PointDao pointDao;
+    private PointLogic pointLogic;
 
     public HighImportDataPointFuture(ImportDataStep step,
-                                     PointDao pointDao) {
+                                     PointLogic pointLogic) {
         this.step = step;
-        this.pointDao = pointDao;
+        this.pointLogic = pointLogic;
     }
     @Override
     public List<Point> call() throws Exception {
         logger.info("start :{} ==  end :{}",step.getRangeStart(),step.getRangeEnd());
-        List<Point> lists = pointDao.queryAllByPointId(step.getRangeStart(),step.getRangeEnd());
+        List<Point> lists = pointLogic.queryAllByPointId(step.getRangeStart(),step.getRangeEnd());
         return lists ;
     }
 

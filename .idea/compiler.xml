@@ -10,6 +10,7 @@
         <module name="threadinterview" />
         <module name="threadpoolexecutor-example" />
         <module name="learnguava" />
+        <module name="sphereg" />
         <module name="sphereg-S" />
         <module name="high-import-try" />
         <module name="teexample" />
@@ -33,6 +34,7 @@
       <module name="grzq-sphere" options="-parameters &quot;-XDignore.symbol.file=true -Xlint&quot;" />
       <module name="high-import-try" options="-parameters &quot;-XDignore.symbol.file=true -Xlint&quot;" />
       <module name="learnguava" options="-parameters" />
+      <module name="sphereg" options="&quot;-XDignore.symbol.file=true -Xlint&quot;" />
       <module name="sphereg-S" options="&quot;-XDignore.symbol.file=true -Xlint&quot;" />
       <module name="teexample" options="-parameters" />
       <module name="thread-interview" options="-parameters" />

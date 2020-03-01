@@ -1,6 +1,4 @@
-package com.geekq.highimporttry.mapper;
-
-
+package com.geekq.highimporttry.logic;
 
 import com.geekq.highimporttry.entity.ImportDataStep;
 import org.apache.ibatis.annotations.Param;
@@ -8,7 +6,8 @@ import org.apache.ibatis.annotations.Param;
 import java.util.Date;
 import java.util.List;
 
-public interface ImportDataStepDao {
+public interface ImportDataStepLogic {
+
     int deleteByPrimaryKey(Integer id);
 
     int insert(ImportDataStep record);
@@ -36,7 +35,7 @@ public interface ImportDataStepDao {
 
     public Integer queryTodayStepIsImportSuccess(String day);
 
-    public int isExistTodayTable(@Param("database") String database , @Param("tableName") String tableName);
+    public Integer isExistTodayTable(@Param("database") String database , @Param("tableName") String tableName);
 
 
 }

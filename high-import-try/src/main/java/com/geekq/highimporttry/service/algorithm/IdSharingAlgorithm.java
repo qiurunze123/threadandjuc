@@ -1,4 +1,4 @@
-package com.geekq.highimporttry.service;
+package com.geekq.highimporttry.service.algorithm;
 
 import com.alibaba.fastjson.JSON;
 import org.apache.shardingsphere.api.sharding.hint.HintShardingAlgorithm;

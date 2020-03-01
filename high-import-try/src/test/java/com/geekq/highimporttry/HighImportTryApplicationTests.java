@@ -2,10 +2,12 @@ package com.geekq.highimporttry;
 
 import com.geekq.highimporttry.entity.ImportDataStep;
 import com.geekq.highimporttry.entity.Point;
+import com.geekq.highimporttry.logic.ImportDataStepLogic;
 import com.geekq.highimporttry.logic.ImportDataTaskLogic;
 import com.geekq.highimporttry.mapper.PointDao;
 import com.geekq.highimporttry.service.HighImportDataService;
 import com.geekq.highimporttry.timer.*;
+import org.apache.shardingsphere.api.hint.HintManager;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -24,6 +26,8 @@ import java.util.concurrent.Executors;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 import java.util.stream.Stream;
+
+import static com.geekq.highimporttry.util.Constant.BILL_2;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
@@ -49,6 +53,9 @@ public class HighImportTryApplicationTests {
 
     @Autowired
     private ImportDataTaskLogic importDataTaskLogic;
+
+    @Autowired
+    private ImportDataStepLogic stepLogic;
 
 //    @Autowired
 //    private TimerRunner4ForkJoin timerRunner4ForkJoin ;
@@ -78,8 +85,11 @@ public class HighImportTryApplicationTests {
     @Test
     public void testHintF() {
 
-        importDataTaskLogic.maxId(20200224+"");
-
+        HintManager hintManager2 = HintManager.getInstance();
+        hintManager2.setDatabaseShardingValue(1);
+        Integer result = stepLogic.isExistTodayTable(BILL_2,"import_point_" +
+                "20200301");
+        hintManager2.close();
         try {
             Thread.currentThread().sleep(50000);
         } catch (InterruptedException e) {
