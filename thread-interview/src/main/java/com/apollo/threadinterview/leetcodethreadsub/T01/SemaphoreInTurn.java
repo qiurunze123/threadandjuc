@@ -1,6 +1,5 @@
-package com.apollo.threadinterview.leetcodethreadsub;
+package com.apollo.threadinterview.leetcodethreadsub.T01;
 
-import java.util.concurrent.Executor;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.Semaphore;

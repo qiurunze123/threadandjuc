@@ -1,4 +1,4 @@
-package com.apollo.threadinterview.leetcodethreadsub;
+package com.apollo.threadinterview.leetcodethreadsub.T01;
 
 import java.util.concurrent.CountDownLatch;
 
