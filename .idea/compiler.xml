@@ -6,15 +6,15 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="learnguavaandstream" />
-        <module name="threadinterview" />
-        <module name="threadpoolexecutor-example" />
+        <module name="high-import-try" />
         <module name="learnguava" />
+        <module name="learnguavaandstream" />
         <module name="sphereg" />
         <module name="sphereg-S" />
-        <module name="high-import-try" />
         <module name="teexample" />
         <module name="thread-interview" />
+        <module name="threadinterview" />
+        <module name="threadpoolexecutor-example" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -32,7 +32,7 @@
       <module name="dubbolearn-rely" options="-parameters" />
       <module name="dubbolearn-service" options="-parameters" />
       <module name="grzq-sphere" options="-parameters &quot;-XDignore.symbol.file=true -Xlint&quot;" />
-      <module name="high-import-try" options="-parameters &quot;-XDignore.symbol.file=true -Xlint&quot;" />
+      <module name="high-import-try" options="&quot;-XDignore.symbol.file=true -Xlint&quot;" />
       <module name="learnguava" options="-parameters" />
       <module name="sphereg" options="&quot;-XDignore.symbol.file=true -Xlint&quot;" />
       <module name="sphereg-S" options="&quot;-XDignore.symbol.file=true -Xlint&quot;" />
