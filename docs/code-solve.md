@@ -25,7 +25,9 @@ three-high-import 项目意义在于利用多线程进行千万级别导入,实�
 
 #### 创造数据
 
-下载项目后 -- 执数据建表语句 -- HighImportTryApplicationTests 中有createMillionData 方法
+下载项目后 -- 执数据建表语句 -- 建三个库  bill_1(import_data_step,import_data_task,import_point_202003)
+                                         bill_2(import_data_step,import_data_task,import_point_202003)
+                                         bill_3（point）
 
    ![整体流程](https://raw.githubusercontent.com/qiurunze123/imageall/master/highimport11.png)
 

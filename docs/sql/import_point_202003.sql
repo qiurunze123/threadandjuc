@@ -19,7 +19,7 @@ SET FOREIGN_KEY_CHECKS=0;
 -- Table structure for `import_point_201904`
 -- ----------------------------
 DROP TABLE IF EXISTS `import_point_201904`;
-CREATE TABLE `import_point_201904` (
+CREATE TABLE `import_point_202003` (
   `day` varchar(20) NOT NULL,
   `userId` int(11) NOT NULL DEFAULT '0',
   `availablePoints` decimal(16,2) DEFAULT NULL,
