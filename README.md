@@ -30,7 +30,7 @@
      - [如何实现高性能](/docs/code-solve.md)<br>
      - [如何实现高可靠](/docs/code-solve.md)
      - [如何自定义线程池以及使用与导入](/docs/code-solve.md)
-     - [数据的导入性能 ](/docs/code-solve.md)
+     - [数据的导入性能(之前的老版本三高导入10万数据大概13s左右新版本还在开发)](/docs/code-solve.md)
      - [进行线程拆分分配资源 ](/docs/code-solve-split.md)
  
 ###  [多线程之前更新版本 -- 请进代码路径：com.geek.threadandjuc](/docs/thread-base-1.md)
