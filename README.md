@@ -59,24 +59,21 @@
 ###  [多线程之前更新版本 -- 请进代码路径：com.geek.threadandjuc](/docs/thread-base-1.md)
  
 ## 目录
-## :coffee: Java基础
-#### 多线程基础
+#### :couple: Java多线程基础
 
-  
- | ID | Problem  | Article | 
- | --- | ---   | :--- |
- | 了解 |你需要知道的几个概念 | [解决思路](/docs/thread-base-0000.md) |
- | 000 |多线程到底有几种实现方式 | [解决思路](/docs/thread-base-000.md) |
- | 001 |多线程使用runnable与继承Thread类有什么区别 | [解决思路](/docs/thread-base-001.md) |
- | 002 |多线程如何正确优雅的中断线程 |[解决思路](/docs/thread-base-002.md)  |
- | 003 |多线程的生命周期状态纽机流转错误错误说法？ |[解决思路](/docs/thread-base-003-1.md)  |
- | 003-1 |多线程的生命周期状态纽机流转 |[解决思路](/docs/thread-base-003.md)  |
- | 003-2 |Thread和Object类 |[解决思路](/docs/thread-base-003-2.md)  |
- | 004 |多线程重要属性|[解决思路](/docs/thread-base-004.md)  |
- | 005 |多线程异常处理机制|[解决思路](/docs/thread-base-005.md)  |
- | 006 |多线程wait notify notifyall join sleep yield作用与方法详细解读 |[解决思路](/docs/thread-base-006.md)  |
- | 007 |多线程可能会带来什么问题 |[解决思路](/docs/thread-base-007.md)  |
- | 008 |多种单例模式 |[解决思路](/docs/thread-base-008.md)  |
+  - 多线程基础
+    - [你需要知道的几个概念](/docs/thread-base-0000.md)<br>
+    - [多线程到底有几种实现方式](/docs/thread-base-000.md)
+    - [多线程使用runnable与继承Thread类有什么区别](/docs/thread-base-001.md)<br>
+    - [多线程如何正确优雅的中断线程](/docs/thread-base-002.md)<br>
+    - [多线程的生命周期状态纽机流转错误错误说法](/docs/thread-base-003-1.md)
+    - [多线程的生命周期状态纽机流转](/docs/thread-base-003.md)
+    - [Thread和Object类](/docs/thread-base-003-2.md)
+    - [多线程重要属性](/docs/thread-base-004.md)
+    - [多线程异常处理机制](/docs/thread-base-005.md)
+    - [多线程wait notify notifyall join sleep yield作用与方法详细解读](/docs/thread-base-006.md)
+    - [多线程可能会带来什么问题](/docs/thread-base-007.md)
+    - [多种单例模式](/docs/thread-base-008.md)
  
 ### 多线程进阶更新
  
