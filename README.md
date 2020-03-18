@@ -1,5 +1,3 @@
-![互联网 Java 多线程那些事](https://raw.githubusercontent.com/qiurunze123/imageall/master/thread100.png)
-
 > 邮箱 : [QiuRunZe_key@163.com](QiuRunZe_key@163.com)
 
 > Github : [https://github.com/qiurunze123](https://github.com/qiurunze123)
@@ -51,6 +49,12 @@
     - [多线程wait notify notifyall join sleep yield作用与方法详细解读](/docs/thread-base-006.md)
     - [多线程可能会带来什么问题](/docs/thread-base-007.md)
     - [多种单例模式](/docs/thread-base-008.md)
+  - 并发容器
+    - [map简介](/docs/bfrq.md)<br>
+    - [vector和HashTable](/docs/bfrq.md)<br>
+    - [ConcurrentHashMap](/docs/bfrq.md)<br>
+    - [CopyOnWriteArrayList](/docs/bfrq.md)
+    - [BlockingQueue](/docs/bfrq.md)<br>
     
 #### :couple: 线程池
 
@@ -78,7 +82,6 @@
        - [小结](/docs/threadpool0001.md)
        - [processWorkerExit方法](/docs/threadpool0001.md)
        - [手写线程池代码](/docs/threadpool0001.md)
-
 
 #### :couple: 多线程进阶更新
 
