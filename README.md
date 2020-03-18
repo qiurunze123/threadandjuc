@@ -103,35 +103,33 @@
        - [手写线程池代码](/docs/threadpool0001.md)
 
 
-### 多线程进阶更新
- 
- | ID | Problem  | Article | 
- | --- | ---   | :--- |
- | 重点 |多线程安全问题 | [解决思路](/docs/JMM.md) |
- | 重点 |JMM多线程内存模型 | [解决思路](/docs/JMM.md) |
- | impo-1 |JMM多线程内存模型 | [解决思路](/docs/JMM-1.md) |
- | 重点 |死锁专题分析 | [解决思路](/docs/dlock.md) |
- | 重点 |AQS--一切的基础 Doug Lee 是个天才 | [解决思路](/docs/AQS.md) |
- | 重点 |Future模式精度分析 Future 模式 | [解决思路](/docs/Future.md) |
- | 000 |java并行程序基础(已完成) | [解决思路](/docs/thread-base-3.md) |
- | 001 |java内存模型和线程安全(已完成) | [解决思路](/docs/thread-base-4.md) |
- | 002 |valatile 专题解析(已完成) |[解决思路](/docs/thread-base-5.md)  |
- | 003 |无锁类 CAS , ABA , Atomic ......(已完成) |[解决思路](/docs/thread-base-6.md)  |
- | 004 |公平锁,非公平锁，可重入锁，递归锁，自旋锁等的理解..(已完成) |[解决思路](/docs/lock.md)  |
- | 005 |阻塞队列..(已完成) |[解决思路](/docs/blocking.md)  |
- | 006 |插播 synchronized和lock 的区别 彻底分析..(已完成) |[解决思路](/docs/sandl.md)  |
- | 008 |AQS .....(有待分析) |[解决思路](/docs/thread-base-14.md)  |
- | 009 |JDK并发包reentrantlock,condition , semaphone ，readwritelock |[解决思路](/docs/thread-base-7.md)  |
- | 010 |countDownLatch |[解决思路](/docs/CountDownLatch.md)  |
- | 011 |reentrantlock 源码分析 ReentrantLockDetails  |[解决思路](/docs/thread-base-7.md)  |
- | 012 |JDK并发包 ConcurrentHashMap 精度分析(粗略版已完成) |[解决思路](/docs/thread-base-8.md)  |
- | 014 |JDK ForkJoin 模式精度分析(粗略版已完成) |[解决思路](/docs/thread-base-10.md)  |
- | 015 |JDK 单例模式 不变模式 Future模式 生产者 消费者 ... (粗略版已完成)） |[解决思路](/docs/thread-base-11.md)  |
- | 016 |NIO AIO 详解 (粗略版已完成)|[解决思路](/docs/thread-base-12.md)  |
- | 017 |并发断点调试 JDK新特性 .....  (粗略版已完成) |[解决思路](/docs/thread-base-13.md)  |
- | 018 |锁优化 ..... (有待分析)   |[解决思路]((/docs/thread-base-13.md))  |
- | 019 |数据伪共享 false—shareing disruptor前传..... )   |[解决思路]((/docs/false-shareing.md))  |
- | 020 |原子性小讲  |[解决思路]((/docs/atom.md))  |
+#### :couple: 多线程进阶更新
+
+  - 线程池
+    - [多线程安全问题](/docs/JMM.md)<br>
+    - [JMM多线程内存模型](/docs/JMM.md)
+    - [JMM多线程内存模型](/docs/JMM-1.md)<br>
+    - [死锁专题分析](/docs/dlock.md)<br>
+    - [AQS--一切的基础 Doug Lee 是个天才](/docs/AQS.md)
+    - [Future模式精度分析 Future 模式](/docs/Future.md)
+    - [java并行程序基础](/docs/thread-base-3.md)
+    - [java内存模型和线程安全](/docs/thread-base-4.md)
+    - [valatile 专题解析](/docs/thread-base-5.md)
+    - [无锁类 CAS , ABA , Atomic ......](/docs/thread-base-6.md)
+    - [公平锁,非公平锁，可重入锁，递归锁，自旋锁](/docs/lock.md)
+    - [阻塞队列.](/docs/blocking.md)
+    - [ synchronized和lock 的区别 .](/docs/sandl.md)
+    - [JDK并发包reentrantlock,condition , semaphone ，readwritelock ](/docs/thread-base-7.md)
+    - [countDownLatch](/docs/CountDownLatch.md)
+    - [reentrantlock 源码分析 ReentrantLockDetails](/docs/thread-base-7.md)
+    - [JDK并发包 ConcurrentHashMap 精度分析](/docs/thread-base-8.md)
+    - [JDK ForkJoin 模式精度分析](/docs/thread-base-10.md)
+    - [JDK 单例模式 不变模式 Future模式 生产者 消费者](/docs/thread-base-11.md)
+    - [NIO AIO 详解](/docs/thread-base-12.md)
+    - [并发断点调试 JDK新特性](/docs/thread-base-13.md)
+    - [锁优化 ](/docs/thread-base-13.md)
+    - [数据伪共享 false—shareing disruptor](/docs/false-shareing.md)
+    - [原子性小讲](/docs/atom.md)
 
      更新此问题的出发点是 **disruptor框架和百度的分布式id生成策略** 
      https://github.com/baidu/uid-generator/blob/master/README.zh_cn.md
@@ -144,31 +142,6 @@
  | 003 |多线程切换上下文 | [解决思路](/docs/threadsafe001.md) |
  | 004 |死锁特辑| [解决思路](/docs/threadsafe001.md) |
 
-
-### 线程池精讲
-
-| ID | Problem  | Article | 
- | --- | ---   | :--- |
- | 001 |JDK 线程池高度解析(大致了解版本) | [解决思路](/docs/thread-base-9.md) |
- | 002 |线程池是什么 | [解决思路](/docs/threadpool0001.md) |
- | 002-1 |多次创建线程的劣势 | [解决思路](/docs/threadpool0001.md) |
- | 003 |什么时候使用线程池 | [解决思路](/docs/threadpool0001.md) |
- | 004 |线程池的优势| [解决思路](/docs/threadpool0001.md) |
- | 005 |Executor框架| [解决思路](/docs/threadpool0001.md) |
- | 006 |线程池的重点属性| [解决思路](/docs/threadpool0001.md) |
- | 007 |线程池的具体实现| [解决思路](/docs/threadpool0001.md) |
- | 008 |线程池的创建| [解决思路](/docs/threadpool0001.md) |
- | 009 |线程池参数解释| [解决思路](/docs/threadpool0001.md) |
- | 010 |线程池监控| [解决思路](/docs/threadpool0001.md) |
- | 011 |线程池的源码分析| [解决思路](/docs/threadpool0001.md) |
- | 011-1 |execute方法| [解决思路](/docs/threadpool0001.md) |
- | 011-2 |addWorker方法| [解决思路](/docs/threadpool0001.md) |
- | 011-3 |Worker类| [解决思路](/docs/threadpool0001.md) |
- | 011-4 |runWorker方法| [解决思路](/docs/threadpool0001.md) |
- | 011-5 |getTask方法| [解决思路](/docs/threadpool0001.md) |
- | 011-6 |processWorkerExit方法| [解决思路](/docs/threadpool0001.md) |
- | 011-7 |小结 | [解决思路](/docs/threadpool0001.md) |
- | 012 |手写线程池代码| [解决思路](/docs/threadpool0001.md) |
 
 ### 多线程juc 分享 
 
