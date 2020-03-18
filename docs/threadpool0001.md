@@ -103,7 +103,24 @@
 #### 线程池的具体实现
 
     ThreadPoolExecutor 默认线程池
+    
     ScheduledThreadPoolExecutor 定时线程池
+    
+    newFixedThreadPool
+    return new ThreadPoolExecutor(nThreads, nThreads,0L, TimeUnit.MILLISECONDS,new LinkedBlockingQueue<Runnable>());
+    
+    newSingleThreadExecutor
+    new ThreadPoolExecutor(1, 1,0L, TimeUnit.MILLISECONDS, new LinkedBlockingQueue<Runnable>()));
+    
+    newCachedThreadPool
+    new ThreadPoolExecutor(0, Integer.MAX_VALUE, 60L, TimeUnit.SECONDS, new SynchronousQueue<Runnable>());
+    
+    newWorkStealingPool
+    new ForkJoinPool(Runtime.getRuntime().availableProcessors(),ForkJoinPool.defaultForkJoinWorkerThreadFactory,null, true);
+    
+#### 如何使用钩子函数来进行线程池操作
+
+com.executor.PauseableThreadPool 如何在使用线程池前后添加钩子函数来进行数据监控
     
 ### 线程池的具体创建
 
