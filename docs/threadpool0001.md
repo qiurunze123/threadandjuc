@@ -58,8 +58,7 @@
     ctlOf：获取运行状态和活动线程数的值
     
     线程池存在5种状态
-    RUNNING = 1
-    << COUNT_BITS; //高3位为111
+    RUNNING = -1<< COUNT_BITS; //高3位为111
     SHUTDOWN = 0 << COUNT_BITS; //高3位为000
     STOP = 1 << COUNT_BITS; //高3位为001
     TIDYING = 2 << COUNT_BITS; //高3位为010
