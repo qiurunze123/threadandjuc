@@ -114,14 +114,14 @@
      更新此问题的出发点是 **disruptor框架和百度的分布式id生成策略** 
      https://github.com/baidu/uid-generator/blob/master/README.zh_cn.md
 
-### 多线程安全专题
- | ID | Problem  | Article | 
- | --- | ---   | :--- |
- | 001 | 一共有几类线程安全的问题 | [解决思路](/docs/threadsafe001.md) |
- | 002 | 哪些场景需要额外注意线程安全问题| [解决思路](/docs/threadsafe001.md) |
- | 003 |多线程切换上下文 | [解决思路](/docs/threadsafe001.md) |
- | 004 |死锁特辑| [解决思路](/docs/threadsafe001.md) |
 
+#### :couple: 多线程安全专题
+
+  - 线程池
+    - [一共有几类线程安全的问题](/docs/threadsafe001.md)<br>
+    - [哪些场景需要额外注意线程安全问题](/docs/threadsafe001.md)
+    - [多线程切换上下文](/docs/threadsafe001.md)<br>
+    - [死锁特辑](/docs/threadsafe001.md)<br>
 
 ### 多线程juc 分享 
 
