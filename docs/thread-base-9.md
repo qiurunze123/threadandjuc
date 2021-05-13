@@ -35,9 +35,9 @@ interface ExecutorService extends Executor
  
 核心参数 
 
-corePoolsize : 线程中允许的核心线程数
+corePoolsize : 线程池中允许的核心线程数
 
-maximumPoolsize : 该线程所允许的最大线程数
+maximumPoolsize : 该线程池所允许的最大线程数
 
 keepAliveTime : 空余线程的存活时间并不会对所有的线程起作用 如果线程数大于corePoolsize  那么这些线程就不会因为被空闲太久而关闭 除非你调用 allowcorethreadtimeout 方法 
 这个方法可以使核心线程数也被回收
